@@ -1,6 +1,6 @@
-## Twelve Sky 2.5 (Version 1) Project Installation Guide
+## Twelve Sky 2.5 Project Installation Guide
 
-This guide will help you set up your Twelve Sky 2.5 (Version 1) server project on an Ubuntu-based server. Follow these steps carefully.
+This guide will help you set up your Twelve Sky 2.5 server project on an Ubuntu-based server. Follow these steps carefully.
 
 ### 1. Installation and Configuration of MySQL Database
 
