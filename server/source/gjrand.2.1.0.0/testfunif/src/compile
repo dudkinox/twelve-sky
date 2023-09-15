@@ -1,0 +1,21 @@
+#!/bin/sh
+
+. ../../compiler
+
+for i in blatf blatdvf blatfil uni2f
+do
+    echo $i
+    eval $CC $CFLAGS $i.c ../../src/gjrand.a -lm -o ../gen/$i
+done
+
+for i in angle diff3 diff10 dim40 dim20 dim6 dim3 dim2 extreme bds chi walk nda
+do
+    echo $i
+    eval $CC $CFLAGS $i.c -lm -o ../bin/$i
+done
+
+for i in mcpf pmcpf
+do
+    echo $i
+    eval $CC $CFLAGS $i.c -lm -o ../$i
+done

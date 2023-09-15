@@ -1,0 +1,47 @@
+dnl Process this file with autoconf to produce a configure script.
+AC_INIT(include/raslib.h)
+
+dnl Checks for programs.
+AC_PROG_CC
+AC_PROG_CXX
+AC_PROG_INSTALL
+AC_PROG_LN_S
+AC_PROG_MAKE_SET
+AC_PROG_RANLIB
+
+AC_PATH_PROG(AR, ar)
+AC_PATH_PROG(LD, ld)
+AC_PATH_PROG(RANLIB, ranlib)
+AC_PATH_PROG(RM, rm)
+AC_PATH_PROG(CHMOD, chmod)
+CPWD=`pwd`
+
+dnl Checks for OS
+AC_ISC_POSIX
+dnl Checks for libraries.
+
+dnl Checks for header files.
+AC_HEADER_STDC
+AC_CHECK_HEADERS(sys/file.h sys/ioctl.h sys/time.h unistd.h sys/select.h sys/epoll.h sys/event.h)
+
+dnl Checks for typedefs, structures, and compiler characteristics.
+AC_C_CONST
+AC_TYPE_SIZE_T
+AC_HEADER_TIME
+AC_STRUCT_TM
+AC_DEFUN([NET_IO_WITH_EPOLL], 
+	[AC_ARG_WITH(epoll,
+		[  --with-epoll        build with epoll],
+		[if test x"${withval-no}" != xno; then
+			if test x"/usr/include/sys/epoll.h" = xno; then
+				AC_MSG_ERROR(epoll is not found)
+			fi
+		fi
+		AM_CONDITIONAL(NET_IO_READLINE, te
+dnl Checks for library functions.
+AC_FUNC_SETPGRP
+AC_TYPE_SIGNAL
+AC_FUNC_VPRINTF
+AC_CHECK_FUNCS(socket strdup select epoll kqueue)
+
+AC_OUTPUT(src/Makefile Makefile)

@@ -1,0 +1,9 @@
+#!/bin/sh
+
+. ../compiler
+
+for i in coins insphere mod2 mod3 mod mod64 onsphere pi2 poker shuffle shuffle1 shuffle2 snakeeyes testchi testt poisson fakepoisson longdouble fv dv mb
+do
+    echo $i :
+    eval $CC $CFLAGS $i.c ../src/gjrand.a -lm -o $i
+done

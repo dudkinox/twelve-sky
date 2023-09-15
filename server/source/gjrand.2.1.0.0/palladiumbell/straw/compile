@@ -1,0 +1,13 @@
+#!/bin/sh
+
+. ../../compiler
+
+for i in straw1 straw3 straw4 straw5 straw6 straw7
+do
+    echo $i
+    eval $CC $CFLAGS $i.c ../../src/gjrand.a -lm -o $i
+done
+
+# straw2 wants some things single precision.
+echo straw2
+eval $CC $C2FLAGS straw2.c ../../src/gjrand.a -lm -o straw2

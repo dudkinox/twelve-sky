@@ -1,0 +1,4 @@
+These programs test random number distributions other than uniform
+and normal distribution. They all link to libgjrand to obtain random
+numbers direct, so some modification will be needed if you want to test
+other sources. TODO: some documentation. In the meantime read the source.

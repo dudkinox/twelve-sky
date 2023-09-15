@@ -1,0 +1,16 @@
+./S07_MyGame03.cpp:					if( mUSER[tUserIndex].mAvatarInfo.aGeneralExperience2 == mLEVEL.ReturnHighExpValue( mUSER[tUserIndex].mAvatarInfo.aLevel2 ) )
+./S07_MyGame03.cpp:					if( mUSER[tUserIndex].mAvatarInfo.aGeneralExperience2 == mLEVEL.ReturnHighExpValue( mUSER[tUserIndex].mAvatarInfo.aLevel2 ) )
+./S07_MyGame03.cpp:					if( mUSER[tUserIndex].mAvatarInfo.aGeneralExperience2 == mLEVEL.ReturnHighExpValue( mUSER[tUserIndex].mAvatarInfo.aLevel2 ) )
+./S07_MyGame03.cpp:					if( mUSER[tUserIndex].mAvatarInfo.aGeneralExperience2 == mLEVEL.ReturnHighExpValue( mUSER[tUserIndex].mAvatarInfo.aLevel2 ) )
+./S07_MyGame03.cpp:					if( mUSER[tUserIndex].mAvatarInfo.aGeneralExperience2 == mLEVEL.ReturnHighExpValue( mUSER[tUserIndex].mAvatarInfo.aLevel2 ) )
+./S07_MyGame03.cpp:					if( mUSER[tUserIndex].mAvatarInfo.aGeneralExperience2 == mLEVEL.ReturnHighExpValue( mUSER[tUserIndex].mAvatarInfo.aLevel2 ) )
+./S07_MyGame03.cpp:					if( mUSER[tUserIndex].mAvatarInfo.aGeneralExperience2 == mLEVEL.ReturnHighExpValue( mUSER[tUserIndex].mAvatarInfo.aLevel2 ) )
+./S07_MyGame03.cpp:					if( mUSER[tUserIndex].mAvatarInfo.aGeneralExperience2 == mLEVEL.ReturnHighExpValue( mUSER[tUserIndex].mAvatarInfo.aLevel2 ) )
+./S07_MyGame03.cpp:					if( mUSER[tUserIndex].mAvatarInfo.aGeneralExperience2 == mLEVEL.ReturnHighExpValue( mUSER[tUserIndex].mAvatarInfo.aLevel2 ) )
+./S07_MyGame03.cpp:					if( mUSER[tUserIndex].mAvatarInfo.aGeneralExperience2 == mLEVEL.ReturnHighExpValue( mUSER[tUserIndex].mAvatarInfo.aLevel2 ) )
+./S07_MyGame03.cpp:					if( mUSER[tUserIndex].mAvatarInfo.aGeneralExperience2 == mLEVEL.ReturnHighExpValue( mUSER[tUserIndex].mAvatarInfo.aLevel2 ) )
+./S07_MyGame03.cpp:			if( ( mUSER[tUserIndex].mAvatarInfo.aGeneralExperience2 + tGainGeneralExperience ) > mLEVEL.ReturnHighExpValue( mUSER[tUserIndex].mAvatarInfo.aLevel2 ) )
+./S07_MyGame03.cpp:				tGainGeneralExperience = mLEVEL.ReturnHighExpValue( mUSER[tUserIndex].mAvatarInfo.aLevel2 ) - mUSER[tUserIndex].mAvatarInfo.aGeneralExperience2;
+./S07_MyGame03.cpp:				if( ( mUSER[tUserIndex].mAvatarInfo.aGeneralExperience2 + tGainGeneralExperience ) < mLEVEL.ReturnHighExpValue( mUSER[tUserIndex].mAvatarInfo.aLevel2 ) )
+./S07_MyGame03.cpp:					tMaxGeneralExperienceRange = (float) mLEVEL.ReturnHighExpValue( mUSER[tUserIndex].mAvatarInfo.aLevel2 );
+./S08_MyGameSystem.cpp:int LEVELSYSTEM::ReturnHighExpValue( int tLevel )

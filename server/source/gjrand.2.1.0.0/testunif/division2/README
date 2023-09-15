@@ -1,0 +1,5 @@
+More tests for uniform random bits. These ones didn't quite make the grade
+and got relegated to 2nd division. In some cases they have a tendency
+to not notice obvious deficiencies in generators until they see a lot
+more data than other tests. In other cases they are incredibly slow.
+Included here for your amusement. Eventually they might go away.

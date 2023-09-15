@@ -1,0 +1,158 @@
+Gjrand random number library.
+=============================
+
+The gjrand library and associated test programs, utilities, documentation,
+etc, are all licensed under the Gnu General Public License, either version 2
+or version 3 at your option. If you distribute gjrand or derived works, this
+can be under:
+(a) GPL v2 or GPL v3 at the recipient's option, or
+(b) just GPL v2, or
+(c) just GPL v3.
+(However if you got this gjrand from some third party under just one version
+of the GPL, that's the only one you can distribute it under.)
+
+See the files COPYING and/or COPYING3 for details.
+
+Since version 0.1.0.0 i am calling this an "alpha test" release.
+That means i have tested almost everything and it seems to work ok.
+As far as i know, only one other person has tested it. There could still
+be bugs, and there almost certainly are portability problems.
+Documentation is sparse.
+This software is still only for people who know how to use a C compiler and
+fix portability botches for themselves (or better, report them to me with
+enough detail that i can fix them for the next version).
+
+The library provides API calls for the following:
+
+seed the generator
+save and restore state
+generate integer uniform random numbers
+generate integer special: coins, biased coins, dice, shuffle, poisson
+generate floating point uniform numbers
+generate floating point special:
+    normal distribution
+    t distribution
+    chi-square distribution
+    in a n-dimensional sphere
+    on the surface of a n-dimensional sphere
+compatibility functions for rand() family and rand48() family.
+
+Except for most of the compatibility functions, gjrand should be thread-safe.
+It is written in C, but appears to also compile as C++.
+
+There are also test programs that test all of the above and could also
+be used or adapted to test other alleged random sources. Some alternative
+(mostly bad) pseudo random generators are also provided so you can amuse
+yourself by watching tests fail.
+
+-----
+
+compiler
+========
+The file compiler in this directory specifies the compiler and flags
+used by compile scrips in all subdirectories. Tweak it if you don't
+use gcc or you want special flags (eg, profile, debug or extra optimise).
+
+src
+===
+The library source code is in subdirectory  src  . No binaries are
+supplied. You need a C compiler. If your setup is very like mine
+the script  compile  should build the library. Otherwise you need
+to know what you're doing. Limited documentation is in the
+files  README  and  gjrand.h  . If you just want a random number
+generator library, this subdirectory is all you need.
+
+util
+====
+Subdirectory  util  contains various small programs that i used
+to help develop the library. This is not useful to most people.
+
+testunif
+========
+Subdirectory  testunif  contains programs to generate hopefully random uniform
+bitstreams, and programs to perform tests on them. These are now quite
+extensive. Note that there is not a huge overlap between tests here and those
+in Diehard or NIST although those are for much the same purpose. This is a
+feature, not a bug. If you want Diehard or NIST tests, go and get them.
+I wanted to do something different to increase the "genepool" of available
+tests for random bits.
+
+testunif/straw contains some dubious uniform pseudo-random generators.
+
+palladiumbell
+=============
+Subdirectory  palladiumbell  contains tests for the  gjrand_normal()
+function. I think these are already quite good, but if you have bug
+reports or useful advice for improvements i'd like to hear them.
+README expains how to interpret the test program output.  compile  is a
+script that compiled all test programs on my machine.
+Programmers should find it fairly easy to adapt these programs to test
+other sources of alleged normally distributed random numbers.
+It is my ambition to turn palladiumbell into the definitive testsuite for
+normally distributed random numbers, on a par with the "Diehard" and
+"NIST" suites for uniform random numbers.
+
+palladiumbell/straw contains some dubious normal pseudo-random generators.
+
+testfunif
+=========
+Tests for uniform double precision floating point on [0.0 .. 1.0).
+
+testcompat
+==========
+Tests for the *rand48 compatibility functions.
+
+testother
+=========
+Subdirectory  testother  contains tests for other random generator functions.
+These now cover all gjrand generators, but are not as thorough as the
+palladiumbell or testunif tests.
+
+testmisc
+========
+Subdirectory  testmisc  contains tests for gjrand API calls which are
+not for generating random numbers, or where the point to be tested
+is not exactly the quality of the random numbers.
+
+-----
+
+Gjrand is not suitable for producing "cryptographic random numbers".
+There are several concrete reasons for this, but more obvious, and
+hopefully enough to scare you off, is that i gave no thought whatsoever
+to achieving cryptographic standard in either the design or programming
+stages. Instead, i concentrated on the needs of simulation, computer games,
+and "Monte-Carlo algorithms".
+
+In general the requirements of cryptography are somewhat incompatible
+with those of other random number uses, and it is probably a good idea
+to use different software for these two purposes.
+
+-----
+
+I am not currently aware of any bugs in the current version. If you find some,
+check if there is a newer version available which fixes them. If not,
+i'd like to hear from you. Try to be clear about your setup and
+exactly what you think is wrong. Example source code that demonstrates
+the bug would be nice.
+
+I want to hear about portability problems, and especially so if you
+have a fix that makes it work on your machine without breaking anything
+else. I am not interested in doing a MS-Windows port unless you want
+to pay me lots of money and allow me time to re-learn MS-Windows programming.
+However i would be happy to include other people's fixes for MS-Windows and
+try not to break them in future versions.
+
+I'm vaguely interested in hearing requests for extra features. I can
+think of heaps of extras to add, but i don't know which ones people would
+actually use.
+
+Gjrand doesn't conform to any standard API for random number generators
+because i'm not aware of any such API. If you have a favourite,
+let me know.
+
+-----
+
+If you want to report bugs or make contact for other reasons, the best
+option is to post on the gjrand public forums on SourceForge. I should
+eventually read those. I use a very limited dialup account, and am
+sometimes out of town without net access. Be patient.

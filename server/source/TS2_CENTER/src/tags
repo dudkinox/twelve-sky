@@ -1,0 +1,315 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.7	//
+B_BROADCAST_INFO	S05_MyTransfer.cpp	/^void MyTransfer::B_BROADCAST_INFO( int tInfoSort, BYTE tInfoData[MAX_BROADCAST_INFO_SIZE] )$/;"	f	class:MyTransfer
+B_CHAT_TOOL_FOR_CENTER_RECV	S05_MyTransfer.cpp	/^void MyTransfer::B_CHAT_TOOL_FOR_CENTER_RECV( void )$/;"	f	class:MyTransfer
+B_CHECK_EVENT	S05_MyTransfer.cpp	/^void MyTransfer::B_CHECK_EVENT( int tEventSort, int tUserIndex, int tGmIndex )$/;"	f	class:MyTransfer
+B_CONNECT_OK	S05_MyTransfer.cpp	/^void MyTransfer::B_CONNECT_OK( void )$/;"	f	class:MyTransfer
+B_GET_ZONE_SERVER_INFO_1_RESULT	S05_MyTransfer.cpp	/^void MyTransfer::B_GET_ZONE_SERVER_INFO_1_RESULT( int tResult, char tIP[16], int tPort )$/;"	f	class:MyTransfer
+B_GTOL_BAN_PLAYER	S05_MyTransfer.cpp	/^void MyTransfer::B_GTOL_BAN_PLAYER (char szID[MAX_USER_ID_LENGTH])$/;"	f	class:MyTransfer
+B_GTOZ_BAN_PLAYER	S05_MyTransfer.cpp	/^void MyTransfer::B_GTOZ_BAN_PLAYER (char szID[MAX_USER_ID_LENGTH])$/;"	f	class:MyTransfer
+B_LOGIN_FOR_CENTER_RECV	S05_MyTransfer.cpp	/^void MyTransfer::B_LOGIN_FOR_CENTER_RECV( void )$/;"	f	class:MyTransfer
+B_NOTICE	S05_MyTransfer.cpp	/^void MyTransfer::B_NOTICE( char tContent[MAX_CHAT_CONTENT_LENGTH], int tTribe )$/;"	f	class:MyTransfer
+B_POLICE_FOR_CENTER_RECV	S05_MyTransfer.cpp	/^void MyTransfer::B_POLICE_FOR_CENTER_RECV( void )$/;"	f	class:MyTransfer
+B_POLICE_INFO	S05_MyTransfer.cpp	/^void MyTransfer::B_POLICE_INFO( char tID[33], int tLoginTime, int tLogoutTime )$/;"	f	class:MyTransfer
+B_RANK_INFO_RESULT	S05_MyTransfer.cpp	/^void MyTransfer::B_RANK_INFO_RESULT(const char *aName)$/;"	f	class:MyTransfer
+B_SECRET_CHAT	S05_MyTransfer.cpp	/^void MyTransfer::B_SECRET_CHAT( int tZoneNumber, int tTribe, char tAvatarName01[13], char tAvatarName02[13], char tContent[51] )$/;"	f	class:MyTransfer
+B_SERCH_AVATAR	S05_MyTransfer.cpp	/^void MyTransfer::B_SERCH_AVATAR( char tAvatarName01[13], int tUserIndex, int tGmIndex)$/;"	f	class:MyTransfer
+B_SET_EVENT	S05_MyTransfer.cpp	/^void MyTransfer::B_SET_EVENT( int tEventSort, int tEventValue )$/;"	f	class:MyTransfer
+B_SET_GM_ORDER	S05_MyTransfer.cpp	/^void MyTransfer::B_SET_GM_ORDER( int tEventSort, int tMoveZoneNumber, char tAvatarName01[13])$/;"	f	class:MyTransfer
+B_SET_GM_ORDER_MOVE_AVATAR	S05_MyTransfer.cpp	/^void MyTransfer::B_SET_GM_ORDER_MOVE_AVATAR( char tAvatarName01[13], int tPosX, int tPosY, int tPosZ )$/;"	f	class:MyTransfer
+B_SHUTDOWN	S05_MyTransfer.cpp	/^void MyTransfer::B_SHUTDOWN( void )$/;"	f	class:MyTransfer
+B_START	S05_MyTransfer.cpp	/^void MyTransfer::B_START( void )$/;"	f	class:MyTransfer
+B_TOOL_CHECK_EVENT_RESULT	S05_MyTransfer.cpp	/^void MyTransfer::B_TOOL_CHECK_EVENT_RESULT( int tGmIndex, int tEventSort, int tResult, int tWorldNumber, int tZoneNumber )$/;"	f	class:MyTransfer
+B_TOOL_DEMAND_RESULT	S05_MyTransfer.cpp	/^void MyTransfer::B_TOOL_DEMAND_RESULT( void )$/;"	f	class:MyTransfer
+B_TOOL_FOR_CENTER_RECV	S05_MyTransfer.cpp	/^void MyTransfer::B_TOOL_FOR_CENTER_RECV( void )$/;"	f	class:MyTransfer
+B_TOOL_SERCH_AVATAR_RESULT	S05_MyTransfer.cpp	/^void MyTransfer::B_TOOL_SERCH_AVATAR_RESULT( int tZoneNumber, int tGmIndex )$/;"	f	class:MyTransfer
+B_TOTAL_RANK_INFO_RESULT	S05_MyTransfer.cpp	/^void MyTransfer::B_TOTAL_RANK_INFO_RESULT(void)$/;"	f	class:MyTransfer
+B_TOTAL_ZONE_CONNECTION_INFO	S05_MyTransfer.cpp	/^void MyTransfer::B_TOTAL_ZONE_CONNECTION_INFO( ZONE_CONNECTION_INFO *tZoneConnectionInfo )$/;"	f	class:MyTransfer
+B_TRIBE_CHAT	S05_MyTransfer.cpp	/^void MyTransfer::B_TRIBE_CHAT( int tZoneNumber, int tTribe, char tAvatarName01[13], char tAvatarName02[13], char tContent[51] )$/;"	f	class:MyTransfer
+B_WORLD_INFO	S05_MyTransfer.cpp	/^void MyTransfer::B_WORLD_INFO( WORLD_INFO *tWorldInfo, TRIBE_INFO *tTribeInfo )$/;"	f	class:MyTransfer
+B_ZONE_CONNECTION_INFO	S05_MyTransfer.cpp	/^void MyTransfer::B_ZONE_CONNECTION_INFO( int tZoneNumber, char tIP[16], int tPort )$/;"	f	class:MyTransfer
+B_ZONE_FOR_CENTER_RECV	S05_MyTransfer.cpp	/^void MyTransfer::B_ZONE_FOR_CENTER_RECV( void )$/;"	f	class:MyTransfer
+CC	Makefile	/^CC 	   = g++$/;"	m
+CFLAGS	Makefile	/^CFLAGS     = -fPIC -rdynamic -Wall -O3 -g3 -ggdb3 -Wimplicit -Wreturn-type -Wunused -Wuninitialized\\$/;"	m
+CHECK_CONFIG_VARIABLE	main.cpp	220;"	d	file:
+CHECK_CONFIG_VAR_BOOLEAN	main.cpp	237;"	d	file:
+CHECK_CONFIG_VAR_RANGE	main.cpp	230;"	d	file:
+CMySQL	cts_mysql.cpp	/^CMySQL::CMySQL() $/;"	f	class:CMySQL
+CMySQL	cts_mysql.cpp	/^CMySQL::CMySQL(bool auto_commit) $/;"	f	class:CMySQL
+CMySQL	mysql.cpp	/^CMySQL::CMySQL() $/;"	f	class:CMySQL
+COracle	oracle.cpp	/^COracle::COracle() $/;"	f	class:COracle
+CP	Makefile	/^CP     = cp$/;"	m
+CPgSQL	pgsql.cpp	/^CPgSQL::CPgSQL() $/;"	f	class:CPgSQL
+CThreadPool	tpool.cpp	/^CThreadPool::CThreadPool(unsigned int num_threads)$/;"	f	class:CThreadPool
+CThreadPoolMThread	tpool.cpp	/^CThreadPool::CThreadPoolMThread::CThreadPoolMThread(CThreadPool *tp_obj_ptr) $/;"	f	class:CThreadPool::CThreadPoolMThread
+CWorkerProcess	worker_process.cpp	/^CWorkerProcess::CWorkerProcess(SOCKET listen_socket) throw(Exception) $/;"	f	class:CWorkerProcess
+CWorkerProcess	worker_process.cpp	/^CWorkerProcess::CWorkerProcess(void) $/;"	f	class:CWorkerProcess
+CWorkerThread	worker_thread.cpp	/^CWorkerThread::CWorkerThread(db_conn_pool_t *db_conn_pool_ptr) $/;"	f	class:CWorkerThread
+CallSubMain	main.cpp	/^static void CallSubMain(int port_num)$/;"	f	file:
+DBManagerTerm	main.cpp	56;"	d	file:
+DB_PROCESS_01	S08_MyDB.cpp	/^BOOL MyDB::DB_PROCESS_01( WORLD_INFO *tWorldInfo )$/;"	f	class:MyDB
+DB_PROCESS_02	S08_MyDB.cpp	/^BOOL MyDB::DB_PROCESS_02( WORLD_INFO *tWorldInfo )$/;"	f	class:MyDB
+DB_PROCESS_03	S08_MyDB.cpp	/^BOOL MyDB::DB_PROCESS_03( int tTribe )$/;"	f	class:MyDB
+DB_PROCESS_04	S08_MyDB.cpp	/^BOOL MyDB::DB_PROCESS_04( int tSort, int tTribe )$/;"	f	class:MyDB
+DB_PROCESS_05	S08_MyDB.cpp	/^BOOL MyDB::DB_PROCESS_05( int tDate, int tTribe )$/;"	f	class:MyDB
+DB_PROCESS_06	S08_MyDB.cpp	/^BOOL MyDB::DB_PROCESS_06( int tSort, int tDate, int tValue )$/;"	f	class:MyDB
+DB_PROCESS_07	S08_MyDB.cpp	/^BOOL MyDB::DB_PROCESS_07( int tSort, int tAlliance01, int tAlliance02 )$/;"	f	class:MyDB
+DB_PROCESS_08	S08_MyDB.cpp	/^BOOL MyDB::DB_PROCESS_08( int tSort, int tValue )$/;"	f	class:MyDB
+DB_PROCESS_09	S08_MyDB.cpp	/^BOOL MyDB::DB_PROCESS_09( int tSort, int tValue )$/;"	f	class:MyDB
+DB_PROCESS_10	S08_MyDB.cpp	/^BOOL MyDB::DB_PROCESS_10( TRIBE_INFO *tTribeInfo )$/;"	f	class:MyDB
+DB_PROCESS_11	S08_MyDB.cpp	/^BOOL MyDB::DB_PROCESS_11( TRIBE_INFO *tTribeInfo )$/;"	f	class:MyDB
+DB_PROCESS_12	S08_MyDB.cpp	/^BOOL MyDB::DB_PROCESS_12(int up_check)$/;"	f	class:MyDB
+DB_PROCESS_13	S08_MyDB.cpp	/^BOOL MyDB::DB_PROCESS_13(const char *aName, rank_info_t *rank_info)$/;"	f	class:MyDB
+DEFAULT_ADD_JOB_TIME_OUT	tpool.cpp	23;"	d	file:
+DFLAGS	Makefile	/^DFLAGS    = -D__RELEASE__ -DUSE_UDP -D__EPOLL__ -D__x86_64__\\$/;"	m
+DISPLAY_CONFIG_ERROR	main.cpp	214;"	d	file:
+DISPLAY_SIGNAL_ACTION_ERROR	main.cpp	88;"	d	file:
+Free	S02_MyServer.cpp	/^void MyServer::Free( void )$/;"	f	class:MyServer
+Free	S03_MyUser.cpp	/^void MyUser::Free( void )$/;"	f	class:MyUser
+Free	S04_MyWork01.cpp	/^void MyWork::Free( void )$/;"	f	class:MyWork
+Free	S05_MyTransfer.cpp	/^void MyTransfer::Free( void )$/;"	f	class:MyTransfer
+Free	S06_MyUpperCom.cpp	/^void MyGameLog::Free( void )$/;"	f	class:MyGameLog
+Free	S07_MyGame01.cpp	/^void MyGame::Free( void )$/;"	f	class:MyGame
+Free	S08_MyDB.cpp	/^void MyDB::Free( void )$/;"	f	class:MyDB
+GL_201_START_TRIBE_SYMBOL_BATTLE	S06_MyUpperCom.cpp	/^void MyGameLog::GL_201_START_TRIBE_SYMBOL_BATTLE( void )$/;"	f	class:MyGameLog
+GL_202_END_TRIBE_SYMBOL_BATTLE	S06_MyUpperCom.cpp	/^void MyGameLog::GL_202_END_TRIBE_SYMBOL_BATTLE( void )$/;"	f	class:MyGameLog
+HEADER	Makefile	/^HEADER = global.h worker_thread.h score_board.h\\$/;"	m
+INCLUDEDIR	Makefile	/^INCLUDEDIR = -I.\/..\/..\/raslib\/include -I..\/include\\$/;"	m
+INSTALLDIR	Makefile	/^INSTALLDIR = ${PRGPATH}\/bin$/;"	m
+Init	S02_MyServer.cpp	/^BOOL MyServer::Init( int *tResult )$/;"	f	class:MyServer
+Init	S03_MyUser.cpp	/^BOOL MyUser::Init( int tSendBufferSize, int tRecvBufferSize )$/;"	f	class:MyUser
+Init	S04_MyWork01.cpp	/^BOOL MyWork::Init( void )$/;"	f	class:MyWork
+Init	S05_MyTransfer.cpp	/^BOOL MyTransfer::Init( void )$/;"	f	class:MyTransfer
+Init	S06_MyUpperCom.cpp	/^BOOL MyGameLog::Init( char tIP[16], int tPort )$/;"	f	class:MyGameLog
+Init	S07_MyGame01.cpp	/^BOOL MyGame::Init( void )$/;"	f	class:MyGame
+Init	S08_MyDB.cpp	/^BOOL MyDB::Init( void )$/;"	f	class:MyDB
+IsConnected	cts_mysql.cpp	/^int CMySQL::IsConnected(void)$/;"	f	class:CMySQL
+LFLAGS	Makefile	/^LFLAGS	   = $/;"	m
+LIBDIR	Makefile	/^LIBDIR     = -L\/usr\/local\/lib\\$/;"	m
+LIBS	Makefile	/^LIBS	   = -lras\\$/;"	m
+LS	Makefile	/^LS     = ls$/;"	m
+MAX_SIZE_OF_FD	worker_process.cpp	71;"	d	file:
+MAX_SIZE_OF_PROC_TITLE	main.cpp	149;"	d	file:
+MAX_SIZE_OF_RECV_BUFFER	worker_thread.cpp	73;"	d	file:
+MAX_SIZE_OF_RTX_BUFFER	worker_thread.cpp	72;"	d	file:
+MAX_SIZE_OF_THREAD_JOB_QUEUE	worker_thread.cpp	19;"	d	file:
+MaxSizeOfBackLog	main.cpp	54;"	d	file:
+MaxSizeOfHint	main.cpp	55;"	d	file:
+MyDB	S08_MyDB.cpp	/^MyDB::MyDB( void )$/;"	f	class:MyDB
+MyGame	S07_MyGame01.cpp	/^MyGame::MyGame( void )$/;"	f	class:MyGame
+MyGameLog	S06_MyUpperCom.cpp	/^MyGameLog::MyGameLog( void )$/;"	f	class:MyGameLog
+MyServer	S02_MyServer.cpp	/^MyServer::MyServer( void )$/;"	f	class:MyServer
+MyTransfer	S05_MyTransfer.cpp	/^MyTransfer::MyTransfer( void )$/;"	f	class:MyTransfer
+MyUser	S03_MyUser.cpp	/^MyUser::MyUser( void )$/;"	f	class:MyUser
+MyWork	S04_MyWork01.cpp	/^MyWork::MyWork( void )$/;"	f	class:MyWork
+OBJ	Makefile	/^OBJ = main.o score_board.o worker_thread.o\\$/;"	m
+OS	Makefile	/^OS	   = -D__LINUX__$/;"	m
+PID_FILE_PATH	cts_util.cpp	30;"	d	file:
+PID_FILE_PATH	cts_util.cpp	32;"	d	file:
+PRGPATH	Makefile	/^PRGPATH = \/user\/service$/;"	m
+PROCESS_FOR_NETWORK	S02_MyServer.cpp	/^int MyServer::PROCESS_FOR_NETWORK(SOCKET *cli_fd, UINT fd_status, void *arg = NULL)$/;"	f	class:MyServer
+PROCESS_FOR_TIMER	S02_MyServer.cpp	/^void MyServer::PROCESS_FOR_TIMER( void )$/;"	f	class:MyServer
+ProcessResponse	S01_MainApplication.cpp	/^int ProcessResponse (UINT nMss, SOCKET *cli_fd, UINT fd_status, void *arg)$/;"	f
+Quit	S03_MyUser.cpp	/^void MyUser::Quit( int tSort )$/;"	f	class:MyUser
+RECONNECT_TO_DATABASE01	S08_MyDB.cpp	/^BOOL MyDB::RECONNECT_TO_DATABASE01( void )$/;"	f	class:MyDB
+RECONNECT_TO_DATABASE02	S08_MyDB.cpp	/^BOOL MyDB::RECONNECT_TO_DATABASE02( void )$/;"	f	class:MyDB
+RM	Makefile	/^RM     = rm$/;"	m
+Reconnect	cts_mysql.cpp	/^int CMySQL::Reconnect(void)$/;"	f	class:CMySQL
+SEND_RESPONSE_ERROR	worker_thread.cpp	75;"	d	file:
+SRC	Makefile	/^SRC =  main.cpp worker_thread.cpp score_board.cpp\\$/;"	m
+STRIP	Makefile	/^STRIP  = strip$/;"	m
+SVRNAME	Makefile	/^SVRNAME = ts2_centerd$/;"	m
+SYS	Makefile	/^SYS = $(shell uname -s)$/;"	m
+Send	S03_MyUser.cpp	/^void MyUser::Send( BOOL tCheckValidBuffer, char *tBuffer, int tBufferSize )$/;"	f	class:MyUser
+SendToLogServer	S06_MyUpperCom.cpp	/^void MyGameLog::SendToLogServer( void )$/;"	f	class:MyGameLog
+SendToLogServerForDB	S06_MyUpperCom.cpp	/^void MyGameLog::SendToLogServerForDB( void )$/;"	f	class:MyGameLog
+SetBeDmon	main.cpp	/^int SetBeDmon(void)$/;"	f
+ShowUsage	main.cpp	/^void ShowUsage(void)$/;"	f
+ShowVersion	main.cpp	/^void ShowVersion(void)$/;"	f
+TAR	Makefile	/^TAR    = tar$/;"	m
+VERSION	Makefile	/^VERSION = $(shell cat ..\/VERSION)$/;"	m
+WRITE_FOR_ERROR	S02_MyServer.cpp	/^void MyServer::WRITE_FOR_ERROR( char *tErrorData )$/;"	f	class:MyServer
+W_BAN_PLAYER	S04_MyWork02.cpp	/^void W_BAN_PLAYER (int iUserIndex)$/;"	f
+W_CHAT_TOOL_FOR_CENTER_SEND	S04_MyWork02.cpp	/^void W_CHAT_TOOL_FOR_CENTER_SEND( int tUserIndex )$/;"	f
+W_CHAT_TOOL_OK_FOR_CENTER_SEND	S04_MyWork02.cpp	/^void W_CHAT_TOOL_OK_FOR_CENTER_SEND( int tUserIndex )$/;"	f
+W_CHECK_EVENT_SEND	S04_MyWork02.cpp	/^void W_CHECK_EVENT_SEND( int tUserIndex ) $/;"	f
+W_DEMAND_BROADCAST_INFO	S04_MyWork02.cpp	/^void W_DEMAND_BROADCAST_INFO( int tUserIndex )$/;"	f
+W_DEMAND_CHECK_EVENT_FOR_TOOL	S04_MyWork02.cpp	/^void W_DEMAND_CHECK_EVENT_FOR_TOOL( int tUserIndex )$/;"	f
+W_DEMAND_NOTICE_FOR_TOOL	S04_MyWork02.cpp	/^void W_DEMAND_NOTICE_FOR_TOOL( int tUserIndex )$/;"	f
+W_DEMAND_SERCH_AVATAR_FOR_GMTOOL	S04_MyWork02.cpp	/^void W_DEMAND_SERCH_AVATAR_FOR_GMTOOL( int tUserIndex )$/;"	f
+W_DEMAND_SET_EVENT_FOR_TOOL	S04_MyWork02.cpp	/^void W_DEMAND_SET_EVENT_FOR_TOOL( int tUserIndex )$/;"	f
+W_DEMAND_SET_GM_ORDER_FOR_GMTOOL	S04_MyWork02.cpp	/^void W_DEMAND_SET_GM_ORDER_FOR_GMTOOL( int tUserIndex )$/;"	f
+W_DEMAND_SET_GM_ORDER_FOR_GMTOOL_MOVE_AVATAR	S04_MyWork02.cpp	/^void W_DEMAND_SET_GM_ORDER_FOR_GMTOOL_MOVE_AVATAR( int tUserIndex )$/;"	f
+W_DEMAND_SHUTDOWN_FOR_TOOL	S04_MyWork02.cpp	/^void W_DEMAND_SHUTDOWN_FOR_TOOL( int tUserIndex )$/;"	f
+W_DEMAND_START_FOR_TOOL	S04_MyWork02.cpp	/^void W_DEMAND_START_FOR_TOOL( int tUserIndex )$/;"	f
+W_FUNCTION	S04_MyWork02.cpp	/^WORKER_FUNCTION W_FUNCTION[256];$/;"	v
+W_GET_RANK_INFO_SEND	S04_MyWork02.cpp	/^void W_GET_RANK_INFO_SEND(int tUserIndex)$/;"	f
+W_GET_TOTAL_RANK_INFO_SEND	S04_MyWork02.cpp	/^void W_GET_TOTAL_RANK_INFO_SEND(int tUserIndex)$/;"	f
+W_GET_ZONE_SERVER_INFO_1	S04_MyWork02.cpp	/^void W_GET_ZONE_SERVER_INFO_1( int tUserIndex )$/;"	f
+W_LOGIN_FOR_CENTER_SEND	S04_MyWork02.cpp	/^void W_LOGIN_FOR_CENTER_SEND( int tUserIndex )$/;"	f
+W_LOGIN_OK_FOR_CENTER_SEND	S04_MyWork02.cpp	/^void W_LOGIN_OK_FOR_CENTER_SEND( int tUserIndex )$/;"	f
+W_POLICE_FOR_CENTER_SEND	S04_MyWork02.cpp	/^void W_POLICE_FOR_CENTER_SEND( int tUserIndex )$/;"	f
+W_POLICE_INFO_FOR_CENTER_SEND	S04_MyWork02.cpp	/^void W_POLICE_INFO_FOR_CENTER_SEND( int tUserIndex )$/;"	f
+W_POLICE_OK_FOR_CENTER_SEND	S04_MyWork02.cpp	/^void W_POLICE_OK_FOR_CENTER_SEND( int tUserIndex )$/;"	f
+W_SECRET_CHAT_FOR_CHAT_TOOL_SEND	S04_MyWork02.cpp	/^void W_SECRET_CHAT_FOR_CHAT_TOOL_SEND( int tUserIndex )$/;"	f
+W_SERCH_AVATAR_SEND	S04_MyWork02.cpp	/^void W_SERCH_AVATAR_SEND ( int tUserIndex )$/;"	f
+W_TOOL_FOR_CENTER_SEND	S04_MyWork02.cpp	/^void W_TOOL_FOR_CENTER_SEND( int tUserIndex )$/;"	f
+W_TOOL_OK_FOR_CENTER_SEND	S04_MyWork02.cpp	/^void W_TOOL_OK_FOR_CENTER_SEND( int tUserIndex )$/;"	f
+W_TRIBE_CHAT_FOR_CHAT_TOOL_SEND	S04_MyWork02.cpp	/^void W_TRIBE_CHAT_FOR_CHAT_TOOL_SEND( int tUserIndex )$/;"	f
+W_ZONE_FOR_CENTER_CONNECTION_SEND	S04_MyWork02.cpp	/^void W_ZONE_FOR_CENTER_CONNECTION_SEND( int tUserIndex )$/;"	f
+W_ZONE_FOR_CENTER_SEND	S04_MyWork02.cpp	/^void W_ZONE_FOR_CENTER_SEND( int tUserIndex )$/;"	f
+W_ZONE_OK_FOR_CENTER_SEND	S04_MyWork02.cpp	/^void W_ZONE_OK_FOR_CENTER_SEND( int tUserIndex )$/;"	f
+add_job	tpool.cpp	/^int CThreadPool::add_job(void (*routine)(void *arg_ptr), void *arg_ptr)$/;"	f	class:CThreadPool
+add_single_thread	tpool.cpp	/^int CThreadPool::add_single_thread(eThreadType thread_type, pthread_t *thread_id_ptr, bool to_be_inserted)$/;"	f	class:CThreadPool
+check_opt_arg	main.cpp	511;"	d	file:
+child_sighandlers	signal.cpp	/^} child_sighandlers[] = {$/;"	v	typeref:struct:__anon1	file:
+clear_query	oracle.cpp	/^void COracle::clear_query(void)$/;"	f	class:COracle
+clear_res	cts_mysql.cpp	/^void CMySQL::clear_res(void)$/;"	f	class:CMySQL
+clear_res	mysql.cpp	/^void CMySQL::clear_res(void)$/;"	f	class:CMySQL
+clear_res	pgsql.cpp	/^void CPgSQL::clear_res(void)$/;"	f	class:CPgSQL
+connect	cts_mysql.cpp	/^MYSQL* CMySQL::connect(const char *hostname_str_const_ptr, int port_num, const char *db_name_str_const_ptr,$/;"	f	class:CMySQL
+connect	cts_mysql.cpp	/^MYSQL* CMySQL::connect(string hostname_str_obj, int port_num, string db_name_str_obj,$/;"	f	class:CMySQL
+connect	cts_mysql.cpp	/^MYSQL* CMySQL::connect(void)$/;"	f	class:CMySQL
+connect	dummy_dp.cpp	/^void *CDummyDP::connect(const char *hostname_str_const_ptr, int port_num, const char *db_name_str_const_ptr,$/;"	f	class:CDummyDP
+connect	dummy_dp.cpp	/^void *CDummyDP::connect(string hostname_str_obj, int port_num, string db_name_str_obj,$/;"	f	class:CDummyDP
+connect	dummy_dp.cpp	/^void *CDummyDP::connect(void)$/;"	f	class:CDummyDP
+connect	mysql.cpp	/^MYSQL* CMySQL::connect(const char *hostname_str_const_ptr, int port_num, const char *db_name_str_const_ptr,$/;"	f	class:CMySQL
+connect	mysql.cpp	/^MYSQL* CMySQL::connect(string hostname_str_obj, int port_num, string db_name_str_obj,$/;"	f	class:CMySQL
+connect	mysql.cpp	/^MYSQL* CMySQL::connect(void)$/;"	f	class:CMySQL
+connect	oracle.cpp	/^Connection* COracle::connect(const char *hostname_str_const_ptr, int port_num,$/;"	f	class:COracle
+connect	oracle.cpp	/^Connection* COracle::connect(string hostname_str_obj, int port_num,$/;"	f	class:COracle
+connect	oracle.cpp	/^Connection* COracle::connect(void)$/;"	f	class:COracle
+connect	pgsql.cpp	/^PGconn* CPgSQL::connect(const char *dbname_str_const_ptr)$/;"	f	class:CPgSQL
+connect	pgsql.cpp	/^PGconn* CPgSQL::connect(const char *hostname_str_const_ptr, int port_num, const char *db_name_str_const_ptr,$/;"	f	class:CPgSQL
+connect	pgsql.cpp	/^PGconn* CPgSQL::connect(string hostname_str_obj, int port_num, string db_name_str_obj,$/;"	f	class:CPgSQL
+connect	pgsql.cpp	/^PGconn* CPgSQL::connect(void)$/;"	f	class:CPgSQL
+create_pid_file	cts_util.cpp	/^int create_pid_file(void)$/;"	f
+destroy	tpool.cpp	/^void CThreadPool::destroy(void) $/;"	f	class:CThreadPool
+destroy_score_board	score_board.cpp	/^void CScoreBoard::destroy_score_board(void) throw (Exception)$/;"	f	class:CScoreBoard
+destroy_score_board_mutex	score_board.cpp	/^void CScoreBoard::destroy_score_board_mutex(void) $/;"	f	class:CScoreBoard
+disconnect	cts_mysql.cpp	/^void CMySQL::disconnect(void)$/;"	f	class:CMySQL
+disconnect	dummy_dp.cpp	/^void CDummyDP::disconnect(void)$/;"	f	class:CDummyDP
+disconnect	mysql.cpp	/^void CMySQL::disconnect(void)$/;"	f	class:CMySQL
+disconnect	oracle.cpp	/^void COracle::disconnect(void)$/;"	f	class:COracle
+disconnect	pgsql.cpp	/^void CPgSQL::disconnect(void)$/;"	f	class:CPgSQL
+do_ping	cts_mysql.cpp	/^int CMySQL::do_ping()$/;"	f	class:CMySQL
+do_ping	mysql.cpp	/^int CMySQL::do_ping()$/;"	f	class:CMySQL
+dump_score_board_out	score_board.cpp	/^void CScoreBoard::dump_score_board_out(void)$/;"	f	class:CScoreBoard
+escape_string	cts_mysql.cpp	/^unsigned long CMySQL::escape_string(char *to, const char *from, size_t length)$/;"	f	class:CMySQL
+escape_string	mysql.cpp	/^unsigned long CMySQL::escape_string(char *to, const char *from, size_t length)$/;"	f	class:CMySQL
+escape_string	pgsql.cpp	/^int CPgSQL::escape_string(char *to, const char *from, size_t length)$/;"	f	class:CPgSQL
+exec_query	cts_mysql.cpp	/^int CMySQL::exec_query(char *query_str_ptr)$/;"	f	class:CMySQL
+exec_query	cts_mysql.cpp	/^int CMySQL::exec_query(char *query_str_ptr, CFLAG flag)$/;"	f	class:CMySQL
+exec_query	cts_mysql.cpp	/^int CMySQL::exec_query(string &query_str_ref)$/;"	f	class:CMySQL
+exec_query	mysql.cpp	/^int CMySQL::exec_query(char *query_str_ptr)$/;"	f	class:CMySQL
+exec_query	mysql.cpp	/^int CMySQL::exec_query(char *query_str_ptr, CFLAG flag)$/;"	f	class:CMySQL
+exec_query	mysql.cpp	/^int CMySQL::exec_query(string &query_str_ref)$/;"	f	class:CMySQL
+exec_query	oracle.cpp	/^bool COracle::exec_query(char *query_str_ptr)$/;"	f	class:COracle
+exec_query	oracle.cpp	/^bool COracle::exec_query(string &query_str_ref)$/;"	f	class:COracle
+exec_query	pgsql.cpp	/^int CPgSQL::exec_query(char *query_str_ptr)$/;"	f	class:CPgSQL
+exec_query	pgsql.cpp	/^int CPgSQL::exec_query(char *query_str_ptr, CFLAG flag)$/;"	f	class:CPgSQL
+exec_query	pgsql.cpp	/^int CPgSQL::exec_query(string &query_str_ref)$/;"	f	class:CPgSQL
+g_config_str_obj	main.cpp	/^string g_config_str_obj;$/;"	v
+g_listen_socket	main.cpp	/^Socket g_listen_socket;$/;"	v
+g_log_obj_ptr	main.cpp	/^CLogging *g_log_obj_ptr;$/;"	v
+g_score_board_obj_ptr	main.cpp	/^CScoreBoard *g_score_board_obj_ptr;$/;"	v
+get_affected_rows	cts_mysql.cpp	/^my_ulonglong CMySQL::get_affected_rows(void)$/;"	f	class:CMySQL
+get_affected_rows	mysql.cpp	/^my_ulonglong CMySQL::get_affected_rows(void)$/;"	f	class:CMySQL
+get_cm_work_status	score_board.cpp	/^unsigned int CScoreBoard::get_cm_work_status(void) $/;"	f	class:CScoreBoard
+get_cmd_tuples	pgsql.cpp	/^int CPgSQL::get_cmd_tuples(void)$/;"	f	class:CPgSQL
+get_error_msg	cts_mysql.cpp	/^string &CMySQL::get_error_msg(void)$/;"	f	class:CMySQL
+get_error_msg	mysql.cpp	/^string &CMySQL::get_error_msg(void)$/;"	f	class:CMySQL
+get_error_msg	oracle.cpp	/^string COracle::get_error_msg(void)$/;"	f	class:COracle
+get_error_msg	pgsql.cpp	/^string &CPgSQL::get_error_msg(void)$/;"	f	class:CPgSQL
+get_num_fields	cts_mysql.cpp	/^int CMySQL::get_num_fields(void)$/;"	f	class:CMySQL
+get_num_fields	mysql.cpp	/^int CMySQL::get_num_fields(void)$/;"	f	class:CMySQL
+get_num_fields	pgsql.cpp	/^int CPgSQL::get_num_fields(void)$/;"	f	class:CPgSQL
+get_num_rows	cts_mysql.cpp	/^int CMySQL::get_num_rows(void)$/;"	f	class:CMySQL
+get_num_rows	mysql.cpp	/^int CMySQL::get_num_rows(void)$/;"	f	class:CMySQL
+get_num_rows	oracle.cpp	/^int  COracle::get_num_rows(void)$/;"	f	class:COracle
+get_num_tuples	pgsql.cpp	/^int CPgSQL::get_num_tuples(void)$/;"	f	class:CPgSQL
+get_pid_file	cts_util.cpp	/^pid_t get_pid_file(void)$/;"	f
+get_proc_updated	score_board.cpp	/^int CScoreBoard::get_proc_updated(pid_t pid)$/;"	f	class:CScoreBoard
+get_res	cts_mysql.cpp	/^MYSQL_RES *CMySQL::get_res(void)$/;"	f	class:CMySQL
+get_res	mysql.cpp	/^MYSQL_RES *CMySQL::get_res(void)$/;"	f	class:CMySQL
+get_res	pgsql.cpp	/^PGresult *CPgSQL::get_res(void)$/;"	f	class:CPgSQL
+get_result	cts_mysql.cpp	/^int CMySQL::get_result(CFLAG flag)$/;"	f	class:CMySQL
+get_result	mysql.cpp	/^int CMySQL::get_result(CFLAG flag)$/;"	f	class:CMySQL
+get_result	pgsql.cpp	/^int CPgSQL::get_result(CFLAG flag)$/;"	f	class:CPgSQL
+get_thread_updated	score_board.cpp	/^int CScoreBoard::get_thread_updated(pid_t pid)$/;"	f	class:CScoreBoard
+get_value	cts_mysql.cpp	/^char *CMySQL::get_value(int row, int field)$/;"	f	class:CMySQL
+get_value	mysql.cpp	/^char *CMySQL::get_value(int row, int field)$/;"	f	class:CMySQL
+get_value	pgsql.cpp	/^char *CPgSQL::get_value(int tuple, int field)$/;"	f	class:CPgSQL
+guard_sighandlers	signal.cpp	/^} guard_sighandlers[] = {$/;"	v	typeref:struct:__anon2	file:
+hand	signal.cpp	/^	void (*hand)(int);$/;"	m	struct:__anon1	file:
+hand	signal.cpp	/^	void (*hand)(int);$/;"	m	struct:__anon2	file:
+init_score_board	score_board.cpp	/^void CScoreBoard::init_score_board(void) throw (Exception)$/;"	f	class:CScoreBoard
+init_signals	signal.cpp	/^int init_signals(int flag)$/;"	f
+init_single_thread	tpool.cpp	/^void *CThreadPool::init_single_thread(void *arg_ptr)$/;"	f	class:CThreadPool
+init_slot	score_board.cpp	/^void CScoreBoard::init_slot(unsigned int num_of_slots) throw(Exception)$/;"	f	class:CScoreBoard
+init_thread_pool	tpool.cpp	/^int CThreadPool::init_thread_pool(void)$/;"	f	class:CThreadPool
+let_cm_spin	score_board.cpp	/^void CScoreBoard::let_cm_spin(void) $/;"	f	class:CScoreBoard
+let_cm_stop	score_board.cpp	/^void CScoreBoard::let_cm_stop(unsigned int shutdown_rsn) $/;"	f	class:CScoreBoard
+lib_log	oracle.cpp	/^void lib_log(const char* log_str)$/;"	f
+load_config	main.cpp	/^static void load_config(void) $/;"	f	file:
+mBaseTickCountForLogic	main.cpp	/^DWORD mBaseTickCountForLogic;$/;"	v
+mCheckLogicFlag	main.cpp	/^BOOL mCheckLogicFlag;$/;"	v
+mDB	S08_MyDB.cpp	/^MyDB mDB;$/;"	v
+mGAME	S07_MyGame01.cpp	/^MyGame mGAME;$/;"	v
+mGAMELOG	S06_MyUpperCom.cpp	/^MyGameLog mGAMELOG;$/;"	v
+mPostTickCountForLogic	main.cpp	/^DWORD mPostTickCountForLogic;$/;"	v
+mSERVER	S02_MyServer.cpp	/^MyServer mSERVER;$/;"	v
+mSERVER_INFO	main.cpp	/^SERVER_INFO mSERVER_INFO;$/;"	v
+mTRANSFER	S05_MyTransfer.cpp	/^MyTransfer mTRANSFER;$/;"	v
+mUSER	S03_MyUser.cpp	/^MyUser *mUSER = NULL;$/;"	v
+mWORK	S04_MyWork01.cpp	/^MyWork mWORK;$/;"	v
+main	main.cpp	/^int main(int argc, char **argv)$/;"	f
+maintenance_child_proc	score_board.cpp	/^unsigned int CScoreBoard::maintenance_child_proc(unsigned int proc_work_time)$/;"	f	class:CScoreBoard
+mark_proc_dead	score_board.cpp	/^int CScoreBoard::mark_proc_dead(pid_t pid)$/;"	f	class:CScoreBoard
+mask	signal.cpp	/^static sigset_t mask;$/;"	v	file:
+mtpool_thread	tpool.cpp	/^int CThreadPool::mtpool_thread(void)$/;"	f	class:CThreadPool
+run	tpool.cpp	/^int CThreadPool::run(void)$/;"	f	class:CThreadPool
+run	tpool.cpp	/^void CThreadPool::CThreadPoolMThread::run(void) $/;"	f	class:CThreadPool::CThreadPoolMThread
+set_db_conn_info	cts_mysql.cpp	/^int CMySQL::set_db_conn_info(const char *hostname_str_const_ptr, const char *hostname2_str_const_ptr, int port_num, const char *db_name_str_const_ptr,$/;"	f	class:CMySQL
+set_db_conn_info	cts_mysql.cpp	/^int CMySQL::set_db_conn_info(const char *hostname_str_const_ptr, int port_num, const char *db_name_str_const_ptr,$/;"	f	class:CMySQL
+set_db_conn_info	mysql.cpp	/^int CMySQL::set_db_conn_info(const char *hostname_str_const_ptr, int port_num, const char *db_name_str_const_ptr,$/;"	f	class:CMySQL
+set_db_conn_info	oracle.cpp	/^int COracle::set_db_conn_info(const char *hostname_str_const_ptr, int port_num,$/;"	f	class:COracle
+set_db_conn_info	pgsql.cpp	/^int CPgSQL::set_db_conn_info(const char *hostname_str_const_ptr, int port_num, const char *db_name_str_const_ptr,$/;"	f	class:CPgSQL
+set_listen_socket	worker_process.cpp	/^void CWorkerProcess::set_listen_socket(SOCKET listen_socket) throw(Exception) $/;"	f	class:CWorkerProcess
+set_nonblock	worker_process.cpp	/^int CWorkerProcess::set_nonblock(int cli_fd)$/;"	f	class:CWorkerProcess
+set_sighandlers_child	signal.cpp	/^static int set_sighandlers_child(void) $/;"	f	file:
+set_sighandlers_guard	signal.cpp	/^static int set_sighandlers_guard(void) $/;"	f	file:
+sig	signal.cpp	/^	int sig;$/;"	m	struct:__anon1	file:
+sig	signal.cpp	/^	int sig;$/;"	m	struct:__anon2	file:
+sig_handler	worker_process.cpp	/^static void sig_handler(int signo)$/;"	f	file:
+signal_child	signal.cpp	/^static void signal_child(int sig)$/;"	f	file:
+signal_gstop	signal.cpp	/^static void signal_gstop(int sig)$/;"	f	file:
+signal_guard	signal.cpp	/^static void signal_guard(int sig)$/;"	f	file:
+spin_wait	cts_util.cpp	/^void spin_wait(unsigned int dfs_sec, unsigned int dfs_usec)$/;"	f
+start_service	worker_thread.cpp	/^int CWorkerThread::start_service(Socket *client_socket_obj_ptr) $/;"	f	class:CWorkerThread
+start_svr_service	worker_process.cpp	/^int CWorkerProcess::start_svr_service(void) $/;"	f	class:CWorkerProcess
+svc_thread_context	worker_thread.cpp	/^void svc_thread_context(void *arg_ptr)$/;"	f
+thread_context_lock	worker_thread.cpp	/^static Semaphore thread_context_lock;$/;"	v	file:
+thread_lock	tpool.cpp	/^Semaphore CThreadPool::thread_lock;$/;"	m	class:CThreadPool	file:
+tpool_add_work	tpool_q.cpp	/^int tpool_add_work(tpool_t tpool, void (*routine)(void *arg), void *arg)$/;"	f
+tpool_destroy	tpool_q.cpp	/^int tpool_destroy(tpool_t tpool, int finish)$/;"	f
+tpool_init	tpool_q.cpp	/^int tpool_init(tpool_t *tpoolp, int num_worker_threads, int max_queue_size, int do_not_block_when_full)$/;"	f
+tpool_thread	tpool_q.cpp	/^void *tpool_thread(void *arg)$/;"	f
+unlink_pid_file	cts_util.cpp	/^int unlink_pid_file(void)$/;"	f
+unset_db_conn_info	cts_mysql.cpp	/^inline void CMySQL::unset_db_conn_info(void) $/;"	f	class:CMySQL
+unset_db_conn_info	mysql.cpp	/^inline void CMySQL::unset_db_conn_info(void) $/;"	f	class:CMySQL
+unset_db_conn_info	oracle.cpp	/^inline void COracle::unset_db_conn_info(void) $/;"	f	class:COracle
+unset_db_conn_info	pgsql.cpp	/^inline void CPgSQL::unset_db_conn_info(void) $/;"	f	class:CPgSQL
+update_slot	score_board.cpp	/^void CScoreBoard::update_slot(pid_t pid)$/;"	f	class:CScoreBoard
+~CMySQL	cts_mysql.cpp	/^CMySQL::~CMySQL()$/;"	f	class:CMySQL
+~CMySQL	mysql.cpp	/^CMySQL::~CMySQL()$/;"	f	class:CMySQL
+~COracle	oracle.cpp	/^COracle::~COracle()$/;"	f	class:COracle
+~CPgSQL	pgsql.cpp	/^CPgSQL::~CPgSQL()$/;"	f	class:CPgSQL
+~CScoreBoard	score_board.cpp	/^CScoreBoard::~CScoreBoard(void) throw()$/;"	f	class:CScoreBoard
+~CThreadPool	tpool.cpp	/^CThreadPool::~CThreadPool(void) $/;"	f	class:CThreadPool
+~CWorkerProcess	worker_process.cpp	/^CWorkerProcess::~CWorkerProcess(void) $/;"	f	class:CWorkerProcess
+~CWorkerThread	worker_thread.cpp	/^CWorkerThread::~CWorkerThread(void) throw ()$/;"	f	class:CWorkerThread

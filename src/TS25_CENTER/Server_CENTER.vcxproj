@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{A985725D-A443-4E84-B79D-3A0CB9BC2B64}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectName>TS25_CENTER</ProjectName>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>16.0.30804.86</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)/_re/</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;__GOD__;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <Optimization>
+      </Optimization>
+      <InlineFunctionExpansion />
+      <FavorSizeOrSpeed>
+      </FavorSizeOrSpeed>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>../include/mysql/libmysql.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(SolutionDir)/_re/$(ProjectName)$(TargetExt)</OutputFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>
+      </OptimizeReferences>
+      <EnableCOMDATFolding>
+      </EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+      <LinkTimeCodeGeneration>
+      </LinkTimeCodeGeneration>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\include\cts_mysql.cpp" />
+    <ClCompile Include="..\include\TimeLog.cpp" />
+    <ClCompile Include="S02_MyServer.cpp" />
+    <ClCompile Include="S03_MyUser.cpp" />
+    <ClCompile Include="S04_MyWork01.cpp" />
+    <ClCompile Include="S04_MyWork02.cpp" />
+    <ClCompile Include="S05_MyTransfer.cpp" />
+    <ClCompile Include="S07_MyGame01.cpp" />
+    <ClCompile Include="S08_MyDB.cpp" />
+    <ClCompile Include="Server_CENTER.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\include\cts_mysql.h" />
+    <ClInclude Include="..\include\TimeLog.h" />
+    <ClInclude Include="H02_MyServer.h" />
+    <ClInclude Include="H03_MyUser.h" />
+    <ClInclude Include="H04_MyWork.h" />
+    <ClInclude Include="H05_MyTransfer.h" />
+    <ClInclude Include="H07_MyGame.h" />
+    <ClInclude Include="H08_MyDB.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="Shengming.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="TS25_CENTER.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\TS2.ico" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

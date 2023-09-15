@@ -1,0 +1,139 @@
+Frequently Asked Questions
+==========================
+
+More than a year after the initial code release, no-one has asked any
+questions at all, let alone frequent ones :-(
+So i decided to cheat and make some up.
+
+
+Q1) This Geronimo Jones is hopeless at maintenance, packaging, and portability
+    issues, and also has left out essential features. I'm going to fork
+    the source tree, so there!
+
+A1) That's fine by me, as long as you stick by the conditions of the
+    GPL (v2 or v3 as appropriate). Write and tell me when you make your first
+    code release so i can point people at a properly maintained version :-)
+
+
+Q2a) In what way is gjrand not good enough for crypto purposes?
+
+A2a) The quality of the numbers is probably close to what is needed
+    for crypto purposes, but that's not the point. The point is that it
+    is all very predictable for someone who has the source code and knows
+    what to do with it. In most crypto applications, that makes it useless.
+
+Q2b) What do you mean, "requirements of cryptography are somewhat
+    incompatible with those of other random number uses, and it is probably
+    a good idea to use different software for these two purposes".
+
+A2b) Without going into too many details, crypto software has to be
+    written by someone you trust, and when it comes to crypto software,
+    you can't trust anyone. This means security audits, line for line.
+    This means good crypto software is small, simple, clearly written, not
+    overly optimised. This means all the goodies and performance tuning you
+    want in your simulation random number package should be left out of a
+    crypto package. Eg you don't want to security audit a normal distribution
+    generator, which wouldn't be useful in most crypto applications anyway.
+
+    On the other hand many crypto random applications have extra requirements
+    on the random stream that are totally irrelevant for non-crypto purposes.
+    Many non-crypto random generators (including gjrand) don't even try to
+    meet these extra requirements.
+
+    So crypto random generators (if they're good) are too feature poor, and
+    possibly too slow, for other purposes, and non-crypto random generators
+    are too messy and can't be trusted for crypto work.
+
+    That said, there are some good ideas, and some good algorithms, in
+    cryptography, that could be applied to other random number purposes.
+    But the actual software is best done seperately.
+
+
+Q3) Why all the tests? Why not just use a) DIEHARD b) FIPS c) NIST
+    d) RaBiGeTe e) SPRNG f) L'Ecuyer g) DIEHARDER h) ENT etc.
+
+A3) There are historical reasons. For instance when i started, my net
+    connection was even worse than now (it's now a 56kbit dialup)
+    and i couldn't actually download any of those, so to do any testing
+    at all, i had to write my own. I'm glad i did, for a few reasons.
+
+    I notice that all the different test software out there that is easy
+    to find has a certain similarity. There must be 20 reasonable packages
+    easy to find, but you'd get nearly all the good ideas out of just 3 of
+    them, all the rest are "me too!". By working in isolation and ignorance
+    in the early stages, i have developed some tests that are a bit different.
+    I think it's good to have some variety in available tests.
+
+    Most of the tests available on the net are aimed at uniform random bits.
+    As i use a generator of that type as my basic generator, and transform to
+    get all the others, that's the type that needs the most careful testing.
+    But it's important to test everything at least slightly. I've now
+    developed multiple reasonably powerful tests for uniform doubles on
+    [ 0 1 ) and for normal distribution, and at least basic sanity checks for
+    everything else.
+
+    All the test suites above have something to offer. DIEHARD is probably
+    my favourite because it's actually easier to use than most of the newer
+    ones. However it only tests about 10MB of data which won't find large
+    scale problems that matter now that some applications consume terabytes
+    of random numbers.
+
+
+Q4) Where you say "Random Generator" do you really mean
+    "Pseudo-Random Generator"?
+
+A4) Yes. I'm lazy.
+
+
+Q5) Aren't genuine random generators much better than pseudo-random generators?
+
+A5) Better for what? For almost all non-crypto uses, i don't know of any
+    real advantage to using a genuine random generator (ie: something
+    interpreting radioactivity or thermal noise or some other source of
+    quantum randomness).
+
+    The disadvantages of a genuine random generator include:
+
+    Usually slow.
+    Usually quite difficult to tell if it is actually working.
+	The software (see below) will usually cover up quite well and
+	obscure the evidence if it is not working. Actually this problem
+	may be going away now. Most of the more responsible manufacturers
+	are now giving you an interface to the "raw" hardware noise before
+	the software cleans it up, so you can monitor its operation.
+    Has horrible biases. These (in a good one) are corrected by software.
+	This software needs to be at least as clever as a good pseudo-random
+	generator in order to correct the bias properly. (Usually this
+	software is hidden in a special processor on the hardware circuit
+	board, or else in a device driver provided by the manufacturer.)
+    Repeatablility is useful in some applications. The only way to get
+	repeatability out of a genuine random generator is to save data
+	to disc and distribute copies to anyone who needs to replicate
+	your work. Kind of messy for a big job. For pseudo-random generators
+	you only need to specify the generator and the starting seed (and
+	maybe a checksum of the random stream so people can be sure they got
+	it right).
+
+    I don't believe the quality of the random numbers (for any particular
+	non-crypto purpose) are any different between genuine random
+	generators and pseudo-random generators, provided both are implemented
+	well using good methods.
+
+    But maybe genuine random generators have some advantage i haven't thought
+	of. (In some crypto applications they are certainly worth considering.)
+
+
+Q6) Between version 0.1.9.0 and version 1.0.0.0 there is a major change in
+    gjrand internals. The earlier versions are based around 32 bit architecture,
+    the later ones around 64 bits. There used to be related questions, but
+    now i just say: If you are using 0.1.9.0 or older, upgrade now, to 1.3.0.0
+    or later, the newest you can find.
+
+    Make sure you recompile any application files that include gjrand.h
+    otherwise bad things will happen. Just relinking is not enough. If you
+    wrote code relying on sizeof(struct gjrand) or the internal fields,
+    you have to fix it. And yes, the new versions should work ok even on
+    a 32 bit computer. (My development machine is 32 bit.)
+
+    Actually almost all versions before 1.3.0.0 have known bugs. 1.3.0.0
+    is the oldest version i feel good about.

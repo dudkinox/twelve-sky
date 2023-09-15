@@ -1,0 +1,110 @@
+biasedcoins.c:/* Part of gjrand random number library version 2.0.0.0 or later. */
+binom.c:/* Part of gjrand random number library version 2.0.0.0 or later. */
+chisquared.c:/* Part of gjrand random number library version 2.1.0.0 or later. */
+coins.c:/* Part of gjrand random number library version 2.0.0.0 or later. */
+crank64.c:/* Update the state and then put 4 new random words into r[]. */
+dice.c:/* Part of gjrand random number library version 1.0.0.0 or later. */
+dranda.c:/* Part of gjrand random number library version 1.0.0.0 or later. */
+drand.c:/* Part of gjrand random number library version 1.0.0.0 or later. */
+drandv.c:/* Part of gjrand random number library version 1.0.0.0 or later. */
+frandv.c:/* Part of gjrand random number library version 2.0.0.0 or later. */
+gjrand.h:/* Part of gjrand random number library version 2.0.0.0 or later. */
+gjrand.h:/* (Each call that generates random data will advance at least one crank, */
+gjrand.h:/* random access to a position in the random stream. */
+gjrand.h:/* --- generate random numbers: integer uniform --- */
+gjrand.h:/* update state and return a uniformly distributed 31 bit random integer in */
+gjrand.h:/* random integer in the range [0 .. (2**32) - 1 ] */
+gjrand.h:/* random integers into the buffer starting at *v . v must point */
+gjrand.h:/* random integer in the range [0 .. (2**64) - 1 ] */
+gjrand.h:/* random integers into the buffer starting at *v . v must point */
+gjrand.h:/* update state and return a uniformly distributed random integer */
+gjrand.h:/* update state and return a uniformly distributed random integer */
+gjrand.h:/* update state and write n uniformly distributed random unsigned bytes */
+gjrand.h:/* --- generate random numbers: integer non-uniform --- */
+gjrand.h:/* update state. Write the integers 0 to n-1 inclusive in random order */
+gjrand.h:/* However, the timing of each individual event is random and independent */
+gjrand.h:/* --- generate random numbers: floating point uniform --- */
+gjrand.h:/* update state. Return a uniform random number in [0.0 .. 1.0). */
+gjrand.h:/* update state. Write n uniform random numbers in [0.0 .. 1.0) into v[] . */
+gjrand.h:/* update state. Write n uniform random numbers in [0.0 .. 1.0) into v[] . */
+gjrand.h:/* update state. Return a uniform random number in [0.0 .. 1.0). */
+gjrand.h:/* update state. Write n uniform random numbers in [-1.0 .. 1.0] into a[] . */
+gjrand.h:/* --- generate random numbers: floating point geometrical --- */
+gjrand.h:/* --- generate random numbers: floating point statistical --- */
+gjrand.h:/* update state. Return a normally distributed random number with mean 0.0 */
+gjrand.h:/* update state. Write n normally distrubuted random numbers with mean 0.0 */
+gjrand.h:/* update state. Return a T-distributed random number with f degrees */
+gjrand.h:/* update state. Return a chi-squared distributed random number with f */
+gjrand.h:/* --- generate random numbers: floating point physical --- */
+gjrand.h:/* C random number generator in SVID 3, BSD 4.3, ISO 9899, and in fact */
+gjrand.h:/* These are not thread safe in that the random state is stored in a */
+gjrand.h:/* return a uniform random integer in the range [ 0 .. GJRAND_RAND_MAX ] */
+gjrand.h:/* unlike other "standard" random number interfaces. The functions work on */
+gjrand.h:/* a fixed cycle of 2**48 random numbers and can be started anywhere in the */
+gjrand.h:/* update xsubi[] and return a random float in [0.0, 1.0). */
+gjrand.h:/* update xsubi[] and return a random integer in [ 0 , 2**31-1 ]  */
+gjrand.h:/* update xsubi[] and return a random integer in [ -2**31 , 2**31-1 ]  */
+gjrand.h:/* used non-zero constants. In the SYSV implementation the quality of random */
+gjrand.h:/* were totally useless as pseudo-random numbers. */
+gjrand.h:/* update global buffer and return a random float in [0.0, 1.0). */
+gjrand.h:/* update global buffer and return a random integer in [ 0 , 2**31-1 ]  */
+gjrand.h:/* update global buffer and return a random integer in [ -2**31 , 2**31-1 ]  */
+goneaway.h:/* Part of gjrand random number library version 2.0.0.0 or later. */
+goneaway.h:/* update state and return a uniformly distributed random integer */
+goneaway.h:/* In versions 0.1.9.0 and older, this was the underlying random generator. */
+goneaway.h:/* update state then place 4 new random 32 bit unsigned integers in r[] */
+hash32_8.c:/* Part of gjrand random number library version 2.0.0.0 or later. */
+init4.c:/* Part of gjrand random number library version 1.0.0.0 or later. */
+init64.c:/* Part of gjrand random number library version 1.0.1.0 or later. */
+init.c:/* Part of gjrand random number library version 1.0.1.0 or later. */
+initrand.c:/* Part of gjrand random number library version 1.0.1.0 or later. */
+inits.c:/* Part of gjrand random number library version 1.0.1.0 or later. */
+insphere.c:/* Part of gjrand random number library version 2.0.0.0 or later. */
+inte.h:/* Part of gjrand random number library version 2.0.0.0 or later. */
+intesphere.c:/* Part of gjrand random number library version 2.0.0.0 or later. */
+l64.c:/* Part of gjrand random number library version 1.0.1.0 or later. */
+ldrand.c:/* Part of gjrand random number library version 1.0.0.0 or later. */
+logfac.c:/* Part of gjrand random number library version 2.0.0.0 or later. */
+mbspeed.c:/* Part of gjrand random number library version 1.3.0.0 or later. */
+mbtspeed.c:/* Part of gjrand random number library version 1.3.0.0 or later. */
+mbtvelocity.c:/* Part of gjrand random number library version 1.3.0.0 or later. */
+mbvelocity.c:/* Part of gjrand random number library version 1.3.0.0 or later. */
+normal.c:/* Part of gjrand random number library version 1.1.0.0 or later. */
+normalv.c:/* Part of gjrand random number library version 1.2.0.0 or later. */
+oldrand.c:/* Part of gjrand random number library version 1.0.0.0 or later. */
+oldrandstate.c:/* Part of gjrand random number library version 1.0.0.0 or later. */
+oldsrand.c:/* Part of gjrand random number library version 1.0.0.0 or later. */
+onsphere.c:/* Part of gjrand random number library version 1.2.0.0 or later. */
+poisson.c:/* Part of gjrand random number library version 2.0.0.0 or later. */
+rand32.c:/* Part of gjrand random number library version 1.0.0.0 or later. */
+rand32mod.c:/* Part of gjrand random number library version 1.0.0.0 or later. */
+rand32v.c:/* Part of gjrand random number library version 1.0.0.0 or later. */
+rand48drand48.c:/* Part of gjrand random number library version 1.0.0.0 or later. */
+rand48erand48.c:/* Part of gjrand random number library version 1.0.0.0 or later. */
+rand48jrand48.c:/* Part of gjrand random number library version 1.0.0.0 or later. */
+rand48lcong48.c:/* Part of gjrand random number library version 1.0.0.0 or later. */
+rand48lrand48.c:/* Part of gjrand random number library version 1.0.0.0 or later. */
+rand48mrand48.c:/* Part of gjrand random number library version 1.0.0.0 or later. */
+rand48nrand48.c:/* Part of gjrand random number library version 1.0.0.0 or later. */
+rand48seed48.c:/* Part of gjrand random number library version 1.0.0.0 or later. */
+rand48set3.c:/* Part of gjrand random number library version 2.0.0.0 or later. */
+rand48set7.c:/* Part of gjrand random number library version 2.0.0.0 or later. */
+rand48srand48.c:/* Part of gjrand random number library version 1.0.0.0 or later. */
+rand48state.c:/* Part of gjrand random number library version 1.0.0.0 or later. */
+rand48update.c:/* Part of gjrand random number library version 2.0.0.0 or later. */
+rand64.c:/* Part of gjrand random number library version 1.0.0.0 or later. */
+rand64mod.c:/* Part of gjrand random number library version 1.0.0.0 or later. */
+rand64v.c:/* Part of gjrand random number library version 1.0.0.0 or later. */
+randbytes.c:/* Part of gjrand random number library version 1.0.0.0 or later. */
+rand.c:/* Part of gjrand random number library version 1.0.0.0 or later. */
+README:2. A random generator object is of type
+README:4. Having done all that you call something to actually get random numbers.
+README:    printf("First random number = %ld\n", gjrand_rand(&g));
+README:    printf("Second random number = %ld\n", gjrand_rand(&g));
+restorestate.c:/* Part of gjrand random number library version 1.0.0.0 or later. */
+s64.c:/* Part of gjrand random number library version 1.0.1.0 or later. */
+savestate.c:/* Part of gjrand random number library version 1.0.1.0 or later. */
+seek.c:/* Part of gjrand random number library version 1.0.1.0 or later. */
+shuffle.c:/* Part of gjrand random number library version 1.3.3.0 or later. */
+statesize.c:/* Part of gjrand random number library version 1.0.0.0 or later. */
+studentt.c:/* Part of gjrand random number library version 1.2.0.0 or later. */

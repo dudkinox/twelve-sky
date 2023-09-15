@@ -1,0 +1,20 @@
+#!/bin/sh
+
+# compile script for the programs in this directory.
+# works ok on my machine with Linux/GCC .
+
+. ../../compiler
+
+for i in bbs bbs32 fast lcon64 lcon lfib3 lfib lfsr2 lfsr3 lfsr randlib fast2 shifty
+do
+    echo $i :
+    eval $CC $CFLAGS $i.c -o $i
+done
+
+eval $CC $CFLAGS mn.c -lm -o mn
+
+for i in gn lowrda
+do
+    echo $i :
+    eval $CC $CFLAGS $i.c ../../src/gjrand.a -o $i
+done

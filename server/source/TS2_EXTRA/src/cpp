@@ -1,0 +1,13 @@
+./S04_MyWork02.cpp:        LOG_TO_FILE("!-------------------- Reload COST_INFO.TXT --------------------\n");
+Binary file ./S04_MyWork02.o matches
+./S07_MyGame01.cpp:	hFile = CreateFile( "COST_INFO.TXT", GENERIC_READ, FILE_SHARE_READ, NULL, OPEN_EXISTING, FILE_ATTRIBUTE_NORMAL, NULL );
+./S07_MyGame01.cpp:    if (!(r_fp = fopen("/user/service/bin/DATA/COST_INFO.TXT", "r")))
+./S07_MyGame01.cpp:        LOG_TO_FILE_1("!GetCostInfoVersion - file open false : %s\n",  "/user/service/bin/DATA/COST_INFO.TXT\n");
+./S07_MyGame01.cpp:        // COST_INFO.TXT 버전 추출
+./S07_MyGame01.cpp:    if(!(r_fp = fopen("/user/service/bin/DATA/COST_INFO.TXT", "r"))) {
+./S07_MyGame01.cpp:        LOG_TO_FILE_1("file open false : %s\n",  "/user/service/bin/DATA/COST_INFO.TXT\n");
+./S07_MyGame01.cpp:        // COST_INFO.TXT 버전 추출
+./S07_MyGame01.cpp:            LOG_TO_FILE_1("!Error - COST_INFO.TXT Version[%d]\n", *pVersion);
+./S07_MyGame01.cpp:        LOG_TO_FILE_1("!COST_INFO.TXT Version[%d]\n", *pVersion);
+Binary file ./S07_MyGame01.o matches
+Binary file ./ts2_extrad matches

@@ -1,0 +1,346 @@
+All these tests read data from standard input and attempt to measure
+in some way how plausible it is that the input data is actually
+uniform random numbers of type double in the interval [0.0 1.0).
+
+Many of the tests end by printing a P-value. The P-value is supposed to
+be the probability that a truly uniform random source would produce a test
+statistic as extreme or worse than the test statistic actually calculated.
+Very informally: the P-value is in the range 0 to 1, and if it is close
+to 0, the data read is probably not random.
+
+How close to 0 is too close to 0? That's hard to say. For one thing
+the P-values are very inaccurate. As a rough guide anything over 0.1
+means the test didn't see any trouble. (Unfortunately this doesn't prove
+there is really no trouble.) Anything under 1.0e-10 i'd want to throw
+in the garbage. Anything in between could be argued to need more testing.
+Try the same test with a larger input data. That usually makes genuine
+trouble return a smaller P-value. Doing different tests could also be a
+good idea.
+
+When running under mcpf, some of the faster tests are done at the
+nominal size of the mcpf run and the slower ones are done on reduced sizes.
+A few tests (noted below) are not done at the smaller sizes due to
+minimum data size requirements.
+
+Nominal mcpf sizes are
+--tiny       1 M numbers
+--small      10 M numbers
+--standard   100 M numbers
+--big        1 G numbers
+--huge       16 G numbers
+--even-huger 128 G numbers
+--tera       1 T numbers
+
+
+extreme
+=======
+
+Takes one or two args, the size of blocks to process (must be in the range
+20 to 4096, in numbers) and the optional total number of numbers to process,
+otherwise to end of file. Any partial block left over at the end is ignored.
+
+A low and high threshold are chosen so that, on average, we should expect
+3 numbers per block below the low threshold and 3 above the high threshold.
+For each block measure how many below low threshold and above high threshold
+are actually present? Counts 7 and above are combined. With 8 possible
+values for low and 8 for high, there are 64 combined possibilities.
+Maintain a count of how many times each one occurs.
+
+Finally, the expected values for each possible count are easily calculated and
+a chi-squared calculation (df=63) is done. Only chi-squared values on the
+high side translate to low P-values.
+
+Under mcpf, this test is done at full size, 3 or 4 times for different block
+sizes. Block sizes are 20, 64, 200. If size arg is --standard or bigger, also
+for block size 4096.
+
+Inspirations: none?
+
+
+nda
+===
+
+Takes one optional arg, the number of numbers to process. If absent it reads
+until end of file. Numbers are read in blocks of 8 numbers, and any partial
+block at the end is ignored.
+
+The 8 numbers are reduced to a 4 bit nibble by comparing in pairs and taking
+one bit from the result of each comparison.
+
+The 4 bit nibbles are then processed as in testunif/src/nda .
+
+Under mcpf, this test is done at full size.
+
+
+angle
+=====
+
+Takes one optional arg, the number of numbers to process. If absent it reads
+until end of file. Numbers are read in blocks of 2 numbers, and any partial
+block at the end is ignored.
+
+2 consecutive numbers are taken to be a 2D point in the unit square.
+The unit square is divided into 1024 x 1024 smaller squares. Each square
+has a status either 0, 1, or more suitable points seen. Initially all are 0.
+
+If 0 points seen, any new input point which falls into this square is tested,
+if it is in the central quarter of the square it becomes the "anchor" point
+of this square and the square now has 1 suitable point, otherwise
+the input point is rejected.
+
+If 1 point seen, any new input point which falls into this square is rejected
+if it is more than 1/4 distance from the anchor point. Otherwise it
+becomes the "near" point and the square now has "more" suitable points.
+
+If more points seen, any new input which falls into this square replaces the
+"near" point, if and only if, it is nearer to the "anchor" point than
+the old "near" point was.
+
+By this means we generate up to 1M pairs of random points that are quite close
+together, and as more random data is read from input, the distances should
+steadily get closer. The means to achieve this (as described above) may look
+strange, but it works quickly, with bounded memory, and simple data structure.
+
+Finally, each pair of points is interpreted as the angle made with the
+line between the two points, and the x-axis. These are then numbers
+in the range -PI to +PI which under the null hypothesis should be
+uniformly distributed and without any correlations. Three kinds of tests
+are done on these numbers.
+
+The "chis" test is a simple chisquared on the angles, dividing the
+2PI radians into 1024 equal sized buckets.
+
+The "gapang" test is a kind of variant of the "birthday seperations" test.
+The order of the numbers is ignored. First they are sorted, then the
+differences between succesive numbers in sorted order is analysed. These
+differences are divided into 64 buckets of (hopefully?) equal probability.
+The final bucket counts are analysed with the chi-squared test. A P-value
+is calculated with only high chi-squared values becoming low P-values.
+
+The "rdaang" test attempts to see if similar angles are spread nicely
+around all parts of the unit square as they should be.
+
+Finally the 3 test P-values are combined to make a summary P-value.
+
+Under mcpf, this test is done at 1/3 of nominal size. It is only done
+for size argument --small or larger.
+
+Inspirations: DIEHARD has d3sphere and cdpark which both analyse the distance
+between random points in space. Since i am too lazy to determine expected
+distributions for such things, i was inspired to do the more complex, but
+easier to analyse, system in angle. angle, however, only remains simpler
+in 2 dimensions. DIEHARD also has a "birthday seperations".
+
+diff10
+======
+
+This takes one optional arg, the number of numbers to process. If absent it
+reads to end of file. diff10 reads blocks of 10 numbers. Points in 10
+dimensional space are analysed for differences and higher order differences up
+to the 9th order. This one requires only 14 bits of randomness per number.
+Therefore, unlike diff3, it can usefully test widely used generators that only
+produce 32, 31, or 24 bits per number.
+One obvious feature of this test is that it is very tough on "lattice"
+structures as produced by linear congruential generators. It may also pick up
+other kinds of regular structure but that is yet to be demonstrated.
+
+Under mcpf, this test is done at 1/4 of nominal size. It is only done
+for size argument --small or larger.
+
+diff3
+=====
+
+This takes one optional arg, the number of numbers to process. If absent it
+reads to end of file. diff3 reads blocks of 3 numbers. Points in 3 dimensional
+space are analysed for differences and higher order differences up to the 10th
+order. This one requires 44 bits of randomness per number. A few generators out
+there only provide 32 (or less) and will fail, regardless of other virtues.
+One obvious feature of this test is that it is very tough on "lattice"
+structures as produced by linear congruential generators. It may also pick up
+other kinds of regular structure but that is yet to be demonstrated.
+
+Under mcpf, this test is done at 1/20 of nominal size. It is only done
+for size argument --small or larger.
+
+walk
+====
+
+Takes one optional arg, the number of numbers to process. If absent it reads
+until end of file.
+
+Data is consumed in blocks of 420 numbers. Any partial block at the end
+is ignored.
+
+This does a random walk in various numbers of dimensions.
+Start with a point at the centre of the unit n-cube. Collect
+n numbers and subtract 0.5 from each to get uniform on [ -0.5 0.5 ).
+Add these to the dimensions. When the walker leaves the box record
+three things:
+face : the n-1 dimensional face the walker exited through. If walker seems
+    to have gone through more than one simultaneously, pick the dimension with
+    most extreme value.
+face pair : For each 2 exits record the combination of faces for first and
+    second exit.
+vertex : Record the vertex the walker was closest to after exit.
+All three are done for 2, 3, 4, 5, 6, 7 dimensions. In addition,
+face only is done for 60 dimensions.
+
+At the end chi-squared tests are done to check if the various exit options
+are used with approximately equal frequencies.
+
+Under mcpf, this test is done at 1/3 of nominal size.
+
+Inspirations: something vaguely similar to this is supposed to be well known,
+(probably just the "face" test?) and i had heard of it before doing this one.
+But i don't know who invented it.
+
+dim2
+====
+
+Takes one optional arg, the number of numbers to process. If absent it reads
+until end of file.
+
+Analysis considers overlapping pairs of numbers, ie first and second number
+together, second and third number together, third and fourth etc.
+
+From the pair, the first number is multiplied by 2 ** 20 and truncated
+to get an integer in the range 0 to 2 ** 20 - 1 inclusive.
+
+The counts test simply counts how many times each possible integer comes up
+and does (effectively) a chi-squared test on the tallies. Due to the very
+large degrees of freedom, a normal approximation is used.
+
+The sums test first subtracts 0.5 from the second number in the pair
+to get a uniform distribution on [ -0.5 0.5 ) . These are then summed
+seperately into buckets depending on the integer value derived from
+the first number in the pair. A P-value is calculated based on the sum
+of squares of these bucket sums. This is supposed to measure if the
+means of the numbers vary in any obvious way depending on the previous
+number.
+
+The squares test is similar to the sums test but works on the sum
+of the squares of the second numbers.
+
+Under mcpf, this test is done at 1/3 of nominal size. It is only done
+for size argument --standard or larger.
+
+dim3
+====
+
+Takes one optional arg, the number of numbers to process. If absent it reads
+until end of file.
+
+This is somewhat similar to dim2 but in 3 dimensions.
+
+Overlapping triples are used, starting at all numbers.
+
+The integer is calculated from the most significant 6 bits of all 3
+numbers, to make an 18 bit integer.
+
+The counts test tests the frequency of all possible 18 bit integers.
+
+The sums and squares tests are done 3 times each, once for each number
+in the triple. For these tests, the most significant 6 bits are zeroed
+and then the number is multiplied by 64. This step is necessary because
+the 6 bits have already been used in determining the 18 bit integer (the
+bucket number) hence all numbers going into any particular bucket are already
+known to come from a restricted range. This step converts that restricted
+range into uniform on [ 0 1 ).
+
+The numbers resulting are then processed as in dim2 for sums and squares.
+
+It is hoped that dim3 will detect most of the kinds of 3-dimensional
+non-uniformity that would cause trouble for a 3-dimensional monte-carlo
+integration. It is the test in testunif that looks most directly for
+this problem.
+
+Under mcpf, this test is done at 1/3 of nominal size. It is only done
+for size argument --small or larger.
+
+dim6
+====
+
+Takes one optional arg, the number of numbers to process. If absent it reads
+until end of file.
+
+Similar to dim3 but with overlapping 6-tuples. The most significant
+3 bits of all 6 numbers are used to make an 18 bit integer.
+
+The sums test is done 6 times, once for each number. The squares
+test is not done here.
+
+It is hoped that dim6 will detect most of the kinds of n-dimensional
+non-uniformity that would cause trouble for a n-dimensional monte-carlo
+integration for n=4,5,6. It is the test in testunif that looks most directly
+for this problem.
+
+Under mcpf, this test is done at 1/3 of nominal size. It is only done
+for size argument --small or larger.
+
+dim20
+=====
+
+Takes one optional arg, the number of numbers to process. If absent it reads
+until end of file.
+
+dim20 is very similar to dim2, but with the following differences.
+Overlapping 21-tuples are used instead of overlapping pairs. The
+20 bit integer is calculated from the first 20 numbers in the tuple,
+one bit per number (above 0.5 -> 1 ; below -> 0). The last number in the
+tuple is used for the "sums" and "squares" test.
+
+Under mcpf, this test is done at 1/3 of nominal size. It is only done
+for size argument --standard or larger.
+
+dim40
+=====
+
+Takes one optional arg, the number of numbers to process. If absent it reads
+until end of file.
+
+dim40 is very similar to dim20, but overlapping 41-tuples are used. The
+20 bit integer is calculated from the first 40 numbers. Each 2 consecutive
+numbers makes one bit: 1 if the first number is greater, else 0.
+
+Under mcpf, this test is done at 1/3 of nominal size. It is only done
+for size argument --standard or larger.
+
+Inspirations: (collectively for dim2, dim3, dim6, dim20, dim40) The "Monkey"
+tests in DIEHARD (OPSO, OQSO, DNA) are very similar in spirit to the
+"count" part of the dim tests. The sums and squares parts seem obvious
+extensions.  It should be noted that the dim tests use enormously more memory
+for the same number of buckets (or less buckets for the same memory) as an
+equivalent Monkey test. On the other hand the dim tests are better able to
+test data streams much larger than the memory used for buckets.
+
+chi
+===
+
+Takes one optional arg, the number of numbers to process. If absent it reads
+until end of file.
+
+Each input number in the range [ 0 1 ) is converted into 48-bit fixed
+point. Then the 48 bit number is split into 6 numbers of 8 bits each.
+Tallies are kept of each possible 8 bit number at each of the 6 positions.
+
+At the end 6 chi-sqaured tests are done, one for each position.
+
+This is a fairly easy test to see how many bits of pseudo-randomness are in
+each floating point number. Some generators may give only 24 or 32 bits
+of randomness, and for some applications this may be ok. If you are sure
+your application falls into that category, don't panic at a generator
+that fails the last couple of chi-squared tests.
+
+Under mcpf, this test is done at 1/16 of nominal size.
+
+bds
+===
+
+Takes one optional arg, the number of numbers to process. If absent it reads
+until end of file. Actually it reads in blocks of 256 numbers, ignoring any
+partial block left over at the end.
+
+Under mcpf, this test is done at 1/32 of nominal size.
+
+Inspirations: DIEHARD has a first-order Birthday Seperations test. Marsaglia
+has also described the higher-order tests, in talks and papers. (HERE: cite?)

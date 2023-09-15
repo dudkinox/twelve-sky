@@ -1,0 +1,65 @@
+Programs to create and test uniform random binary doubles on [ 0 .. 1 ) .
+
+To create random streams:
+blatf : uses gjrand_drand to make randoms.
+blatdvf : uses gjrand_drandv to make randoms (faster).
+uni2f : reads uniform random bits, writes random binary doubles on [ 0 .. 1 ) .
+    Use with the progs in ../testunif/gen or ../testunif/straw .
+Look in palladiumbell/ . Use blatnorm or the straw
+generators piped through tounif. eg.
+
+./blatf | ./chi 1000000
+../testunif/bin/blatrand inf | ./uni2f | ./chi 1000000
+../palladiumbell/blatnorm | ../palladiumbell/tounif f 1 | ./chi 1000000
+
+There is now a Master Control Program to run several tests, eg:
+
+./mcpf --tiny < somefile.dat
+./blatdvf | ./mcpf --small
+
+The size args are:
+--tiny         1M doubles
+--small       10M doubles
+--standard   100M doubles (default)
+--big          1G doubles
+--huge        16G doubles
+--even-huger 128G doubles
+--tera         1T doubles.
+
+pmcpf is an alternative version that runs in parallel. It is probably
+faster on SMP machines, and perhaps even on single CPU machines. But
+it is much more memory hungry. Recommended at least 192 to 256 MB of
+RAM plus some swap. (My main development box has 64MB so pmcpf has not
+been tested as well as i would like. Be careful, and send bug reports.)
+
+Individual programs for above:
+angle
+bds
+chi
+dim2
+dim3
+dim6
+dim20
+dim40
+extreme
+walk
+diff3
+diff10
+
+Of these, angle, bds, dim20, and extreme seem to be the toughest on the
+generators i have tried so far.
+
+dim2, dim3, dim6, and walk seem to be of intermediate power.
+
+nda, dim40, diff3, and diff10 are still being evaluated.
+
+chi is quite easy, except that it requires that the generator produce at
+least 48 bits of reasonable quality. A lot of applications don't actually
+need that much precision in their random doubles, and a lot of generators
+don't produce that much. If a generator passes all other tests and fails chi,
+and the failure only affects the last two of the six chi-squared tests, you
+have to ask yourself if it really matters in your application.
+
+extreme takes a block size, and an optional count.
+
+The others take one optional argument, a count.

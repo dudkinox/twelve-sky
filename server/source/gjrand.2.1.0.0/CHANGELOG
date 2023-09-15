@@ -1,0 +1,141 @@
+2008-06-03: more gjrand_chisquared() tweaks.
+
+2008-05-26: testother/onsphere, insphere, poker,
+	testunif/addsub, crlf, metachi, selfcor :
+	fixed initialisation of counter arrays. The problem was that some
+	arrays weren't explitly zeroed. Most systems probably zero them anyway,
+	but i fixed it just in case.
+
+2008-05-24: tweak to gjrand_chisquared(), faster, makes a different sequence.
+
+2008-05-22: posted version 2.0.0.0 on SourceForge.
+
+2008-05-19: C2FLAGS in compiler for more standard floating point.
+
+2008-04-17: A few cleanups for C++.
+
+2008-04-11: gjrand_inte_crank64() rewritten for compactness and a modest
+	speed gain. All generators now make a different sequence with
+	same seed as before.
+
+2008-04-10: More tweaking gjrand_biased_coins().
+
+2008-04-09: New gjrand_poisson() with asymptotic speed sqrt(n).
+
+2008-04-08: New versions gjrand_coins() gjrand_biased_coins() . These
+	have asymptotic speed sqrt(n).
+     Removed inline from some rand48 stuff.
+
+2008-03-29: removed old deprecated function gjrand_insphere2() .
+
+2008-03-01: testcommon/binom.h : now uses common integration code.
+
+2008-02-28: testcommon/chi2p.h : now uses common integration code.
+
+2008-02-27: testcommon : working on a common numerical integration code.
+	integrate.h is a candidate (Romberg).
+	erfc.h rewritten to use it.
+    deleted util/moment.c (corresponding test deleted last year).
+
+2008-02-09: testother/testchi now prints P-values for each displayed
+	chisquared value; this tests chi2p1().
+
+2008-02-09: posted version 1.3.3.0 on SourceForge.
+
+2008-02-03: Applying the chisquared to P-value in palladiumbell: pdb bigpdb
+	hence pdb and bigpdb to version 4. (NB pdb never had a version 3.)
+    Applying the chisquared to P-value in testfunif:
+	angle bds chi diff10 diff3 extreme nda walk
+    hence mcpf and pmcpf to version 6.
+
+2008-02-02 : Applying the chisquared to P-value in testother:
+	coins dv fakepoisson fv longdouble mb mod2 mod3 mod pi2
+	poisson shuffle1 shuffle2 snakeeyes
+     testother/pi2 tweaked for speed + 64 bit counters
+     deleted testother/pi3
+     minor tweak to gjrand_shuffle(). may be slightly faster.
+
+2008-02-01 : Improved P-value calculation for nda and chixor8.
+
+2008-01-31 : got a way to convert chisquared to P-value. Should be much
+	more accurate than the existing normal approximations, especially
+	for extreme chisquared scores. Now beginning to use this for
+	calculating P-values for tests in testunif. Note that this means
+	testunif version 4 will produce different P-values for most tests
+	than version 3 did.
+	Done chi16 metachi shuffle v256 rda partrda slicerda shiftrda sh5da
+	zrda chixor8.
+	testother/testchi : now prints a measure of skew.
+
+2008-01-25 approx : new test testunif/zrda .
+
+2008-01-12: testunif/metachi : adjusted variance of variance, based on
+		new calculation in ../util/metachi .
+		experimental new xmetachi test.
+	testunif/zero : brought in the new version with 5th moment;
+		deleted from division2.
+	therefore mcp and pmcp to version 4.
+
+2008-01-03: testfunif/diff10 : tweaked output formatting.
+
+2008-01-03: posted version 1.3.2.0 on SourceForge.
+
+2008-01-01: removed testunif/division2/chixor16 : too old, too slow, too weak.
+
+2007-12-30: testfunif/diff10 : new test.
+
+2007-12-17: split testfunif into subdirectories for easier cleanup.
+	testfunif/diff3 : bugfix, now read vecs of 3 not 6.
+	    therefore mcpf and pmcpf to version 5.
+
+2007-12-13: posted version 1.3.1.0 on SourceForge.
+
+2007-12-11: New test testfunif/diff3 .
+	testfunif/shuffle removed.
+	removed lc2 lfib3x from testfunif/straw .
+	removed r4da from testunif/division2 .
+
+2007-12-10: New faulty generator testfunif/straw/lcprime .
+
+2007-12-07: New test testfunif/nda .
+	testfunif/shuffle 10 no longer done in mcpf.
+
+2007-12-03: New test testfunif/dim40 .
+	testfunif/moment removed.
+	mcpf to version 4.
+
+2007-09-27: posted version 1.3.0.0 on SourceForge.
+
+2007-09-25: testunif/zero: moved the version with 5th moment into division2
+	so as not to have to update the mcp version. Will decide its fate
+	in a later release.
+
+2007-09-22: Changed the licence. In older versions, only GPL version 2.
+	Starting at verion 1.3.0.0, either GPL version 2 or GPL version 3
+	at your option. Because i own all the code, i can do this without
+	consulting anyone. Reasoning: some people who want random numbers are
+	going to start using GPL v3 now it's out and i'm happy for them to use
+	gjrand. But other people may already be using gjrand under v2 and
+	might be locked in somehow, so i allow that too. Downside: GPL v3 is
+	huge! It's going to significantly increase the package size.
+
+2007-09-13: removed these old deprecated functions:
+	gjrand_randmod() gjrand_crankhandle() gjrand_crash() .
+    Bugfix in gjrand_insphere_2(). This only applies if __GNUC__ is undefined
+	(presumably means you aren't using GCC). The problem was in 3
+	dimensions only. Also affected gjrand_insphere() gjrand_onsphere() .
+	The bug was probably only present in version 1.2.0.0 ?
+
+2007-07-01: *rand48() functions, bug fix. This will produce new sequences
+	for some of the functions. Probably more repeatable.
+
+2007-06-15: testunif/zero : added 5th moment tests. Possible small improvement.
+
+2007-06-01: testunif/addsub : reduced memory use in transform.
+
+2007-03-23: experimenting with Maxwell-Boltzmann distributions.
+
+2007-03-05: posted version 1.2.0.0 on SourceForge.
+
+(A CHANGELOG complete from the start is released as a seperate file on
+SourceForge .)

@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{7d8b8ca7-86e4-44fa-accd-cfde6497b780}</ProjectGuid>
+    <RootNamespace>ZONE</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>TS25_ZONE</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <LibraryPath>..\include\pthread\Pre-built.2\lib;$(LibraryPath)</LibraryPath>
+    <GenerateManifest>false</GenerateManifest>
+    <OutDir>$(SolutionDir)/_re/</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <FunctionLevelLinking>
+      </FunctionLevelLinking>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <SDLCheck>
+      </SDLCheck>
+      <PreprocessorDefinitions>WIN32;_CONSOLE;__GOD__;__PARTY_VER_2__;__ANIMAL__;__IVEN_BUG_FIX__;__EVENT_GOLD_PHONE__;__EVENT_KILL__;__LOCK__;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>
+      </ConformanceMode>
+      <AdditionalIncludeDirectories>..\include\pthread\Pre-built.2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <Optimization>
+      </Optimization>
+      <InlineFunctionExpansion />
+      <FavorSizeOrSpeed>
+      </FavorSizeOrSpeed>
+      <DisableSpecificWarnings>26495;26451;28159;6001;6386;6385;6053;</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>
+      </EnableCOMDATFolding>
+      <OptimizeReferences>
+      </OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <OutputFile>$(SolutionDir)/_re/$(ProjectName)$(TargetExt)</OutputFile>
+      <SuppressStartupBanner>false</SuppressStartupBanner>
+      <AdditionalDependencies>../include/zdll.lib;../include/pthread/Pre-built.2/lib/x86/pthreadVC2.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <LinkTimeCodeGeneration>
+      </LinkTimeCodeGeneration>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\include\TimeLog.cpp" />
+    <ClCompile Include="MyGAME01.cpp" />
+    <ClCompile Include="MyGAME02.cpp" />
+    <ClCompile Include="MyGAME03.cpp" />
+    <ClCompile Include="MyGAME04.cpp" />
+    <ClCompile Include="MyGAME05.cpp" />
+    <ClCompile Include="MyGAME06.cpp" />
+    <ClCompile Include="MyGAME07.cpp" />
+    <ClCompile Include="MyGAMESYSTEM.cpp" />
+    <ClCompile Include="MyServer.cpp" />
+    <ClCompile Include="MySUMMONSYSTEM.cpp" />
+    <ClCompile Include="MyTRANSFER.cpp" />
+    <ClCompile Include="MyUpperCOM.cpp" />
+    <ClCompile Include="MyUser.cpp" />
+    <ClCompile Include="MyWORK01.cpp" />
+    <ClCompile Include="MyWORK02.cpp" />
+    <ClCompile Include="MyWORK03.cpp" />
+    <ClCompile Include="MyWORK04.cpp" />
+    <ClCompile Include="MyWORLD.cpp" />
+    <ClCompile Include="MyGameLog.cpp" />
+    <ClCompile Include="ZONE.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\include\struct.h" />
+    <ClInclude Include="..\include\TimeLog.h" />
+    <ClInclude Include="..\include\zconf.h" />
+    <ClInclude Include="..\include\zlib.h" />
+    <ClInclude Include="MainApp.h" />
+    <ClInclude Include="MyGame.h" />
+    <ClInclude Include="MyGameSYSTEM.h" />
+    <ClInclude Include="MyServer.h" />
+    <ClInclude Include="MySummonSYSTEM.h" />
+    <ClInclude Include="MyTransfer.h" />
+    <ClInclude Include="MyUpperCOM.h" />
+    <ClInclude Include="MyUser.h" />
+    <ClInclude Include="MyWork.h" />
+    <ClInclude Include="MyWorld.h" />
+    <ClInclude Include="resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="ZONE.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\TS2.ico" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

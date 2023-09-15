@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Etc.">
+      <UniqueIdentifier>{0ec1fbc9-3147-4700-96aa-9b3956817ce4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include">
+      <UniqueIdentifier>{e741426a-0192-4823-b6ab-90bbb0196728}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source">
+      <UniqueIdentifier>{6a74465e-4ab4-48b5-ba9f-8b4f2e32d304}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\include\TimeLog.cpp">
+      <Filter>Etc.</Filter>
+    </ClCompile>
+    <ClCompile Include="S05_MyTransfer.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="S02_MyServer.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="S04_MyWork01.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="S04_MyWork02.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Server_RELAY.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="S03_MyUser.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\include\TimeLog.h">
+      <Filter>Etc.</Filter>
+    </ClInclude>
+    <ClInclude Include="H03_MyUser.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="H04_MyWork.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="H02_MyServer.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Shengming.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="H05_MyTransfer.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="TS25_RELAY.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\TS2.ico" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,27 @@
+#!/bin/sh
+
+. ../compiler
+
+# We compile twice, once for static link, once for dynamic.
+# I don't like -fPIC much except in dynamic libraries.
+
+# static link
+rm *.o
+eval $CC $CFLAGS -c *.c
+rm logfac.o poisson.o binom.o biasedcoins.o
+eval $CC $C2FLAGS -c logfac.c poisson.c binom.c biasedcoins.c
+
+rm gjrand.a
+
+ar rs gjrand.a *.o
+
+# dynamic link
+rm *.o
+
+eval $CC $CFLAGS -fPIC -c *.c
+rm logfac.o poisson.o binom.o biasedcoins.o
+eval $CC $C2FLAGS -fPIC -c logfac.c poisson.c binom.c biasedcoins.c
+
+$CC -shared -fPIC *.o -o gjrand.so
+
+#rm *.o

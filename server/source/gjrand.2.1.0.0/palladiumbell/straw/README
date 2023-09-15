@@ -1,0 +1,5 @@
+This directory contains various other normal distribution generators.
+The programs operate similarly to blatnorm, but use different algorithms.
+As far as i know none of them is incredibly good. The deficiencies range
+from very subtle (straw1) to very obvious (straw3).
+These can all be tested with Palladium Bell.

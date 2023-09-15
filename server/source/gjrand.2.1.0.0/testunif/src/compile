@@ -1,0 +1,24 @@
+#!/bin/sh
+
+# compile script for the programs in this directory.
+# works ok on my machine with Linux/GCC .
+
+. ../../compiler
+
+for i in blatil blatbytes blat64 blatseed blat32v blat64v
+do
+    echo $i :
+    eval $CC $CFLAGS $i.c ../../src/gjrand.a -o ../gen/$i
+done
+
+for i in addsub selfcor chi16 chixor8 v256 metachi rda crlf partrda nda slicerda shuffle sh5da zero shiftrda zrda
+do
+    echo $i :
+    eval $CC $CFLAGS $i.c -lm -o ../bin/$i
+done
+
+for i in mcp pmcp
+do
+    echo $i :
+    eval $CC $CFLAGS $i.c -lm -o ../$i
+done

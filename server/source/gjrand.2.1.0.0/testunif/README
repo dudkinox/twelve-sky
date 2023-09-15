@@ -1,0 +1,121 @@
+This is tests for supposedly uniform random bits. They are not much
+concerned with potential problems in cryptographic random generators,
+which is a whole specialised subject of it's own. Mostly they are looking
+out for random generators for simulation, Monte-Carlo integration, and
+so on, though most of the tests are quite generalised. Also look in
+../palladiumbell for tests of normal distribution, ../testfunif for uniform
+floating point, and ../testother for tests of other distributions.
+
+Sources are in the subdirectory src. There is a compile script in there
+that worked for me. If you have to compile by hand, put the resulting
+binaries in the subdirectory bin, except for mcp and pmcp which would
+normally go in this directory, and all the blat* programs which go in
+subdirectory gen.
+
+The easy (and standardised) way to run tests is through mcp or pmcp. eg:
+
+gen/blatrand inf | ./mcp --tiny
+or
+./mcp --tiny < randomfile
+
+pmcp is approximately equivalent to mcp but gets more parallelism.
+
+Anything that is supposed to be uniform random bits ran be tested by
+mcp, provided it produces enough data.
+
+The file must be at least 10MB for a --tiny run.
+
+The test file format is raw binary, 8 bits to a byte.
+
+--tiny       10MB
+--small     100MB
+--standard    1GB
+--big        10GB
+--huge      128GB
+--tera        1TB
+--ten-tera    10TB
+
+--standard is the default.
+
+Expected runtime varies from a few seconds (--tiny) up to about 10 hours
+(--huge) on a 1GHz class PC. This can be even longer if you are piping from
+a slow random generator or reading from a file on a slow hard disc.
+Depending on what you want the random numbers for, --huge can be either
+ridiculous overkill, or totally inadequate.
+
+Note that --big is the biggest i have actually tested.
+
+A report is produced in the file report.txt and also to standard output
+(usually the console).  If report.txt already exists, the new report is
+appended.
+
+Lazy people should read the last line of the report. If
+it says
+
+P = 0
+
+the random numbers are totally broken. In general
+
+P = (some number)
+
+where (some number) is more than 0.1 means it is ok, as far as the tests
+can tell. Less than 0.1 means vague suspicion, and below that, lower is
+worse. However, even the best generators will produce a small P value
+occasionally. Telling the good generator / occasional bad luck from the
+genuinely bad generators can be hard in marginal cases.
+
+If the last line doesn't start with
+
+P =
+
+then the run probably didn't work. Read the error message and try
+to figure it out. Non-existant file, or input from a piped program
+that crashed are frequent mistakes. Also input from a file that was
+too small.
+
+If you have more time on your hands, read the whole report.
+Some of the individual tests might find suspicious behaviour that doesn't
+get fully reflected in the final P value. If you find some of these
+it might be worth running just that test again by hand, possibly with
+a larger data set. A
+
+P = 0.02
+
+result that turns into a
+
+P = 0.35
+
+when you do a larger run probably indicates the smaller result was
+just bad luck. A genuine bad result usually gets much worse when rerun
+with ten times more data.
+
+BTW if a generator with good reputation bombs out big time, try the
+crlf test (not part of the standard mcp run) and carefully read its
+rather cryptic output. Could be that some sort of data corruption has
+happened to the test file.
+
+The tests here were chosen from those that run fast, are fairly
+easy to program, and that blow the whistle on at least one well
+known random generator. They are not entirely original, and most
+are somewhat similar to something recommended by Knuth, or found
+in the DIEHARD or NIST suites. But not totally identical in the
+coding, which is all mine, and usually not totally identical in the
+details.
+
+Most random number applications are very sensitive to some kinds
+of non-uniformity, but not to others. There is no guarantee that
+results on any particular test correspond to what will happen in
+your application. I suggest testing on a variety of tests (mine and
+someone else's :-) that are harder than you think you need before
+choosing a generator.
+
+Then, if at all possible, choose two good ones that have very different
+internals but similar APIs, and set your program up so it can easily
+switch from one to another. If your program's results (averaged over many
+runs if appropriate) differ radically with the two generators, chances are
+that at least one of them is broken. Try to find out which one. If this
+isn't already well known, tell the world. Try to get your program into
+someone's random test suite.
+
+Above all, be aware that a random number generator can bite you if you
+give too much trust to a bad one.

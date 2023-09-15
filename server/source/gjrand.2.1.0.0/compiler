@@ -1,0 +1,5 @@
+# Common compiler name and flags used by "compile" scripts.
+CC=gcc
+CFLAGS="-Wall -O2 -fomit-frame-pointer -ffast-math -fno-float-store"
+# more consistent floating point across platforms.
+C2FLAGS="-Wall -O2 -fomit-frame-pointer -fno-fast-math -ffloat-store"

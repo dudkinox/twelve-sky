@@ -1,0 +1,116 @@
+If you are on something resembling linux with gcc, try the  compile  script.
+
+If that fails, what you are trying to do is compile all of the *.c files
+in this directory and link or archive them to make a programmer's library.
+That would be called gjrand.a or gjrand.so on many POSIX-like systems,
+and gjrand.lib or gjrand.dll on MS-Windows systems. There will probably
+be various difficulties on MS-Windows.
+
+The  compile  script makes 2 different libraries:
+gjrand.a : for static linking
+gjrand.so : for dynamic linking
+
+When success is achieved, if you are brave enough, copy the resulting
+library file to where your programmer's libraries are kept
+( /usr/lib on my system ) and gjrand.h to where the C include files are
+kept ( /usr/include ditto ). If you are slightly less brave, there may
+be alternative directories for less official libraries and include files
+( eg. /usr/local/lib and /usr/local/include ) or you could just leave them
+where they are and invoke your compiler in such a way as to find them there.
+
+Currently the only documentation for the available functions is in
+comments in gjrand.h . You don't necessarily need all the functions.
+There are five things you need to know about the API.
+
+1. Put
+#include <gjrand.h>
+in your source code before you use any gjrand functions.
+
+2. A random generator object is of type
+struct gjrand
+You need one of these to do anything useful.
+
+3. You need to seed the generator before use. The simplest function
+for this is
+gjrand_init()
+
+4. Having done all that you call something to actually get random numbers.
+gjrand_rand()
+is the simplest. Various others are available if you want something
+special.
+
+5. When compiling your program, remember to link in the gjrand library.
+If the library and include file are not in official places, you may
+need to give your compiler special flags to say where to find them.
+
+Trivial example:
+-------------------begin C file-------------------
+#include <stdio.h>
+#include <gjrand.h>
+
+int
+main(int argc, char **argv)
+{
+    struct gjrand g;
+    gjrand_init(&g, 42);
+    printf("First random number = %ld\n", gjrand_rand(&g));
+    printf("Second random number = %ld\n", gjrand_rand(&g));
+    return 0;
+}
+-------------------end C file-------------------
+
+Slightly more complex examples are in the  palladiumbell ,  testunif ,
+testfunif, and  testother  directories.
+
+---------------
+
+Performance hints:
+0. Don't worry about these unless library performance really is an issue.
+1. Compile the library as 64 bit code if practical on your system.
+   It's likely to be several times faster than as 32 bit.
+2. Try compiling the library with and without -DGJRAND_ALTCODE=1
+   and see which way is faster. (It may vary on different systems.)
+3. If gjrand_frandv() is likely to be time critical, experiment
+   with -DGJRAND_FAST_387=1 . Test gjrand_frandv() carefully with this.
+   It may break, or it may get faster.
+4. Applications can use gjrand_rand32v() gjrand_rand64v() gjrand_randbytes()
+   gjrand_drandv() gjrand_frandv() or gjrand_normalv() to generate several
+   variates at once. This can be several times faster than generating
+   one variate at a time.
+
+---------------
+
+See gjrand.h for prototypes and brief descriptions.
+
+Random number distributions.
+
+integer uniform: gjrand_rand() gjrand_rand32() gjrand_rand64()
+	gjrand_rand32v() gjrand_rand64v() gjrand_randbytes()
+	gjrand_rand32mod() gjrand_rand64mod()
+
+floating point uniform: gjrand_drand() gjrand_ldrand()
+	gjrand_drandv() gjrand_frandv()
+
+normal: gjrand_normal() gjrand_normalv()
+
+student t: gjrand_t()
+
+chi squared: gjrand_chisquared()
+
+binomial : gjrand_coins() gjrand_biased_coins()
+
+multinomial : gjrand_dice() is one special case.
+
+poisson: gjrand_poisson()
+
+others: gjrand_shuffle() gjrand_insphere() gjrand_onsphere()
+	gjrand_mb_speed() gjrand_mb_velocity()
+	gjrand_mbt_speed() gjrand_mbt_velocity()
+
+more others: search the gjrand.h file in case i've missed some.
+	If you want something else, put a request on the SF forums for
+	gjrand. Otherwise, i'm not planning to do any more distributions soon.
+
+Seeding functions.
+
+gjrand_init() gjrand_init64() gjrand_init4() gjrand_inits() gjrand_initrand()

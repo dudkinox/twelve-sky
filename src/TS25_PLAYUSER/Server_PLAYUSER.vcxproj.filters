@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Etc.">
+      <UniqueIdentifier>{fab59a34-4420-48b0-902c-4ce31184ed6d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include">
+      <UniqueIdentifier>{d672620e-6832-4556-ad8a-4935cb9dbc67}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source">
+      <UniqueIdentifier>{7d77ba5a-72cb-4813-93f7-ad597d4ba792}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\include\cts_mysql.cpp">
+      <Filter>Etc.</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\TimeLog.cpp">
+      <Filter>Etc.</Filter>
+    </ClCompile>
+    <ClCompile Include="S03_MyUser.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Server_PLAYUSER.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="S04_MyWork02.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="S04_MyWork01.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="S02_MyServer.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="S05_MyTransfer.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="S08_MyDB.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="S07_MyGame01.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\include\TimeLog.h">
+      <Filter>Etc.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\cts_mysql.h">
+      <Filter>Etc.</Filter>
+    </ClInclude>
+    <ClInclude Include="H03_MyUser.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="H04_MyWork.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="H02_MyServer.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Shengming.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="H05_MyTransfer.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="H08_MyDB.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="H07_MyGame.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="TS25_PLAYUSER.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\TS2.ico" />
+  </ItemGroup>
+</Project>

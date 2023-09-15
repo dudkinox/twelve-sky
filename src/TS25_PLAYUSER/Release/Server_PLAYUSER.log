@@ -1,0 +1,12 @@
+﻿  cts_mysql.cpp
+  TimeLog.cpp
+  S02_MyServer.cpp
+  S03_MyUser.cpp
+  S04_MyWork01.cpp
+  S04_MyWork02.cpp
+  S05_MyTransfer.cpp
+  S07_MyGame01.cpp
+  S08_MyDB.cpp
+  Server_PLAYUSER.cpp
+  Generating Code...
+  Server_PLAYUSER.vcxproj -> C:\Users\Cynegeirus\Desktop\12SKY2\12Sky2 Lunix Dosyaları\12Sky2 Lunix Dosyaları\TwelveSky2.5 Source Files\src\_re\TS25_PLAYUSER.exe

@@ -1,0 +1,18 @@
+#!/bin/sh
+
+# compile script for the programs in this directory.
+# works ok on my machine with Linux/GCC .
+
+. ../../compiler
+
+for i in eicg eicg64 lc64 lcprime lcon lib2rand librand
+do
+    echo $i :
+    eval $CC $CFLAGS $i.c -o $i
+done
+
+for i in lfib3 lfib3l lfib5
+do
+    echo $i :
+    eval $CC $CFLAGS $i.c -lm -o $i
+done

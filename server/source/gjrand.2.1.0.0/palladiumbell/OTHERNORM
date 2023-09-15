@@ -1,0 +1,16 @@
+gjrand_normal now uses the Polar Box-Muller method. This is very popular.
+
+Christopher Stewart Wallace's algorithm (the source also acknowledges
+R.P. Brent and Dr Christine Rueb). Search for "Wallace" and "FastNorm3".
+This is incredibly fast. It passes all the default mode palladiumbell tests.
+Wallace says testing has revealed very small biases for the two fastest modes.
+For the two slowest modes no biases were detected, and these are still very
+competitive on speed with other algorithms. It's only obvious weakness is a
+moderately large memory footprint (just over 32K long term plus 32K temporary).
+If you need billions of normal deviates really fast, this is the way to go.
+
+Marsaglia's Ziggurat algorithm. I've seen source code for this (in GSL).
+I don't completely understand how it works yet. It may be slightly faster
+than Polar Box-Muller. Comments in GSL suggest it may have some accuracy
+problems, but some quick testing with bigpdb suggests these are not
+immediately obvious for small data sets.

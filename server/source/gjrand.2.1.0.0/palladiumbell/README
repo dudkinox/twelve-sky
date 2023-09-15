@@ -1,0 +1,255 @@
+Palladium Bell is a set of tests for normally distributed random numbers.
+There are four test programs: pdb bigpdb tounif combin . Each of the first
+two reads numbers in binary form as C type double from standard input and
+analyses them. tounif converts the same kind of input to uniform random bits
+which can then be tested by other programs. combin combines two variates
+to make one, resulting in a smaller output file.
+
+The blatnorm program will create appropriate test files using the gjrand
+library. You can test other generators by writing programs similar to
+blatnorm that work with your generator of choice. blatv is a slightly
+faster version. It takes a compulsory argument for block size.
+
+Note that binary double is not always the same format between different
+CPUs, operating systems or compilers, so try to generate and use the
+numbers on the same computer.
+
+pdb will read and test 4194304 (ie. 4MEG) variates.
+
+bigpdb will read to end of file with no arguments, or use a size arg as below.
+
+The others will read to end of file.
+
+A generator that fails some of the Palladium Bell tests is not necessarily
+useless (and may well be faster and smaller than one that passes the lot).
+Nonetheless, it can be useful to know the failings of your chosen generator
+so you can evaluate whether they are important to your application. It is also
+important to realise that a good random generator will on rare occasions
+produce a surprising result. This makes it hard to decide if you are dealing
+with a bad generator or an extreme chance result from a good one. Where
+suggested results are bracketted (see below) a good generator will be outside
+the outermost pair about 1 time in 500, (and at more than twice that deviation
+1 time in several billion for some of the tests). If the deviation is much
+worse than that you can probably reject the generator as bad. But for results
+only just outside the flags, the correct action is suspicion and more tests.
+
+In a few spots for suggested numbers i give six bracketed together as
+[ 0.001 0.01 0.1 0.9 0.99 0.999 ]. There is supposed to be a 0.998
+probability of the measurement being inside the outermost pair, assuming
+all is well with the random generator. Likewise 0.98 for the next pair
+in, and 0.8 for the innermost pair. Where a chi-square distribution
+is expected, a Monte-Carlo evaluation has been used for small
+degrees of freedom, and a normal approximation for larger degrees. Hence
+these are quite approximate. Where a normal distribution is expected,
+extended Simpson's rule is used. This should be reasonably accurate.
+
+Most of the suggested values not in this format are guesses. This may be
+fixed in future.
+
+Program pdb
+===========
+
+Invoke with no arguments. It reads from standard input.
+eg:
+./pdb < datafile
+or
+./blatnorm | ./pdb
+
+The values assume SIZ = 4MEG unless noted.
+
+Self-correlation =================
+This measures self-correlation of first CSIZ numbers for all lags up to
+CSIZ/2. A moderately efficient method with Karatsuba multiplication is used.
+This is still quite slow. FFT would be better. Values assume CSIZ = 256K .
+
+mean should be [ -0.0060 -0.0045 -0.0025 0.0025 0.0045 0.0060 ]
+sd should be 0.985 to 1.015
+high:  first should be [ 3.88 3.98 4.14 4.80 5.25 5.66 ]
+low :  first should be (negatives of above range)
+(Numbers in brackets after highs and lows are the lags. Mostly these
+are not interesting, but if you see the same lags appearing frequently
+for different seeds it may say something about the structure of the generator
+and how to fix it.)
+
+High and low numbers too far from zero indicates there is too much
+correlation between numbers with certain lags. This could be a serious problem
+in some applications.
+
+High and low numbers too close to zero indicates that there is never as much
+correlation for any short lag, as you could reasonably expect from chance. It
+is hard to understand what could cause this, or what problems it could lead to
+in applications. Nevertheless, when judging at the highest standards, it
+indicates something is wrong with the generator.
+
+The bounds are calculated assuming 131072 correlations with mean=0 sd=1,
+and that the correlations should follow the normal distribution. In fact
+the correlations are normalised in such a way that this is probably true
+if the normal distribution generator is good.
+
+Low order bits (various shift counts) ==================
+This takes the numbers as fixed point, shifts to the left by the shiftcount,
+and then analyses the 16 bits immediately to the right of the binary point,
+counting and doing various stats for each of the 64K different possible values.
+I'd have thought shift=2 was dubious, but hey, it seems to work.
+
+chis should be [ 64416 64693 65071 65999 66377 66654 ]
+high near 100?
+low near 33?
+
+(chis bracketed values calculated for normal distribution mean=65535
+ sd=sqrt(131070). With large degrees of freedom this should be fairly close.)
+
+The P value reflects only the chisquared test.
+
+Moments ================
+These are the mean, variance, skewness, and higher moments.
+First column is the moment number, second is the raw moment,
+third is the deviation from expectation in units of sigma,
+and last is a P-value for this moment.
+
+The final P value now reflects all 8 moments.
+
+Extrema ===============
+These are the highest and lowest values in each of the eighths of the data.
+high:  should be [ 4.20 4.29 4.45 5.07 5.50 5.89 ]
+low :  should be (negatives of above range)
+
+Gap ===================
+This sorts the numbers and examines the differences between succesive
+values in sorted order, to see if there are significant gaps where
+numbers rarely or never occur. (This is quite slow.)
+max should be 8.1e-06 to 1.4e-05
+rms should be 8.443e-07 to 8.460e-07
+chis should be [ 191 205 227 284 310 331 ].
+zeroes should usually be 0, very rarely 1.
+
+Chisquare X / Y ====================
+The expected results for these chisquare tests do not depend much
+on SIZ provided at least 10 or so fall in each bucket. It does depend
+on the number of buckets.
+
+Failure on the high side suggests maybe the generator is not really normal, or
+has the wrong mean or standard deviation.
+Failure on the low side suggests the generator is filling the buckets more
+accurately than expected and therefore might not really be random.
+
+Expected bucket counts are calculated on the fly using extended Simpson's rule.
+
+Chisquare 16 / 4 ====================
+There are 32 buckets covering -4 sigma to +4 sigma, plus one bucket
+on each side for outliers. (So 33 degrees of freedom.)
+
+chis should be [ 13.5 17.1 23.1 43.8 54.7 63.8 ]
+
+Chisquare 96 / 32 ====================
+There are 192 buckets covering -3sigma to +3sigma, plus one bucket
+on each side for outliers. (So 193 degrees of freedom.)
+
+chis should be [ 138 150 168 219 242 260 ]
+
+Chisquare 640 / 256 ====================
+There are 1280 buckets covering -2.5sigma to +2.5sigma, plus one bucket
+on each side for outliers. (So 1281 degrees of freedom.)
+
+chis should be [ 1130 1166 1217 1346 1402 1443 ]
+
+Chisquare 5000 / 4096 ====================
+There are 10000 buckets covering (approx) -1.22sigma to +1.22sigma, plus one
+bucket on each side for outliers. (So 10001 degrees of freedom.)
+
+chis should be [ 9570 9675 9820 10183 10333 10444 ]
+(determined using normal approximation).
+
+Double chisquare 24/16 ====================
+Examines two successive normal variates. 48x48 buckets covering -1.5sigma
+to 1.5sigma for each variate, plus outlier buckets. Total buckets 2500.
+Degrees of freedom 2499?
+
+chis should be [ 2281 2335 2408 2590 2663 2717 ]
+
+Nearest distance analysis ==================
+Expected results don't depend much on SIZ.
+This classifies the normal variates into 16 buckets that should be of
+equal probability, then analyses the distance between value x and the most
+recent previous value y for all values of x and y. The procedure is
+inspired by Maurer's universal statistical test, and also the chi-squared
+statistic. You'll have to read the source for more info. The suggested range
+is determined emperically and probably without great accuracy. Note that the
+distribution here is probably not the classic chi-squared for any possible
+degrees of freedom.
+nda should be [ 11770 11940 12170 12890 13270 13570 ]
+
+
+Program bigpdb
+==============
+
+Invoke with no arguments. It reads from standard input.
+eg:
+./bigpdb < datafile
+or
+./blatnorm 20000000 | ./bigpdb
+
+or with a size argument for a standard sized run eg:
+./blatv 512 | ./bigpdb --small
+size args are
+--tiny		1M variates
+--small		10M variates
+--standard	100M variates
+--big		1G variates
+--huge		16G variates
+--even-huger	128G variates
+--tera		1T variates.
+Some of the larger options are untested :-)
+
+This does some of the tests from pdb only. Unlike pdb it can handle
+as much data as you want to throw at it up to many billion samples.
+Counts less than about 10000 can lead to spurious high chisquare values
+due to lots of almost empty buckets, so don't do that. Less than about
+500000 might upset lowbits.
+
+The self-correlation test is a bit different to in pdb. Only lags
+up to 64 are calculated and all data except the first approx 1K is used.
+The expected values for the highest:
+[ 1.27 1.48 1.81 2.94 3.60 4.16 ]
+for the lowest: negatives of above range.
+
+All others expect the same as for pdb.
+
+bigpdb now prints (very approximate) one-sided P-values for each test,
+and a summary P-value at the bottom. P-values 0.1 to 1.0 are ok,
+less than 0.1 somewhat suspicious, and the lower the worse, 0 totally broken.
+
+In the low order bits tests, the P-value is based on the chi-squared only.
+
+Program tounif
+==============
+
+This reads binary floating normal numbers from standard input and writes
+hopefully uniform random bits to standard output. This allows testing
+of a normal generator using test suites for uniform generators (such as
+the programs in testunif, or the Diehard and NIST test suites.) Must have
+two args, which are bits per sample (8, 16, 32, 48, f) and transform number
+(1, 2, 4, or 5).
+eg:
+
+./blatnorm 1000000 | ./tounif 16 2 | ../testunif/bin/chi16
+
+If the first arg is "f", instead binary doubles uniform on [ 0 1 ) are
+written. eg:
+
+./blatnorm | ./tounif f 1 | ../testfunif/mcpf --standard
+
+Program combin
+==============
+
+This reads binary floating numbers from standard input and writes half
+as many to standard ouput. By default or with the -a flag, a pair is
+added and divided by sqrt(2) to make each output number. With -s,
+a pair is subtracted and divided by sqrt(2). If the input is normally
+distributed and random, the output should be too.
+eg:
+
+./blatnorm | ./combin -s | ./pdb
+
+I suppose this puts a very strong focus on correlations between
+successive numbers in the stream.

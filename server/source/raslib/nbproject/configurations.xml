@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="35">
+  <logicalFolder name="root" displayName="root" projectFiles="true">
+    <logicalFolder name="raslib" displayName="raslib" projectFiles="true">
+      <logicalFolder name="include" displayName="include" projectFiles="true">
+        <itemPath>include/address.h</itemPath>
+        <itemPath>include/atomic.h</itemPath>
+        <itemPath>include/avl.h</itemPath>
+        <itemPath>include/blowfish.h</itemPath>
+        <itemPath>include/buffer.h</itemPath>
+        <itemPath>include/bytebuffer.h</itemPath>
+        <itemPath>include/db_pool.h</itemPath>
+        <itemPath>include/exception.h</itemPath>
+        <itemPath>include/log.h</itemPath>
+        <itemPath>include/md5.h</itemPath>
+        <itemPath>include/MersenneTwister.h</itemPath>
+        <itemPath>include/net_io.h</itemPath>
+        <itemPath>include/netint.h</itemPath>
+        <itemPath>include/option.h</itemPath>
+        <itemPath>include/pointer.h</itemPath>
+        <itemPath>include/raslib.h</itemPath>
+        <itemPath>include/rconfig.h</itemPath>
+        <itemPath>include/semaphore.h</itemPath>
+        <itemPath>include/socket.h</itemPath>
+        <itemPath>include/stringbuffer.h</itemPath>
+        <itemPath>include/sysutil.h</itemPath>
+        <itemPath>include/tcpclient.h</itemPath>
+        <itemPath>include/tcpconnection.h</itemPath>
+        <itemPath>include/tcpserver.h</itemPath>
+        <itemPath>include/thread.h</itemPath>
+        <itemPath>include/udpnode.h</itemPath>
+        <itemPath>include/util.h</itemPath>
+      </logicalFolder>
+      <logicalFolder name="src" displayName="src" projectFiles="true">
+        <logicalFolder name="sample" displayName="sample" projectFiles="true">
+          <itemPath>src/sample/main_t.cpp</itemPath>
+          <itemPath>src/sample/net_io_test.cpp</itemPath>
+        </logicalFolder>
+        <itemPath>src/address.cpp</itemPath>
+        <itemPath>src/blowfish.cpp</itemPath>
+        <itemPath>src/bytebuffer.cpp</itemPath>
+        <itemPath>src/config.cpp</itemPath>
+        <itemPath>src/log.cpp</itemPath>
+        <itemPath>src/md5.cpp</itemPath>
+        <itemPath>src/net_io.cpp</itemPath>
+        <itemPath>src/semaphore.cpp</itemPath>
+        <itemPath>src/socket.cpp</itemPath>
+        <itemPath>src/stringbuffer.cpp</itemPath>
+        <itemPath>src/sysutil.cpp</itemPath>
+        <itemPath>src/tcpclient.cpp</itemPath>
+        <itemPath>src/tcpconnection.cpp</itemPath>
+        <itemPath>src/tcpserver.cpp</itemPath>
+        <itemPath>src/thread.cpp</itemPath>
+        <itemPath>src/udpnode.cpp</itemPath>
+        <itemPath>src/util.cpp</itemPath>
+      </logicalFolder>
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false">
+      <itemPath>configure</itemPath>
+      <itemPath>src/Makefile.in</itemPath>
+      <itemPath>Makefile</itemPath>
+      <itemPath>raslib-Makefile.mk</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <projectmakefile>raslib-Makefile.mk</projectmakefile>
+  <defaultConf>0</defaultConf>
+  <confs>
+    <conf name="Default" type="0">
+      <toolsSet>
+        <compilerSet>Sun12</compilerSet>
+        <cRequired>true</cRequired>
+        <cppRequired>true</cppRequired>
+        <fortranRequired>false</fortranRequired>
+        <platform>2</platform>
+      </toolsSet>
+      <makefileType>
+        <makeTool>
+          <buildCommandWorkingDir>.</buildCommandWorkingDir>
+          <buildCommand>make -f Makefile</buildCommand>
+          <cleanCommand>make -f Makefile clean</cleanCommand>
+          <executablePath></executablePath>
+          <ccCompilerTool>
+            <includeDirectories>
+              <directoryPath>/usr/lib/gcc/i586-suse-linux/4.1.2/include</directoryPath>
+              <directoryPath>include</directoryPath>
+            </includeDirectories>
+          </ccCompilerTool>
+        </makeTool>
+      </makefileType>
+      <item path="include/MersenneTwister.h">
+        <itemExcluded>true</itemExcluded>
+        <itemTool>3</itemTool>
+      </item>
+      <item path="include/address.h">
+        <itemTool>3</itemTool>
+      </item>
+      <item path="include/atomic.h">
+        <itemExcluded>true</itemExcluded>
+        <itemTool>3</itemTool>
+      </item>
+      <item path="include/avl.h">
+        <itemExcluded>true</itemExcluded>
+        <itemTool>3</itemTool>
+      </item>
+      <item path="include/blowfish.h">
+        <itemTool>3</itemTool>
+      </item>
+      <item path="include/buffer.h">
+        <itemTool>3</itemTool>
+      </item>
+      <item path="include/bytebuffer.h">
+        <itemTool>3</itemTool>
+      </item>
+      <item path="include/db_pool.h">
+        <itemExcluded>true</itemExcluded>
+        <itemTool>3</itemTool>
+      </item>
+      <item path="include/exception.h">
+        <itemTool>3</itemTool>
+      </item>
+      <item path="include/log.h">
+        <itemTool>3</itemTool>
+      </item>
+      <item path="include/md5.h">
+        <itemTool>3</itemTool>
+      </item>
+      <item path="include/net_io.h">
+        <itemTool>3</itemTool>
+      </item>
+      <item path="include/netint.h">
+        <itemTool>3</itemTool>
+      </item>
+      <item path="include/option.h">
+        <itemTool>3</itemTool>
+      </item>
+      <item path="include/pointer.h">
+        <itemExcluded>true</itemExcluded>
+        <itemTool>3</itemTool>
+      </item>
+      <item path="include/raslib.h">
+        <itemExcluded>true</itemExcluded>
+        <itemTool>3</itemTool>
+      </item>
+      <item path="include/rconfig.h">
+        <itemTool>3</itemTool>
+      </item>
+      <item path="include/semaphore.h">
+        <itemTool>3</itemTool>
+      </item>
+      <item path="include/socket.h">
+        <itemTool>3</itemTool>
+      </item>
+      <item path="include/stringbuffer.h">
+        <itemTool>3</itemTool>
+      </item>
+      <item path="include/sysutil.h">
+        <itemTool>3</itemTool>
+      </item>
+      <item path="include/tcpclient.h">
+        <itemTool>3</itemTool>
+      </item>
+      <item path="include/tcpconnection.h">
+        <itemTool>3</itemTool>
+      </item>
+      <item path="include/tcpserver.h">
+        <itemTool>3</itemTool>
+      </item>
+      <item path="include/thread.h">
+        <itemTool>3</itemTool>
+      </item>
+      <item path="include/udpnode.h">
+        <itemTool>3</itemTool>
+      </item>
+      <item path="include/util.h">
+        <itemTool>3</itemTool>
+      </item>
+      <item path="src/address.cpp">
+        <itemTool>1</itemTool>
+      </item>
+      <item path="src/blowfish.cpp">
+        <itemTool>1</itemTool>
+      </item>
+      <item path="src/bytebuffer.cpp">
+        <itemTool>1</itemTool>
+      </item>
+      <item path="src/config.cpp">
+        <itemTool>1</itemTool>
+      </item>
+      <item path="src/log.cpp">
+        <itemTool>1</itemTool>
+      </item>
+      <item path="src/md5.cpp">
+        <itemTool>1</itemTool>
+      </item>
+      <item path="src/net_io.cpp">
+        <itemTool>1</itemTool>
+      </item>
+      <item path="src/sample/main_t.cpp">
+        <itemExcluded>true</itemExcluded>
+        <itemTool>1</itemTool>
+      </item>
+      <item path="src/sample/net_io_test.cpp">
+        <itemExcluded>true</itemExcluded>
+        <itemTool>1</itemTool>
+      </item>
+      <item path="src/semaphore.cpp">
+        <itemTool>1</itemTool>
+      </item>
+      <item path="src/socket.cpp">
+        <itemTool>1</itemTool>
+      </item>
+      <item path="src/stringbuffer.cpp">
+        <itemTool>1</itemTool>
+      </item>
+      <item path="src/sysutil.cpp">
+        <itemTool>1</itemTool>
+      </item>
+      <item path="src/tcpclient.cpp">
+        <itemTool>1</itemTool>
+      </item>
+      <item path="src/tcpconnection.cpp">
+        <itemTool>1</itemTool>
+      </item>
+      <item path="src/tcpserver.cpp">
+        <itemTool>1</itemTool>
+      </item>
+      <item path="src/thread.cpp">
+        <itemTool>1</itemTool>
+      </item>
+      <item path="src/udpnode.cpp">
+        <itemTool>1</itemTool>
+      </item>
+      <item path="src/util.cpp">
+        <itemTool>1</itemTool>
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>

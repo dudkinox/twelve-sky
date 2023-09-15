@@ -1,0 +1,15 @@
+#!/bin/sh
+
+. ../compiler
+
+for i in blatgj_j blatgj_m blatgj_e
+do
+    echo $i
+    eval $CC $CFLAGS $i.c ../src/gjrand.a -lm -o $i
+done
+
+for i in blatj blatm blate
+do
+    echo $i
+    eval $CC $CFLAGS $i.c -lm -o $i
+done

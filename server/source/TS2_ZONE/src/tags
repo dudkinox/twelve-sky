@@ -1,0 +1,1070 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+A001	S07_MyGame05.cpp	/^void MONSTER_OBJECT::A001( int tObjectIndex, float tPostTime )$/;"	f	class:MONSTER_OBJECT
+A002	S07_MyGame05.cpp	/^void MONSTER_OBJECT::A002( int tObjectIndex, float tPostTime )$/;"	f	class:MONSTER_OBJECT
+A002_FOR_ZONE_175_TYPE_BOSS	S07_MyGame05.cpp	/^void MONSTER_OBJECT::A002_FOR_ZONE_175_TYPE_BOSS( int tObjectIndex, float tPostTime )$/;"	f	class:MONSTER_OBJECT
+A004	S07_MyGame05.cpp	/^void MONSTER_OBJECT::A004( int tObjectIndex, float tPostTime )$/;"	f	class:MONSTER_OBJECT
+A005	S07_MyGame05.cpp	/^void MONSTER_OBJECT::A005( int tObjectIndex, float tPostTime )$/;"	f	class:MONSTER_OBJECT
+A005_FOR_ZONE_175_TYPE_BOSS	S07_MyGame05.cpp	/^void MONSTER_OBJECT::A005_FOR_ZONE_175_TYPE_BOSS( int tObjectIndex, float tPostTime )$/;"	f	class:MONSTER_OBJECT
+A006	S07_MyGame05.cpp	/^void MONSTER_OBJECT::A006( int tObjectIndex, float tPostTime )$/;"	f	class:MONSTER_OBJECT
+A008	S07_MyGame05.cpp	/^void MONSTER_OBJECT::A008( int tObjectIndex, float tPostTime )$/;"	f	class:MONSTER_OBJECT
+A009	S07_MyGame05.cpp	/^void MONSTER_OBJECT::A009( int tObjectIndex, float tPostTime )$/;"	f	class:MONSTER_OBJECT
+A013	S07_MyGame05.cpp	/^void MONSTER_OBJECT::A013( int tObjectIndex, float tPostTime )$/;"	f	class:MONSTER_OBJECT
+A020	S07_MyGame05.cpp	/^void MONSTER_OBJECT::A020( int tObjectIndex, float tPostTime )$/;"	f	class:MONSTER_OBJECT
+AddTribeBankInfo	S07_MyGame01.cpp	/^void MyGame::AddTribeBankInfo( int tTribe, int tMoney )$/;"	f	class:MyGame
+Add_Use_Auto_Day	S07_MyGame01.cpp	/^BOOL MyGame::Add_Use_Auto_Day(int iIndex, int iDay)$/;"	f	class:MyGame
+AdjustSymbolDamageInfo	S07_MyGame01.cpp	/^void MyGame::AdjustSymbolDamageInfo( void )$/;"	f	class:MyGame
+AdjustValidAttackTarget	S07_MyGame05.cpp	/^void MONSTER_OBJECT::AdjustValidAttackTarget( void )$/;"	f	class:MONSTER_OBJECT
+AdjustValidAttackTargetForZone175TypeBoss	S07_MyGame05.cpp	/^void MONSTER_OBJECT::AdjustValidAttackTargetForZone175TypeBoss( void )$/;"	f	class:MONSTER_OBJECT
+BLOCK_SIGNAL	S06_MyUpperCom.cpp	16;"	d	file:
+B_049_TYPE_BATTLE_INFO	S05_MyTransfer.cpp	/^void MyTransfer::B_049_TYPE_BATTLE_INFO( int tTribeUserNum[4], int tRemainTime )$/;"	f	class:MyTransfer
+B_051_TYPE_BATTLE_INFO	S05_MyTransfer.cpp	/^void MyTransfer::B_051_TYPE_BATTLE_INFO( int tExistStone[4], int tRemainTime )$/;"	f	class:MyTransfer
+B_053_TYPE_BATTLE_INFO	S05_MyTransfer.cpp	/^void MyTransfer::B_053_TYPE_BATTLE_INFO( int tRemainTime )$/;"	f	class:MyTransfer
+B_194_BATTLE_COUNTDOWN	S05_MyTransfer.cpp	/^void MyTransfer::B_194_BATTLE_COUNTDOWN( int tTime )$/;"	f	class:MyTransfer
+B_194_BATTLE_INFO	S05_MyTransfer.cpp	/^void MyTransfer::B_194_BATTLE_INFO( int tTribeUserNum[4] )$/;"	f	class:MyTransfer
+B_267_TYPE_BATTLE_INFO	S05_MyTransfer.cpp	/^void MyTransfer::B_267_TYPE_BATTLE_INFO( int tTribeUserNum[4], int tRemainTime )$/;"	f	class:MyTransfer
+B_ADD_ITEM_RECV	S05_MyTransfer.cpp	/^void MyTransfer::B_ADD_ITEM_RECV( int tResult, int tCost )$/;"	f	class:MyTransfer
+B_ANIMAL_STATE_RECV	S05_MyTransfer.cpp	/^void MyTransfer::B_ANIMAL_STATE_RECV( int tValue01, int tValue02 )$/;"	f	class:MyTransfer
+B_AUTO_CHECK_ASK_SEND	S05_MyTransfer.cpp	/^void MyTransfer::B_AUTO_CHECK_ASK_SEND( int tDataSize, BYTE tData[1000] )$/;"	f	class:MyTransfer
+B_AVATAR_ACTION_RECV	S05_MyTransfer.cpp	/^void MyTransfer::B_AVATAR_ACTION_RECV( int tServerIndex, DWORD tUniqueNumber, OBJECT_FOR_AVATAR *tAvatar, int tCheckChangeActionState )$/;"	f	class:MyTransfer
+B_AVATAR_ACTION_RECV2	S05_MyTransfer.cpp	/^void MyTransfer::B_AVATAR_ACTION_RECV2( int tServerIndex, DWORD tUniqueNumber, OBJECT_FOR_AVATAR *tAvatar, int tCheckChangeActionState )$/;"	f	class:MyTransfer
+B_AVATAR_CHANGE_INFO_1	S05_MyTransfer.cpp	/^void MyTransfer::B_AVATAR_CHANGE_INFO_1( int tServerIndex, DWORD tUniqueNumber, int tSort, int tValue01, int tValue02, int tValue03 )$/;"	f	class:MyTransfer
+B_AVATAR_CHANGE_INFO_2	S05_MyTransfer.cpp	/^void MyTransfer::B_AVATAR_CHANGE_INFO_2( int tSort, int tValue )$/;"	f	class:MyTransfer
+B_AVATAR_EFFECT_VALUE_INFO	S05_MyTransfer.cpp	/^void MyTransfer::B_AVATAR_EFFECT_VALUE_INFO( int tServerIndex, DWORD tUniqueNumber, int tEffectValue[MAX_AVATAR_EFFECT_SORT_NUM][2], int tEffectValueState[MAX_AVATAR_EFFECT_SORT_NUM] )$/;"	f	class:MyTransfer
+B_BROADCAST_INFO_RECV	S05_MyTransfer.cpp	/^void MyTransfer::B_BROADCAST_INFO_RECV( int tInfoSort, BYTE tInfoData[MAX_BROADCAST_INFO_SIZE] )$/;"	f	class:MyTransfer
+B_BROADCAST_INFO_RECV2	S05_MyTransfer.cpp	/^void MyTransfer::B_BROADCAST_INFO_RECV2( int tInfoSort, BYTE tInfoData[MAX_BROADCAST_INFO_SIZE] )$/;"	f	class:MyTransfer
+B_BROADCAST_WORLD_INFO	S05_MyTransfer.cpp	/^void MyTransfer::B_BROADCAST_WORLD_INFO( WORLD_INFO *tWorldInfo, TRIBE_INFO *tTribeInfo )$/;"	f	class:MyTransfer
+B_BROADCAST_WORLD_INFO2	S05_MyTransfer.cpp	/^void MyTransfer::B_BROADCAST_WORLD_INFO2( WORLD_INFO *tWorldInfo, TRIBE_INFO *tTribeInfo )$/;"	f	class:MyTransfer
+B_BUY_CASH_ITEM_RECV	S05_MyTransfer.cpp	/^void MyTransfer::B_BUY_CASH_ITEM_RECV( int tResult, int tCashSize, int tBonusCashSize, int tPage, int tIndex, int tValue[6] )$/;"	f	class:MyTransfer
+B_BUY_PSHOP_RECV	S05_MyTransfer.cpp	/^void MyTransfer::B_BUY_PSHOP_RECV( int tResult, int tCost, int tPage, int tIndex, int tValue[6] )$/;"	f	class:MyTransfer
+B_CHANGE_PLAYTIMETOTEACHERPOINT	S05_MyTransfer.cpp	/^void MyTransfer::B_CHANGE_PLAYTIMETOTEACHERPOINT (BYTE bResult, int iAddTeacherPoints)$/;"	f	class:MyTransfer
+B_CHANGE_TO_TRIBE4_RECV	S05_MyTransfer.cpp	/^void MyTransfer::B_CHANGE_TO_TRIBE4_RECV( int tResult )$/;"	f	class:MyTransfer
+B_CHECK_AUTH_KEY	S05_MyTransfer.cpp	/^void MyTransfer::B_CHECK_AUTH_KEY (BYTE bResult)$/;"	f	class:MyTransfer
+B_CHECK_EVENT_INFO	S05_MyTransfer.cpp	/^void MyTransfer::B_CHECK_EVENT_INFO(void)$/;"	f	class:MyTransfer
+B_CHECK_N_PROTECT_1	S05_MyTransfer.cpp	/^void MyTransfer::B_CHECK_N_PROTECT_1( GG_AUTH_DATA *tValue )$/;"	f	class:MyTransfer
+B_CONNECT_OK	S05_MyTransfer.cpp	/^void MyTransfer::B_CONNECT_OK( int tRandomNumber )$/;"	f	class:MyTransfer
+B_CORRECT_ANSWER_RESULT	S05_MyTransfer.cpp	/^void MyTransfer::B_CORRECT_ANSWER_RESULT( int tSort )$/;"	f	class:MyTransfer
+B_DEMAND_PSHOP_RECV	S05_MyTransfer.cpp	/^void MyTransfer::B_DEMAND_PSHOP_RECV( int tResult, PSHOP_INFO *tPShopInfo )$/;"	f	class:MyTransfer
+B_DEMAND_ZONE_SERVER_INFO_2_RESULT	S05_MyTransfer.cpp	/^void MyTransfer::B_DEMAND_ZONE_SERVER_INFO_2_RESULT( int tResult, char tIp[16], int tPort )$/;"	f	class:MyTransfer
+B_DUEL_ANSWER_RECV	S05_MyTransfer.cpp	/^void MyTransfer::B_DUEL_ANSWER_RECV( int tAnswer )$/;"	f	class:MyTransfer
+B_DUEL_ASK_RECV	S05_MyTransfer.cpp	/^void MyTransfer::B_DUEL_ASK_RECV( char tAvatarName[MAX_AVATAR_NAME_LENGTH], int tSort )$/;"	f	class:MyTransfer
+B_DUEL_CANCEL_RECV	S05_MyTransfer.cpp	/^void MyTransfer::B_DUEL_CANCEL_RECV( void )$/;"	f	class:MyTransfer
+B_DUEL_END_RECV	S05_MyTransfer.cpp	/^void MyTransfer::B_DUEL_END_RECV( int tResult )$/;"	f	class:MyTransfer
+B_DUEL_START_RECV	S05_MyTransfer.cpp	/^void MyTransfer::B_DUEL_START_RECV( int tDuelState[3], int tRemainTime )$/;"	f	class:MyTransfer
+B_DUEL_TIME_INFO	S05_MyTransfer.cpp	/^void MyTransfer::B_DUEL_TIME_INFO( int tRemainTime )$/;"	f	class:MyTransfer
+B_END_PSHOP_RECV	S05_MyTransfer.cpp	/^void MyTransfer::B_END_PSHOP_RECV( void )$/;"	f	class:MyTransfer
+B_EXCHANGE_ITEM_RECV	S05_MyTransfer.cpp	/^void MyTransfer::B_EXCHANGE_ITEM_RECV( int tResult, int tCost, int tValue[6] )$/;"	f	class:MyTransfer
+B_FRIEND_ANSWER_RECV	S05_MyTransfer.cpp	/^void MyTransfer::B_FRIEND_ANSWER_RECV( int tAnswer )$/;"	f	class:MyTransfer
+B_FRIEND_ASK_RECV	S05_MyTransfer.cpp	/^void MyTransfer::B_FRIEND_ASK_RECV( char tAvatarName[MAX_AVATAR_NAME_LENGTH] )$/;"	f	class:MyTransfer
+B_FRIEND_CANCEL_RECV	S05_MyTransfer.cpp	/^void MyTransfer::B_FRIEND_CANCEL_RECV( void )$/;"	f	class:MyTransfer
+B_FRIEND_DELETE_RECV	S05_MyTransfer.cpp	/^void MyTransfer::B_FRIEND_DELETE_RECV( int tIndex )$/;"	f	class:MyTransfer
+B_FRIEND_FIND_RECV	S05_MyTransfer.cpp	/^void MyTransfer::B_FRIEND_FIND_RECV( int tIndex, int tZoneNumber )$/;"	f	class:MyTransfer
+B_FRIEND_MAKE_RECV	S05_MyTransfer.cpp	/^void MyTransfer::B_FRIEND_MAKE_RECV( int tIndex, char tAvatarName[MAX_AVATAR_NAME_LENGTH] )$/;"	f	class:MyTransfer
+B_GENERAL_CHAT_RECV	S05_MyTransfer.cpp	/^void MyTransfer::B_GENERAL_CHAT_RECV( char tAvatarName[MAX_AVATAR_NAME_LENGTH], BYTE tAuthType, char tContent[MAX_CHAT_CONTENT_LENGTH] )$/;"	f	class:MyTransfer
+B_GENERAL_NOTICE_RECV	S05_MyTransfer.cpp	/^void MyTransfer::B_GENERAL_NOTICE_RECV( char tContent[MAX_CHAT_CONTENT_LENGTH], int type )$/;"	f	class:MyTransfer
+B_GENERAL_SHOUT_RECV	S05_MyTransfer.cpp	/^void MyTransfer::B_GENERAL_SHOUT_RECV( char tAvatarName[MAX_AVATAR_NAME_LENGTH], BYTE tAuthType, char tContent[MAX_CHAT_CONTENT_LENGTH] )$/;"	f	class:MyTransfer
+B_GET_CASH_ITEM_INFO_RECV	S05_MyTransfer.cpp	/^void MyTransfer::B_GET_CASH_ITEM_INFO_RECV(int tResult, int tVersion, const int tCashItemInfo[4][10][10][4])$/;"	f	class:MyTransfer
+B_GET_CASH_SIZE_RECV	S05_MyTransfer.cpp	/^void MyTransfer::B_GET_CASH_SIZE_RECV( int tCashSize, int tBonusCashSize )$/;"	f	class:MyTransfer
+B_GET_RANK_INFO	S05_MyTransfer.cpp	/^void MyTransfer::B_GET_RANK_INFO(const char *aName, int tUserIndex)$/;"	f	class:MyTransfer
+B_GM_COMMAND_INFO	S05_MyTransfer.cpp	/^void MyTransfer::B_GM_COMMAND_INFO( int tSort, BYTE tData[MAX_TRIBE_WORK_SIZE] )$/;"	f	class:MyTransfer
+B_GM_COMMAND_INFO2	S05_MyTransfer.cpp	/^void MyTransfer::B_GM_COMMAND_INFO2( int tSort, BYTE tData[MAX_TRIBE_WORK_SIZE] )$/;"	f	class:MyTransfer
+B_GUILD_ANSWER_RECV	S05_MyTransfer.cpp	/^void MyTransfer::B_GUILD_ANSWER_RECV( int tAnswer )$/;"	f	class:MyTransfer
+B_GUILD_ASK_RECV	S05_MyTransfer.cpp	/^void MyTransfer::B_GUILD_ASK_RECV( char tAvatarName[MAX_AVATAR_NAME_LENGTH] )$/;"	f	class:MyTransfer
+B_GUILD_CANCEL_RECV	S05_MyTransfer.cpp	/^void MyTransfer::B_GUILD_CANCEL_RECV( void )$/;"	f	class:MyTransfer
+B_GUILD_CHAT_RECV	S05_MyTransfer.cpp	/^void MyTransfer::B_GUILD_CHAT_RECV( char tAvatarName[MAX_AVATAR_NAME_LENGTH], char tContent[MAX_CHAT_CONTENT_LENGTH], int type )$/;"	f	class:MyTransfer
+B_GUILD_FIND_RECV	S05_MyTransfer.cpp	/^void MyTransfer::B_GUILD_FIND_RECV( int tResult )$/;"	f	class:MyTransfer
+B_GUILD_LOGIN_INFO	S05_MyTransfer.cpp	/^void MyTransfer::B_GUILD_LOGIN_INFO( char tAvatarName[MAX_AVATAR_NAME_LENGTH], int type )$/;"	f	class:MyTransfer
+B_GUILD_NOTICE_RECV	S05_MyTransfer.cpp	/^void MyTransfer::B_GUILD_NOTICE_RECV( char tAvatarName[MAX_AVATAR_NAME_LENGTH], char tContent[MAX_CHAT_CONTENT_LENGTH], int type )$/;"	f	class:MyTransfer
+B_GUILD_WORK_RECV	S05_MyTransfer.cpp	/^void MyTransfer::B_GUILD_WORK_RECV( int tResult, int tSort, GUILD_INFO *tGuildInfo )$/;"	f	class:MyTransfer
+B_HIGH_ITEM_RECV	S05_MyTransfer.cpp	/^void MyTransfer::B_HIGH_ITEM_RECV( int tResult, int tCost, int tValue[6] )$/;"	f	class:MyTransfer
+B_IMPROVE_ITEM_RECV	S05_MyTransfer.cpp	/^void MyTransfer::B_IMPROVE_ITEM_RECV( int tResult, int tCost, int iValue )$/;"	f	class:MyTransfer
+B_ITEM_ACTION_RECV	S05_MyTransfer.cpp	/^void MyTransfer::B_ITEM_ACTION_RECV( int tServerIndex, DWORD tUniqueNumber, OBJECT_FOR_ITEM *tItem, int tCheckChangeActionState )$/;"	f	class:MyTransfer
+B_ITEM_ACTION_RECV2	S05_MyTransfer.cpp	/^void MyTransfer::B_ITEM_ACTION_RECV2( int tServerIndex, DWORD tUniqueNumber, OBJECT_FOR_ITEM *tItem, int tCheckChangeActionState )$/;"	f	class:MyTransfer
+B_ITEM_LIKE_1336_RECV	S05_MyTransfer.cpp	/^void MyTransfer::B_ITEM_LIKE_1336_RECV(int *tCount, int *tPage, int *tInvenSlot, int *tInvenIndex, int (*tItemList)[2], int *tItemValue, int *tItemRecognitionNum)$/;"	f	class:MyTransfer
+B_LOW_ITEM_RECV	S05_MyTransfer.cpp	/^void MyTransfer::B_LOW_ITEM_RECV( int tResult, int tCost, int tValue[6] )$/;"	f	class:MyTransfer
+B_MAKE_ITEM_RECV	S05_MyTransfer.cpp	/^void MyTransfer::B_MAKE_ITEM_RECV( int tResult, int tValue[6] )$/;"	f	class:MyTransfer
+B_MAKE_SKILL_RECV	S05_MyTransfer.cpp	/^void MyTransfer::B_MAKE_SKILL_RECV( int tResult, int tValue[6] )$/;"	f	class:MyTransfer
+B_MEDAL_EXCHANGE_RECV	S05_MyTransfer.cpp	/^void MyTransfer::B_MEDAL_EXCHANGE_RECV( int tResult, int tPage, int tSlot, int tIndex, int tValue )$/;"	f	class:MyTransfer
+B_MONSTER_ACTION_RECV	S05_MyTransfer.cpp	/^void MyTransfer::B_MONSTER_ACTION_RECV( int tServerIndex, DWORD tUniqueNumber, OBJECT_FOR_MONSTER *tMonster, int tCheckChangeActionState )$/;"	f	class:MyTransfer
+B_PARTY_ANSWER_RECV	S05_MyTransfer.cpp	/^void MyTransfer::B_PARTY_ANSWER_RECV( int tAnswer )$/;"	f	class:MyTransfer
+B_PARTY_ASK_RECV	S05_MyTransfer.cpp	/^void MyTransfer::B_PARTY_ASK_RECV( char tAvatarName[MAX_AVATAR_NAME_LENGTH] )$/;"	f	class:MyTransfer
+B_PARTY_BREAK_RECV	S05_MyTransfer.cpp	/^void MyTransfer::B_PARTY_BREAK_RECV( char tAvatarName[MAX_AVATAR_NAME_LENGTH], int type )$/;"	f	class:MyTransfer
+B_PARTY_CANCEL_RECV	S05_MyTransfer.cpp	/^void MyTransfer::B_PARTY_CANCEL_RECV( void )$/;"	f	class:MyTransfer
+B_PARTY_CHAT_RECV	S05_MyTransfer.cpp	/^void MyTransfer::B_PARTY_CHAT_RECV( char tAvatarName[MAX_AVATAR_NAME_LENGTH], char tContent[MAX_CHAT_CONTENT_LENGTH], int type )$/;"	f	class:MyTransfer
+B_PARTY_EXILE_RECV	S05_MyTransfer.cpp	/^void MyTransfer::B_PARTY_EXILE_RECV( char tAvatarName[MAX_AVATAR_NAME_LENGTH], int type )$/;"	f	class:MyTransfer
+B_PARTY_INFO_RECV	S05_MyTransfer.cpp	/^void MyTransfer::B_PARTY_INFO_RECV( char tAvatarName01[MAX_AVATAR_NAME_LENGTH], char tAvatarName02[MAX_AVATAR_NAME_LENGTH], char tAvatarName03[MAX_AVATAR_NAME_LENGTH], char tAvatarName04[MAX_AVATAR_NAME_LENGTH], char tAvatarName05[MAX_AVATAR_NAME_LENGTH], int type )$/;"	f	class:MyTransfer
+B_PARTY_JOIN_RECV	S05_MyTransfer.cpp	/^void MyTransfer::B_PARTY_JOIN_RECV( char tAvatarName[MAX_AVATAR_NAME_LENGTH], int type )$/;"	f	class:MyTransfer
+B_PARTY_LEAVE_RECV	S05_MyTransfer.cpp	/^void MyTransfer::B_PARTY_LEAVE_RECV( char tAvatarName[MAX_AVATAR_NAME_LENGTH], int type )$/;"	f	class:MyTransfer
+B_PARTY_MAKE_RECV	S05_MyTransfer.cpp	/^void MyTransfer::B_PARTY_MAKE_RECV( void )$/;"	f	class:MyTransfer
+B_PROCESS_ATTACK_RECV	S05_MyTransfer.cpp	/^void MyTransfer::B_PROCESS_ATTACK_RECV( ATTACK_FOR_PROTOCOL *tAttackInfo )$/;"	f	class:MyTransfer
+B_PROCESS_DATA_RECV	S05_MyTransfer.cpp	/^void MyTransfer::B_PROCESS_DATA_RECV( int tResult, int tSort, BYTE tData[MAX_BROADCAST_DATA_SIZE] )$/;"	f	class:MyTransfer
+B_PROCESS_QUEST_RECV	S05_MyTransfer.cpp	/^void MyTransfer::B_PROCESS_QUEST_RECV( int tResult, int tSort, int tPage, int tIndex, int  tXPost, int tYPost )$/;"	f	class:MyTransfer
+B_PSHOP_ITEM_INFO_RECV	S05_MyTransfer.cpp	/^void MyTransfer::B_PSHOP_ITEM_INFO_RECV( DWORD tUniqueNumber, char tAvatarName[MAX_AVATAR_NAME_LENGTH], int tPage, int tIndex, int tPShopItemInfo[9] )$/;"	f	class:MyTransfer
+B_REGISTER_AVATAR_RECV	S05_MyTransfer.cpp	/^void MyTransfer::B_REGISTER_AVATAR_RECV( AVATAR_INFO *tAvatarInfo, int tEffectValue[MAX_AVATAR_EFFECT_SORT_NUM][2], int tPremiumServerExpirationDate ) \/\/ 함수 선언 수정 - int tPremiumServerExpirationDate 추가. \/\/ @_Premium_Server_@$/;"	f	class:MyTransfer
+B_REQUEST_PRESENT	S05_MyTransfer.cpp	/^void MyTransfer::B_REQUEST_PRESENT (BYTE bResult, int iPage, int iInvenSlot, int iInvenIndex, int iItemIndex)$/;"	f	class:MyTransfer
+B_RETURN_TO_AUTO_ZONE	S05_MyTransfer.cpp	/^void MyTransfer::B_RETURN_TO_AUTO_ZONE( void )$/;"	f	class:MyTransfer
+B_SECRET_CHAT_RECV	S05_MyTransfer.cpp	/^void MyTransfer::B_SECRET_CHAT_RECV( int tResult, int tZoneNumber, char tAvatarName[MAX_AVATAR_NAME_LENGTH], char tContent[MAX_CHAT_CONTENT_LENGTH], BYTE tAuthType, int type )$/;"	f	class:MyTransfer
+B_SEND_QUESTION	S05_MyTransfer.cpp	/^void MyTransfer::B_SEND_QUESTION( int iCount, BYTE* tContents )$/;"	f	class:MyTransfer
+B_SPEED_CHECK	S05_MyTransfer.cpp	/^void MyTransfer::B_SPEED_CHECK(unsigned int tValue)$/;"	f	class:MyTransfer
+B_START_PSHOP_RECV	S05_MyTransfer.cpp	/^void MyTransfer::B_START_PSHOP_RECV( int tResult, PSHOP_INFO *tPShopInfo )$/;"	f	class:MyTransfer
+B_TEACHER_ANSWER_RECV	S05_MyTransfer.cpp	/^void MyTransfer::B_TEACHER_ANSWER_RECV( int tAnswer )$/;"	f	class:MyTransfer
+B_TEACHER_ASK_RECV	S05_MyTransfer.cpp	/^void MyTransfer::B_TEACHER_ASK_RECV( char tAvatarName[MAX_AVATAR_NAME_LENGTH] )$/;"	f	class:MyTransfer
+B_TEACHER_CANCEL_RECV	S05_MyTransfer.cpp	/^void MyTransfer::B_TEACHER_CANCEL_RECV( void )$/;"	f	class:MyTransfer
+B_TEACHER_END_RECV	S05_MyTransfer.cpp	/^void MyTransfer::B_TEACHER_END_RECV( void )$/;"	f	class:MyTransfer
+B_TEACHER_START_RECV	S05_MyTransfer.cpp	/^void MyTransfer::B_TEACHER_START_RECV( int tSort, char tAvatarName[MAX_AVATAR_NAME_LENGTH] )$/;"	f	class:MyTransfer
+B_TEACHER_STATE_RECV	S05_MyTransfer.cpp	/^void MyTransfer::B_TEACHER_STATE_RECV( int tResult )$/;"	f	class:MyTransfer
+B_TEMP_REGISTER_RECV	S05_MyTransfer.cpp	/^void MyTransfer::B_TEMP_REGISTER_RECV( int tResult )$/;"	f	class:MyTransfer
+B_TOGGLE_STOPWATCH	S05_MyTransfer.cpp	/^void MyTransfer::B_TOGGLE_STOPWATCH (BYTE bResult, BYTE bKind, BYTE bUse)$/;"	f	class:MyTransfer
+B_TRADE_ANSWER_RECV	S05_MyTransfer.cpp	/^void MyTransfer::B_TRADE_ANSWER_RECV( int tAnswer )$/;"	f	class:MyTransfer
+B_TRADE_ASK_RECV	S05_MyTransfer.cpp	/^void MyTransfer::B_TRADE_ASK_RECV( char tAvatarName[MAX_AVATAR_NAME_LENGTH], int tLevel )$/;"	f	class:MyTransfer
+B_TRADE_CANCEL_RECV	S05_MyTransfer.cpp	/^void MyTransfer::B_TRADE_CANCEL_RECV( void )$/;"	f	class:MyTransfer
+B_TRADE_END_RECV	S05_MyTransfer.cpp	/^void MyTransfer::B_TRADE_END_RECV( int tResult )$/;"	f	class:MyTransfer
+B_TRADE_MENU_RECV	S05_MyTransfer.cpp	/^void MyTransfer::B_TRADE_MENU_RECV( int tCheckMe )$/;"	f	class:MyTransfer
+B_TRADE_START_RECV	S05_MyTransfer.cpp	/^void MyTransfer::B_TRADE_START_RECV( int tTradeMoney, int tTrade[MAX_TRADE_SLOT_NUM][4] )$/;"	f	class:MyTransfer
+B_TRADE_STATE_RECV	S05_MyTransfer.cpp	/^void MyTransfer::B_TRADE_STATE_RECV( int tTradeMoney, int tTrade[MAX_TRADE_SLOT_NUM][4] )$/;"	f	class:MyTransfer
+B_TRIBE_ALLIANCE_INFO	S05_MyTransfer.cpp	/^void MyTransfer::B_TRIBE_ALLIANCE_INFO( int tSort, int tValue )$/;"	f	class:MyTransfer
+B_TRIBE_BANK_RECV	S05_MyTransfer.cpp	/^void MyTransfer::B_TRIBE_BANK_RECV( int tResult, int tSort, int tTribeBankInfo[MAX_TRIBE_BANK_SLOT_NUM], int tMoney )$/;"	f	class:MyTransfer
+B_TRIBE_CHAT_RECV	S05_MyTransfer.cpp	/^void MyTransfer::B_TRIBE_CHAT_RECV( char tAvatarName[MAX_AVATAR_NAME_LENGTH], BYTE tAuthType, char tContent[MAX_CHAT_CONTENT_LENGTH] )$/;"	f	class:MyTransfer
+B_TRIBE_CHAT_RECV2	S05_MyTransfer.cpp	/^void MyTransfer::B_TRIBE_CHAT_RECV2( char tAvatarName[MAX_AVATAR_NAME_LENGTH], char tContent[MAX_CHAT_CONTENT_LENGTH] )$/;"	f	class:MyTransfer
+B_TRIBE_NOTICE_RECV	S05_MyTransfer.cpp	/^void MyTransfer::B_TRIBE_NOTICE_RECV( char tAvatarName[MAX_AVATAR_NAME_LENGTH], char tContent[MAX_CHAT_CONTENT_LENGTH], int type )$/;"	f	class:MyTransfer
+B_TRIBE_VOTE_RECV	S05_MyTransfer.cpp	/^void MyTransfer::B_TRIBE_VOTE_RECV( int tResult, int tSort, int tValue )$/;"	f	class:MyTransfer
+B_TRIBE_WORK_RECV	S05_MyTransfer.cpp	/^void MyTransfer::B_TRIBE_WORK_RECV( int tResult, int tSort, BYTE tData[MAX_TRIBE_WORK_SIZE] )$/;"	f	class:MyTransfer
+B_UPDATE_AUTH_KEY	S05_MyTransfer.cpp	/^void MyTransfer::B_UPDATE_AUTH_KEY (BYTE bResult)$/;"	f	class:MyTransfer
+B_UPDATE_CASH_ITEM_INFO	S05_MyTransfer.cpp	/^void MyTransfer::B_UPDATE_CASH_ITEM_INFO()$/;"	f	class:MyTransfer
+B_USE_HOTKEY_ITEM_RECV	S05_MyTransfer.cpp	/^void MyTransfer::B_USE_HOTKEY_ITEM_RECV( int tResult, int tPage, int tIndex )$/;"	f	class:MyTransfer
+B_USE_INVENTORY_ITEM_RECV	S05_MyTransfer.cpp	/^void MyTransfer::B_USE_INVENTORY_ITEM_RECV( int tResult, int tPage, int tIndex, int tValue )$/;"	f	class:MyTransfer
+B_XTRAP_STEP_1	S05_MyTransfer.cpp	/^int MyTransfer::B_XTRAP_STEP_1( char tXTrapCheckBuf[XTRAP_STEP_1_BUF_SIZE] )$/;"	f	class:MyTransfer
+Broadcast	S07_MyGame03.cpp	/^void MyUtil::Broadcast( BOOL tCheckInRange, float tPostLocation[3], int iScale, bool bUDPSend, int type )$/;"	f	class:MyUtil
+Broadcast	S07_MyGame03.cpp	/^void MyUtil::Broadcast( BOOL tCheckInRange, float tPostLocation[3], int iScale, int tUserIndexForNoSend, bool bUDPSend, int type )$/;"	f	class:MyUtil
+CBroadCastMgr	BroadCastMgr.cpp	/^CBroadCastMgr::CBroadCastMgr(void) : m_hSock (-1)$/;"	f	class:CBroadCastMgr
+CHECK_CONFIG_VARIABLE	main.cpp	219;"	d	file:
+CHECK_CONFIG_VAR_BOOLEAN	main.cpp	236;"	d	file:
+CHECK_CONFIG_VAR_RANGE	main.cpp	229;"	d	file:
+CMySQL	mysql.cpp	/^CMySQL::CMySQL() $/;"	f	class:CMySQL
+COracle	oracle.cpp	/^COracle::COracle() $/;"	f	class:COracle
+CPgSQL	pgsql.cpp	/^CPgSQL::CPgSQL() $/;"	f	class:CPgSQL
+CSphinx	S11_Sphinx.cpp	/^CSphinx::CSphinx() : m_bReady( 0 )$/;"	f	class:CSphinx
+CThreadPool	tpool.cpp	/^CThreadPool::CThreadPool(unsigned int num_threads)$/;"	f	class:CThreadPool
+CThreadPoolMThread	tpool.cpp	/^CThreadPool::CThreadPoolMThread::CThreadPoolMThread(CThreadPool *tp_obj_ptr) $/;"	f	class:CThreadPool::CThreadPoolMThread
+CWorkerProcess	worker_process.cpp	/^CWorkerProcess::CWorkerProcess(SOCKET listen_socket) throw(Exception) $/;"	f	class:CWorkerProcess
+CWorkerProcess	worker_process.cpp	/^CWorkerProcess::CWorkerProcess(void) $/;"	f	class:CWorkerProcess
+CWorkerThread	worker_thread.cpp	/^CWorkerThread::CWorkerThread(db_conn_pool_t *db_conn_pool_ptr) $/;"	f	class:CWorkerThread
+CXTrap	S14_CXTrap.cpp	/^CXTrap::CXTrap()$/;"	f	class:CXTrap
+CallSubMain	main.cpp	/^static void CallSubMain(int port_num)$/;"	f	file:
+ChangeISValue	S07_MyGame03.cpp	/^int MyUtil::ChangeISValue( int tValue, int tISValue )$/;"	f	class:MyUtil
+ChangeIUValue	S07_MyGame03.cpp	/^int MyUtil::ChangeIUValue( int tValue, int tIUValue )$/;"	f	class:MyUtil
+ChangeQuestItem	S07_MyGame04.cpp	/^int AVATAR_OBJECT::ChangeQuestItem( int tItemNumber1, int tItemNumber2 )$/;"	f	class:AVATAR_OBJECT
+Check	S07_MyGame06.cpp	/^BOOL HACKINFO::Check( int tHackSize )$/;"	f	class:HACKINFO
+CheckArrivedAtClient	BroadCastMgr.cpp	/^bool CBroadCastMgr::CheckArrivedAtClient (std::string name)$/;"	f	class:CBroadCastMgr
+CheckChangeTribeTime	S07_MyGame03.cpp	/^BOOL MyUtil::CheckChangeTribeTime( void )$/;"	f	class:MyUtil
+CheckCommunityWork	S07_MyGame04.cpp	/^BOOL AVATAR_OBJECT::CheckCommunityWork( void )$/;"	f	class:AVATAR_OBJECT
+CheckInRange	S07_MyGame03.cpp	/^BOOL MyUtil::CheckInRange( float tLocation01[3], float tLocation02[3], float tDistance )$/;"	f	class:MyUtil
+CheckInvenForItem	S07_MyGame03.cpp	/^bool MyUtil::CheckInvenForItem(int *tUserIndex, ITEM_INFO *pItem, int *tPage, int *tIndex, int *tXPost, int *tYPost)$/;"	f	class:MyUtil
+CheckMoveZoneForMoveZoneItem	S07_MyGame01.cpp	/^int MyGame::CheckMoveZoneForMoveZoneItem(int tTribe, int tLevel, int tZoneNumber)$/;"	f	class:MyGame
+CheckNPCFunction	S07_MyGame06.cpp	/^BOOL ZONENPCINFO::CheckNPCFunction( float tCoord[3], int tMenuIndex )$/;"	f	class:ZONENPCINFO
+CheckNameString	S07_MyGame03.cpp	/^BOOL MyUtil::CheckNameString( char *tString )$/;"	f	class:MyUtil
+CheckOverMaximum	S07_MyGame03.cpp	/^BOOL MyUtil::CheckOverMaximum( int tValue1, int tValue2 )$/;"	f	class:MyUtil
+CheckPointInTris	S09_MyWorld.cpp	/^BOOL WORLD_FOR_GXD::CheckPointInTris( int tTrisIndex, float tPoint[3] )$/;"	f	class:WORLD_FOR_GXD
+CheckPointInTrisWithoutYCoord	S09_MyWorld.cpp	/^BOOL WORLD_FOR_GXD::CheckPointInTrisWithoutYCoord( int tTrisIndex, float tPoint[3] )$/;"	f	class:WORLD_FOR_GXD
+CheckPointInWorldWithoutYCoord	S09_MyWorld.cpp	/^BOOL WORLD_FOR_GXD::CheckPointInWorldWithoutYCoord( float tPoint[3] )$/;"	f	class:WORLD_FOR_GXD
+CheckPossibleAttackTarget	S07_MyGame02.cpp	/^BOOL MyGame::CheckPossibleAttackTarget( int tTargetSort, int tActionSort )$/;"	f	class:MyGame
+CheckPossibleChangeToTribe4	S07_MyGame01.cpp	/^int MyGame::CheckPossibleChangeToTribe4( int tTribe )$/;"	f	class:MyGame
+CheckPossibleChangeToTribe4_2	S07_MyGame01.cpp	/^int MyGame::CheckPossibleChangeToTribe4_2( int tTribe )$/;"	f	class:MyGame
+CheckPossibleEquipItem	S07_MyGame03.cpp	/^BOOL MyUtil::CheckPossibleEquipItem( int iIndex, int tTribe, int tEquipIndex, int tLevel )$/;"	f	class:MyUtil
+CheckPossibleGetItem	S07_MyGame06.cpp	/^BOOL ITEM_OBJECT::CheckPossibleGetItem( int tUserIndex )$/;"	f	class:ITEM_OBJECT
+CheckPossiblePShopRegion	S04_MyWork02.cpp	/^BOOL MyWork::CheckPossiblePShopRegion( int tTribe, int tZoneNumber, float tCoord[3] )$/;"	f	class:MyWork
+CheckRAttackRange	S07_MyGame03.cpp	/^bool MyUtil::CheckRAttackRange(int tUserIndex, int tSkillNumber, float tLocation1[3], float tLocation2[3], float tObjectSize)$/;"	f	class:MyUtil
+CheckSmallTribeForAdvantage	S07_MyGame01.cpp	/^BOOL MyGame::CheckSmallTribeForAdvantage( int tTribe )$/;"	f	class:MyGame
+CheckUpdateCashItemInfo	S07_MyGame01.cpp	/^void MyGame::CheckUpdateCashItemInfo()$/;"	f	class:MyGame
+CheckValidCharacterMotionForSend	S04_MyWork02.cpp	/^BOOL MyWork::CheckValidCharacterMotionForSend( int tType, int tSort, int tSkillNumber, int *tSkillSort, int *tCheckMaxAttackPacketNum, int *tAttackPacketSort, int *tMaxAttackPacketNum )$/;"	f	class:MyWork
+CheckValidElement	S08_MyGameSystem.cpp	/^BOOL ITEMSYSTEM::CheckValidElement( int tArrayIndex )$/;"	f	class:ITEMSYSTEM
+CheckValidElement	S08_MyGameSystem.cpp	/^BOOL LEVELSYSTEM::CheckValidElement( int tArrayIndex )$/;"	f	class:LEVELSYSTEM
+CheckValidElement	S08_MyGameSystem.cpp	/^BOOL MONSTERSYSTEM::CheckValidElement( int tArrayIndex )$/;"	f	class:MONSTERSYSTEM
+CheckValidElement	S08_MyGameSystem.cpp	/^BOOL NPCSYSTEM::CheckValidElement( int tArrayIndex )$/;"	f	class:NPCSYSTEM
+CheckValidElement	S08_MyGameSystem.cpp	/^BOOL QUESTSYSTEM::CheckValidElement( int tArrayIndex )$/;"	f	class:QUESTSYSTEM
+CheckValidElement	S08_MyGameSystem.cpp	/^BOOL SKILLSYSTEM::CheckValidElement( int tArrayIndex )$/;"	f	class:SKILLSYSTEM
+CheckValidState	S06_MyUpperCom.cpp	/^BOOL MyGameLog::CheckValidState( int tUserIndex )$/;"	f	class:MyGameLog
+Check_Use_Auto_Day	S07_MyGame01.cpp	/^int MyGame::Check_Use_Auto_Day(int mIndex)$/;"	f	class:MyGame
+Close	BroadCastMgr.cpp	/^void CBroadCastMgr::Close (void)$/;"	f	class:CBroadCastMgr
+Close	S06_MyUpperCom.cpp	/^void MyCenterCom::Close( void )$/;"	f	class:MyCenterCom
+Close	S06_MyUpperCom.cpp	/^void MyExtraCom::Close( void )$/;"	f	class:MyExtraCom
+Close	S06_MyUpperCom.cpp	/^void MyPlayUserCom::Close( void )$/;"	f	class:MyPlayUserCom
+Close	S06_MyUpperCom.cpp	/^void MyRelayCom::Close( void )$/;"	f	class:MyRelayCom
+Connect	S06_MyUpperCom.cpp	/^BOOL MyCenterCom::Connect( void )$/;"	f	class:MyCenterCom
+Connect	S06_MyUpperCom.cpp	/^BOOL MyExtraCom::Connect( void )$/;"	f	class:MyExtraCom
+Connect	S06_MyUpperCom.cpp	/^BOOL MyPlayUserCom::Connect( void )$/;"	f	class:MyPlayUserCom
+Connect	S06_MyUpperCom.cpp	/^BOOL MyRelayCom::Connect( void )$/;"	f	class:MyRelayCom
+DBManagerTerm	main.cpp	56;"	d	file:
+DEFAULT_ADD_JOB_TIME_OUT	tpool.cpp	23;"	d	file:
+DISPLAY_CONFIG_ERROR	main.cpp	213;"	d	file:
+DISPLAY_SIGNAL_ACTION_ERROR	main.cpp	88;"	d	file:
+Decompress	S07_MyGame01.cpp	/^BOOL MyGame::Decompress( DWORD tCompressSize, BYTE *tCompress, DWORD tOriginalSize, BYTE *tOriginal )$/;"	f	class:MyGame
+Delete	BroadCastMgr.cpp	/^bool CBroadCastMgr::Delete (std::string name)$/;"	f	class:CBroadCastMgr
+DeleteMonster	S10_MySummonSystem.cpp	/^void MySummonSystem::DeleteMonster( void )$/;"	f	class:MySummonSystem
+DeleteQuestItem	S07_MyGame04.cpp	/^int AVATAR_OBJECT::DeleteQuestItem( int tItemNumber )$/;"	f	class:AVATAR_OBJECT
+DropItemForKillOtherTribe	S07_MyGame03.cpp	/^void MyUtil::DropItemForKillOtherTribe( int tUserIndex, int tOtherIndex, int tZoneNumber )$/;"	f	class:MyUtil
+FindEmptyInvenForItem	S07_MyGame03.cpp	/^bool MyUtil::FindEmptyInvenForItem (int iUserIndex, ITEM_INFO* pItem, int& iPage, int& iIndex)$/;"	f	class:MyUtil
+Free	S02_MyServer.cpp	/^void MyServer::Free( void )$/;"	f	class:MyServer
+Free	S03_MyUser.cpp	/^void MyUser::Free( void )$/;"	f	class:MyUser
+Free	S04_MyWork01.cpp	/^void MyWork::Free( void )$/;"	f	class:MyWork
+Free	S05_MyTransfer.cpp	/^void MyTransfer::Free( void )$/;"	f	class:MyTransfer
+Free	S06_MyUpperCom.cpp	/^void MyCenterCom::Free( void )$/;"	f	class:MyCenterCom
+Free	S06_MyUpperCom.cpp	/^void MyChatLog::Free( void )$/;"	f	class:MyChatLog
+Free	S06_MyUpperCom.cpp	/^void MyExtraCom::Free( void )$/;"	f	class:MyExtraCom
+Free	S06_MyUpperCom.cpp	/^void MyGameLog::Free( void )$/;"	f	class:MyGameLog
+Free	S06_MyUpperCom.cpp	/^void MyPlayUserCom::Free( void )$/;"	f	class:MyPlayUserCom
+Free	S06_MyUpperCom.cpp	/^void MyRelayCom::Free( void )$/;"	f	class:MyRelayCom
+Free	S07_MyGame01.cpp	/^void MyGame::Free( void )$/;"	f	class:MyGame
+Free	S07_MyGame06.cpp	/^void HACKINFO::Free( void )$/;"	f	class:HACKINFO
+Free	S07_MyGame06.cpp	/^void ZONEMAININFO::Free( void )$/;"	f	class:ZONEMAININFO
+Free	S07_MyGame06.cpp	/^void ZONENPCINFO::Free( void )$/;"	f	class:ZONENPCINFO
+Free	S08_MyGameSystem.cpp	/^void ITEMSYSTEM::Free( void )$/;"	f	class:ITEMSYSTEM
+Free	S08_MyGameSystem.cpp	/^void LEVELSYSTEM::Free( void )$/;"	f	class:LEVELSYSTEM
+Free	S08_MyGameSystem.cpp	/^void MONSTERSYSTEM::Free( void )$/;"	f	class:MONSTERSYSTEM
+Free	S08_MyGameSystem.cpp	/^void NPCSYSTEM::Free( void )$/;"	f	class:NPCSYSTEM
+Free	S08_MyGameSystem.cpp	/^void PATSYSTEM::Free( void )$/;"	f	class:PATSYSTEM
+Free	S08_MyGameSystem.cpp	/^void QUESTSYSTEM::Free( void )$/;"	f	class:QUESTSYSTEM
+Free	S08_MyGameSystem.cpp	/^void SKILLSYSTEM::Free( void )$/;"	f	class:SKILLSYSTEM
+Free	S09_MyWorld.cpp	/^void WORLD_FOR_GXD::Free( void )$/;"	f	class:WORLD_FOR_GXD
+Free	S10_MySummonSystem.cpp	/^void MySummonSystem::Free( void )$/;"	f	class:MySummonSystem
+GGAuthUpdateCallback	S01_MainApplication.cpp	/^GGAUTHS_API void GGAuthUpdateCallback( PGG_UPREPORT tReport ){}$/;"	f
+GL_601_GM_CREATE_MONEY	S06_MyUpperCom.cpp	/^void MyGameLog::GL_601_GM_CREATE_MONEY( int tUserIndex, int tValue )$/;"	f	class:MyGameLog
+GL_602_GM_CREATE_ITEM	S06_MyUpperCom.cpp	/^void MyGameLog::GL_602_GM_CREATE_ITEM( int tUserIndex, int iIndex, int iQuantity, int iValue, int iRecognitionNumber )$/;"	f	class:MyGameLog
+GL_603_TRACE_USER	S06_MyUpperCom.cpp	/^void MyGameLog::GL_603_TRACE_USER( int tUserIndex, int tValue )$/;"	f	class:MyGameLog
+GL_604_BUY_CASH_ITEM	S06_MyUpperCom.cpp	/^void MyGameLog::GL_604_BUY_CASH_ITEM( int tUserIndex, int iIndex, int iQuantity, int iValue, int iRecognitionNumber, int iCostSize, int iBonusCostSize )$/;"	f	class:MyGameLog
+GL_605_USE_CASH_ITEM	S06_MyUpperCom.cpp	/^void MyGameLog::GL_605_USE_CASH_ITEM( int tUserIndex, int iIndex, int iQuantity, int iValue, int iRecognitionNumber )$/;"	f	class:MyGameLog
+GL_606_USE_INVENTORY_ITEM	S06_MyUpperCom.cpp	/^void MyGameLog::GL_606_USE_INVENTORY_ITEM( int tUserIndex, int iIndex, int iQuantity, int iValue, int iRecognitionNumber, int tIndex, int tQuantity, int tValue, int tRecognitionNumber )$/;"	f	class:MyGameLog
+GL_607_GAIN_SIN_ITEM	S06_MyUpperCom.cpp	/^void MyGameLog::GL_607_GAIN_SIN_ITEM( int tUserIndex, int tAction, int iIndex, int iQuantity, int iValue, int iRecognitionNumber )$/;"	f	class:MyGameLog
+GL_608_IMPROVE_ITEM	S06_MyUpperCom.cpp	/^void MyGameLog::GL_608_IMPROVE_ITEM( int tUserIndex, int tAction, int iIndex, int iQuantity, int iValue, int iRecognitionNumber, int tPrice )$/;"	f	class:MyGameLog
+GL_609_PSHOP_ITEM	S06_MyUpperCom.cpp	/^void MyGameLog::GL_609_PSHOP_ITEM( int tUserIndex, int tAction, int iIndex, int iQuantity, int iValue, int iRecognitionNumber, int tPrice )$/;"	f	class:MyGameLog
+GL_610_QUEST_ITEM	S06_MyUpperCom.cpp	/^void MyGameLog::GL_610_QUEST_ITEM( int tUserIndex, int iIndex, int iQuantity, int iValue, int iRecognitionNumber )$/;"	f	class:MyGameLog
+GL_611_QUEST_MONEY	S06_MyUpperCom.cpp	/^void MyGameLog::GL_611_QUEST_MONEY( int tUserIndex, int tValue )$/;"	f	class:MyGameLog
+GL_612_QUEST_KILL_NUM	S06_MyUpperCom.cpp	/^void MyGameLog::GL_612_QUEST_KILL_NUM( int tUserIndex, int tValue )$/;"	f	class:MyGameLog
+GL_613_QUEST_EXP	S06_MyUpperCom.cpp	/^void MyGameLog::GL_613_QUEST_EXP( int tUserIndex, int tValue )$/;"	f	class:MyGameLog
+GL_614_QUEST_TEACHER_POINT	S06_MyUpperCom.cpp	/^void MyGameLog::GL_614_QUEST_TEACHER_POINT( int tUserIndex, int tValue )$/;"	f	class:MyGameLog
+GL_615_TRADE_ITEM	S06_MyUpperCom.cpp	/^void MyGameLog::GL_615_TRADE_ITEM( int tUserIndex, int tOtherIndex, int iIndex, int iQuantity, int iValue, int iRecognitionNumber )$/;"	f	class:MyGameLog
+GL_616_TRADE_MONEY	S06_MyUpperCom.cpp	/^void MyGameLog::GL_616_TRADE_MONEY( int tUserIndex, int tOtherIndex, int tValue )$/;"	f	class:MyGameLog
+GL_617_GUILD_MONEY	S06_MyUpperCom.cpp	/^void MyGameLog::GL_617_GUILD_MONEY( int tUserIndex, int tValue, int tAction, int tGrade )$/;"	f	class:MyGameLog
+GL_618_TRIBE_MONEY	S06_MyUpperCom.cpp	/^void MyGameLog::GL_618_TRIBE_MONEY( int tUserIndex, int tValue )$/;"	f	class:MyGameLog
+GL_619_GAIN_ITEM	S06_MyUpperCom.cpp	/^void MyGameLog::GL_619_GAIN_ITEM( int tUserIndex, int iIndex, int iQuantity, int iValue, int iRecognitionNumber )$/;"	f	class:MyGameLog
+GL_620_DROP_ITEM	S06_MyUpperCom.cpp	/^void MyGameLog::GL_620_DROP_ITEM( int tUserIndex, int iIndex, int iQuantity, int iValue, int iRecognitionNumber )$/;"	f	class:MyGameLog
+GL_621_NSHOP_ITEM	S06_MyUpperCom.cpp	/^void MyGameLog::GL_621_NSHOP_ITEM( int tUserIndex, int tAction, int iIndex, int iQuantity, int iValue, int iRecognitionNumber, int tPrice )$/;"	f	class:MyGameLog
+GL_622_TRADESLOT_ITEM	S06_MyUpperCom.cpp	/^void MyGameLog::GL_622_TRADESLOT_ITEM( int tUserIndex, int tAction, int iIndex, int iQuantity, int iValue, int iRecognitionNumber )$/;"	f	class:MyGameLog
+GL_623_TRADESLOT_MONEY	S06_MyUpperCom.cpp	/^void MyGameLog::GL_623_TRADESLOT_MONEY( int tUserIndex, int tAction, int tValue )$/;"	f	class:MyGameLog
+GL_624_STROESLOT_ITEM	S06_MyUpperCom.cpp	/^void MyGameLog::GL_624_STROESLOT_ITEM( int tUserIndex, int tAction, int iIndex, int iQuantity, int iValue, int iRecognitionNumber )$/;"	f	class:MyGameLog
+GL_625_STORESLOT_MONEY	S06_MyUpperCom.cpp	/^void MyGameLog::GL_625_STORESLOT_MONEY( int tUserIndex, int tAction, int tValue )$/;"	f	class:MyGameLog
+GL_626_SAVESLOT_ITEM	S06_MyUpperCom.cpp	/^void MyGameLog::GL_626_SAVESLOT_ITEM( int tUserIndex, int tAction, int iIndex, int iQuantity, int iValue, int iRecognitionNumber )$/;"	f	class:MyGameLog
+GL_627_SAVESLOT_MONEY	S06_MyUpperCom.cpp	/^void MyGameLog::GL_627_SAVESLOT_MONEY( int tUserIndex, int tAction, int tValue )$/;"	f	class:MyGameLog
+GL_628_GM_MONCALL	S06_MyUpperCom.cpp	/^void MyGameLog::GL_628_GM_MONCALL( int tUserIndex, int tValue )$/;"	f	class:MyGameLog
+GL_629_GM_NCHAT	S06_MyUpperCom.cpp	/^void MyGameLog::GL_629_GM_NCHAT( int tUserIndex, int tOtherIndex )$/;"	f	class:MyGameLog
+GL_630_GM_YCHAT	S06_MyUpperCom.cpp	/^void MyGameLog::GL_630_GM_YCHAT( int tUserIndex, int tOtherIndex )$/;"	f	class:MyGameLog
+GL_631_GM_KICK	S06_MyUpperCom.cpp	/^void MyGameLog::GL_631_GM_KICK( int tUserIndex, int tOtherIndex )$/;"	f	class:MyGameLog
+GL_632_GM_BLOCK	S06_MyUpperCom.cpp	/^void MyGameLog::GL_632_GM_BLOCK( int tUserIndex, int tOtherIndex )$/;"	f	class:MyGameLog
+GL_633_MINUS_EXP_WITH_DIE	S06_MyUpperCom.cpp	/^void MyGameLog::GL_633_MINUS_EXP_WITH_DIE( int tUserIndex, int tValue1, int tValue2 )$/;"	f	class:MyGameLog
+GL_634_ADD_ITEM	S06_MyUpperCom.cpp	/^void MyGameLog::GL_634_ADD_ITEM( int tUserIndex, int tAction, int iIndex, int iQuantity, int iValue, int iRecognitionNumber, int tPrice )$/;"	f	class:MyGameLog
+GL_635_HIGH_ITEM	S06_MyUpperCom.cpp	/^void MyGameLog::GL_635_HIGH_ITEM( int tUserIndex, int tAction, int iIndex, int iQuantity, int iValue, int iRecognitionNumber, int tPrice, int tItem2 )$/;"	f	class:MyGameLog
+GL_636_LOW_ITEM	S06_MyUpperCom.cpp	/^void MyGameLog::GL_636_LOW_ITEM( int tUserIndex, int tAction, int iIndex, int iQuantity, int iValue, int iRecognitionNumber, int tPrice, int tItem2 )$/;"	f	class:MyGameLog
+GL_637_EXCHANGE_ITEM	S06_MyUpperCom.cpp	/^void MyGameLog::GL_637_EXCHANGE_ITEM( int tUserIndex, int tAction, int iIndex, int iQuantity, int iValue, int iRecognitionNumber, int tPrice )$/;"	f	class:MyGameLog
+GL_638_MAKE_ITEM	S06_MyUpperCom.cpp	/^void MyGameLog::GL_638_MAKE_ITEM( int tUserIndex, int tAction, int iIndex, int iQuantity, int iValue, int iRecognitionNumber )$/;"	f	class:MyGameLog
+GL_639_MAKE_SKILL	S06_MyUpperCom.cpp	/^void MyGameLog::GL_639_MAKE_SKILL( int tUserIndex, int tAction, int iIndex, int iQuantity, int iValue, int iRecognitionNumber )$/;"	f	class:MyGameLog
+GL_640_USER_CREATE_ITEM	S06_MyUpperCom.cpp	/^void MyGameLog::GL_640_USER_CREATE_ITEM( int tUserIndex, int iIndex, int iQuantity, int iValue, int iRecognitionNumber )$/;"	f	class:MyGameLog
+GL_641_MAKE_TRIBE_WEAPON	S06_MyUpperCom.cpp	/^void MyGameLog::GL_641_MAKE_TRIBE_WEAPON( int tUserIndex, int iIndex, int iQuantity, int iValue, int iRecognitionNumber )$/;"	f	class:MyGameLog
+GL_642_N_PROTECT	S06_MyUpperCom.cpp	/^void MyGameLog::GL_642_N_PROTECT( int tUserIndex, int tValue )$/;"	f	class:MyGameLog
+GL_643_CHECK_MONSTER_ATTACK_PACKET	S06_MyUpperCom.cpp	/^void MyGameLog::GL_643_CHECK_MONSTER_ATTACK_PACKET( int tUserIndex )$/;"	f	class:MyGameLog
+GL_644_CHECK_AUTH_KEY	S06_MyUpperCom.cpp	/^void MyGameLog::GL_644_CHECK_AUTH_KEY (int tUserIndex)$/;"	f	class:MyGameLog
+GL_648_GM_GOD	S06_MyUpperCom.cpp	/^void MyGameLog::GL_648_GM_GOD( int tUserIndex, int tValue )$/;"	f	class:MyGameLog
+GL_649_GM_CHAT	S06_MyUpperCom.cpp	/^void MyGameLog::GL_649_GM_CHAT( int tUserIndex )$/;"	f	class:MyGameLog
+GL_650_GM_UMOVE	S06_MyUpperCom.cpp	/^void MyGameLog::GL_650_GM_UMOVE( int tUserIndex, int tOtherUserIndex, int tZone )$/;"	f	class:MyGameLog
+GL_651_GM_LEVEL	S06_MyUpperCom.cpp	/^void MyGameLog::GL_651_GM_LEVEL( int tUserIndex, int tLevel )$/;"	f	class:MyGameLog
+GL_652_GM_ZNOTICE	S06_MyUpperCom.cpp	/^void MyGameLog::GL_652_GM_ZNOTICE( int tUserIndex )$/;"	f	class:MyGameLog
+GL_653_GM_RES	S06_MyUpperCom.cpp	/^void MyGameLog::GL_653_GM_RES( int tUserIndex, int tOtherUserIndex, int tRes )$/;"	f	class:MyGameLog
+GL_654_GM_RENAME	S06_MyUpperCom.cpp	/^void MyGameLog::GL_654_GM_RENAME( int tUserIndex, int tOtherUserIndex, char *tName, char* tChangeName )$/;"	f	class:MyGameLog
+GL_655_GM_CALL	S06_MyUpperCom.cpp	/^void MyGameLog::GL_655_GM_CALL( int tUserIndex, int tOtherUserIndex )$/;"	f	class:MyGameLog
+GL_656_GM_EXP	S06_MyUpperCom.cpp	/^void MyGameLog::GL_656_GM_EXP( int tUserIndex, int tExp )$/;"	f	class:MyGameLog
+GL_657_GM_DIE	S06_MyUpperCom.cpp	/^void MyGameLog::GL_657_GM_DIE( int tUserIndex, int tMonsterNumber )$/;"	f	class:MyGameLog
+GL_658_USE_INVENTORY_ITEM	S06_MyUpperCom.cpp	/^void MyGameLog::GL_658_USE_INVENTORY_ITEM( int tUserIndex, int iIndex, int iQuantity, int iValue, int iRecognitionNumber, int tIndex, int tQuantity, int tValue, int tRecognitionNumber, int tCount)$/;"	f	class:MyGameLog
+GL_659_AUTO_CHECK	S06_MyUpperCom.cpp	/^void MyGameLog::GL_659_AUTO_CHECK (int tUserIndex, int tType, float fValue, int iValue \/* = 0 *\/, int iValue2 \/* = 0 *\/)$/;"	f	class:MyGameLog
+GL_660_AUTO_CHECK	S06_MyUpperCom.cpp	/^void MyGameLog::GL_660_AUTO_CHECK (int tUserIndex)$/;"	f	class:MyGameLog
+GL_661_START_MISSION_LABYRINTH	S06_MyUpperCom.cpp	/^void MyGameLog::GL_661_START_MISSION_LABYRINTH(void)$/;"	f	class:MyGameLog
+GL_662_END_MISSION_LABYRINTH	S06_MyUpperCom.cpp	/^void MyGameLog::GL_662_END_MISSION_LABYRINTH(void)$/;"	f	class:MyGameLog
+GL_663_X_TRAP	S06_MyUpperCom.cpp	/^void MyGameLog::GL_663_X_TRAP( int tUserIndex, unsigned long tErrCode )$/;"	f	class:MyGameLog
+GL_664_BONUS_CASH_FAIL_FOR_PACKAGE_ITEM	S06_MyUpperCom.cpp	/^void MyGameLog::GL_664_BONUS_CASH_FAIL_FOR_PACKAGE_ITEM(int tUserIndex, int iIndex, int failType)$/;"	f	class:MyGameLog
+GL_700_SPHINX_HACK	S06_MyUpperCom.cpp	/^void MyGameLog::GL_700_SPHINX_HACK(int tUserIndex)$/;"	f	class:MyGameLog
+GL_701_CHEAT_USER	S06_MyUpperCom.cpp	/^void MyGameLog::GL_701_CHEAT_USER(int tUserIndex, int cheatSort)$/;"	f	class:MyGameLog
+GL_702_CHEAT_AVATAR_ACTION	S06_MyUpperCom.cpp	/^void MyGameLog::GL_702_CHEAT_AVATAR_ACTION(int tUserIndex, int skillNum, int skillGrad1, int skillGrad2, int skillVal)$/;"	f	class:MyGameLog
+GL_800_USE_KILLNUM_TO_ITEM	S06_MyUpperCom.cpp	/^void MyGameLog::GL_800_USE_KILLNUM_TO_ITEM(int tUserIndex, int iBeforeKillOtherTribe, int iAfterKillOtherTribe)$/;"	f	class:MyGameLog
+GL_801_UPGRADE_AVATAR	S06_MyUpperCom.cpp	/^void MyGameLog::GL_801_UPGRADE_AVATAR( int tUserIndex, int tValue01, int tValue02 )$/;"	f	class:MyGameLog
+GL_802_USE_KILLOTHERTRIBE_TO_ITEM	S06_MyUpperCom.cpp	/^void MyGameLog::GL_802_USE_KILLOTHERTRIBE_TO_ITEM (int tUserIndex, int iBeforeKillOtherTribe, int iAfterKillOtherTribe)$/;"	f	class:MyGameLog
+GetAttackBlock	S07_MyGame04.cpp	/^int AVATAR_OBJECT::GetAttackBlock( void )$/;"	f	class:AVATAR_OBJECT
+GetAttackPower	S07_MyGame04.cpp	/^int AVATAR_OBJECT::GetAttackPower( void )$/;"	f	class:AVATAR_OBJECT
+GetAttackRadius	S07_MyGame03.cpp	/^int MyUtil::GetAttackRadius(int tSkillNumber)$/;"	f	class:MyUtil
+GetAttackSuccess	S07_MyGame04.cpp	/^int AVATAR_OBJECT::GetAttackSuccess( void )$/;"	f	class:AVATAR_OBJECT
+GetBonusSkillValue	S07_MyGame04.cpp	/^int AVATAR_OBJECT::GetBonusSkillValue( int sIndex )$/;"	f	class:AVATAR_OBJECT
+GetCritical	S07_MyGame04.cpp	/^int AVATAR_OBJECT::GetCritical( void )$/;"	f	class:AVATAR_OBJECT
+GetCriticalDefense	S07_MyGame04.cpp	/^int AVATAR_OBJECT::GetCriticalDefense( void )$/;"	f	class:AVATAR_OBJECT
+GetDefensePower	S07_MyGame04.cpp	/^int AVATAR_OBJECT::GetDefensePower( void )$/;"	f	class:AVATAR_OBJECT
+GetDoubleXYZ	S07_MyGame03.cpp	/^float MyUtil::GetDoubleXYZ( float tLocation01[3], float tLocation02[3] )$/;"	f	class:MyUtil
+GetDoubleX_Z	S07_MyGame03.cpp	/^float MyUtil::GetDoubleX_Z( float tLocation01[3], float tLocation02[3] )$/;"	f	class:MyUtil
+GetElementAttackPower	S07_MyGame04.cpp	/^int AVATAR_OBJECT::GetElementAttackPower( void )$/;"	f	class:AVATAR_OBJECT
+GetElementDefensePower	S07_MyGame04.cpp	/^int AVATAR_OBJECT::GetElementDefensePower( void )$/;"	f	class:AVATAR_OBJECT
+GetEmptyInvenSlotIndex	S07_MyGame03.cpp	/^int MyUtil::GetEmptyInvenSlotIndex (int iUserIndex, int iPage)$/;"	f	class:MyUtil
+GetLastAttackBonusProbability	S07_MyGame04.cpp	/^int AVATAR_OBJECT::GetLastAttackBonusProbability( void )$/;"	f	class:AVATAR_OBJECT
+GetLastAttackBonusValue	S07_MyGame04.cpp	/^float AVATAR_OBJECT::GetLastAttackBonusValue( void )$/;"	f	class:AVATAR_OBJECT
+GetLengthXYZ	S07_MyGame03.cpp	/^float MyUtil::GetLengthXYZ( float tLocation01[3], float tLocation02[3] )$/;"	f	class:MyUtil
+GetLengthX_Z	S07_MyGame03.cpp	/^float MyUtil::GetLengthX_Z( float tLocation01[3], float tLocation02[3] )$/;"	f	class:MyUtil
+GetLevelBattleRewardInfo	S07_MyGame01.cpp	/^void MyGame::GetLevelBattleRewardInfo( int tLevel1, int tLevel2, int *tGainExperience, int *tGainMoney, BOOL tWin )$/;"	f	class:MyGame
+GetLuck	S07_MyGame04.cpp	/^int AVATAR_OBJECT::GetLuck( void )$/;"	f	class:AVATAR_OBJECT
+GetMaxLife	S07_MyGame04.cpp	/^int AVATAR_OBJECT::GetMaxLife( void )$/;"	f	class:AVATAR_OBJECT
+GetMaxMana	S07_MyGame04.cpp	/^int AVATAR_OBJECT::GetMaxMana( void )$/;"	f	class:AVATAR_OBJECT
+GetMaxSkillGradeNum	S03_MyUser.cpp	/^int MyUser::GetMaxSkillGradeNum(int skillNumber)$/;"	f	class:MyUser
+GetMoneyBy1WonLuckyBag	S08_MyGameSystem.cpp	/^ITEM_INFO* ITEMSYSTEM::GetMoneyBy1WonLuckyBag (void)$/;"	f	class:ITEMSYSTEM
+GetOneValueFromFile	S07_MyGame06.cpp	/^int HACKINFO::GetOneValueFromFile(const char *pBuffer)$/;"	f	class:HACKINFO
+GetPresentItemPtrByGoodwillAmbassador	S08_MyGameSystem.cpp	/^ITEM_INFO* ITEMSYSTEM::GetPresentItemPtrByGoodwillAmbassador (int& iCounts)$/;"	f	class:ITEMSYSTEM
+GetReduceManaRatio	S07_MyGame04.cpp	/^int AVATAR_OBJECT::GetReduceManaRatio( void )$/;"	f	class:AVATAR_OBJECT
+GetResultItemPtrByGigabyteItem	S08_MyGameSystem.cpp	/^ITEM_INFO* ITEMSYSTEM::GetResultItemPtrByGigabyteItem (void)$/;"	f	class:ITEMSYSTEM
+GetWeaponClass	S07_MyGame04.cpp	/^int AVATAR_OBJECT::GetWeaponClass( void )$/;"	f	class:AVATAR_OBJECT
+GetYAngle	S07_MyGame03.cpp	/^float MyUtil::GetYAngle( float x1, float z1, float x2, float z2 )$/;"	f	class:MyUtil
+GetYCoord	S09_MyWorld.cpp	/^BOOL WORLD_FOR_GXD::GetYCoord( float x, float z, float *y, BOOL tCheckExistPostYCoord, float tPostYCoord, BOOL tCheckTwoSide, BOOL tCheckOnlyOne )$/;"	f	class:WORLD_FOR_GXD
+GetYCoordWithTris	S09_MyWorld.cpp	/^BOOL WORLD_FOR_GXD::GetYCoordWithTris( int tTrisIndex, float x, float z, float *y )$/;"	f	class:WORLD_FOR_GXD
+GetZone175TypeRewardInfo	S07_MyGame01.cpp	/^void MyGame::GetZone175TypeRewardInfo( int tLevel, int tLevel2, int tStep, int *tGainExperience, int *tGainMoney )$/;"	f	class:MyGame
+Get_Transform_Num	S11_Sphinx.cpp	/^BOOL CSphinx::Get_Transform_Num(BYTE out[], int index)const$/;"	f	class:CSphinx
+HACKINFO	S07_MyGame06.cpp	/^HACKINFO::HACKINFO( void )$/;"	f	class:HACKINFO
+HealthCheck	S07_MyGame01.cpp	/^void MyGame::HealthCheck(void)$/;"	f	class:MyGame
+ITEMSYSTEM	S08_MyGameSystem.cpp	/^ITEMSYSTEM::ITEMSYSTEM( void )$/;"	f	class:ITEMSYSTEM
+Init	S02_MyServer.cpp	/^BOOL MyServer::Init( int *tResult)$/;"	f	class:MyServer
+Init	S03_MyUser.cpp	/^BOOL MyUser::Init( int tUserIndex, int tSendBufferSize, int tRecvBufferSize )$/;"	f	class:MyUser
+Init	S04_MyWork01.cpp	/^BOOL MyWork::Init( void )$/;"	f	class:MyWork
+Init	S05_MyTransfer.cpp	/^BOOL MyTransfer::Init( void )$/;"	f	class:MyTransfer
+Init	S06_MyUpperCom.cpp	/^BOOL MyCenterCom::Init( int tZoneNumber, int tZonePort, char tIP[16], int tPort )$/;"	f	class:MyCenterCom
+Init	S06_MyUpperCom.cpp	/^BOOL MyChatLog::Init( char tIP[16], int tPort )$/;"	f	class:MyChatLog
+Init	S06_MyUpperCom.cpp	/^BOOL MyExtraCom::Init( int tZoneNumber, char tIP[16], int tPort )$/;"	f	class:MyExtraCom
+Init	S06_MyUpperCom.cpp	/^BOOL MyGameLog::Init( char tIP[16], int tPort )$/;"	f	class:MyGameLog
+Init	S06_MyUpperCom.cpp	/^BOOL MyPlayUserCom::Init( int tZoneNumber, char tIP[16], int tPort )$/;"	f	class:MyPlayUserCom
+Init	S06_MyUpperCom.cpp	/^BOOL MyRelayCom::Init( int tZoneNumber, char tIP[16], int tPort )$/;"	f	class:MyRelayCom
+Init	S07_MyGame01.cpp	/^BOOL MyGame::Init( void )$/;"	f	class:MyGame
+Init	S07_MyGame04.cpp	/^void AVATAR_OBJECT::Init(void)$/;"	f	class:AVATAR_OBJECT
+Init	S07_MyGame06.cpp	/^BOOL HACKINFO::Init( void )$/;"	f	class:HACKINFO
+Init	S07_MyGame06.cpp	/^BOOL ZONEMAININFO::Init( void )$/;"	f	class:ZONEMAININFO
+Init	S07_MyGame06.cpp	/^BOOL ZONENPCINFO::Init( void )$/;"	f	class:ZONENPCINFO
+Init	S08_MyGameSystem.cpp	/^BOOL ITEMSYSTEM::Init( char *tFileName )$/;"	f	class:ITEMSYSTEM
+Init	S08_MyGameSystem.cpp	/^BOOL LEVELSYSTEM::Init( char *tFileName )$/;"	f	class:LEVELSYSTEM
+Init	S08_MyGameSystem.cpp	/^BOOL MONSTERSYSTEM::Init( char *tFileName )$/;"	f	class:MONSTERSYSTEM
+Init	S08_MyGameSystem.cpp	/^BOOL NPCSYSTEM::Init( char *tFileName )$/;"	f	class:NPCSYSTEM
+Init	S08_MyGameSystem.cpp	/^BOOL PATSYSTEM::Init( void )$/;"	f	class:PATSYSTEM
+Init	S08_MyGameSystem.cpp	/^BOOL QUESTSYSTEM::Init( char *tFileName )$/;"	f	class:QUESTSYSTEM
+Init	S08_MyGameSystem.cpp	/^BOOL SKILLSYSTEM::Init( char *tFileName )$/;"	f	class:SKILLSYSTEM
+Init	S09_MyWorld.cpp	/^void WORLD_FOR_GXD::Init( void )$/;"	f	class:WORLD_FOR_GXD
+Init	S10_MySummonSystem.cpp	/^void MySummonSystem::Init( void )$/;"	f	class:MySummonSystem
+Init	S14_CXTrap.cpp	/^bool CXTrap::Init()$/;"	f	class:CXTrap
+IsBlack	S12_SphinxAlgorithm.cpp	/^template<> BOOL CDOTSCREEN_BACKGROUND< 8>::IsBlack(TEXEL_T texel)const$/;"	f	class:CDOTSCREEN_BACKGROUND
+IsBlack	S12_SphinxAlgorithm.cpp	/^template<> BOOL CDOTSCREEN_BACKGROUND<16>::IsBlack(TEXEL_T texel)const$/;"	f	class:CDOTSCREEN_BACKGROUND
+IsBlack	S12_SphinxAlgorithm.cpp	/^template<> BOOL CDOTSCREEN_BACKGROUND<24>::IsBlack(TEXEL_T texel)const$/;"	f	class:CDOTSCREEN_BACKGROUND
+IsBlack	S12_SphinxAlgorithm.cpp	/^template<> BOOL CDOTSCREEN_BACKGROUND<32>::IsBlack(TEXEL_T texel)const$/;"	f	class:CDOTSCREEN_BACKGROUND
+IsSend_TimeOver	S03_MyUser.cpp	/^BOOL MyUser::IsSend_TimeOver( void )$/;"	f	class:MyUser
+IsUpdateCashItemInfo	S06_MyUpperCom.cpp	/^bool MyCenterCom::IsUpdateCashItemInfo()$/;"	f	class:MyCenterCom
+IsUsedOrnament	S07_MyGame04.cpp	/^int AVATAR_OBJECT::IsUsedOrnament (void)$/;"	f	class:AVATAR_OBJECT
+IsValidSkillNumber	S03_MyUser.cpp	/^bool MyUser::IsValidSkillNumber(int skillNumber)$/;"	f	class:MyUser
+IsWrong_CountOver	S03_MyUser.cpp	/^BOOL MyUser::IsWrong_CountOver( void )$/;"	f	class:MyUser
+LEVELSYSTEM	S08_MyGameSystem.cpp	/^LEVELSYSTEM::LEVELSYSTEM( void )$/;"	f	class:LEVELSYSTEM
+LoadForAutoCheckInfo	S07_MyGame01.cpp	/^BOOL MyGame::LoadForAutoCheckInfo( void )$/;"	f	class:MyGame
+LoadForSellItemInfo	S07_MyGame01.cpp	/^BOOL MyGame::LoadForSellItemInfo( void )$/;"	f	class:MyGame
+LoadMapFile	S14_CXTrap.cpp	/^bool CXTrap::LoadMapFile(const int mapFileNum)$/;"	f	class:CXTrap
+LoadRegionInfo_1	S10_MySummonSystem.cpp	/^void MySummonSystem::LoadRegionInfo_1( char *tFileName )$/;"	f	class:MySummonSystem
+LoadRegionInfo_2	S10_MySummonSystem.cpp	/^void MySummonSystem::LoadRegionInfo_2( char *tFileName )$/;"	f	class:MySummonSystem
+LoadWM	S09_MyWorld.cpp	/^BOOL WORLD_FOR_GXD::LoadWM( void )$/;"	f	class:WORLD_FOR_GXD
+Logic	S07_MyGame01.cpp	/^void MyGame::Logic( float dTime )$/;"	f	class:MyGame
+MAX_PATH	S09_MyWorld.cpp	52;"	d	file:
+MAX_SIZE_OF_FD	worker_process.cpp	96;"	d	file:
+MAX_SIZE_OF_PROC_TITLE	main.cpp	148;"	d	file:
+MAX_SIZE_OF_RECV_BUFFER	worker_thread.cpp	73;"	d	file:
+MAX_SIZE_OF_RTX_BUFFER	worker_thread.cpp	72;"	d	file:
+MAX_SIZE_OF_THREAD_JOB_QUEUE	worker_thread.cpp	19;"	d	file:
+MONSTERSYSTEM	S08_MyGameSystem.cpp	/^MONSTERSYSTEM::MONSTERSYSTEM( void )$/;"	f	class:MONSTERSYSTEM
+Mat2Inverse	S13_Math_For_Server.cpp	/^Matrix2* Mat2Inverse(Matrix2 * out, float * out_det, Matrix2 const * in)$/;"	f
+Mat2Rotation	S13_Math_For_Server.cpp	/^Matrix2* Mat2Rotation(Matrix2* out, float radian)$/;"	f
+Mat2Scale	S13_Math_For_Server.cpp	/^Matrix2* Mat2Scale(Matrix2* out, float s)$/;"	f
+Matrix2	S13_Math_For_Server.cpp	/^Matrix2::Matrix2( const Matrix2 & rhs)$/;"	f	class:Matrix2
+Matrix2	S13_Math_For_Server.cpp	/^Matrix2::Matrix2( const float * pf)$/;"	f	class:Matrix2
+Matrix2	S13_Math_For_Server.cpp	/^Matrix2::Matrix2( float _11, float _12$/;"	f	class:Matrix2
+Matrix2Multiply	S13_Math_For_Server.cpp	/^Matrix2* Matrix2Multiply(Matrix2* out, Matrix2 const * m1, Matrix2 const * m2)$/;"	f
+MaxSizeOfBackLog	main.cpp	54;"	d	file:
+MaxSizeOfHint	main.cpp	55;"	d	file:
+Move	S09_MyWorld.cpp	/^BOOL WORLD_FOR_GXD::Move( float tSCoord[3], float tECoord[3], float tSpeed, float tPostTime, BOOL *tCheckArrival )$/;"	f	class:WORLD_FOR_GXD
+MyCenterCom	S06_MyUpperCom.cpp	/^MyCenterCom::MyCenterCom( void )$/;"	f	class:MyCenterCom
+MyChatLog	S06_MyUpperCom.cpp	/^MyChatLog::MyChatLog( void )$/;"	f	class:MyChatLog
+MyExtraCom	S06_MyUpperCom.cpp	/^MyExtraCom::MyExtraCom( void )$/;"	f	class:MyExtraCom
+MyGame	S07_MyGame01.cpp	/^MyGame::MyGame( void )$/;"	f	class:MyGame
+MyGameLog	S06_MyUpperCom.cpp	/^MyGameLog::MyGameLog( void )$/;"	f	class:MyGameLog
+MyPlayUserCom	S06_MyUpperCom.cpp	/^MyPlayUserCom::MyPlayUserCom( void )$/;"	f	class:MyPlayUserCom
+MyRelayCom	S06_MyUpperCom.cpp	/^MyRelayCom::MyRelayCom( void )$/;"	f	class:MyRelayCom
+MyServer	S02_MyServer.cpp	/^MyServer::MyServer( void )$/;"	f	class:MyServer
+MySummonSystem	S10_MySummonSystem.cpp	/^MySummonSystem::MySummonSystem( void )$/;"	f	class:MySummonSystem
+MyTransfer	S05_MyTransfer.cpp	/^MyTransfer::MyTransfer( void )$/;"	f	class:MyTransfer
+MyUser	S03_MyUser.cpp	/^MyUser::MyUser( void )$/;"	f	class:MyUser
+MyUtil	S07_MyGame03.cpp	/^MyUtil::MyUtil( void )$/;"	f	class:MyUtil
+MyWork	S04_MyWork01.cpp	/^MyWork::MyWork( void )$/;"	f	class:MyWork
+NPCSYSTEM	S08_MyGameSystem.cpp	/^NPCSYSTEM::NPCSYSTEM( void )$/;"	f	class:NPCSYSTEM
+Normal	S13_Math_For_Server.cpp	/^Vector3 const * Plane::Normal()const$/;"	f	class:Plane
+NpLog	S01_MainApplication.cpp	/^GGAUTHS_API void NpLog( int tMode, char *tMsg ){}$/;"	f
+PATSYSTEM	S08_MyGameSystem.cpp	/^PATSYSTEM::PATSYSTEM( void )$/;"	f	class:PATSYSTEM
+PID_FILE_PATH	cts_util.cpp	30;"	d	file:
+PID_FILE_PATH	cts_util.cpp	32;"	d	file:
+PROCESS_FOR_NETWORK	S02_MyServer.cpp	/^int MyServer::PROCESS_FOR_NETWORK(SOCKET *cli_fd, UINT fd_status, void *arg = NULL)$/;"	f	class:MyServer
+PROCESS_FOR_NETWORK	S06_MyUpperCom.cpp	/^int MyCenterCom::PROCESS_FOR_NETWORK(SOCKET cli_fd, UINT fd_status)$/;"	f	class:MyCenterCom
+PROCESS_FOR_NETWORK	S06_MyUpperCom.cpp	/^int MyRelayCom::PROCESS_FOR_NETWORK(SOCKET cli_fd, UINT fd_status)$/;"	f	class:MyRelayCom
+PROTECT_TICK	S07_MyGame02.cpp	11;"	d	file:
+Path	S09_MyWorld.cpp	/^void WORLD_FOR_GXD::Path( float tSCoord[3], float tECoord[3], float tSpeed, float tPostTime, float tResult[3] )$/;"	f	class:WORLD_FOR_GXD
+PathForMonsterAttack	S09_MyWorld.cpp	/^BOOL WORLD_FOR_GXD::PathForMonsterAttack( float tSCoord[3], float tECoord[3], float tSpeed, float tPostTime, float tLimitCoord[3], float tLimitLength, float tResult[3] )$/;"	f	class:WORLD_FOR_GXD
+Plane	S13_Math_For_Server.cpp	/^Plane::Plane( const float* pf )$/;"	f	class:Plane
+Plane	S13_Math_For_Server.cpp	/^Plane::Plane( float fa, float fb, float fc, float fd )$/;"	f	class:Plane
+PlaneDistance	S13_Math_For_Server.cpp	/^float PlaneDistance(Plane const * p, Vector3 const * v)$/;"	f
+PlaneIntersectLine	S13_Math_For_Server.cpp	/^Vector3 * PlaneIntersectLine(Vector3 * out, Plane const * p, Vector3 const * from, Vector3 const * to)$/;"	f
+Prepare	BroadCastMgr.cpp	/^bool CBroadCastMgr::Prepare (int iPort)$/;"	f	class:CBroadCastMgr
+Process	BroadCastMgr.cpp	/^bool CBroadCastMgr::Process (SOCKET cli_fd, UINT fd_status)$/;"	f	class:CBroadCastMgr
+ProcessAttack01	S07_MyGame02.cpp	/^void MyGame::ProcessAttack01( int tUserIndex, ATTACK_FOR_PROTOCOL *tAttackInfo )$/;"	f	class:MyGame
+ProcessAttack02	S07_MyGame02.cpp	/^void MyGame::ProcessAttack02( int tUserIndex, ATTACK_FOR_PROTOCOL *tAttackInfo )$/;"	f	class:MyGame
+ProcessAttack03	S07_MyGame02.cpp	/^void MyGame::ProcessAttack03( int tUserIndex, ATTACK_FOR_PROTOCOL *tAttackInfo )$/;"	f	class:MyGame
+ProcessAttack04	S07_MyGame02.cpp	/^void MyGame::ProcessAttack04( int tUserIndex, ATTACK_FOR_PROTOCOL *tAttackInfo )$/;"	f	class:MyGame
+ProcessAttack05	S07_MyGame02.cpp	/^void MyGame::ProcessAttack05( int tUserIndex, ATTACK_FOR_PROTOCOL *tAttackInfo )$/;"	f	class:MyGame
+ProcessAttack06	S07_MyGame02.cpp	/^void MyGame::ProcessAttack06( int tUserIndex, ATTACK_FOR_PROTOCOL *tAttackInfo )$/;"	f	class:MyGame
+ProcessForBroadcastInfo	S07_MyGame07.cpp	/^void MyGame::ProcessForBroadcastInfo( int tInfoSort, BYTE tInfoData[MAX_BROADCAST_INFO_SIZE] )$/;"	f	class:MyGame
+ProcessForChange	S07_MyGame03.cpp	/^BOOL MyUtil::ProcessForChange( int tUserIndex )$/;"	f	class:MyUtil
+ProcessForCreateEffectValue	S07_MyGame04.cpp	/^void AVATAR_OBJECT::ProcessForCreateEffectValue( ACTION_INFO *tAction )$/;"	f	class:AVATAR_OBJECT
+ProcessForData	S04_MyWork03.cpp	/^void MyWork::ProcessForData( int tUserIndex, int tSort, BYTE tData[MAX_BROADCAST_DATA_SIZE] )$/;"	f	class:MyWork
+ProcessForDeath	S07_MyGame04.cpp	/^void AVATAR_OBJECT::ProcessForDeath( void )$/;"	f	class:AVATAR_OBJECT
+ProcessForDeleteEffectValue	S07_MyGame04.cpp	/^void AVATAR_OBJECT::ProcessForDeleteEffectValue( void )$/;"	f	class:AVATAR_OBJECT
+ProcessForDropItem	S07_MyGame03.cpp	/^BOOL MyUtil::ProcessForDropItem( int tDropSort, int tItemIndex, int tItemQuantity, int tItemValue, int tItemRecognitionNumber, float tLocation[3], char tMaster[MAX_AVATAR_NAME_LENGTH], int tTribe )$/;"	f	class:MyUtil
+ProcessForDropItem	S07_MyGame05.cpp	/^void MONSTER_OBJECT::ProcessForDropItem( int tUserIndex )$/;"	f	class:MONSTER_OBJECT
+ProcessForDropItem	S07_MyGame05.cpp	/^void MONSTER_OBJECT::ProcessForDropItem( int tUserIndex, int tMonsterIndex )$/;"	f	class:MONSTER_OBJECT
+ProcessForEquipToInventory	S04_MyWork04.cpp	/^BOOL MyWork::ProcessForEquipToInventory( int tUserIndex, int tPage1, int tIndex1, int tQuantity1, int tPage2, int tIndex2, int tXPost2, int tYPost2, int *tResult )$/;"	f	class:MyWork
+ProcessForExperience	S07_MyGame03.cpp	/^void MyUtil::ProcessForExperience( int tUserIndex, int tGainGeneralExperience, int tGainPatExperience, int tGainLifeValue )$/;"	f	class:MyUtil
+ProcessForGetItem	S04_MyWork04.cpp	/^BOOL MyWork::ProcessForGetItem( int tUserIndex, int tPage1, int tIndex1, int tQuantity1, int tPage2, int tIndex2, int tXPost2, int tYPost2, int *tResult )$/;"	f	class:MyWork
+ProcessForGuardState	S07_MyGame01.cpp	/^void MyGame::ProcessForGuardState( void )$/;"	f	class:MyGame
+ProcessForHotKeyToHotKey	S04_MyWork04.cpp	/^BOOL MyWork::ProcessForHotKeyToHotKey( int tUserIndex, int tPage1, int tIndex1, int tQuantity1, int tPage2, int tIndex2, int tXPost2, int tYPost2, int *tResult )$/;"	f	class:MyWork
+ProcessForHotKeyToInventory	S04_MyWork04.cpp	/^BOOL MyWork::ProcessForHotKeyToInventory( int tUserIndex, int tPage1, int tIndex1, int tQuantity1, int tPage2, int tIndex2, int tXPost2, int tYPost2, int *tResult )$/;"	f	class:MyWork
+ProcessForHotKeyToNo	S04_MyWork04.cpp	/^BOOL MyWork::ProcessForHotKeyToNo( int tUserIndex, int tHotKeyPage, int tHotKeyIndex, int *tResult )$/;"	f	class:MyWork
+ProcessForInventoryMoneyToSaveMoney	S04_MyWork04.cpp	/^BOOL MyWork::ProcessForInventoryMoneyToSaveMoney( int tUserIndex, int tPage1, int tIndex1, int tQuantity1, int tPage2, int tIndex2, int tXPost2, int tYPost2, int *tResult )$/;"	f	class:MyWork
+ProcessForInventoryMoneyToStoreMoney	S04_MyWork04.cpp	/^BOOL MyWork::ProcessForInventoryMoneyToStoreMoney( int tUserIndex, int tPage1, int tIndex1, int tQuantity1, int tPage2, int tIndex2, int tXPost2, int tYPost2, int *tResult )$/;"	f	class:MyWork
+ProcessForInventoryMoneyToTradeMoney	S04_MyWork04.cpp	/^BOOL MyWork::ProcessForInventoryMoneyToTradeMoney( int tUserIndex, int tPage1, int tIndex1, int tQuantity1, int tPage2, int tIndex2, int tXPost2, int tYPost2, int *tResult )$/;"	f	class:MyWork
+ProcessForInventoryMoneyToWorld	S04_MyWork04.cpp	/^BOOL MyWork::ProcessForInventoryMoneyToWorld( int tUserIndex, int tPage1, int tIndex1, int tQuantity1, int tPage2, int tIndex2, int tXPost2, int tYPost2, int *tResult )$/;"	f	class:MyWork
+ProcessForInventoryToEquip	S04_MyWork04.cpp	/^BOOL MyWork::ProcessForInventoryToEquip( int tUserIndex, int tPage1, int tIndex1, int tQuantity1, int tPage2, int tIndex2, int tXPost2, int tYPost2, int *tResult )$/;"	f	class:MyWork
+ProcessForInventoryToHotKey	S04_MyWork04.cpp	/^BOOL MyWork::ProcessForInventoryToHotKey( int tUserIndex, int tPage1, int tIndex1, int tQuantity1, int tPage2, int tIndex2, int tXPost2, int tYPost2, int *tResult )$/;"	f	class:MyWork
+ProcessForInventoryToInventory	S04_MyWork04.cpp	/^BOOL MyWork::ProcessForInventoryToInventory( int tUserIndex, int tPage1, int tIndex1, int tQuantity1, int tPage2, int tIndex2, int tXPost2, int tYPost2, int *tResult )$/;"	f	class:MyWork
+ProcessForInventoryToNPCShop	S04_MyWork04.cpp	/^BOOL MyWork::ProcessForInventoryToNPCShop( int tUserIndex, int tPage1, int tIndex1, int tQuantity1, int tPage2, int tIndex2, int tXPost2, int tYPost2, int *tResult )$/;"	f	class:MyWork
+ProcessForInventoryToSave	S04_MyWork04.cpp	/^BOOL MyWork::ProcessForInventoryToSave( int tUserIndex, int tPage1, int tIndex1, int tQuantity1, int tPage2, int tIndex2, int tXPost2, int tYPost2, int *tResult )$/;"	f	class:MyWork
+ProcessForInventoryToStore	S04_MyWork04.cpp	/^BOOL MyWork::ProcessForInventoryToStore( int tUserIndex, int tPage1, int tIndex1, int tQuantity1, int tPage2, int tIndex2, int tXPost2, int tYPost2, int *tResult )$/;"	f	class:MyWork
+ProcessForInventoryToTrade	S04_MyWork04.cpp	/^BOOL MyWork::ProcessForInventoryToTrade( int tUserIndex, int tPage1, int tIndex1, int tQuantity1, int tPage2, int tIndex2, int tXPost2, int tYPost2, int *tResult )$/;"	f	class:MyWork
+ProcessForInventoryToWorld	S04_MyWork04.cpp	/^BOOL MyWork::ProcessForInventoryToWorld( int tUserIndex, int tPage1, int tIndex1, int tQuantity1, int tPage2, int tIndex2, int tXPost2, int tYPost2, int *tResult )$/;"	f	class:MyWork
+ProcessForKillOtherTribe	S07_MyGame03.cpp	/^void MyUtil::ProcessForKillOtherTribe( int tUserIndex, int tOtherIndex, int tZoneNumber )$/;"	f	class:MyUtil
+ProcessForLearnSkill1	S04_MyWork04.cpp	/^BOOL MyWork::ProcessForLearnSkill1( int tUserIndex, int nIndex, int sIndex, int *tResult )$/;"	f	class:MyWork
+ProcessForLearnSkill2	S04_MyWork04.cpp	/^BOOL MyWork::ProcessForLearnSkill2( int tUserIndex, int nIndex, int sIndex, int *tResult )$/;"	f	class:MyWork
+ProcessForNPCShopToInventory	S04_MyWork04.cpp	/^BOOL MyWork::ProcessForNPCShopToInventory( int tUserIndex, int tPage1, int tIndex1, int tQuantity1, int tPage2, int tIndex2, int tXPost2, int tYPost2, int *tResult )$/;"	f	class:MyWork
+ProcessForNetwork	S06_MyUpperCom.cpp	/^BOOL MyExtraCom::ProcessForNetwork( void )$/;"	f	class:MyExtraCom
+ProcessForNetwork	S06_MyUpperCom.cpp	/^BOOL MyPlayUserCom::ProcessForNetwork( void )$/;"	f	class:MyPlayUserCom
+ProcessForRelay	S04_MyWork03.cpp	/^void MyWork::ProcessForRelay( int tSort, BYTE tData[MAX_BROADCAST_DATA_SIZE], int type )$/;"	f	class:MyWork
+ProcessForSaveMoneyToInventoryMoney	S04_MyWork04.cpp	/^BOOL MyWork::ProcessForSaveMoneyToInventoryMoney( int tUserIndex, int tPage1, int tIndex1, int tQuantity1, int tPage2, int tIndex2, int tXPost2, int tYPost2, int *tResult )$/;"	f	class:MyWork
+ProcessForSaveToInventory	S04_MyWork04.cpp	/^BOOL MyWork::ProcessForSaveToInventory( int tUserIndex, int tPage1, int tIndex1, int tQuantity1, int tPage2, int tIndex2, int tXPost2, int tYPost2, int *tResult )$/;"	f	class:MyWork
+ProcessForSaveToSave	S04_MyWork04.cpp	/^BOOL MyWork::ProcessForSaveToSave( int tUserIndex, int tPage1, int tIndex1, int tQuantity1, int tPage2, int tIndex2, int tXPost2, int tYPost2, int *tResult )$/;"	f	class:MyWork
+ProcessForSend	S06_MyUpperCom.cpp	/^BOOL MyCenterCom::ProcessForSend( void )$/;"	f	class:MyCenterCom
+ProcessForSend	S06_MyUpperCom.cpp	/^BOOL MyRelayCom::ProcessForSend( void )$/;"	f	class:MyRelayCom
+ProcessForSkillToHotKey	S04_MyWork04.cpp	/^BOOL MyWork::ProcessForSkillToHotKey( int tUserIndex, int tSkillSort, int tSkillIndex, int tSkillGrade, int tHotKeyPage, int tHotKeyIndex, int *tResult )$/;"	f	class:MyWork
+ProcessForSkillUpgrade	S04_MyWork04.cpp	/^BOOL MyWork::ProcessForSkillUpgrade( int tUserIndex, int tSkillIndex, int *tResult )$/;"	f	class:MyWork
+ProcessForStatPlus	S04_MyWork04.cpp	/^BOOL MyWork::ProcessForStatPlus( int tUserIndex, int tStatSort, int *tResult )$/;"	f	class:MyWork
+ProcessForStoreMoneyToInventoryMoney	S04_MyWork04.cpp	/^BOOL MyWork::ProcessForStoreMoneyToInventoryMoney( int tUserIndex, int tPage1, int tIndex1, int tQuantity1, int tPage2, int tIndex2, int tXPost2, int tYPost2, int *tResult )$/;"	f	class:MyWork
+ProcessForStoreToInventory	S04_MyWork04.cpp	/^BOOL MyWork::ProcessForStoreToInventory( int tUserIndex, int tPage1, int tIndex1, int tQuantity1, int tPage2, int tIndex2, int tXPost2, int tYPost2, int *tResult )$/;"	f	class:MyWork
+ProcessForStoreToStore	S04_MyWork04.cpp	/^BOOL MyWork::ProcessForStoreToStore( int tUserIndex, int tPage1, int tIndex1, int tQuantity1, int tPage2, int tIndex2, int tXPost2, int tYPost2, int *tResult )$/;"	f	class:MyWork
+ProcessForTradeInfo	S07_MyGame04.cpp	/^void AVATAR_OBJECT::ProcessForTradeInfo( void )$/;"	f	class:AVATAR_OBJECT
+ProcessForTradeMoneyToInventoryMoney	S04_MyWork04.cpp	/^BOOL MyWork::ProcessForTradeMoneyToInventoryMoney( int tUserIndex, int tPage1, int tIndex1, int tQuantity1, int tPage2, int tIndex2, int tXPost2, int tYPost2, int *tResult )$/;"	f	class:MyWork
+ProcessForTradeToInventory	S04_MyWork04.cpp	/^BOOL MyWork::ProcessForTradeToInventory( int tUserIndex, int tPage1, int tIndex1, int tQuantity1, int tPage2, int tIndex2, int tXPost2, int tYPost2, int *tResult )$/;"	f	class:MyWork
+ProcessForTradeToTrade	S04_MyWork04.cpp	/^BOOL MyWork::ProcessForTradeToTrade( int tUserIndex, int tPage1, int tIndex1, int tQuantity1, int tPage2, int tIndex2, int tXPost2, int tYPost2, int *tResult )$/;"	f	class:MyWork
+ProcessForValidAvatarInfoWithItem	S07_MyGame01.cpp	/^void MyGame::ProcessForValidAvatarInfoWithItem( AVATAR_INFO *tAvatarInfo )$/;"	f	class:MyGame
+ProcessResponse	S01_MainApplication.cpp	/^int ProcessResponse(UINT nMss, SOCKET *cli_fd, UINT fd_status, void *arg)$/;"	f
+Process_Allience_Server	S07_MyGame01.cpp	/^void MyGame::Process_Allience_Server( void )$/;"	f	class:MyGame
+Process_TribeVote_Server	S07_MyGame01.cpp	/^void MyGame::Process_TribeVote_Server( void )$/;"	f	class:MyGame
+Process_Zone_037	S07_MyGame01.cpp	/^void MyGame::Process_Zone_037( void )$/;"	f	class:MyGame
+Process_Zone_038	S07_MyGame01.cpp	/^void MyGame::Process_Zone_038( void )$/;"	f	class:MyGame
+Process_Zone_039_TYPE	S07_MyGame01.cpp	/^void MyGame::Process_Zone_039_TYPE( void )$/;"	f	class:MyGame
+Process_Zone_049_TYPE	S07_MyGame01.cpp	/^void MyGame::Process_Zone_049_TYPE( void )$/;"	f	class:MyGame
+Process_Zone_051_TYPE	S07_MyGame01.cpp	/^void MyGame::Process_Zone_051_TYPE( void )$/;"	f	class:MyGame
+Process_Zone_053_TYPE	S07_MyGame01.cpp	/^void MyGame::Process_Zone_053_TYPE( void )$/;"	f	class:MyGame
+Process_Zone_071_TYPE	S07_MyGame01.cpp	/^void MyGame::Process_Zone_071_TYPE( void )$/;"	f	class:MyGame
+Process_Zone_124	S07_MyGame01.cpp	/^void MyGame::Process_Zone_124( void )$/;"	f	class:MyGame
+Process_Zone_175_TYPE	S07_MyGame01.cpp	/^void MyGame::Process_Zone_175_TYPE( void )$/;"	f	class:MyGame
+Process_Zone_194	S07_MyGame01.cpp	/^void MyGame::Process_Zone_194( void )$/;"	f	class:MyGame
+Process_Zone_267_TYPE	S07_MyGame01.cpp	/^void MyGame::Process_Zone_267_TYPE( void )$/;"	f	class:MyGame
+QUESTSYSTEM	S08_MyGameSystem.cpp	/^QUESTSYSTEM::QUESTSYSTEM( void )$/;"	f	class:QUESTSYSTEM
+Quit	S03_MyUser.cpp	/^void MyUser::Quit(const char *tFileName, const char *tFuncName, int tLine)$/;"	f	class:MyUser
+RandomNumber	S07_MyGame03.cpp	/^float MyUtil::RandomNumber( float tMinValue, float tMaxValue )$/;"	f	class:MyUtil
+RandomNumber	S07_MyGame03.cpp	/^int MyUtil::RandomNumber( void )$/;"	f	class:MyUtil
+Recv	S06_MyUpperCom.cpp	/^BOOL MyExtraCom::Recv( void )$/;"	f	class:MyExtraCom
+Recv	S06_MyUpperCom.cpp	/^BOOL MyPlayUserCom::Recv( void )$/;"	f	class:MyPlayUserCom
+Return	S08_MyGameSystem.cpp	/^ITEM_INFO * ITEMSYSTEM::Return( int iLevel, ITEM_INFO *tITEM_INFO )$/;"	f	class:ITEMSYSTEM
+Return	S08_MyGameSystem.cpp	/^ITEM_INFO * ITEMSYSTEM::Return( int iLevel, int iType, int iSort )$/;"	f	class:ITEMSYSTEM
+Return	S08_MyGameSystem.cpp	/^ITEM_INFO * ITEMSYSTEM::Return( int iLevel, int iType, int iSort, ITEM_INFO *tITEM_INFO )$/;"	f	class:ITEMSYSTEM
+ReturnAddDate	S07_MyGame03.cpp	/^int MyUtil::ReturnAddDate( int tPostDateValue, int tAddDayValue )$/;"	f	class:MyUtil
+ReturnAlliance	S07_MyGame01.cpp	/^int MyGame::ReturnAlliance(int tTribe)$/;"	f	class:MyGame
+ReturnAllianceTribe	S07_MyGame01.cpp	/^int MyGame::ReturnAllianceTribe( int tTribe )$/;"	f	class:MyGame
+ReturnAttackPower	S08_MyGameSystem.cpp	/^float PATSYSTEM::ReturnAttackPower( int pIndex, int pGrowUpValue, int pActivityValue )$/;"	f	class:PATSYSTEM
+ReturnAttackType	S08_MyGameSystem.cpp	/^int SKILLSYSTEM::ReturnAttackType( int sIndex )$/;"	f	class:SKILLSYSTEM
+ReturnBigTribe	S07_MyGame01.cpp	/^int MyGame::ReturnBigTribe( void )$/;"	f	class:MyGame
+ReturnDefensePower	S08_MyGameSystem.cpp	/^float PATSYSTEM::ReturnDefensePower( int pIndex, int pGrowUpValue, int pActivityValue )$/;"	f	class:PATSYSTEM
+ReturnFixedLevel	S07_MyGame03.cpp	/^int MyUtil::ReturnFixedLevel( int tLevel )$/;"	f	class:MyUtil
+ReturnGainExpForKillOtherTribe	S08_MyGameSystem.cpp	/^int LEVELSYSTEM::ReturnGainExpForKillOtherTribe( int tAttackLevel, int tDefenseLevel )$/;"	f	class:LEVELSYSTEM
+ReturnGrowPercent	S08_MyGameSystem.cpp	/^float PATSYSTEM::ReturnGrowPercent( int pIndex, int pGrowUpValue )$/;"	f	class:PATSYSTEM
+ReturnGrowStep	S08_MyGameSystem.cpp	/^float PATSYSTEM::ReturnGrowStep( int pIndex, int pGrowUpValue )$/;"	f	class:PATSYSTEM
+ReturnHealthState	S07_MyGame03.cpp	/^int MyUtil::ReturnHealthState( int tPlayTime )$/;"	f	class:MyUtil
+ReturnHighExpValue	S08_MyGameSystem.cpp	/^int LEVELSYSTEM::ReturnHighExpValue( int tLevel )$/;"	f	class:LEVELSYSTEM
+ReturnISValue	S07_MyGame03.cpp	/^int MyUtil::ReturnISValue( int tValue )$/;"	f	class:MyUtil
+ReturnISValueWithLevelLimit	S07_MyGame03.cpp	/^int MyUtil::ReturnISValueWithLevelLimit( int tLevel, int tISValue )$/;"	f	class:MyUtil
+ReturnIUEffectValue	S07_MyGame03.cpp	/^int MyUtil::ReturnIUEffectValue( ITEM_INFO *tITEM_INFO, int tEffectSort )$/;"	f	class:MyUtil
+ReturnIUValue	S07_MyGame03.cpp	/^int MyUtil::ReturnIUValue( int tValue )$/;"	f	class:MyUtil
+ReturnIUValueWithLevelLimit	S07_MyGame03.cpp	/^int MyUtil::ReturnIUValueWithLevelLimit( int tLevel, int tIUValue )$/;"	f	class:MyUtil
+ReturnItemNumberForQuestReward	S07_MyGame04.cpp	/^int AVATAR_OBJECT::ReturnItemNumberForQuestReward( void )$/;"	f	class:AVATAR_OBJECT
+ReturnItemQuantityForQuestReward	S07_MyGame04.cpp	/^int AVATAR_OBJECT::ReturnItemQuantityForQuestReward( void )$/;"	f	class:AVATAR_OBJECT
+ReturnItemRecognitionNumber	S07_MyGame03.cpp	/^int MyUtil::ReturnItemRecognitionNumber( int tItemType )$/;"	f	class:MyUtil
+ReturnLengthXYZ	S07_MyGame03.cpp	/^float MyUtil::ReturnLengthXYZ(float tLocation01[3], float tLocation02[3])$/;"	f	class:MyUtil
+ReturnLevel	S08_MyGameSystem.cpp	/^int LEVELSYSTEM::ReturnLevel( int tGeneralExperience )$/;"	f	class:LEVELSYSTEM
+ReturnLevelFactor1	S08_MyGameSystem.cpp	/^int LEVELSYSTEM::ReturnLevelFactor1( int tLevel )$/;"	f	class:LEVELSYSTEM
+ReturnLevelFactor2	S08_MyGameSystem.cpp	/^int LEVELSYSTEM::ReturnLevelFactor2( int tLevel )$/;"	f	class:LEVELSYSTEM
+ReturnLevelFactor3	S08_MyGameSystem.cpp	/^int LEVELSYSTEM::ReturnLevelFactor3( int tLevel )$/;"	f	class:LEVELSYSTEM
+ReturnLevelFactorAttackBlock	S08_MyGameSystem.cpp	/^int LEVELSYSTEM::ReturnLevelFactorAttackBlock( int tLevel )$/;"	f	class:LEVELSYSTEM
+ReturnLevelFactorAttackPower	S08_MyGameSystem.cpp	/^int LEVELSYSTEM::ReturnLevelFactorAttackPower( int tLevel )$/;"	f	class:LEVELSYSTEM
+ReturnLevelFactorAttackSuccess	S08_MyGameSystem.cpp	/^int LEVELSYSTEM::ReturnLevelFactorAttackSuccess( int tLevel )$/;"	f	class:LEVELSYSTEM
+ReturnLevelFactorDefensePower	S08_MyGameSystem.cpp	/^int LEVELSYSTEM::ReturnLevelFactorDefensePower( int tLevel )$/;"	f	class:LEVELSYSTEM
+ReturnLevelFactorElementAttack	S08_MyGameSystem.cpp	/^int LEVELSYSTEM::ReturnLevelFactorElementAttack( int tLevel )$/;"	f	class:LEVELSYSTEM
+ReturnLevelFactorLife	S08_MyGameSystem.cpp	/^int LEVELSYSTEM::ReturnLevelFactorLife( int tLevel )$/;"	f	class:LEVELSYSTEM
+ReturnLevelFactorMana	S08_MyGameSystem.cpp	/^int LEVELSYSTEM::ReturnLevelFactorMana( int tLevel )$/;"	f	class:LEVELSYSTEM
+ReturnLevelWarReward3	S07_MyGame01.cpp	/^void MyGame::ReturnLevelWarReward3( int tLevel1, int tLevel2, int *tGainExperience, int *tGainMoney )$/;"	f	class:MyGame
+ReturnLifeValue	S08_MyGameSystem.cpp	/^float PATSYSTEM::ReturnLifeValue( int pIndex, int pGrowUpValue )$/;"	f	class:PATSYSTEM
+ReturnManaValue	S08_MyGameSystem.cpp	/^float PATSYSTEM::ReturnManaValue( int pIndex, int pGrowUpValue )$/;"	f	class:PATSYSTEM
+ReturnMaxZoneLevelInfo	S07_MyGame06.cpp	/^int ZONEMAININFO::ReturnMaxZoneLevelInfo( int tZoneNumber )$/;"	f	class:ZONEMAININFO
+ReturnMinZoneLevelInfo	S07_MyGame06.cpp	/^int ZONEMAININFO::ReturnMinZoneLevelInfo( int tZoneNumber )$/;"	f	class:ZONEMAININFO
+ReturnNowDate	S07_MyGame03.cpp	/^int MyUtil::ReturnNowDate( void )$/;"	f	class:MyUtil
+ReturnQuestEndConditionState	S07_MyGame04.cpp	/^int AVATAR_OBJECT::ReturnQuestEndConditionState( void )$/;"	f	class:AVATAR_OBJECT
+ReturnQuestNextNPCNumber	S07_MyGame04.cpp	/^int AVATAR_OBJECT::ReturnQuestNextNPCNumber( void )$/;"	f	class:AVATAR_OBJECT
+ReturnQuestPresentState	S07_MyGame04.cpp	/^int AVATAR_OBJECT::ReturnQuestPresentState( void )$/;"	f	class:AVATAR_OBJECT
+ReturnRareItem	S08_MyGameSystem.cpp	/^ITEM_INFO* ITEMSYSTEM::ReturnRareItem (int iTribe, int iLevel)$/;"	f	class:ITEMSYSTEM
+ReturnRareItem	S08_MyGameSystem.cpp	/^ITEM_INFO* ITEMSYSTEM::ReturnRareItem (int iTribe, int iType, int iLevel)$/;"	f	class:ITEMSYSTEM
+ReturnSkillValue	S08_MyGameSystem.cpp	/^float SKILLSYSTEM::ReturnSkillValue( int sIndex, int sPoint, int sFactor )$/;"	f	class:SKILLSYSTEM
+ReturnSmallTribe	S07_MyGame01.cpp	/^int MyGame::ReturnSmallTribe( void )$/;"	f	class:MyGame
+ReturnSpecialSortNumber	S10_MySummonSystem.cpp	/^int MySummonSystem::ReturnSpecialSortNumber( MONSTER_INFO *tMONSTER_INFO )$/;"	f	class:MySummonSystem
+ReturnSubDate	S07_MyGame03.cpp	/^int MyUtil::ReturnSubDate( int tPostDateValue, int tSubDayValue )$/;"	f	class:MyUtil
+ReturnSymbolDamageDown	S07_MyGame01.cpp	/^float MyGame::ReturnSymbolDamageDown( int tTribe )$/;"	f	class:MyGame
+ReturnSymbolDamageUp	S07_MyGame01.cpp	/^float MyGame::ReturnSymbolDamageUp( int tTribe )$/;"	f	class:MyGame
+ReturnTotalHitNumber	S08_MyGameSystem.cpp	/^int SKILLSYSTEM::ReturnTotalHitNumber( int sIndex )$/;"	f	class:SKILLSYSTEM
+ReturnTribeForSymbol	S07_MyGame01.cpp	/^int MyGame::ReturnTribeForSymbol( int tTribe )$/;"	f	class:MyGame
+ReturnTribePointWithAlliance	S07_MyGame01.cpp	/^int MyGame::ReturnTribePointWithAlliance( int tTribe )$/;"	f	class:MyGame
+ReturnTribeRole	S07_MyGame01.cpp	/^int MyGame::ReturnTribeRole( char tAvatarName[MAX_AVATAR_NAME_LENGTH], int tTribe )$/;"	f	class:MyGame
+ReturnTribeSubMasterNum	S07_MyGame01.cpp	/^int MyGame::ReturnTribeSubMasterNum( int tTribe )$/;"	f	class:MyGame
+ReturnUpgradeValueWithLevelLimit	S07_MyGame03.cpp	/^int MyUtil::ReturnUpgradeValueWithLevelLimit( int tLevel, int tUpgradeValue )$/;"	f	class:MyUtil
+ReturnVoteDate	S07_MyGame03.cpp	/^int MyUtil::ReturnVoteDate( void )$/;"	f	class:MyUtil
+ReturnZoneCoord	S07_MyGame06.cpp	/^int ZONENPCINFO::ReturnZoneCoord( int tNPCNumber, float tCoord[3] )$/;"	f	class:ZONENPCINFO
+ReturnZoneNumber	S07_MyGame06.cpp	/^int ZONENPCINFO::ReturnZoneNumber( int tNPCNumber )$/;"	f	class:ZONENPCINFO
+ReturnZoneTribeInfo1	S07_MyGame06.cpp	/^int ZONEMAININFO::ReturnZoneTribeInfo1( int tZoneNumber )$/;"	f	class:ZONEMAININFO
+ReturnZoneTribeInfo2	S07_MyGame06.cpp	/^int ZONEMAININFO::ReturnZoneTribeInfo2( int tZoneNumber )$/;"	f	class:ZONEMAININFO
+Return_1	S08_MyGameSystem.cpp	/^ITEM_INFO * ITEMSYSTEM::Return_1( int iLevel, ITEM_INFO *tITEM_INFO )$/;"	f	class:ITEMSYSTEM
+Return_2	S08_MyGameSystem.cpp	/^ITEM_INFO * ITEMSYSTEM::Return_2( int iLevel, ITEM_INFO *tITEM_INFO )$/;"	f	class:ITEMSYSTEM
+SEND_RESPONSE_ERROR	worker_thread.cpp	75;"	d	file:
+SKILLSYSTEM	S08_MyGameSystem.cpp	/^SKILLSYSTEM::SKILLSYSTEM( void )$/;"	f	class:SKILLSYSTEM
+SaveForSellItemInfo	S07_MyGame01.cpp	/^void MyGame::SaveForSellItemInfo( void )$/;"	f	class:MyGame
+Search	S08_MyGameSystem.cpp	/^ITEM_INFO * ITEMSYSTEM::Search( int iIndex )$/;"	f	class:ITEMSYSTEM
+Search	S08_MyGameSystem.cpp	/^MONSTER_INFO * MONSTERSYSTEM::Search( int mIndex )$/;"	f	class:MONSTERSYSTEM
+Search	S08_MyGameSystem.cpp	/^MONSTER_INFO * MONSTERSYSTEM::Search( int tMonsterType, int tMonsterSpecialType )$/;"	f	class:MONSTERSYSTEM
+Search	S08_MyGameSystem.cpp	/^NPC_INFO * NPCSYSTEM::Search( int nIndex )$/;"	f	class:NPCSYSTEM
+Search	S08_MyGameSystem.cpp	/^QUEST_INFO * QUESTSYSTEM::Search( int qTribe, int qStep )$/;"	f	class:QUESTSYSTEM
+Search	S08_MyGameSystem.cpp	/^SKILL_INFO * SKILLSYSTEM::Search( int sIndex )$/;"	f	class:SKILLSYSTEM
+SearchAvatar	S07_MyGame03.cpp	/^int MyUtil::SearchAvatar( char tAvatarName[MAX_AVATAR_NAME_LENGTH], int tInvalidIndex )$/;"	f	class:MyUtil
+SearchAvatarforGM	S06_MyUpperCom.cpp	/^int MyCenterCom::SearchAvatarforGM(const char *tAvatarName)$/;"	f	class:MyCenterCom
+SelectAvatarIndexForAttackAction	S07_MyGame05.cpp	/^int MONSTER_OBJECT::SelectAvatarIndexForAttackAction( void )$/;"	f	class:MONSTER_OBJECT
+SelectAvatarIndexForGuardAttack	S07_MyGame05.cpp	/^int MONSTER_OBJECT::SelectAvatarIndexForGuardAttack( void )$/;"	f	class:MONSTER_OBJECT
+SelectAvatarIndexForIdleAI	S07_MyGame05.cpp	/^int MONSTER_OBJECT::SelectAvatarIndexForIdleAI( void )$/;"	f	class:MONSTER_OBJECT
+SelectAvatarIndexForIdleAIWIthThrowCar	S07_MyGame05.cpp	/^int MONSTER_OBJECT::SelectAvatarIndexForIdleAIWIthThrowCar( void )$/;"	f	class:MONSTER_OBJECT
+SelectAvatarIndexForMaxAttackDamage	S07_MyGame05.cpp	/^int MONSTER_OBJECT::SelectAvatarIndexForMaxAttackDamage( void )$/;"	f	class:MONSTER_OBJECT
+SelectAvatarIndexForPossibleAttack	S07_MyGame05.cpp	/^int MONSTER_OBJECT::SelectAvatarIndexForPossibleAttack( void )$/;"	f	class:MONSTER_OBJECT
+SelectAvatarIndexForPossibleAttackForZone175TypeBoss	S07_MyGame05.cpp	/^void MONSTER_OBJECT::SelectAvatarIndexForPossibleAttackForZone175TypeBoss( void )$/;"	f	class:MONSTER_OBJECT
+SelectAvatarIndexForThrowCarAttack	S07_MyGame05.cpp	/^int MONSTER_OBJECT::SelectAvatarIndexForThrowCarAttack( void )$/;"	f	class:MONSTER_OBJECT
+Send	S03_MyUser.cpp	/^void MyUser::Send( BOOL tCheckValidBuffer, char *tBuffer, int tBufferSize, bool bUDPSend)$/;"	f	class:MyUser
+Send	S06_MyUpperCom.cpp	/^BOOL MyCenterCom::Send( void )$/;"	f	class:MyCenterCom
+Send	S06_MyUpperCom.cpp	/^BOOL MyExtraCom::Send( void )$/;"	f	class:MyExtraCom
+Send	S06_MyUpperCom.cpp	/^BOOL MyPlayUserCom::Send( void )$/;"	f	class:MyPlayUserCom
+Send	S06_MyUpperCom.cpp	/^BOOL MyRelayCom::Send( void )$/;"	f	class:MyRelayCom
+SendToLogServer	S06_MyUpperCom.cpp	/^void MyChatLog::SendToLogServer( int tTribe, int tChatSort, char tAvatarName01[MAX_AVATAR_NAME_LENGTH], char tAvatarName02[MAX_AVATAR_NAME_LENGTH], char tContent[MAX_CHAT_CONTENT_LENGTH] )$/;"	f	class:MyChatLog
+SendToLogServer	S06_MyUpperCom.cpp	/^void MyGameLog::SendToLogServer( void )$/;"	f	class:MyGameLog
+SendToLogServerForDB	S06_MyUpperCom.cpp	/^void MyGameLog::SendToLogServerForDB( void )$/;"	f	class:MyGameLog
+SetAttackInfoWithAvatar	S07_MyGame05.cpp	/^void MONSTER_OBJECT::SetAttackInfoWithAvatar( int tServerIndex, DWORD tUniqueNumber, int *tWhoAttackMonster )$/;"	f	class:MONSTER_OBJECT
+SetBasicAbilityFromEquip	S07_MyGame04.cpp	/^void AVATAR_OBJECT::SetBasicAbilityFromEquip( void )$/;"	f	class:AVATAR_OBJECT
+SetBeDmon	main.cpp	/^int SetBeDmon(void)$/;"	f
+SetISIUValue	S07_MyGame03.cpp	/^int MyUtil::SetISIUValue( int tISValue, int tIUValue )$/;"	f	class:MyUtil
+SetInvenSlotHumanReadable	S07_MyGame03.cpp	/^bool MyUtil::SetInvenSlotHumanReadable (int iUserIndex, int iPage, bool bInvenSlots[MAX_INVENTORY_SLOT_NUM])$/;"	f	class:MyUtil
+SetRGB	S12_SphinxAlgorithm.cpp	/^template<> void CDOTSCREEN_BACKGROUND< 8>::SetRGB(TEXEL_T & texel, BYTE val)const$/;"	f	class:CDOTSCREEN_BACKGROUND
+SetRGB	S12_SphinxAlgorithm.cpp	/^template<> void CDOTSCREEN_BACKGROUND<16>::SetRGB(TEXEL_T & texel, BYTE val)const$/;"	f	class:CDOTSCREEN_BACKGROUND
+SetRGB	S12_SphinxAlgorithm.cpp	/^template<> void CDOTSCREEN_BACKGROUND<24>::SetRGB(TEXEL_T & texel, BYTE val)const$/;"	f	class:CDOTSCREEN_BACKGROUND
+SetRGB	S12_SphinxAlgorithm.cpp	/^template<> void CDOTSCREEN_BACKGROUND<32>::SetRGB(TEXEL_T & texel, BYTE val)const$/;"	f	class:CDOTSCREEN_BACKGROUND
+SetSpaceIndex	S07_MyGame04.cpp	/^void AVATAR_OBJECT::SetSpaceIndex( void )$/;"	f	class:AVATAR_OBJECT
+SetSpaceIndex	S07_MyGame05.cpp	/^void MONSTER_OBJECT::SetSpaceIndex( void )$/;"	f	class:MONSTER_OBJECT
+SetSpaceIndex	S07_MyGame06.cpp	/^void ITEM_OBJECT::SetSpaceIndex( void )$/;"	f	class:ITEM_OBJECT
+SetUpdateCashItemInfo	S06_MyUpperCom.cpp	/^void MyCenterCom::SetUpdateCashItemInfo(bool isUpdate)$/;"	f	class:MyCenterCom
+ShowUsage	main.cpp	/^void ShowUsage(void)$/;"	f
+ShowVersion	main.cpp	/^void ShowVersion(void)$/;"	f
+Sphinx_Punishment	S04_MyWork04.cpp	/^void MyWork::Sphinx_Punishment( int iIndex )$/;"	f	class:MyWork
+Sphinx_Question_Control	S04_MyWork04.cpp	/^void MyWork::Sphinx_Question_Control(  int iIndex  )$/;"	f	class:MyWork
+Sphinx_Question_TimeCheck	S04_MyWork04.cpp	/^void MyWork::Sphinx_Question_TimeCheck( int iIndex )$/;"	f	class:MyWork
+Sphinx_Requital	S04_MyWork04.cpp	/^void MyWork::Sphinx_Requital( int iIndex )$/;"	f	class:MyWork
+Start	BroadCastMgr.cpp	/^void *CBroadCastMgr::Start(void *arg)$/;"	f	class:CBroadCastMgr
+Start	S06_MyUpperCom.cpp	/^void *MyCenterCom::Start(void *arg)$/;"	f	class:MyCenterCom
+Start	S06_MyUpperCom.cpp	/^void *MyRelayCom::Start(void *arg)$/;"	f	class:MyRelayCom
+SummonBossMonster	S10_MySummonSystem.cpp	/^void MySummonSystem::SummonBossMonster( void )$/;"	f	class:MySummonSystem
+SummonGuard	S10_MySummonSystem.cpp	/^void MySummonSystem::SummonGuard( BOOL tCheckZone038, BOOL tCheckFirst )$/;"	f	class:MySummonSystem
+SummonMonster	S10_MySummonSystem.cpp	/^void MySummonSystem::SummonMonster( void )$/;"	f	class:MySummonSystem
+SummonMonsterForSpecial	S10_MySummonSystem.cpp	/^void MySummonSystem::SummonMonsterForSpecial( int tMonsterNumber, float tMonsterLocation[3], BOOL tCheckExistMonster, int tUserIndex \/*= -1*\/ )$/;"	f	class:MySummonSystem
+SummonMonsterForTribeWeapon	S10_MySummonSystem.cpp	/^BOOL MySummonSystem::SummonMonsterForTribeWeapon( int tMonsterNumber, float tMonsterLocation[3] )$/;"	f	class:MySummonSystem
+SummonMonsterForZone175Type	S10_MySummonSystem.cpp	/^void MySummonSystem::SummonMonsterForZone175Type( void )$/;"	f	class:MySummonSystem
+SummonMonsterWithoutTimeLimit	S10_MySummonSystem.cpp	/^void MySummonSystem::SummonMonsterWithoutTimeLimit( void )$/;"	f	class:MySummonSystem
+SummonMonsterWithoutTimeLimitForZone175Type	S10_MySummonSystem.cpp	/^void MySummonSystem::SummonMonsterWithoutTimeLimitForZone175Type( int tStep )$/;"	f	class:MySummonSystem
+SummonQuestBoss	S07_MyGame04.cpp	/^int AVATAR_OBJECT::SummonQuestBoss( void )$/;"	f	class:AVATAR_OBJECT
+SummonTribeSymbol	S10_MySummonSystem.cpp	/^void MySummonSystem::SummonTribeSymbol( void )$/;"	f	class:MySummonSystem
+ToSleep_Sphinx	S11_Sphinx.cpp	/^void CSphinx::ToSleep_Sphinx( void )$/;"	f	class:CSphinx
+Transform_Manager	S11_Sphinx.cpp	/^BOOL CSphinx::Transform_Manager(BYTE out[], BYTE const in[], TGA_HEADER const * hdr)const$/;"	f	class:CSphinx
+UNBLOCK_SIGNAL	S06_MyUpperCom.cpp	21;"	d	file:
+USER_SEND	S04_MyWork03.cpp	10;"	d	file:
+U_ADD_AUTO_USER_LIST_SEND	S06_MyUpperCom.cpp	/^void MyPlayUserCom::U_ADD_AUTO_USER_LIST_SEND( char tID[MAX_USER_ID_LENGTH], char tAvatarName[MAX_AVATAR_NAME_LENGTH], int tWorldNumber, int tZoneNumber )$/;"	f	class:MyPlayUserCom
+U_BLOCK_USER_FOR_ZONE_1_SEND	S06_MyUpperCom.cpp	/^void MyPlayUserCom::U_BLOCK_USER_FOR_ZONE_1_SEND( int tSort, char tID[MAX_USER_ID_LENGTH] )$/;"	f	class:MyPlayUserCom
+U_BLOCK_USER_FOR_ZONE_2_SEND	S06_MyUpperCom.cpp	/^void MyPlayUserCom::U_BLOCK_USER_FOR_ZONE_2_SEND( int tSort, char tID[MAX_USER_ID_LENGTH] )$/;"	f	class:MyPlayUserCom
+U_BONUS_100_MONEY_FOR_ZONE_SEND	S06_MyUpperCom.cpp	/^void MyPlayUserCom::U_BONUS_100_MONEY_FOR_ZONE_SEND(int tPlayUserIndex)$/;"	f	class:MyPlayUserCom
+U_BUY_CASH_ITEM_FOR_EXTRA_SEND	S06_MyUpperCom.cpp	/^BOOL MyExtraCom::U_BUY_CASH_ITEM_FOR_EXTRA_SEND( char tID[MAX_USER_ID_LENGTH], int tCostInfoIndex, int iIndex, int iQuantity, char tAvatarName[MAX_AVATAR_NAME_LENGTH], int tTribe, int tLevel, int tVersion )$/;"	f	class:MyExtraCom
+U_CHANGE_AVATAR_NAME_FOR_ZONE_SEND	S06_MyUpperCom.cpp	/^void MyPlayUserCom::U_CHANGE_AVATAR_NAME_FOR_ZONE_SEND(int tPlayUserIndex, char *tChangeAvatarName)$/;"	f	class:MyPlayUserCom
+U_CHECK_AUTH_KEY	S06_MyUpperCom.cpp	/^void MyPlayUserCom::U_CHECK_AUTH_KEY (char szID[MAX_USER_ID_LENGTH], char szAuthKey[MAX_MOUSE_PASSWORD_LENGTH])$/;"	f	class:MyPlayUserCom
+U_CHECK_KILL_OTHER_TRIBE_SEND	S06_MyUpperCom.cpp	/^void MyPlayUserCom::U_CHECK_KILL_OTHER_TRIBE_SEND( char tAvatarName1[MAX_AVATAR_NAME_LENGTH], char tAvatarName2[MAX_AVATAR_NAME_LENGTH] )$/;"	f	class:MyPlayUserCom
+U_DEMAND_BROADCAST_DATA	S06_MyUpperCom.cpp	/^void MyRelayCom::U_DEMAND_BROADCAST_DATA( int tSort, BYTE tData[MAX_BROADCAST_DATA_SIZE] )$/;"	f	class:MyRelayCom
+U_DEMAND_BROADCAST_INFO	S06_MyUpperCom.cpp	/^void MyCenterCom::U_DEMAND_BROADCAST_INFO( int tInfoSort, BYTE tInfoData[MAX_BROADCAST_INFO_SIZE] )$/;"	f	class:MyCenterCom
+U_EVENT_FOR_ZONE_SEND	S06_MyUpperCom.cpp	/^void MyPlayUserCom::U_EVENT_FOR_ZONE_SEND(int tPlayUserIndex)$/;"	f	class:MyPlayUserCom
+U_EVENT_FOR_ZONE_SEND	S06_MyUpperCom.cpp	/^void MyPlayUserCom::U_EVENT_FOR_ZONE_SEND(int tPlayUserIndex, int tKillNum)$/;"	f	class:MyPlayUserCom
+U_EVENT_INFO_SEND	S06_MyUpperCom.cpp	/^void MyPlayUserCom::U_EVENT_INFO_SEND( char tID[MAX_USER_ID_LENGTH], int tSort )$/;"	f	class:MyPlayUserCom
+U_FIND_AVATAR_FOR_ZONE_SEND	S06_MyUpperCom.cpp	/^void MyPlayUserCom::U_FIND_AVATAR_FOR_ZONE_SEND( char tAvatarName[MAX_AVATAR_NAME_LENGTH] )$/;"	f	class:MyPlayUserCom
+U_GET_CASH_ITEM_INFO_FOR_EXTRA_SEND	S06_MyUpperCom.cpp	/^BOOL MyExtraCom::U_GET_CASH_ITEM_INFO_FOR_EXTRA_SEND()$/;"	f	class:MyExtraCom
+U_GET_CASH_SIZE_FOR_EXTRA_SEND	S06_MyUpperCom.cpp	/^BOOL MyExtraCom::U_GET_CASH_SIZE_FOR_EXTRA_SEND( char tID[MAX_USER_ID_LENGTH] )$/;"	f	class:MyExtraCom
+U_GUILD_WORK_FOR_EXTRA_SEND	S06_MyUpperCom.cpp	/^BOOL MyExtraCom::U_GUILD_WORK_FOR_EXTRA_SEND( int tSort, BYTE tData[MAX_GUILD_WORK_SIZE] )$/;"	f	class:MyExtraCom
+U_HACK_NAME_SEND	S06_MyUpperCom.cpp	/^void MyPlayUserCom::U_HACK_NAME_SEND( char tID[MAX_USER_ID_LENGTH], char tHackName[MAX_HACK_NAME_LENGTH], int tHackSize )$/;"	f	class:MyPlayUserCom
+U_REGISTER_USER_FOR_ZONE_0_SEND	S06_MyUpperCom.cpp	/^void MyPlayUserCom::U_REGISTER_USER_FOR_ZONE_0_SEND( char tID[MAX_USER_ID_LENGTH] )$/;"	f	class:MyPlayUserCom
+U_REGISTER_USER_FOR_ZONE_1_SEND	S06_MyUpperCom.cpp	/^void MyPlayUserCom::U_REGISTER_USER_FOR_ZONE_1_SEND( int tPlayUserIndex, char tID[MAX_USER_ID_LENGTH], char tAvatarName[MAX_AVATAR_NAME_LENGTH], int tLogoutInfo[6] )$/;"	f	class:MyPlayUserCom
+U_REGISTER_USER_FOR_ZONE_2_SEND	S06_MyUpperCom.cpp	/^void MyPlayUserCom::U_REGISTER_USER_FOR_ZONE_2_SEND( int tPlayUserIndex, char tID[MAX_USER_ID_LENGTH], AVATAR_INFO *tAvatarInfo, int tEffectValue[MAX_AVATAR_EFFECT_SORT_NUM][2], AUTH_INFO *tAuthInfo)$/;"	f	class:MyPlayUserCom
+U_REGISTER_USER_FOR_ZONE_3_SEND	S06_MyUpperCom.cpp	/^void MyPlayUserCom::U_REGISTER_USER_FOR_ZONE_3_SEND( int tPlayUserIndex, char tID[MAX_USER_ID_LENGTH], AVATAR_INFO *tAvatarInfo, int tEffectValue[MAX_AVATAR_EFFECT_SORT_NUM][2], AUTH_INFO *tAuthInfo)$/;"	f	class:MyPlayUserCom
+U_SET_MOVE_ITEM_FOR_ZONE_SEND	S06_MyUpperCom.cpp	/^void MyPlayUserCom::U_SET_MOVE_ITEM_FOR_ZONE_SEND( int tPlayUserIndex, MOVE_ITEM_INFO *tMoveItemInfo)$/;"	f	class:MyPlayUserCom
+U_TRIBE_BANK_INFO_LOAD_SEND	S06_MyUpperCom.cpp	/^void MyPlayUserCom::U_TRIBE_BANK_INFO_LOAD_SEND( int tTribe, int tTribeBankInfoIndex, int tInventoryMoney )$/;"	f	class:MyPlayUserCom
+U_TRIBE_BANK_INFO_SAVE_SEND	S06_MyUpperCom.cpp	/^void MyPlayUserCom::U_TRIBE_BANK_INFO_SAVE_SEND( int tMoney[4] )$/;"	f	class:MyPlayUserCom
+U_TRIBE_BANK_INFO_VIEW_SEND	S06_MyUpperCom.cpp	/^void MyPlayUserCom::U_TRIBE_BANK_INFO_VIEW_SEND( int tTribe )$/;"	f	class:MyPlayUserCom
+U_UNREGISTER_USER_FOR_ZONE_SEND	S06_MyUpperCom.cpp	/^void MyPlayUserCom::U_UNREGISTER_USER_FOR_ZONE_SEND( int tPlayUserIndex, char tID[MAX_USER_ID_LENGTH], AVATAR_INFO *tAvatarInfo, AUTH_INFO *tAuthInfo )$/;"	f	class:MyPlayUserCom
+U_UPDATE_AUTH_KEY	S06_MyUpperCom.cpp	/^void MyPlayUserCom::U_UPDATE_AUTH_KEY (char szID[MAX_USER_ID_LENGTH], char szAuthKey[3][MAX_MOUSE_PASSWORD_LENGTH])$/;"	f	class:MyPlayUserCom
+U_UPDATE_CASH_ITEM_INFO_FOR_EXTRA_SEND	S06_MyUpperCom.cpp	/^BOOL MyExtraCom::U_UPDATE_CASH_ITEM_INFO_FOR_EXTRA_SEND()$/;"	f	class:MyExtraCom
+U_USE_PACKAGE_ITEM_FOR_EXTRA_SEND	S06_MyUpperCom.cpp	/^BOOL MyExtraCom::U_USE_PACKAGE_ITEM_FOR_EXTRA_SEND( char tID[MAX_USER_ID_LENGTH], int iIndex, char tAvatarName[MAX_AVATAR_NAME_LENGTH] )$/;"	f	class:MyExtraCom
+U_ZONE_OK_FOR_CENTER_SEND	S06_MyUpperCom.cpp	/^void MyCenterCom::U_ZONE_OK_FOR_CENTER_SEND( void )$/;"	f	class:MyCenterCom
+U_ZONE_OK_FOR_EXTRA_SEND	S06_MyUpperCom.cpp	/^BOOL MyExtraCom::U_ZONE_OK_FOR_EXTRA_SEND( void )$/;"	f	class:MyExtraCom
+U_ZONE_OK_FOR_PLAYUSER_SEND	S06_MyUpperCom.cpp	/^void MyPlayUserCom::U_ZONE_OK_FOR_PLAYUSER_SEND( void )$/;"	f	class:MyPlayUserCom
+U_ZONE_OK_FOR_RELAY_SEND	S06_MyUpperCom.cpp	/^void MyRelayCom::U_ZONE_OK_FOR_RELAY_SEND( void )$/;"	f	class:MyRelayCom
+Update	BroadCastMgr.cpp	/^int CBroadCastMgr::Update (std::string name)$/;"	f	class:CBroadCastMgr
+Update	S07_MyGame04.cpp	/^void AVATAR_OBJECT::Update( float tPostTime )$/;"	f	class:AVATAR_OBJECT
+Update	S07_MyGame05.cpp	/^void MONSTER_OBJECT::Update( int tObjectIndex, float tPostTime )$/;"	f	class:MONSTER_OBJECT
+Update	S07_MyGame06.cpp	/^void ITEM_OBJECT::Update( int tObjectIndex )$/;"	f	class:ITEM_OBJECT
+UpdateAddress	BroadCastMgr.cpp	/^bool CBroadCastMgr::UpdateAddress (std::string name, SOCKADDR_IN* pAddr)$/;"	f	class:CBroadCastMgr
+Vec2Cross	S13_Math_For_Server.cpp	/^float Vec2Cross(Vector2 const * v1, Vector2 const * v2)$/;"	f
+Vec2Dot	S13_Math_For_Server.cpp	/^float Vec2Dot(Vector2 const * v1, Vector2 const * v2)$/;"	f
+Vec2Length	S13_Math_For_Server.cpp	/^float Vec2Length(Vector2 const * v)$/;"	f
+Vec2LengthSq	S13_Math_For_Server.cpp	/^float Vec2LengthSq(Vector2 const * v)$/;"	f
+Vec2Normalize	S13_Math_For_Server.cpp	/^Vector2 * Vec2Normalize(Vector2 * out, Vector2 const * v)$/;"	f
+Vec2Transform	S13_Math_For_Server.cpp	/^Vector2 * Vec2Transform(Vector2 * out, Vector2 const * v, Matrix2 const * m)$/;"	f
+Vec3Cross	S13_Math_For_Server.cpp	/^Vector3 * Vec3Cross(Vector3 * out, Vector3 const * v1, Vector3 const * v2)$/;"	f
+Vec3Dot	S13_Math_For_Server.cpp	/^float Vec3Dot(Vector3 const * v1, Vector3 const * v2)$/;"	f
+Vec3Length	S13_Math_For_Server.cpp	/^float Vec3Length(Vector3 const * v)$/;"	f
+Vec3LengthSq	S13_Math_For_Server.cpp	/^float Vec3LengthSq(Vector3 const * v)$/;"	f
+Vec3Normalize	S13_Math_For_Server.cpp	/^Vector3 * Vec3Normalize(Vector3 * out, Vector3 const * v)$/;"	f
+Vec3Transform	S13_Math_For_Server.cpp	/^Vector3 * Vec3Transform(Vector3 * out, Vector3 const * v, Matrix2 const * m)$/;"	f
+Vector2	S13_Math_For_Server.cpp	/^Vector2::Vector2(const Vector2& rkV)$/;"	f	class:Vector2
+Vector2	S13_Math_For_Server.cpp	/^Vector2::Vector2(const float* afTuple)$/;"	f	class:Vector2
+Vector2	S13_Math_For_Server.cpp	/^Vector2::Vector2(float fX, float fY)$/;"	f	class:Vector2
+Vector3	S13_Math_For_Server.cpp	/^Vector3::Vector3(const Vector3& rkV)$/;"	f	class:Vector3
+Vector3	S13_Math_For_Server.cpp	/^Vector3::Vector3(const float* afTuple)$/;"	f	class:Vector3
+Vector3	S13_Math_For_Server.cpp	/^Vector3::Vector3(float fX, float fY, float fZ)$/;"	f	class:Vector3
+WORLD_FOR_GXD	S09_MyWorld.cpp	/^WORLD_FOR_GXD::WORLD_FOR_GXD( void )$/;"	f	class:WORLD_FOR_GXD
+WRITE_FOR_LOG	S02_MyServer.cpp	/^void MyServer::WRITE_FOR_LOG( char *tLogData )$/;"	f	class:MyServer
+W_ACK_INCOMING_UDP	S04_MyWork02.cpp	/^void W_ACK_INCOMING_UDP (int tUserIndex)$/;"	f
+W_ADD_ITEM_SEND	S04_MyWork02.cpp	/^void W_ADD_ITEM_SEND( int tUserIndex )$/;"	f
+W_ANIMAL_STATE_SEND	S04_MyWork02.cpp	/^void W_ANIMAL_STATE_SEND( int tUserIndex )$/;"	f
+W_AUTO_CHECK_ASK_RECV	S04_MyWork02.cpp	/^void W_AUTO_CHECK_ASK_RECV( int tUserIndex )$/;"	f
+W_AVATAR_ACTION_SEND	S04_MyWork02.cpp	/^void W_AVATAR_ACTION_SEND( int tUserIndex )$/;"	f
+W_BAN_PLAYER	S06_MyUpperCom.cpp	/^void MyCenterCom::W_BAN_PLAYER (void)$/;"	f	class:MyCenterCom
+W_BROADCAST_DATA	S06_MyUpperCom.cpp	/^void MyRelayCom::W_BROADCAST_DATA( void )$/;"	f	class:MyRelayCom
+W_BROADCAST_INFO	S06_MyUpperCom.cpp	/^void MyCenterCom::W_BROADCAST_INFO( void )$/;"	f	class:MyCenterCom
+W_BUY_CASH_ITEM_SEND	S04_MyWork02.cpp	/^void W_BUY_CASH_ITEM_SEND( int tUserIndex )$/;"	f
+W_BUY_PSHOP_SEND	S04_MyWork02.cpp	/^void W_BUY_PSHOP_SEND( int tUserIndex )$/;"	f
+W_CENTER_GET_RANK_INFO	S06_MyUpperCom.cpp	/^void MyCenterCom::W_CENTER_GET_RANK_INFO(const char *aName, int tUserIndex)$/;"	f	class:MyCenterCom
+W_CHANGE_AUTO_INFO	S04_MyWork02.cpp	/^void W_CHANGE_AUTO_INFO( int tUserIndex )$/;"	f
+W_CHANGE_PLAYTIMETOTEACHERPOINT	S04_MyWork02.cpp	/^void W_CHANGE_PLAYTIMETOTEACHERPOINT (int tUserIndex)$/;"	f
+W_CHANGE_TO_TRIBE4_SEND	S04_MyWork02.cpp	/^void W_CHANGE_TO_TRIBE4_SEND( int tUserIndex )$/;"	f
+W_CHECK_AUTH_KEY	S04_MyWork02.cpp	/^void W_CHECK_AUTH_KEY (int tUserIndex)$/;"	f
+W_CHECK_EVENT	S06_MyUpperCom.cpp	/^void MyCenterCom::W_CHECK_EVENT( void )$/;"	f	class:MyCenterCom
+W_CHECK_EVENT_INFO	S04_MyWork02.cpp	/^void W_CHECK_EVENT_INFO(int tUserIndex)$/;"	f
+W_CHECK_HACK_INFO	S04_MyWork02.cpp	/^void W_CHECK_HACK_INFO( int tUserIndex )$/;"	f
+W_CHECK_N_PROTECT_2	S04_MyWork02.cpp	/^void W_CHECK_N_PROTECT_2( int tUserIndex )$/;"	f
+W_CLIENT_OK_FOR_ZONE_SEND	S04_MyWork02.cpp	/^void W_CLIENT_OK_FOR_ZONE_SEND( int tUserIndex )$/;"	f
+W_CORRECT_ANSWER	S04_MyWork02.cpp	/^void W_CORRECT_ANSWER( int tUserIndex )$/;"	f
+W_DEMAND_PSHOP_SEND	S04_MyWork02.cpp	/^void W_DEMAND_PSHOP_SEND( int tUserIndex )$/;"	f
+W_DEMAND_ZONE_SERVER_INFO_2	S04_MyWork02.cpp	/^void W_DEMAND_ZONE_SERVER_INFO_2( int tUserIndex )$/;"	f
+W_DUEL_ANSWER_SEND	S04_MyWork02.cpp	/^void W_DUEL_ANSWER_SEND( int tUserIndex )$/;"	f
+W_DUEL_ASK_SEND	S04_MyWork02.cpp	/^void W_DUEL_ASK_SEND( int tUserIndex )$/;"	f
+W_DUEL_CANCEL_SEND	S04_MyWork02.cpp	/^void W_DUEL_CANCEL_SEND( int tUserIndex )$/;"	f
+W_DUEL_START_SEND	S04_MyWork02.cpp	/^void W_DUEL_START_SEND( int tUserIndex )$/;"	f
+W_END_PSHOP_SEND	S04_MyWork02.cpp	/^void W_END_PSHOP_SEND( int tUserIndex )$/;"	f
+W_EXCHANGE_ITEM_SEND	S04_MyWork02.cpp	/^void W_EXCHANGE_ITEM_SEND( int tUserIndex )$/;"	f
+W_FAIL_MOVE_ZONE_2_SEND	S04_MyWork02.cpp	/^void W_FAIL_MOVE_ZONE_2_SEND( int tUserIndex )$/;"	f
+W_FRIEND_ANSWER_SEND	S04_MyWork02.cpp	/^void W_FRIEND_ANSWER_SEND( int tUserIndex )$/;"	f
+W_FRIEND_ASK_SEND	S04_MyWork02.cpp	/^void W_FRIEND_ASK_SEND( int tUserIndex )$/;"	f
+W_FRIEND_CANCEL_SEND	S04_MyWork02.cpp	/^void W_FRIEND_CANCEL_SEND( int tUserIndex )$/;"	f
+W_FRIEND_DELETE_SEND	S04_MyWork02.cpp	/^void W_FRIEND_DELETE_SEND( int tUserIndex )$/;"	f
+W_FRIEND_FIND_SEND	S04_MyWork02.cpp	/^void W_FRIEND_FIND_SEND( int tUserIndex )$/;"	f
+W_FRIEND_MAKE_SEND	S04_MyWork02.cpp	/^void W_FRIEND_MAKE_SEND( int tUserIndex )$/;"	f
+W_FUNCTION	S04_MyWork02.cpp	/^WORKER_FUNCTION W_FUNCTION[256];$/;"	v
+W_GENERAL_CHAT_SEND	S04_MyWork02.cpp	/^void W_GENERAL_CHAT_SEND( int tUserIndex )$/;"	f
+W_GENERAL_NOTICE_SEND	S04_MyWork02.cpp	/^void W_GENERAL_NOTICE_SEND( int tUserIndex )$/;"	f
+W_GENERAL_SHOUT_SEND	S04_MyWork02.cpp	/^void W_GENERAL_SHOUT_SEND( int tUserIndex )$/;"	f
+W_GET_CASH_ITEM_INFO_SEND	S04_MyWork02.cpp	/^void W_GET_CASH_ITEM_INFO_SEND(int tUserIndex)$/;"	f
+W_GET_CASH_SIZE_SEND	S04_MyWork02.cpp	/^void W_GET_CASH_SIZE_SEND( int tUserIndex )$/;"	f
+W_GET_RANK_INFO	S04_MyWork02.cpp	/^void W_GET_RANK_INFO(int tUserIndex)$/;"	f
+W_GUILD_ANSWER_SEND	S04_MyWork02.cpp	/^void W_GUILD_ANSWER_SEND( int tUserIndex )$/;"	f
+W_GUILD_ASK_SEND	S04_MyWork02.cpp	/^void W_GUILD_ASK_SEND( int tUserIndex )$/;"	f
+W_GUILD_CANCEL_SEND	S04_MyWork02.cpp	/^void W_GUILD_CANCEL_SEND( int tUserIndex )$/;"	f
+W_GUILD_CHAT_SEND	S04_MyWork02.cpp	/^void W_GUILD_CHAT_SEND( int tUserIndex )$/;"	f
+W_GUILD_FIND_SEND	S04_MyWork02.cpp	/^void W_GUILD_FIND_SEND( int tUserIndex )$/;"	f
+W_GUILD_NOTICE_SEND	S04_MyWork02.cpp	/^void W_GUILD_NOTICE_SEND( int tUserIndex )$/;"	f
+W_GUILD_WORK_SEND	S04_MyWork02.cpp	/^void W_GUILD_WORK_SEND( int tUserIndex )$/;"	f
+W_HIGH_ITEM_SEND	S04_MyWork02.cpp	/^void W_HIGH_ITEM_SEND( int tUserIndex )$/;"	f
+W_IMPROVE_ITEM_SEND	S04_MyWork02.cpp	/^void W_IMPROVE_ITEM_SEND( int tUserIndex )$/;"	f
+W_LOW_ITEM_SEND	S04_MyWork02.cpp	/^void W_LOW_ITEM_SEND( int tUserIndex )$/;"	f
+W_MAKE_ITEM_SEND	S04_MyWork02.cpp	/^void W_MAKE_ITEM_SEND( int tUserIndex )$/;"	f
+W_MAKE_SKILL_SEND	S04_MyWork02.cpp	/^void W_MAKE_SKILL_SEND( int tUserIndex )$/;"	f
+W_MEDAL_EXCHANGE_SEND	S04_MyWork02.cpp	/^void W_MEDAL_EXCHANGE_SEND( int tUserIndex )$/;"	f
+W_NOTICE	S06_MyUpperCom.cpp	/^void MyCenterCom::W_NOTICE( void )$/;"	f	class:MyCenterCom
+W_PARTY_ANSWER_SEND	S04_MyWork02.cpp	/^void W_PARTY_ANSWER_SEND( int tUserIndex )$/;"	f
+W_PARTY_ASK_SEND	S04_MyWork02.cpp	/^void W_PARTY_ASK_SEND( int tUserIndex )$/;"	f
+W_PARTY_BREAK_SEND	S04_MyWork02.cpp	/^void W_PARTY_BREAK_SEND( int tUserIndex )$/;"	f
+W_PARTY_CANCEL_SEND	S04_MyWork02.cpp	/^void W_PARTY_CANCEL_SEND( int tUserIndex )$/;"	f
+W_PARTY_CHAT_SEND	S04_MyWork02.cpp	/^void W_PARTY_CHAT_SEND( int tUserIndex )$/;"	f
+W_PARTY_EXILE_SEND	S04_MyWork02.cpp	/^void W_PARTY_EXILE_SEND( int tUserIndex )$/;"	f
+W_PARTY_INFO_SEND	S04_MyWork02.cpp	/^void W_PARTY_INFO_SEND( int tUserIndex )$/;"	f
+W_PARTY_JOIN_SEND	S04_MyWork02.cpp	/^void W_PARTY_JOIN_SEND( int tUserIndex )$/;"	f
+W_PARTY_LEAVE_SEND	S04_MyWork02.cpp	/^void W_PARTY_LEAVE_SEND( int tUserIndex )$/;"	f
+W_PARTY_MAKE_SEND	S04_MyWork02.cpp	/^void W_PARTY_MAKE_SEND( int tUserIndex )$/;"	f
+W_POLICE_INFO	S06_MyUpperCom.cpp	/^void MyCenterCom::W_POLICE_INFO( void )$/;"	f	class:MyCenterCom
+W_PROCESS_ATTACK_SEND	S04_MyWork02.cpp	/^void W_PROCESS_ATTACK_SEND( int tUserIndex )$/;"	f
+W_PROCESS_DATA_SEND	S04_MyWork02.cpp	/^void W_PROCESS_DATA_SEND( int tUserIndex )$/;"	f
+W_PROCESS_QUEST_SEND	S04_MyWork02.cpp	/^void W_PROCESS_QUEST_SEND( int tUserIndex )$/;"	f
+W_PSHOP_ITEM_INFO_SEND	S04_MyWork02.cpp	/^void W_PSHOP_ITEM_INFO_SEND( int tUserIndex )$/;"	f
+W_RANK_INFO_SEND	S06_MyUpperCom.cpp	/^void MyCenterCom::W_RANK_INFO_SEND(void)$/;"	f	class:MyCenterCom
+W_RANK_TOTAL_INFO_SEND	S06_MyUpperCom.cpp	/^void MyCenterCom::W_RANK_TOTAL_INFO_SEND(int TotalSize)$/;"	f	class:MyCenterCom
+W_RANK_TOTAL_SEND	S06_MyUpperCom.cpp	/^void MyCenterCom::W_RANK_TOTAL_SEND(void)$/;"	f	class:MyCenterCom
+W_REGISTER_AVATAR_SEND	S04_MyWork02.cpp	/^void W_REGISTER_AVATAR_SEND( int tUserIndex )$/;"	f
+W_REQUEST_PRESENT	S04_MyWork02.cpp	/^void W_REQUEST_PRESENT (int tUserIndex)$/;"	f
+W_SECRET_CHAT	S06_MyUpperCom.cpp	/^void MyCenterCom::W_SECRET_CHAT( void )$/;"	f	class:MyCenterCom
+W_SECRET_CHAT_SEND	S04_MyWork02.cpp	/^void W_SECRET_CHAT_SEND( int tUserIndex )$/;"	f
+W_SERCH_AVATAR	S06_MyUpperCom.cpp	/^void MyCenterCom::W_SERCH_AVATAR( void )$/;"	f	class:MyCenterCom
+W_SET_EVENT	S06_MyUpperCom.cpp	/^void MyCenterCom::W_SET_EVENT( void )$/;"	f	class:MyCenterCom
+W_SET_GM_ORDER	S06_MyUpperCom.cpp	/^void MyCenterCom::W_SET_GM_ORDER( void )$/;"	f	class:MyCenterCom
+W_SET_GM_ORDER_MOVE_AVATAR	S06_MyUpperCom.cpp	/^void MyCenterCom::W_SET_GM_ORDER_MOVE_AVATAR( void )$/;"	f	class:MyCenterCom
+W_SHUTDOWN	S06_MyUpperCom.cpp	/^void MyCenterCom::W_SHUTDOWN( void )$/;"	f	class:MyCenterCom
+W_SPEED_HACK_SEND	S04_MyWork02.cpp	/^void W_SPEED_HACK_SEND(int tUserIndex)$/;"	f
+W_START	S06_MyUpperCom.cpp	/^void MyCenterCom::W_START( void )$/;"	f	class:MyCenterCom
+W_START_PSHOP_SEND	S04_MyWork02.cpp	/^void W_START_PSHOP_SEND( int tUserIndex )$/;"	f
+W_TEACHER_ANSWER_SEND	S04_MyWork02.cpp	/^void W_TEACHER_ANSWER_SEND( int tUserIndex )$/;"	f
+W_TEACHER_ASK_SEND	S04_MyWork02.cpp	/^void W_TEACHER_ASK_SEND( int tUserIndex )$/;"	f
+W_TEACHER_CANCEL_SEND	S04_MyWork02.cpp	/^void W_TEACHER_CANCEL_SEND( int tUserIndex )$/;"	f
+W_TEACHER_END_SEND	S04_MyWork02.cpp	/^void W_TEACHER_END_SEND( int tUserIndex )$/;"	f
+W_TEACHER_START_SEND	S04_MyWork02.cpp	/^void W_TEACHER_START_SEND( int tUserIndex )$/;"	f
+W_TEACHER_STATE_SEND	S04_MyWork02.cpp	/^void W_TEACHER_STATE_SEND( int tUserIndex )$/;"	f
+W_TEMP_REGISTER_SEND	S04_MyWork02.cpp	/^void W_TEMP_REGISTER_SEND( int tUserIndex )$/;"	f
+W_TOGGLE_STOPWATCH	S04_MyWork02.cpp	/^void W_TOGGLE_STOPWATCH (int tUserIndex)$/;"	f
+W_TRADE_ANSWER_SEND	S04_MyWork02.cpp	/^void W_TRADE_ANSWER_SEND( int tUserIndex )$/;"	f
+W_TRADE_ASK_SEND	S04_MyWork02.cpp	/^void W_TRADE_ASK_SEND( int tUserIndex )$/;"	f
+W_TRADE_CANCEL_SEND	S04_MyWork02.cpp	/^void W_TRADE_CANCEL_SEND( int tUserIndex )$/;"	f
+W_TRADE_END_SEND	S04_MyWork02.cpp	/^void W_TRADE_END_SEND( int tUserIndex )$/;"	f
+W_TRADE_MENU_SEND	S04_MyWork02.cpp	/^void W_TRADE_MENU_SEND( int tUserIndex )$/;"	f
+W_TRADE_START_SEND	S04_MyWork02.cpp	/^void W_TRADE_START_SEND( int tUserIndex )$/;"	f
+W_TRIBE_BANK_SEND	S04_MyWork02.cpp	/^void W_TRIBE_BANK_SEND( int tUserIndex )$/;"	f
+W_TRIBE_CHAT	S06_MyUpperCom.cpp	/^void MyCenterCom::W_TRIBE_CHAT( void )$/;"	f	class:MyCenterCom
+W_TRIBE_CHAT_SEND	S04_MyWork02.cpp	/^void W_TRIBE_CHAT_SEND( int tUserIndex )$/;"	f
+W_TRIBE_NOTICE_SEND	S04_MyWork02.cpp	/^void W_TRIBE_NOTICE_SEND( int tUserIndex )$/;"	f
+W_TRIBE_VOTE_SEND	S04_MyWork02.cpp	/^void W_TRIBE_VOTE_SEND( int tUserIndex )$/;"	f
+W_TRIBE_WORK_SEND	S04_MyWork02.cpp	/^void W_TRIBE_WORK_SEND( int tUserIndex )$/;"	f
+W_UPDATE_AUTH_KEY	S04_MyWork02.cpp	/^void W_UPDATE_AUTH_KEY (int tUserIndex)$/;"	f
+W_UPDATE_AVATAR_ACTION	S04_MyWork02.cpp	/^void W_UPDATE_AVATAR_ACTION( int tUserIndex )$/;"	f
+W_UPDATE_CASH_ITEM_INFO_FOR_CENTER	S06_MyUpperCom.cpp	/^void MyCenterCom::W_UPDATE_CASH_ITEM_INFO_FOR_CENTER(int tResult)$/;"	f	class:MyCenterCom
+W_UPDATE_CASH_ITEM_INFO_FOR_ZONE	S06_MyUpperCom.cpp	/^void MyCenterCom::W_UPDATE_CASH_ITEM_INFO_FOR_ZONE()$/;"	f	class:MyCenterCom
+W_USE_HOTKEY_ITEM_SEND	S04_MyWork02.cpp	/^void W_USE_HOTKEY_ITEM_SEND( int tUserIndex )$/;"	f
+W_USE_INVENTORY_ITEM_SEND	S04_MyWork02.cpp	/^void W_USE_INVENTORY_ITEM_SEND( int tUserIndex )$/;"	f
+W_WORLD_INFO	S06_MyUpperCom.cpp	/^void MyCenterCom::W_WORLD_INFO( void )$/;"	f	class:MyCenterCom
+W_XTRAP_MAP_FILE_CHANGE_FOR_ZONE	S06_MyUpperCom.cpp	/^void MyCenterCom::W_XTRAP_MAP_FILE_CHANGE_FOR_ZONE( void )$/;"	f	class:MyCenterCom
+W_XTRAP_STEP_2	S04_MyWork02.cpp	/^void W_XTRAP_STEP_2( int tUserIndex )$/;"	f
+W_ZONE_CONNECTION_INFO	S06_MyUpperCom.cpp	/^void MyCenterCom::W_ZONE_CONNECTION_INFO( void )$/;"	f	class:MyCenterCom
+W_ZONE_OTHER_CONNECTION_INFO	S06_MyUpperCom.cpp	/^void MyCenterCom::W_ZONE_OTHER_CONNECTION_INFO(int tZoneNumber)$/;"	f	class:MyCenterCom
+WakeUp_Sphinx	S11_Sphinx.cpp	/^BOOL CSphinx::WakeUp_Sphinx()$/;"	f	class:CSphinx
+XTrapMapFileChange	S14_CXTrap.cpp	/^bool CXTrap::XTrapMapFileChange()$/;"	f	class:CXTrap
+XTrapSessionInit	S14_CXTrap.cpp	/^bool CXTrap::XTrapSessionInit(char userSessionBuf[XTRAP_SESSION_BUF_SIZE])$/;"	f	class:CXTrap
+XTrapStep1	S14_CXTrap.cpp	/^unsigned long CXTrap::XTrapStep1(char userSessionBuf[XTRAP_SESSION_BUF_SIZE], char* sendBuf)$/;"	f	class:CXTrap
+XTrapStep3	S14_CXTrap.cpp	/^bool CXTrap::XTrapStep3(char userSessionBuf[XTRAP_SESSION_BUF_SIZE], char* tPacket)$/;"	f	class:CXTrap
+XTrap_CS_Step1	XTrap4Server.c	/^PFN_XTrap_CS_Step1			XTrap_CS_Step1			= 0;$/;"	v
+XTrap_CS_Step3	XTrap4Server.c	/^PFN_XTrap_CS_Step3			XTrap_CS_Step3			= 0;$/;"	v
+XTrap_S_FreeDll	XTrap4Server.c	/^unsigned int XTrap_S_FreeDll()$/;"	f
+XTrap_S_LoadCMF	XTrap4Server.c	/^unsigned int XTrap_S_LoadCMF(void* pBuf, unsigned int ulSize, unsigned int ulCount, char* pFileName, unsigned int ulMax)$/;"	f
+XTrap_S_LoadDll	XTrap4Server.c	/^unsigned int XTrap_S_LoadDll()$/;"	f
+XTrap_S_SessionInit	XTrap4Server.c	/^PFN_XTrap_S_SessionInit		XTrap_S_SessionInit		= 0;$/;"	v
+XTrap_S_SetActiveCode	XTrap4Server.c	/^PFN_XTrap_S_SetActiveCode	XTrap_S_SetActiveCode	= 0; $/;"	v
+XTrap_S_SetOption	XTrap4Server.c	/^PFN_XTrap_S_SetOption		XTrap_S_SetOption		= 0;$/;"	v
+XTrap_S_Start	XTrap4Server.c	/^PFN_XTrap_S_Start			XTrap_S_Start			= 0;$/;"	v
+ZONEMAININFO	S07_MyGame06.cpp	/^ZONEMAININFO::ZONEMAININFO( void )$/;"	f	class:ZONEMAININFO
+ZONENPCINFO	S07_MyGame06.cpp	/^ZONENPCINFO::ZONENPCINFO( void )$/;"	f	class:ZONENPCINFO
+add_job	tpool.cpp	/^int CThreadPool::add_job(void (*routine)(void *arg_ptr), void *arg_ptr)$/;"	f	class:CThreadPool
+add_single_thread	tpool.cpp	/^int CThreadPool::add_single_thread(eThreadType thread_type, pthread_t *thread_id_ptr, bool to_be_inserted)$/;"	f	class:CThreadPool
+check_opt_arg	main.cpp	540;"	d	file:
+child_sighandlers	signal.cpp	/^} child_sighandlers[] = {$/;"	v	typeref:struct:__anon1	file:
+clear_query	oracle.cpp	/^void COracle::clear_query(void)$/;"	f	class:COracle
+clear_res	mysql.cpp	/^void CMySQL::clear_res(void)$/;"	f	class:CMySQL
+clear_res	pgsql.cpp	/^void CPgSQL::clear_res(void)$/;"	f	class:CPgSQL
+connect	dummy_dp.cpp	/^void *CDummyDP::connect(const char *hostname_str_const_ptr, int port_num, const char *db_name_str_const_ptr,$/;"	f	class:CDummyDP
+connect	dummy_dp.cpp	/^void *CDummyDP::connect(string hostname_str_obj, int port_num, string db_name_str_obj,$/;"	f	class:CDummyDP
+connect	dummy_dp.cpp	/^void *CDummyDP::connect(void)$/;"	f	class:CDummyDP
+connect	mysql.cpp	/^MYSQL* CMySQL::connect(const char *hostname_str_const_ptr, int port_num, const char *db_name_str_const_ptr,$/;"	f	class:CMySQL
+connect	mysql.cpp	/^MYSQL* CMySQL::connect(string hostname_str_obj, int port_num, string db_name_str_obj,$/;"	f	class:CMySQL
+connect	mysql.cpp	/^MYSQL* CMySQL::connect(void)$/;"	f	class:CMySQL
+connect	oracle.cpp	/^Connection* COracle::connect(const char *hostname_str_const_ptr, int port_num,$/;"	f	class:COracle
+connect	oracle.cpp	/^Connection* COracle::connect(string hostname_str_obj, int port_num,$/;"	f	class:COracle
+connect	oracle.cpp	/^Connection* COracle::connect(void)$/;"	f	class:COracle
+connect	pgsql.cpp	/^PGconn* CPgSQL::connect(const char *dbname_str_const_ptr)$/;"	f	class:CPgSQL
+connect	pgsql.cpp	/^PGconn* CPgSQL::connect(const char *hostname_str_const_ptr, int port_num, const char *db_name_str_const_ptr,$/;"	f	class:CPgSQL
+connect	pgsql.cpp	/^PGconn* CPgSQL::connect(string hostname_str_obj, int port_num, string db_name_str_obj,$/;"	f	class:CPgSQL
+connect	pgsql.cpp	/^PGconn* CPgSQL::connect(void)$/;"	f	class:CPgSQL
+connect_thread	S06_MyUpperCom.cpp	/^void MyCenterCom::connect_thread(void)$/;"	f	class:MyCenterCom
+connect_thread	S06_MyUpperCom.cpp	/^void MyRelayCom::connect_thread(void)$/;"	f	class:MyRelayCom
+create_pid_file	cts_util.cpp	/^int create_pid_file(void)$/;"	f
+destroy	tpool.cpp	/^void CThreadPool::destroy(void) $/;"	f	class:CThreadPool
+destroy_score_board	score_board.cpp	/^void CScoreBoard::destroy_score_board(void) throw (Exception)$/;"	f	class:CScoreBoard
+destroy_score_board_mutex	score_board.cpp	/^void CScoreBoard::destroy_score_board_mutex(void) $/;"	f	class:CScoreBoard
+disconnect	dummy_dp.cpp	/^void CDummyDP::disconnect(void)$/;"	f	class:CDummyDP
+disconnect	mysql.cpp	/^void CMySQL::disconnect(void)$/;"	f	class:CMySQL
+disconnect	oracle.cpp	/^void COracle::disconnect(void)$/;"	f	class:COracle
+disconnect	pgsql.cpp	/^void CPgSQL::disconnect(void)$/;"	f	class:CPgSQL
+do_ping	mysql.cpp	/^int CMySQL::do_ping()$/;"	f	class:CMySQL
+dump_score_board_out	score_board.cpp	/^void CScoreBoard::dump_score_board_out(void)$/;"	f	class:CScoreBoard
+escape_string	mysql.cpp	/^unsigned long CMySQL::escape_string(char *to, const char *from, size_t length)$/;"	f	class:CMySQL
+escape_string	pgsql.cpp	/^int CPgSQL::escape_string(char *to, const char *from, size_t length)$/;"	f	class:CPgSQL
+exec_query	mysql.cpp	/^int CMySQL::exec_query(char *query_str_ptr)$/;"	f	class:CMySQL
+exec_query	mysql.cpp	/^int CMySQL::exec_query(char *query_str_ptr, CFLAG flag)$/;"	f	class:CMySQL
+exec_query	mysql.cpp	/^int CMySQL::exec_query(string &query_str_ref)$/;"	f	class:CMySQL
+exec_query	oracle.cpp	/^bool COracle::exec_query(char *query_str_ptr)$/;"	f	class:COracle
+exec_query	oracle.cpp	/^bool COracle::exec_query(string &query_str_ref)$/;"	f	class:COracle
+exec_query	pgsql.cpp	/^int CPgSQL::exec_query(char *query_str_ptr)$/;"	f	class:CPgSQL
+exec_query	pgsql.cpp	/^int CPgSQL::exec_query(char *query_str_ptr, CFLAG flag)$/;"	f	class:CPgSQL
+exec_query	pgsql.cpp	/^int CPgSQL::exec_query(string &query_str_ref)$/;"	f	class:CPgSQL
+g	cts_util.cpp	/^struct gjrand g;$/;"	v	typeref:struct:gjrand
+g_BroadCastMgr	BroadCastMgr.cpp	/^CBroadCastMgr g_BroadCastMgr;$/;"	v
+g_config_str_obj	main.cpp	/^string g_config_str_obj;$/;"	v
+g_listen_socket	main.cpp	/^Socket g_listen_socket;$/;"	v
+g_log_obj_ptr	main.cpp	/^CLogging *g_log_obj_ptr;$/;"	v
+g_score_board_obj_ptr	main.cpp	/^CScoreBoard *g_score_board_obj_ptr;$/;"	v
+getCriticalAttackDefValue	S07_MyGame02.cpp	/^unsigned int MyGame::getCriticalAttackDefValue( AVATAR_OBJECT *_attacker, AVATAR_OBJECT *_defenser )$/;"	f	class:MyGame
+get_affected_rows	mysql.cpp	/^my_ulonglong CMySQL::get_affected_rows(void)$/;"	f	class:CMySQL
+get_cm_work_status	score_board.cpp	/^unsigned int CScoreBoard::get_cm_work_status(void) $/;"	f	class:CScoreBoard
+get_cmd_tuples	pgsql.cpp	/^int CPgSQL::get_cmd_tuples(void)$/;"	f	class:CPgSQL
+get_error_msg	mysql.cpp	/^string &CMySQL::get_error_msg(void)$/;"	f	class:CMySQL
+get_error_msg	oracle.cpp	/^string COracle::get_error_msg(void)$/;"	f	class:COracle
+get_error_msg	pgsql.cpp	/^string &CPgSQL::get_error_msg(void)$/;"	f	class:CPgSQL
+get_num_fields	mysql.cpp	/^int CMySQL::get_num_fields(void)$/;"	f	class:CMySQL
+get_num_fields	pgsql.cpp	/^int CPgSQL::get_num_fields(void)$/;"	f	class:CPgSQL
+get_num_rows	mysql.cpp	/^int CMySQL::get_num_rows(void)$/;"	f	class:CMySQL
+get_num_rows	oracle.cpp	/^int  COracle::get_num_rows(void)$/;"	f	class:COracle
+get_num_tuples	pgsql.cpp	/^int CPgSQL::get_num_tuples(void)$/;"	f	class:CPgSQL
+get_pid_file	cts_util.cpp	/^pid_t get_pid_file(void)$/;"	f
+get_proc_updated	score_board.cpp	/^int CScoreBoard::get_proc_updated(pid_t pid)$/;"	f	class:CScoreBoard
+get_res	mysql.cpp	/^MYSQL_RES *CMySQL::get_res(void)$/;"	f	class:CMySQL
+get_res	pgsql.cpp	/^PGresult *CPgSQL::get_res(void)$/;"	f	class:CPgSQL
+get_result	mysql.cpp	/^int CMySQL::get_result(CFLAG flag)$/;"	f	class:CMySQL
+get_result	pgsql.cpp	/^int CPgSQL::get_result(CFLAG flag)$/;"	f	class:CPgSQL
+get_thread_updated	score_board.cpp	/^int CScoreBoard::get_thread_updated(pid_t pid)$/;"	f	class:CScoreBoard
+get_value	mysql.cpp	/^char *CMySQL::get_value(int row, int field)$/;"	f	class:CMySQL
+get_value	pgsql.cpp	/^char *CPgSQL::get_value(int tuple, int field)$/;"	f	class:CPgSQL
+guard_sighandlers	signal.cpp	/^} guard_sighandlers[] = {$/;"	v	typeref:struct:__anon2	file:
+hXTrap4Server	XTrap4Server.c	/^HINSTANCE hXTrap4Server = 0;$/;"	v
+hXTrap4Server	XTrap4Server.c	/^void *hXTrap4Server	= 0;$/;"	v
+hand	signal.cpp	/^	void (*hand)(int);$/;"	m	struct:__anon1	file:
+hand	signal.cpp	/^	void (*hand)(int);$/;"	m	struct:__anon2	file:
+init_score_board	score_board.cpp	/^void CScoreBoard::init_score_board(void) throw (Exception)$/;"	f	class:CScoreBoard
+init_signals	signal.cpp	/^int init_signals(int flag)$/;"	f
+init_single_thread	tpool.cpp	/^void *CThreadPool::init_single_thread(void *arg_ptr)$/;"	f	class:CThreadPool
+init_slot	score_board.cpp	/^void CScoreBoard::init_slot(unsigned int num_of_slots) throw(Exception)$/;"	f	class:CScoreBoard
+init_thread_pool	tpool.cpp	/^int CThreadPool::init_thread_pool(void)$/;"	f	class:CThreadPool
+let_cm_spin	score_board.cpp	/^void CScoreBoard::let_cm_spin(void) $/;"	f	class:CScoreBoard
+let_cm_stop	score_board.cpp	/^void CScoreBoard::let_cm_stop(unsigned int shutdown_rsn) $/;"	f	class:CScoreBoard
+lib_log	oracle.cpp	/^void lib_log(const char* log_str)$/;"	f
+load_config	main.cpp	/^static void load_config(void) $/;"	f	file:
+mAVATAR_OBJECT	S07_MyGame04.cpp	/^AVATAR_OBJECT mAVATAR_OBJECT[MAX_AVATAR_OBJECT_NUM];$/;"	v
+mBaseTickCountForLogic	main.cpp	/^DWORD mBaseTickCountForLogic;$/;"	v
+mCENTER_COM	S06_MyUpperCom.cpp	/^MyCenterCom mCENTER_COM;$/;"	v
+mCHATLOG	S06_MyUpperCom.cpp	/^MyChatLog mCHATLOG;$/;"	v
+mCheckLogicFlag	main.cpp	/^BOOL mCheckLogicFlag;$/;"	v
+mEXTRA_COM	S06_MyUpperCom.cpp	/^MyExtraCom mEXTRA_COM;$/;"	v
+mGAME	S07_MyGame01.cpp	/^MyGame mGAME;$/;"	v
+mGAMELOG	S06_MyUpperCom.cpp	/^MyGameLog mGAMELOG;$/;"	v
+mHACKINFO	S07_MyGame06.cpp	/^HACKINFO mHACKINFO;$/;"	v
+mITEM	S08_MyGameSystem.cpp	/^ITEMSYSTEM mITEM;$/;"	v
+mITEM_OBJECT	S07_MyGame06.cpp	/^ITEM_OBJECT mITEM_OBJECT[MAX_ITEM_OBJECT_NUM];$/;"	v
+mLEVEL	S08_MyGameSystem.cpp	/^LEVELSYSTEM mLEVEL;$/;"	v
+mMONSTER	S08_MyGameSystem.cpp	/^MONSTERSYSTEM mMONSTER;$/;"	v
+mMONSTER_OBJECT	S07_MyGame05.cpp	/^MONSTER_OBJECT mMONSTER_OBJECT[MAX_MONSTER_OBJECT_NUM];$/;"	v
+mNPC	S08_MyGameSystem.cpp	/^NPCSYSTEM mNPC;$/;"	v
+mPAT	S08_MyGameSystem.cpp	/^PATSYSTEM mPAT;$/;"	v
+mPLAYUSER_COM	S06_MyUpperCom.cpp	/^MyPlayUserCom mPLAYUSER_COM;$/;"	v
+mPostTickCountForLogic	main.cpp	/^DWORD mPostTickCountForLogic;$/;"	v
+mQUEST	S08_MyGameSystem.cpp	/^QUESTSYSTEM mQUEST;$/;"	v
+mRELAY_COM	S06_MyUpperCom.cpp	/^MyRelayCom mRELAY_COM;$/;"	v
+mSERVER	S02_MyServer.cpp	/^MyServer mSERVER;$/;"	v
+mSERVER_INFO	main.cpp	/^SERVER_INFO mSERVER_INFO;$/;"	v
+mSKILL	S08_MyGameSystem.cpp	/^SKILLSYSTEM mSKILL;$/;"	v
+mSUMMON	S10_MySummonSystem.cpp	/^MySummonSystem mSUMMON;$/;"	v
+mSphinx	S11_Sphinx.cpp	/^CSphinx mSphinx;$/;"	v
+mTRANSFER	S05_MyTransfer.cpp	/^MyTransfer mTRANSFER;$/;"	v
+mUSER	S03_MyUser.cpp	/^MyUser *mUSER = NULL;$/;"	v
+mUTIL	S07_MyGame03.cpp	/^MyUtil mUTIL;$/;"	v
+mWORK	S04_MyWork01.cpp	/^MyWork mWORK;$/;"	v
+mWORLD	S09_MyWorld.cpp	/^WORLD_FOR_GXD mWORLD;$/;"	v
+mXTRAP	S14_CXTrap.cpp	/^CXTrap mXTRAP;$/;"	v
+mZONEMAININFO	S07_MyGame06.cpp	/^ZONEMAININFO mZONEMAININFO;$/;"	v
+mZONENPCINFO	S07_MyGame06.cpp	/^ZONENPCINFO mZONENPCINFO;$/;"	v
+main	main.cpp	/^int main(int argc, char **argv)$/;"	f
+maintenance_child_proc	score_board.cpp	/^unsigned int CScoreBoard::maintenance_child_proc(unsigned int proc_work_time)$/;"	f	class:CScoreBoard
+mark_proc_dead	score_board.cpp	/^int CScoreBoard::mark_proc_dead(pid_t pid)$/;"	f	class:CScoreBoard
+mask	signal.cpp	/^static sigset_t mask;$/;"	v	file:
+mtpool_thread	tpool.cpp	/^int CThreadPool::mtpool_thread(void)$/;"	f	class:CThreadPool
+operator !=	S13_Math_For_Server.cpp	/^bool Matrix2::operator != ( const Matrix2& mat) const$/;"	f	class:Matrix2
+operator !=	S13_Math_For_Server.cpp	/^bool Plane::operator != ( const Plane& p ) const$/;"	f	class:Plane
+operator !=	S13_Math_For_Server.cpp	/^bool Vector2::operator != ( const Vector2& rkV) const$/;"	f	class:Vector2
+operator !=	S13_Math_For_Server.cpp	/^bool Vector3::operator != ( const Vector3& rkV) const$/;"	f	class:Vector3
+operator ()	S13_Math_For_Server.cpp	/^float Matrix2::operator () ( int Row, int Col ) const$/;"	f	class:Matrix2
+operator ()	S13_Math_For_Server.cpp	/^float& Matrix2::operator () ( int Row, int Col )$/;"	f	class:Matrix2
+operator *	S13_Math_For_Server.cpp	/^Matrix2 Matrix2::operator * ( const Matrix2& mat) const$/;"	f	class:Matrix2
+operator *	S13_Math_For_Server.cpp	/^Matrix2 Matrix2::operator * ( float f ) const$/;"	f	class:Matrix2
+operator *	S13_Math_For_Server.cpp	/^Matrix2 operator * ( float f, const Matrix2& mat)$/;"	f
+operator *	S13_Math_For_Server.cpp	/^Plane Plane::operator * ( float f ) const$/;"	f	class:Plane
+operator *	S13_Math_For_Server.cpp	/^Plane operator * (float f, const Plane& p )$/;"	f
+operator *	S13_Math_For_Server.cpp	/^Vector2 Vector2::operator* (float fScalar) const$/;"	f	class:Vector2
+operator *	S13_Math_For_Server.cpp	/^Vector2 operator * ( float fScalar, const Vector2 & rkV )$/;"	f
+operator *	S13_Math_For_Server.cpp	/^Vector3 Vector3::operator* (float fScalar) const$/;"	f	class:Vector3
+operator *	S13_Math_For_Server.cpp	/^Vector3 operator * ( float fScalar, const Vector3 & rkV )$/;"	f
+operator *=	S13_Math_For_Server.cpp	/^Matrix2& Matrix2::operator *= ( const Matrix2& mat )$/;"	f	class:Matrix2
+operator *=	S13_Math_For_Server.cpp	/^Matrix2& Matrix2::operator *= ( float f )$/;"	f	class:Matrix2
+operator *=	S13_Math_For_Server.cpp	/^Plane& Plane::operator *= ( float f )$/;"	f	class:Plane
+operator *=	S13_Math_For_Server.cpp	/^Vector2& Vector2::operator*= (float fScalar)$/;"	f	class:Vector2
+operator *=	S13_Math_For_Server.cpp	/^Vector3& Vector3::operator*= (float fScalar)$/;"	f	class:Vector3
+operator +	S13_Math_For_Server.cpp	/^Matrix2 Matrix2::operator + ( const Matrix2& mat) const$/;"	f	class:Matrix2
+operator +	S13_Math_For_Server.cpp	/^Matrix2 Matrix2::operator + () const$/;"	f	class:Matrix2
+operator +	S13_Math_For_Server.cpp	/^Plane Plane::operator + () const$/;"	f	class:Plane
+operator +	S13_Math_For_Server.cpp	/^Vector2 Vector2::operator+ () const$/;"	f	class:Vector2
+operator +	S13_Math_For_Server.cpp	/^Vector2 Vector2::operator+ (const Vector2& rkV) const$/;"	f	class:Vector2
+operator +	S13_Math_For_Server.cpp	/^Vector3 Vector3::operator+ () const$/;"	f	class:Vector3
+operator +	S13_Math_For_Server.cpp	/^Vector3 Vector3::operator+ (const Vector3& rkV) const$/;"	f	class:Vector3
+operator +=	S13_Math_For_Server.cpp	/^Matrix2& Matrix2::operator += ( const Matrix2& mat)$/;"	f	class:Matrix2
+operator +=	S13_Math_For_Server.cpp	/^Vector2& Vector2::operator+= (const Vector2& rkV)$/;"	f	class:Vector2
+operator +=	S13_Math_For_Server.cpp	/^Vector3& Vector3::operator+= (const Vector3& rkV)$/;"	f	class:Vector3
+operator -	S13_Math_For_Server.cpp	/^Matrix2 Matrix2::operator - ( const Matrix2& mat) const$/;"	f	class:Matrix2
+operator -	S13_Math_For_Server.cpp	/^Matrix2 Matrix2::operator - () const$/;"	f	class:Matrix2
+operator -	S13_Math_For_Server.cpp	/^Plane Plane::operator - () const$/;"	f	class:Plane
+operator -	S13_Math_For_Server.cpp	/^Vector2 Vector2::operator- () const$/;"	f	class:Vector2
+operator -	S13_Math_For_Server.cpp	/^Vector2 Vector2::operator- (const Vector2& rkV) const$/;"	f	class:Vector2
+operator -	S13_Math_For_Server.cpp	/^Vector3 Vector3::operator- () const$/;"	f	class:Vector3
+operator -	S13_Math_For_Server.cpp	/^Vector3 Vector3::operator- (const Vector3& rkV) const$/;"	f	class:Vector3
+operator -=	S13_Math_For_Server.cpp	/^Matrix2& Matrix2::operator -= ( const Matrix2& mat)$/;"	f	class:Matrix2
+operator -=	S13_Math_For_Server.cpp	/^Vector2& Vector2::operator-= (const Vector2& rkV)$/;"	f	class:Vector2
+operator -=	S13_Math_For_Server.cpp	/^Vector3& Vector3::operator-= (const Vector3& rkV)$/;"	f	class:Vector3
+operator /	S13_Math_For_Server.cpp	/^Matrix2 Matrix2::operator \/ ( float f) const$/;"	f	class:Matrix2
+operator /	S13_Math_For_Server.cpp	/^Plane Plane::operator \/ ( float f ) const$/;"	f	class:Plane
+operator /	S13_Math_For_Server.cpp	/^Vector2 Vector2::operator\/ (float fScalar) const$/;"	f	class:Vector2
+operator /	S13_Math_For_Server.cpp	/^Vector3 Vector3::operator\/ (float fScalar) const$/;"	f	class:Vector3
+operator /=	S13_Math_For_Server.cpp	/^Matrix2& Matrix2::operator \/= ( float f )$/;"	f	class:Matrix2
+operator /=	S13_Math_For_Server.cpp	/^Plane& Plane::operator \/= ( float f )$/;"	f	class:Plane
+operator /=	S13_Math_For_Server.cpp	/^Vector2& Vector2::operator\/= (float fScalar)$/;"	f	class:Vector2
+operator /=	S13_Math_For_Server.cpp	/^Vector3& Vector3::operator\/= (float fScalar)$/;"	f	class:Vector3
+operator ==	S13_Math_For_Server.cpp	/^bool Matrix2::operator == ( const Matrix2& mat) const$/;"	f	class:Matrix2
+operator ==	S13_Math_For_Server.cpp	/^bool Plane::operator == ( const Plane& p ) const$/;"	f	class:Plane
+operator ==	S13_Math_For_Server.cpp	/^bool Vector2::operator == ( const Vector2& rkV) const$/;"	f	class:Vector2
+operator ==	S13_Math_For_Server.cpp	/^bool Vector3::operator == ( const Vector3& rkV) const$/;"	f	class:Vector3
+operator const float*	S13_Math_For_Server.cpp	/^Matrix2::operator const float* () const$/;"	f	class:Matrix2
+operator const float*	S13_Math_For_Server.cpp	/^Plane::operator const float* () const$/;"	f	class:Plane
+operator const float*	S13_Math_For_Server.cpp	/^Vector2::operator const float* () const$/;"	f	class:Vector2
+operator const float*	S13_Math_For_Server.cpp	/^Vector3::operator const float* () const$/;"	f	class:Vector3
+operator float*	S13_Math_For_Server.cpp	/^Matrix2::operator float* ()$/;"	f	class:Matrix2
+operator float*	S13_Math_For_Server.cpp	/^Plane::operator float* ()$/;"	f	class:Plane
+operator float*	S13_Math_For_Server.cpp	/^Vector2::operator float* ()$/;"	f	class:Vector2
+operator float*	S13_Math_For_Server.cpp	/^Vector3::operator float* ()$/;"	f	class:Vector3
+rand_mir	cts_util.cpp	/^unsigned int rand_mir(void)$/;"	f
+rand_mir_init	cts_util.cpp	/^void rand_mir_init(void)$/;"	f
+run	tpool.cpp	/^int CThreadPool::run(void)$/;"	f	class:CThreadPool
+run	tpool.cpp	/^void CThreadPool::CThreadPoolMThread::run(void) $/;"	f	class:CThreadPool::CThreadPoolMThread
+set_db_conn_info	mysql.cpp	/^int CMySQL::set_db_conn_info(const char *hostname_str_const_ptr, int port_num, const char *db_name_str_const_ptr,$/;"	f	class:CMySQL
+set_db_conn_info	oracle.cpp	/^int COracle::set_db_conn_info(const char *hostname_str_const_ptr, int port_num,$/;"	f	class:COracle
+set_db_conn_info	pgsql.cpp	/^int CPgSQL::set_db_conn_info(const char *hostname_str_const_ptr, int port_num, const char *db_name_str_const_ptr,$/;"	f	class:CPgSQL
+set_listen_socket	worker_process.cpp	/^void CWorkerProcess::set_listen_socket(SOCKET listen_socket) throw(Exception) $/;"	f	class:CWorkerProcess
+set_nodelay	worker_process.cpp	/^int CWorkerProcess::set_nodelay(int cli_fd)$/;"	f	class:CWorkerProcess
+set_nonblock	worker_process.cpp	/^int CWorkerProcess::set_nonblock(int cli_fd)$/;"	f	class:CWorkerProcess
+set_sighandlers_child	signal.cpp	/^static int set_sighandlers_child(void) $/;"	f	file:
+set_sighandlers_guard	signal.cpp	/^static int set_sighandlers_guard(void) $/;"	f	file:
+sig	signal.cpp	/^	int sig;$/;"	m	struct:__anon1	file:
+sig	signal.cpp	/^	int sig;$/;"	m	struct:__anon2	file:
+sig_handler	worker_process.cpp	/^inline static void sig_handler(int signo)$/;"	f	file:
+signal_child	signal.cpp	/^static void signal_child(int sig)$/;"	f	file:
+signal_gstop	signal.cpp	/^static void signal_gstop(int sig)$/;"	f	file:
+signal_guard	signal.cpp	/^static void signal_guard(int sig)$/;"	f	file:
+spin_wait	cts_util.cpp	/^void  spin_wait(unsigned int dfs_sec, unsigned int dfs_usec)$/;"	f
+start_service	worker_thread.cpp	/^int CWorkerThread::start_service(Socket *client_socket_obj_ptr) $/;"	f	class:CWorkerThread
+start_svr_service	worker_process.cpp	/^int CWorkerProcess::start_svr_service(void) $/;"	f	class:CWorkerProcess
+svc_thread_context	worker_thread.cpp	/^void svc_thread_context(void *arg_ptr)$/;"	f
+tAVATAR_OBJECT1	S07_MyGame02.cpp	/^static AVATAR_OBJECT *tAVATAR_OBJECT1;$/;"	v	file:
+tAVATAR_OBJECT2	S07_MyGame02.cpp	/^static AVATAR_OBJECT *tAVATAR_OBJECT2;$/;"	v	file:
+tAttackBlockValue	S07_MyGame02.cpp	/^static int tAttackBlockValue;$/;"	v	file:
+tAttackDetermineValue	S07_MyGame02.cpp	/^static int tAttackDetermineValue;$/;"	v	file:
+tAttackPowerUpRatio	S07_MyGame02.cpp	/^static float tAttackPowerUpRatio;$/;"	v	file:
+tAttackPowerValue	S07_MyGame02.cpp	/^static int tAttackPowerValue;$/;"	v	file:
+tAttackSuccessValue	S07_MyGame02.cpp	/^static int tAttackSuccessValue;$/;"	v	file:
+tChargingValue	S07_MyGame02.cpp	/^static int tChargingValue;$/;"	v	file:
+tDamageValue	S07_MyGame02.cpp	/^static int tDamageValue;$/;"	v	file:
+tDeathDirection	S07_MyGame02.cpp	/^static float tDeathDirection[3];$/;"	v	file:
+tDeathLength	S07_MyGame02.cpp	/^static float tDeathLength;$/;"	v	file:
+tDefensePowerValue	S07_MyGame02.cpp	/^static int tDefensePowerValue;$/;"	v	file:
+tElementAttackPower	S07_MyGame02.cpp	/^static int tElementAttackPower;$/;"	v	file:
+tElementAttackPowerUpRatio	S07_MyGame02.cpp	/^static float tElementAttackPowerUpRatio;$/;"	v	file:
+tElementDefensePower	S07_MyGame02.cpp	/^static int tElementDefensePower;$/;"	v	file:
+tMONSTER_OBJECT	S07_MyGame02.cpp	/^static MONSTER_OBJECT *tMONSTER_OBJECT;$/;"	v	file:
+tMinDamageValueWithAvatar	S07_MyGame02.cpp	/^static int tMinDamageValueWithAvatar = 5;$/;"	v	file:
+tReturnDamageProbability	S07_MyGame02.cpp	/^static int tReturnDamageProbability;$/;"	v	file:
+tReturnDamageValue	S07_MyGame02.cpp	/^static int tReturnDamageValue;$/;"	v	file:
+tShieldDamageValue	S07_MyGame02.cpp	/^static int tShieldDamageValue;$/;"	v	file:
+thread_context_lock	worker_thread.cpp	/^static Semaphore thread_context_lock;$/;"	v	file:
+thread_lock	tpool.cpp	/^Semaphore CThreadPool::thread_lock;$/;"	m	class:CThreadPool	file:
+tpool_add_work	tpool_q.cpp	/^int tpool_add_work(tpool_t tpool, void (*routine)(void *arg), void *arg)$/;"	f
+tpool_destroy	tpool_q.cpp	/^int tpool_destroy(tpool_t tpool, int finish)$/;"	f
+tpool_init	tpool_q.cpp	/^int tpool_init(tpool_t *tpoolp, int num_worker_threads, int max_queue_size, int do_not_block_when_full)$/;"	f
+tpool_thread	tpool_q.cpp	/^void *tpool_thread(void *arg)$/;"	f
+unlink_pid_file	cts_util.cpp	/^int unlink_pid_file(void)$/;"	f
+unset_db_conn_info	mysql.cpp	/^inline void CMySQL::unset_db_conn_info(void) $/;"	f	class:CMySQL
+unset_db_conn_info	oracle.cpp	/^inline void COracle::unset_db_conn_info(void) $/;"	f	class:COracle
+unset_db_conn_info	pgsql.cpp	/^inline void CPgSQL::unset_db_conn_info(void) $/;"	f	class:CPgSQL
+update_slot	score_board.cpp	/^void CScoreBoard::update_slot(pid_t pid)$/;"	f	class:CScoreBoard
+~CBroadCastMgr	BroadCastMgr.cpp	/^CBroadCastMgr::~CBroadCastMgr(void)$/;"	f	class:CBroadCastMgr
+~CMySQL	mysql.cpp	/^CMySQL::~CMySQL()$/;"	f	class:CMySQL
+~COracle	oracle.cpp	/^COracle::~COracle()$/;"	f	class:COracle
+~CPgSQL	pgsql.cpp	/^CPgSQL::~CPgSQL()$/;"	f	class:CPgSQL
+~CScoreBoard	score_board.cpp	/^CScoreBoard::~CScoreBoard(void) throw()$/;"	f	class:CScoreBoard
+~CSphinx	S11_Sphinx.cpp	/^CSphinx::~CSphinx()$/;"	f	class:CSphinx
+~CThreadPool	tpool.cpp	/^CThreadPool::~CThreadPool(void) $/;"	f	class:CThreadPool
+~CWorkerProcess	worker_process.cpp	/^CWorkerProcess::~CWorkerProcess(void) $/;"	f	class:CWorkerProcess
+~CWorkerThread	worker_thread.cpp	/^CWorkerThread::~CWorkerThread(void) throw ()$/;"	f	class:CWorkerThread
+~CXTrap	S14_CXTrap.cpp	/^CXTrap::~CXTrap()$/;"	f	class:CXTrap

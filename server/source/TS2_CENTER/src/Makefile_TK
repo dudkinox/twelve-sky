@@ -1,0 +1,155 @@
+#****************************************************************************
+#
+#   CopyRight(C) 2003 Sean Kim All Rights reserved.
+#   Author : Sean Kim (sean@0x31.com)
+#
+#   $Id: Makefile,v 1.50 2007/10/19 01:33:22 sean Exp $
+#
+#   Redistribution and use in source and binary forms, with or with out
+#   modification, are not permitted without author's permission.
+#
+#****************************************************************************
+
+#program name 
+SVRNAME = ts2_centerd
+
+#program path
+PRGPATH = /user/service
+
+#version
+VERSION = $(shell cat ../VERSION)
+# Which Compiler ?
+CC 	   = g++
+
+# UTILITIES
+STRIP  = strip
+CP     = cp
+RM     = rm
+TAR    = tar
+LS     = ls
+
+# Which OS ?
+SYS = $(shell uname -s)
+ifeq (${SYS}, Linux)
+OS	   = -D__LINUX__
+endif
+
+#library directory
+LIBDIR     = -L/usr/local/lib\
+			 -L/usr/local/raslib/lib\
+			 -L/usr/local/lib/mysql\
+			 -L/usr/lib
+
+INCLUDEDIR = -I./../../raslib/include -I../include\
+			 -I./../../commonlib/include -I/usr/local/include\
+			 -I./../../P01_Common\
+			 -I/user/db/mysql/include/mysql
+#			 -I/usr/local/include/orapp\
+#			 -I$(ORACLE_HOME)/rdbms/demo -I$(ORACLE_HOME)/rdbms/public
+
+#libraries
+ifeq (${SYS}, FreeBSD)
+LIBS	   = -lras\
+			 -lpthread
+endif
+ifeq (${SYS}, Linux)
+LIBS	   = -lras\
+			 -lpthread\
+			 -lm\
+			 -ldl\
+			 ./../../commonlib/src/libwin2unix.a\
+			 /user/db/mysql/lib/mysql/libmysqlclient_r.a\
+			 /usr/local/lib/libz.a
+#/usr/lib/libz.a\
+
+#-ldl\
+#/usr/local/lib/libggsrv25_Linux_GCC4X.a
+endif
+
+#EXTRA_LIBS = /usr/local/lib/orapp/liborapp.a 
+#EXTRA_LIBS =
+#$(ORACLE_HOME)/lib/libclntsh.so \
+#/usr/local/lib/orapp/liborapp.a
+
+#compile option
+#CFLAGS     = -fPIC -rdynamic -Wall -O2 -g3 -ggdb3 -Wimplicit -Wreturn-type -Wunused -Wuninitialized
+#CFLAGS     = -fPIC -rdynamic -Wall -O2 -Wimplicit -Wreturn-type -Wunused -Wuninitialized
+CFLAGS     = -fPIC -rdynamic -Wall -O3 -g3 -ggdb3 -Wimplicit -Wreturn-type -Wunused -Wuninitialized\
+	         -Wparentheses -Wshadow -Wpointer-arith -Woverloaded-virtual -Wendif-labels -fno-strict-aliasing\
+			 -Wundef -Wcast-align -Wconversion -Wformat-security -Wmissing-format-attribute
+#-m64
+
+#link  option 
+LFLAGS	   = 
+
+#Definition flag 
+#DFLAGS    = -D__RELEASE__ -DUSE_UDP -D__POLL__ -D__i686__
+DFLAGS    = -D__RELEASE__ -DUSE_UDP -D__EPOLL__ -D__x86_64__\
+			-DPROGPATH=\"${PRGPATH}\" -DSVR_VERSION=\"${VERSION}\" ${OS}\
+			-D__USE_MPM_WORKER__ -D_REENTRANT -DSVR_NAME=\"${SVRNAME}\"\
+			-D__NB__ -D__USE_X_TRAP__ -D__TK__ #-D__N_PROTECT__
+
+#install directory
+INSTALLDIR = ${PRGPATH}/bin
+
+# Source List
+HEADER = global.h worker_thread.h score_board.h\
+		 worker_process.h cts_signal.h\
+		 tpool.h tsvc_obj.h cts_util.h dummy_dp.h\
+		 cts_mysql.h\
+		 H01_MainApplication.h\
+		 H02_MyServer.h\
+		 H03_MyUser.h\
+		 H04_MyWork.h\
+		 H05_MyTransfer.h\
+		 H06_MyUpperCom.h\
+		 H07_MyGame.h\
+		 H08_MyDB.h
+#pgsql.h mysql.h oracle.h\
+
+SRC =  main.cpp worker_thread.cpp score_board.cpp\
+	   worker_process.cpp signal.cpp\
+	   tpool.cpp cts_util.cpp dummy_dp.cpp\
+	   cts_mysql.h\
+	   S01_MainApplication.cpp\
+	   S02_MyServer.cpp\
+	   S03_MyUser.cpp\
+	   S04_MyWork01.cpp\
+	   S04_MyWork02.cpp\
+	   S05_MyTransfer.cpp\
+	   S06_MyUpperCom.cpp\
+	   S07_MyGame01.cpp\
+	   S08_MyDB.cpp
+#pgsql.cpp mysql.cpp oracle.cpp\
+
+# Object List
+OBJ = main.o score_board.o worker_thread.o\
+	  worker_process.o signal.o tpool.o\
+	  cts_util.o dummy_dp.o\
+	  cts_mysql.o\
+	  S01_MainApplication.o\
+	  S02_MyServer.o\
+	  S03_MyUser.o\
+	  S04_MyWork01.o\
+	  S04_MyWork02.o\
+	  S05_MyTransfer.o\
+	  S06_MyUpperCom.o\
+	  S07_MyGame01.o\
+	  S08_MyDB.o
+#pgsql.o mysql.o oracle.o\
+
+all : Makefile_TK ${OBJ} version
+	${CC} ${CFLAGS} ${OBJ} -o ${SVRNAME} ${LIBDIR} ${LIBS} ${EXTRA_LIBS} ${LFLAGS}
+version :
+#ibn ../VERSION 
+.cpp.o : ${SRC} ${HEADER}
+	${CC} $(CFLAGS) -c -o $@ $< ${INCLUDEDIR} ${DFLAGS}
+dist: clean all
+	${STRIP} ${SVRNAME}	
+	${LS} -al ${SVRNAME} ${SVRNAME}_ctl ipcclean
+	${TAR} cvzf ctsd_${VERSION}.tar.gz ${SVRNAME} ${SVRNAME}_ctl ipcclean
+install:
+	${CP} -f $(SVRNAME) $(INSTALLDIR)
+	${CP} -f ipcclean $(INSTALLDIR)
+clean :
+	${RM} -f $(OBJ) ${HOSTSTATOBJ} $(SVRNAME) $(SVRNAME)_ctl *.log *.pid *.core core*.* *.tar.gz

@@ -1,0 +1,15 @@
+#!/bin/sh
+
+. ../compiler
+
+for i in blatnorm blatv
+do
+    echo $i
+    eval $CC $CFLAGS $i.c ../src/gjrand.a -lm -o $i
+done
+
+for i in bigpdb pdb tounif combin
+do
+    echo $i
+    eval $CC $CFLAGS $i.c -lm -o $i
+done

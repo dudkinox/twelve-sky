@@ -1,0 +1,26 @@
+blatj, blatm and blate use the *rand48 functions. These might be absent from
+some C libraries since the only "standard" that describes them is probably
+SYSV (TM) and even recent versions of that say they are obsolete. In the
+original SYSV implementation and most clones, these functions use a generator
+that is not as bad as some, but not good enough for the most demanding
+applications today.
+
+For instance try piping 10MegaBytes or so from blatj to testunif/slicerda or
+testunif/shuffle -r . Diehard doesn't like it either.
+
+blatgj_j, blatgj_m and blatgj_e use the equivalent gjrand_*rand48 functions
+from the gjrand library. These have a different underlying generator
+which passes all the tests i tried so far.
+
+blatj and blatgj_j produce uniform pseudo-random bits on standard output.
+They take a size arg followed by 3 seed args. The size arg can be "inf"
+or a positive integer for size in bytes. "inf" means to write forever.
+
+blatm and blatgj_m are similar but take a size arg followed by 1, 3, or 7
+seed args.
+
+The "gj" variants need to link against the gjrand library.
+
+The others need only the library with the *rand48 functions. On most systems
+that have these functions at all, they will probably be in the C standard
+library, linked by default.

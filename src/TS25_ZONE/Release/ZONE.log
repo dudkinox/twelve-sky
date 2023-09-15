@@ -1,0 +1,49 @@
+﻿  TimeLog.cpp
+  MyGAME01.cpp
+  MyGAME02.cpp
+  MyGAME03.cpp
+  MyGAME04.cpp
+  MyGAME05.cpp
+  MyGAME06.cpp
+  MyGAME07.cpp
+  MyGAMESYSTEM.cpp
+  MyServer.cpp
+  MySUMMONSYSTEM.cpp
+  MyTRANSFER.cpp
+  MyUpperCOM.cpp
+  MyUser.cpp
+  MyWORK01.cpp
+  MyWORK02.cpp
+  MyWORK03.cpp
+  MyWORK04.cpp
+  MyWORLD.cpp
+  MyGameLog.cpp
+  Generating Code...
+  Compiling...
+  ZONE.cpp
+  Generating Code...
+  Microsoft (R) Incremental Linker Version 14.38.32919.0
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  "/OUT:C:\Users\Cynegeirus\Desktop\12SKY2\12Sky2 Lunix Dosyaları\12Sky2 Lunix Dosyaları\TwelveSky2.5 Source Files\src\/_re/TS25_ZONE.exe" /INCREMENTAL:NO ../include/zdll.lib "../include/pthread/Pre-built.2/lib/x86/pthreadVC2.lib" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST:NO /DEBUG "/PDB:C:\Users\Cynegeirus\Desktop\12SKY2\12Sky2 Lunix Dosyaları\12Sky2 Lunix Dosyaları\TwelveSky2.5 Source Files\src\/_re/TS25_ZONE.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT "/IMPLIB:C:\Users\Cynegeirus\Desktop\12SKY2\12Sky2 Lunix Dosyaları\12Sky2 Lunix Dosyaları\TwelveSky2.5 Source Files\src\/_re/TS25_ZONE.lib" /MACHINE:X86 /SAFESEH Release\ZONE.res 
+  Release\TimeLog.obj 
+  Release\MyGAME01.obj 
+  Release\MyGAME02.obj 
+  Release\MyGAME03.obj 
+  Release\MyGAME04.obj 
+  Release\MyGAME05.obj 
+  Release\MyGAME06.obj 
+  Release\MyGAME07.obj 
+  Release\MyGAMESYSTEM.obj 
+  Release\MyServer.obj 
+  Release\MySUMMONSYSTEM.obj 
+  Release\MyTRANSFER.obj 
+  Release\MyUpperCOM.obj 
+  Release\MyUser.obj 
+  Release\MyWORK01.obj 
+  Release\MyWORK02.obj 
+  Release\MyWORK03.obj 
+  Release\MyWORK04.obj 
+  Release\MyWORLD.obj 
+  Release\MyGameLog.obj 
+  Release\ZONE.obj 
+  ZONE.vcxproj -> C:\Users\Cynegeirus\Desktop\12SKY2\12Sky2 Lunix Dosyaları\12Sky2 Lunix Dosyaları\TwelveSky2.5 Source Files\src\_re\TS25_ZONE.exe
