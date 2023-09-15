@@ -111,3 +111,9 @@ Replace `'db_username_12sky2'` with your database username.
 - Replace `'db_username_12sky2'` and `'YourPassword'` with your actual database username and password.
 - Pay close attention to security and permissions, and configure your server appropriately.
 - Keep your server and database passwords secure, and use strong passwords.
+
+## License
+This project is licensed under the [MIT License](LICENSE).
+
+## Issues, Feature Requests or Support
+Please use the [New Issue](https://github.com/akinbicer/TS25v1/issues/new) button to submit issues, feature requests or support issues directly to me. You can also send an e-mail to akin.bicer@outlook.com.tr.
