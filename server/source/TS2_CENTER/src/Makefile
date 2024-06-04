@@ -14,7 +14,7 @@
 SVRNAME = ts2_centerd
 
 #program path
-PRGPATH = /home/guitar/12sky/12sky/server/service
+PRGPATH = /home/guitar/12sky/twelve-sky/server/service
 
 #version
 VERSION = $(shell cat ../VERSION)
@@ -44,7 +44,7 @@ INCLUDEDIR = -I./../../raslib/include -I../include\
 			 -I./../../commonlib/include -I/usr/local/include\
 			 -I./../../P01_Common\
 			 -I/usr/include/mysql\
-			 -I/home/guitar/12sky/12sky/db/mysql/include/mysql
+			 -I/home/guitar/12sky/twelve-sky/db/mysql/include/mysql
 			 # -I./../../MYSQL\
 #			 -I/usr/local/include/orapp\
 #			 -I$(ORACLE_HOME)/rdbms/demo -I$(ORACLE_HOME)/rdbms/public
@@ -66,7 +66,7 @@ LIBS	   = -lras\
 			 # /usr/local/lib/libz.a
 			 # /usr/lib/x86_64-linux-gnu/libmysqlclient.a\
 #/usr/lib/libz.a\
-#			 /home/guitar/12sky/12sky/db/mysql/lib/mysql/libmysqlclient_r.a\
+#			 /home/guitar/12sky/twelve-sky/db/mysql/lib/mysql/libmysqlclient_r.a\
 
 #-ldl\
 #/usr/local/lib/libggsrv25_Linux_GCC4X.a
