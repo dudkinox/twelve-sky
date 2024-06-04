@@ -155,7 +155,7 @@ dist: clean all
 	${LS} -al ${SVRNAME} ${SVRNAME}_ctl ipcclean
 	${TAR} cvzf ctsd_${VERSION}.tar.gz ${SVRNAME} ${SVRNAME}_ctl ipcclean
 install:
-	${CP} -f $(SVRNAME) $(INSTALLDIR)
-	${CP} -f ipcclean $(INSTALLDIR)
+	sudo ${CP} -f $(SVRNAME) $(INSTALLDIR)
+	sudo ${CP} -f ipcclean $(INSTALLDIR)
 clean :
 	${RM} -f $(OBJ) ${HOSTSTATOBJ} $(SVRNAME) $(SVRNAME)_ctl *.log *.pid *.core core*.* *.tar.gz
