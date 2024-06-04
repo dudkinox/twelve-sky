@@ -1136,37 +1136,37 @@ BOOL MyGame::Init( void )
 	}
 	
 	
-	if( !mLEVEL.Init( "/user/service/bin/DATA/005_00001.IMG" ) )
+	if( !mLEVEL.Init( "/home/guitar/12sky/twelve-sky/server/service/bin/DATA/005_00001.IMG" ) )
 	{
 		LOG_TO_FILE_1("![%s] : Level ERROR\n", __FUNCTION__);
 		return FALSE;
 	}
 	
-	if( !mITEM.Init( "/user/service/bin/DATA/005_00002.IMG" ) )
+	if( !mITEM.Init( "/home/guitar/12sky/twelve-sky/server/service/bin/DATA/005_00002.IMG" ) )
 	{
 		LOG_TO_FILE_1("![%s] : Item error_new \n", __FUNCTION__);
 		return FALSE;
 	}
 	
-	if( !mSKILL.Init( "/user/service/bin/DATA/005_00003.IMG" ) )
+	if( !mSKILL.Init( "/home/guitar/12sky/twelve-sky/server/service/bin/DATA/005_00003.IMG" ) )
 	{	
 		LOG_TO_FILE_1("![%s] : Skill error\n", __FUNCTION__);
 		return FALSE;
 	}
 
-	if( !mMONSTER.Init( "/user/service/bin/DATA/005_00004.IMG" ) )
+	if( !mMONSTER.Init( "/home/guitar/12sky/twelve-sky/server/service/bin/DATA/005_00004.IMG" ) )
 	{	
 		LOG_TO_FILE_1("![%s] : Monster error\n", __FUNCTION__);
 		return FALSE;
 	}
 
-	if( !mNPC.Init( "/user/service/bin/DATA/005_00005.IMG" ) )
+	if( !mNPC.Init( "/home/guitar/12sky/twelve-sky/server/service/bin/DATA/005_00005.IMG" ) )
 	{
 		LOG_TO_FILE_1("![%s] : NPC error\n", __FUNCTION__);
 		return FALSE;
 	}
 
-	if( !mQUEST.Init( "/user/service/bin/DATA/005_00006.IMG" ) )
+	if( !mQUEST.Init( "/home/guitar/12sky/twelve-sky/server/service/bin/DATA/005_00006.IMG" ) )
 	{	
 		LOG_TO_FILE_1("![%s] : Quest error\n", __FUNCTION__);
 		return FALSE;
@@ -1204,7 +1204,7 @@ BOOL MyGame::Init( void )
     bAttackMonsterSymbol = true;
     /** 2009. 10. 27 : MonsterSymbol edit (wolf) */
 
-    mPremiumServerExpirationCountDown = -1; // ÇÁ¸®¹Ì¾ö ¼­¹ö(¿ùµå) ÀÔÀå±Ç ¸¸·á 5ºÐ Ä«¿îÆ® ´Ù¿î¿ë º¯¼ö. // @_Premium_Server_@
+    mPremiumServerExpirationCountDown = -1; // ï¿½ï¿½ï¿½ï¿½ï¿½Ì¾ï¿½ ï¿½ï¿½ï¿½ï¿½(ï¿½ï¿½ï¿½ï¿½) ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ 5ï¿½ï¿½ Ä«ï¿½ï¿½Æ® ï¿½Ù¿ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½. // @_Premium_Server_@
 
 	return TRUE;
 }
@@ -1306,7 +1306,7 @@ BOOL MyGame::LoadForAutoCheckInfo( void )
 		return FALSE;
 	}
 #else
-	sprintf( tempString01, "/user/service/bin/A01_AUTOCHECK/%05d.IMG", ( tAutoCheckAnswer1 * 10 + tAutoCheckAnswer2 + 1 ) );
+	sprintf( tempString01, "/home/guitar/12sky/twelve-sky/server/service/bin/A01_AUTOCHECK/%05d.IMG", ( tAutoCheckAnswer1 * 10 + tAutoCheckAnswer2 + 1 ) );
 	FILE *r_fp = NULL;
 	struct stat file_stat;
 
@@ -1379,7 +1379,7 @@ BOOL MyGame::LoadForSellItemInfo( void )
 	FILE *r_fp = NULL;
 	struct stat file_stat;
 
-	if(!(r_fp = fopen("/user/service/bin/DATA/SELL_ITEM_INFO.DAT", "r"))) {
+	if(!(r_fp = fopen("/home/guitar/12sky/twelve-sky/server/service/bin/DATA/SELL_ITEM_INFO.DAT", "r"))) {
 		return FALSE;
 	}
 		
@@ -1432,7 +1432,7 @@ void MyGame::SaveForSellItemInfo( void )
 	FILE *w_fp = NULL;
 	//struct stat file_stat;
 
-	if(!(w_fp = fopen("/user/service/bin/DATA/SELL_ITEM_INFO.DAT", "w"))) {
+	if(!(w_fp = fopen("/home/guitar/12sky/twelve-sky/server/service/bin/DATA/SELL_ITEM_INFO.DAT", "w"))) {
 		return;
 	}
 
@@ -1717,16 +1717,16 @@ void MyGame::Logic( float dTime )
     tPresentTime = localtime( &tCountSeconds );
 
     // @_Premium_Server_@
-    // ÇÁ¸®¹Ì¾ö ¼­¹ö(¿ùµå) ÀÔÀå±Ç ¸¸·á 5ºÐÀü Ä«¿îÆ® ÇÏ±â.
+    // ï¿½ï¿½ï¿½ï¿½ï¿½Ì¾ï¿½ ï¿½ï¿½ï¿½ï¿½(ï¿½ï¿½ï¿½ï¿½) ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ 5ï¿½ï¿½ï¿½ï¿½ Ä«ï¿½ï¿½Æ® ï¿½Ï±ï¿½.
     if ((mSERVER_INFO.mCheckPremiumServer == 1) && (tPresentTime != NULL)) {
         if ((tPresentTime->tm_hour == 23) && (tPresentTime->tm_min == 55)) {
             if (mPremiumServerExpirationCountDown < 0) {
                 mPremiumExpirationCountDownDate = mUTIL.ReturnNowDate();
-                mPremiumServerExpirationCountDown = 5; // Ä«¿îÆ® 5ºÐÀ¸·Î ¼³Á¤.
+                mPremiumServerExpirationCountDown = 5; // Ä«ï¿½ï¿½Æ® 5ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½.
             }
         }
 
-        // 5ºÐ Ä«¿îÆ® ½ÃÀÛ.
+        // 5ï¿½ï¿½ Ä«ï¿½ï¿½Æ® ï¿½ï¿½ï¿½ï¿½.
         if ((mPremiumServerExpirationCountDown >= 0) && ((mTickCount % 120) == 0)) {
             for( index01 = 0 ; index01 < mSERVER.mMAX_USER_NUM ; index01++ ) {
                 if( !mUSER[index01].mCheckConnectState ) {
@@ -1742,7 +1742,7 @@ void MyGame::Logic( float dTime )
             --mPremiumServerExpirationCountDown;
             if (mPremiumServerExpirationCountDown < 0) {
                 mPremiumServerExpirationCountDown = -1;
-                mUSER[index01].uPremiumServerExpirationDate = 0; // ½ÇÁ¦ DBÀÇ °ªÀ» update ÇÏÁö´Â ¾Ê½À´Ï´Ù.
+                mUSER[index01].uPremiumServerExpirationDate = 0; // ï¿½ï¿½ï¿½ï¿½ DBï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ update ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ê½ï¿½ï¿½Ï´ï¿½.
             }
         }
     } // @
@@ -1906,7 +1906,7 @@ void MyGame::Logic( float dTime )
 		}
 		mTRANSFER.B_MONSTER_ACTION_RECV( index01, mMONSTER_OBJECT[index01].mUniqueNumber, &mMONSTER_OBJECT[index01].mDATA, 2 );
 		//-----------------------------------------------------------------//
-		//[01].ÀÏ¹Ý,[02].¼º¼®,[03].¼öÈ£ºñ,[04].µ¿¸Í¼®,[05].¼öÈ£¼®,[06].¼®Â÷//
+		//[01].ï¿½Ï¹ï¿½,[02].ï¿½ï¿½ï¿½ï¿½,[03].ï¿½ï¿½È£ï¿½ï¿½,[04].ï¿½ï¿½ï¿½Í¼ï¿½,[05].ï¿½ï¿½È£ï¿½ï¿½,[06].ï¿½ï¿½ï¿½ï¿½//
 		//-----------------------------------------------------------------//
 		switch( mMONSTER_OBJECT[index01].mSpecialSortNumber )
 		{
@@ -2152,7 +2152,7 @@ int MyGame::ReturnTribeForSymbol( int tTribe )
 	return -1;
 }
 //RETURN_ALLIANCE_TRIBE
-// ÇÔ¼ö¸¦ È£ÃâÇÏ´Â ¼­¹ö¿¡ °ü°è¾øÀÌ µ¿¸Í¼¼·ÂÀ» ¸®ÅÏÇÏ´Â ÇÔ¼ö¸¦ º°µµ·Î ÀÛ¼ºÇÏ¿© ReturnAllianceTribe ÇÔ¼ö¸¦ ¼öÁ¤ÇÕ´Ï´Ù.
+// ï¿½Ô¼ï¿½ï¿½ï¿½ È£ï¿½ï¿½ï¿½Ï´ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Í¼ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½ ï¿½Ô¼ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Û¼ï¿½ï¿½Ï¿ï¿½ ReturnAllianceTribe ï¿½Ô¼ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Õ´Ï´ï¿½.
 int MyGame::ReturnAllianceTribe( int tTribe )
 {
     if((49 == mSERVER_INFO.mServerNumber) || (51 == mSERVER_INFO.mServerNumber) || (53 == mSERVER_INFO.mServerNumber)
@@ -3433,7 +3433,7 @@ void MyGame::Process_Zone_124( void )
 void MyGame::Process_Zone_071_TYPE( void )
 {
 }
-//PROCESS_ZONE_049_TYPE (°ËÅõ¼º)
+//PROCESS_ZONE_049_TYPE (ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½)
 void MyGame::Process_Zone_049_TYPE( void )
 {
 	int index01;
@@ -4041,7 +4041,7 @@ void MyGame::Process_Zone_049_TYPE( void )
 		return;
 	}
 }
-//PROCESS_ZONE_051_TYPE (±¤µµ¼º 20 ~ 29).
+//PROCESS_ZONE_051_TYPE (ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 20 ~ 29).
 void MyGame::Process_Zone_051_TYPE( void )
 {
 	int index01;
@@ -5105,12 +5105,12 @@ void MyGame::GetLevelBattleRewardInfo( int tLevel1, int tLevel2, int *tGainExper
 	
 	
 	
-	// 2009.10.26 : ±è¼º¼ö
-	// 26ÀÏ ¼ö·ÉÇÑ 4ºÐ±â10¿ù ¾÷µ¥ÀÌÆ® Á¤±ÔÀï ÆÐÄ¡ºÐ
-	// ¾Æ·¡ÀÇ /*/¸¦ //*/·Î °íÃÄÁÖ¸é ÇØ´ç ¾÷µ¥ÀÌÆ®ºÐÀÌ Àû¿ëµË´Ï´Ù.
-	// ¸íÀÏ ÇÊ¸®ÇÉ ÆÐÄ¡°¡ ÀÖ´Â °ü°è·Î ÀÛ¾÷³»¿ëÀ» ÁÖ¼®À¸·Î ¸·¾Æ ³õ½À´Ï´Ù.
-	// 2009.11.06 : ±è¼º¼ö
-	// ¿¢¼¿¿¡ ÀÖ´Â Á¤º¸¸¦ ÀÐÀ»¶§, int º¯¼ö¿¡ ¿À¹ö ÇÃ·Î¾î°¡ ¹ß»ýÇÏ´Â ÇÏ±â ¶§¹®¿¡ ÇÏµå ÄÚµùÀ¸·Î ´Ù½Ã º¯°æ
+	// 2009.10.26 : ï¿½è¼ºï¿½ï¿½
+	// 26ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 4ï¿½Ð±ï¿½10ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ® ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ä¡ï¿½ï¿½
+	// ï¿½Æ·ï¿½ï¿½ï¿½ /*/ï¿½ï¿½ //*/ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ö¸ï¿½ ï¿½Ø´ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ®ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ë´Ï´ï¿½.
+	// ï¿½ï¿½ï¿½ï¿½ ï¿½Ê¸ï¿½ï¿½ï¿½ ï¿½ï¿½Ä¡ï¿½ï¿½ ï¿½Ö´ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Û¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ö¼ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½.
+	// 2009.11.06 : ï¿½è¼ºï¿½ï¿½
+	// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ö´ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½, int ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ã·Î¾î°¡ ï¿½ß»ï¿½ï¿½Ï´ï¿½ ï¿½Ï±ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ïµï¿½ ï¿½Úµï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ù½ï¿½ ï¿½ï¿½ï¿½ï¿½
 	
 	if( tLevel2 > 0 )
 	{
@@ -6096,7 +6096,7 @@ void MyGame::Process_Zone_175_TYPE( void )
 		mZone175TypePostTick = 0;
 		mZone175TypeBattleState = 0;
 		return;
-	case  2 : //[1´Ü°è_ÀÔ±¸°³¹æ]
+	case  2 : //[1ï¿½Ü°ï¿½_ï¿½Ô±ï¿½ï¿½ï¿½ï¿½ï¿½]
 		if( mZone175TypePostTick < ( 120 * 1 ) )
 		{
 			return;
@@ -6115,7 +6115,7 @@ void MyGame::Process_Zone_175_TYPE( void )
 		mZone175TypePostTick = 0;
 		mZone175TypeBattleState = 0;
 		return;
-	case  3 : //[1´Ü°è_ÀÔ±¸Æó¼â]
+	case  3 : //[1ï¿½Ü°ï¿½_ï¿½Ô±ï¿½ï¿½ï¿½ï¿½]
 		if( mZone175TypePostTick < ( 120 * 2 ) )
 		{
 			return;
@@ -6134,7 +6134,7 @@ void MyGame::Process_Zone_175_TYPE( void )
 		mZone175TypePostTick = 0;
 		mZone175TypeBattleState = 0;
 		return;
-	case  4 : //[1´Ü°è_½ÃÀÛ]
+	case  4 : //[1ï¿½Ü°ï¿½_ï¿½ï¿½ï¿½ï¿½]
 		if( mZone175TypePostTick < ( 120 * 1 ) )
 		{
 			return;
@@ -6160,7 +6160,7 @@ void MyGame::Process_Zone_175_TYPE( void )
 		//--------------//
 		//--------------//
 		return;
-	case  5 : //[1´Ü°è_ÁøÇà]
+	case  5 : //[1ï¿½Ü°ï¿½_ï¿½ï¿½ï¿½ï¿½]
 		for( index01 = 0 ; index01 < mSERVER.mMAX_USER_NUM ; index01++ )
 		{
 			if( !mAVATAR_OBJECT[index01].mCheckValidState )
@@ -6285,8 +6285,8 @@ void MyGame::Process_Zone_175_TYPE( void )
 			{
 				continue;
 			}
-			// 2010.1.18 : ±è¼º¼ö : ¹«½Å ºÙÀÌ¸é¼­ Ã³¸®ÇÑ°Å 
-			//Àï º¸»ó½Ã¿¡ Á¡Ç÷»óÅÂÀÏ‹š .. ÇØ´ç ÄÉ¸¯ÅÍÀÇ Á¡Ç÷ »óÅÂ¸¦ Ç®¾î ÁØ´Ù
+			// 2010.1.18 : ï¿½è¼ºï¿½ï¿½ : ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ì¸é¼­ Ã³ï¿½ï¿½ï¿½Ñ°ï¿½ 
+			//ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ã¿ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï‹ï¿½ .. ï¿½Ø´ï¿½ ï¿½É¸ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Â¸ï¿½ Ç®ï¿½ï¿½ ï¿½Ø´ï¿½
 			if( mAVATAR_OBJECT[index01].mDATA.aAction.aSort == 11 )
 			{
 				mAVATAR_OBJECT[index01].mDATA.aAction.aType = mAVATAR_OBJECT[index01].GetWeaponClass() * 2;
@@ -6323,7 +6323,7 @@ void MyGame::Process_Zone_175_TYPE( void )
 		//----------------//
 		//----------------//
 		return;
-	case  6 : //[º»¼º±ÍÈ¯_OR_2´Ü°è_ÀÔ±¸°³¹æ]
+	case  6 : //[ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È¯_OR_2ï¿½Ü°ï¿½_ï¿½Ô±ï¿½ï¿½ï¿½ï¿½ï¿½]
 		if( mZone175TypePostTick < ( 120 * 1 ) )
 		{
 			return;
@@ -6359,7 +6359,7 @@ void MyGame::Process_Zone_175_TYPE( void )
 		mZone175TypePostTick = 0;
 		mZone175TypeBattleState = 0;
 		return;
-	case  7 : //[2´Ü°è_ÀÔ±¸Æó¼â]
+	case  7 : //[2ï¿½Ü°ï¿½_ï¿½Ô±ï¿½ï¿½ï¿½ï¿½]
 		if( mZone175TypePostTick < ( 120 * 2 ) )
 		{
 			return;
@@ -6378,7 +6378,7 @@ void MyGame::Process_Zone_175_TYPE( void )
 		mZone175TypePostTick = 0;
 		mZone175TypeBattleState = 0;
 		return;
-	case  8 : //[2´Ü°è_½ÃÀÛ]
+	case  8 : //[2ï¿½Ü°ï¿½_ï¿½ï¿½ï¿½ï¿½]
 		if( mZone175TypePostTick < ( 120 * 1 ) )
 		{
 			return;
@@ -6404,7 +6404,7 @@ void MyGame::Process_Zone_175_TYPE( void )
 		//--------------//
 		//--------------//
 		return;
-	case  9 : //[2´Ü°è_ÁøÇà]
+	case  9 : //[2ï¿½Ü°ï¿½_ï¿½ï¿½ï¿½ï¿½]
 		for( index01 = 0 ; index01 < mSERVER.mMAX_USER_NUM ; index01++ )
 		{
 			if( !mAVATAR_OBJECT[index01].mCheckValidState )
@@ -6529,8 +6529,8 @@ void MyGame::Process_Zone_175_TYPE( void )
 			{
 				continue;
 			}
-			// 2010.1.18 : ±è¼º¼ö : ¹«½Å ºÙÀÌ¸é¼­ Ã³¸®ÇÑ°Å 
-			//Àï º¸»ó½Ã¿¡ Á¡Ç÷»óÅÂÀÏ‹š .. ÇØ´ç ÄÉ¸¯ÅÍÀÇ Á¡Ç÷ »óÅÂ¸¦ Ç®¾î ÁØ´Ù
+			// 2010.1.18 : ï¿½è¼ºï¿½ï¿½ : ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ì¸é¼­ Ã³ï¿½ï¿½ï¿½Ñ°ï¿½ 
+			//ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ã¿ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï‹ï¿½ .. ï¿½Ø´ï¿½ ï¿½É¸ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Â¸ï¿½ Ç®ï¿½ï¿½ ï¿½Ø´ï¿½
 			if( mAVATAR_OBJECT[index01].mDATA.aAction.aSort == 11 )
 			{
 				mAVATAR_OBJECT[index01].mDATA.aAction.aType = mAVATAR_OBJECT[index01].GetWeaponClass() * 2;
@@ -6566,7 +6566,7 @@ void MyGame::Process_Zone_175_TYPE( void )
 		//----------------//
 		//----------------//
 		return;
-	case 10 : //[º»¼º±ÍÈ¯_OR_3´Ü°è_ÀÔ±¸°³¹æ]
+	case 10 : //[ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È¯_OR_3ï¿½Ü°ï¿½_ï¿½Ô±ï¿½ï¿½ï¿½ï¿½ï¿½]
 		if( mZone175TypePostTick < ( 120 * 1 ) )
 		{
 			return;
@@ -6602,7 +6602,7 @@ void MyGame::Process_Zone_175_TYPE( void )
 		mZone175TypePostTick = 0;
 		mZone175TypeBattleState = 0;
 		return;
-	case 11 : //[3´Ü°è_ÀÔ±¸Æó¼â]
+	case 11 : //[3ï¿½Ü°ï¿½_ï¿½Ô±ï¿½ï¿½ï¿½ï¿½]
 		if( mZone175TypePostTick < ( 120 * 2 ) )
 		{
 			return;
@@ -6621,7 +6621,7 @@ void MyGame::Process_Zone_175_TYPE( void )
 		mZone175TypePostTick = 0;
 		mZone175TypeBattleState = 0;
 		return;
-	case 12 : //[3´Ü°è_½ÃÀÛ]
+	case 12 : //[3ï¿½Ü°ï¿½_ï¿½ï¿½ï¿½ï¿½]
 		if( mZone175TypePostTick < ( 120 * 1 ) )
 		{
 			return;
@@ -6647,7 +6647,7 @@ void MyGame::Process_Zone_175_TYPE( void )
 		//--------------//
 		//--------------//
 		return;
-	case 13 : //[3´Ü°è_ÁøÇà]
+	case 13 : //[3ï¿½Ü°ï¿½_ï¿½ï¿½ï¿½ï¿½]
 		for( index01 = 0 ; index01 < mSERVER.mMAX_USER_NUM ; index01++ )
 		{
 			if( !mAVATAR_OBJECT[index01].mCheckValidState )
@@ -6775,8 +6775,8 @@ void MyGame::Process_Zone_175_TYPE( void )
 				continue;
 			}
 			
-			// 2010.1.18 : ±è¼º¼ö : ¹«½Å ºÙÀÌ¸é¼­ Ã³¸®ÇÑ°Å 
-			//Àï º¸»ó½Ã¿¡ Á¡Ç÷»óÅÂÀÏ‹š .. ÇØ´ç ÄÉ¸¯ÅÍÀÇ Á¡Ç÷ »óÅÂ¸¦ Ç®¾î ÁØ´Ù
+			// 2010.1.18 : ï¿½è¼ºï¿½ï¿½ : ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ì¸é¼­ Ã³ï¿½ï¿½ï¿½Ñ°ï¿½ 
+			//ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ã¿ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï‹ï¿½ .. ï¿½Ø´ï¿½ ï¿½É¸ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Â¸ï¿½ Ç®ï¿½ï¿½ ï¿½Ø´ï¿½
 			if( mAVATAR_OBJECT[index01].mDATA.aAction.aSort == 11 )
 			{
 				mAVATAR_OBJECT[index01].mDATA.aAction.aType = mAVATAR_OBJECT[index01].GetWeaponClass() * 2;
@@ -6815,7 +6815,7 @@ void MyGame::Process_Zone_175_TYPE( void )
 		//----------------//
 		//----------------//
 		return;
-	case 14 : //[º»¼º±ÍÈ¯_OR_4´Ü°è_ÀÔ±¸°³¹æ]
+	case 14 : //[ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È¯_OR_4ï¿½Ü°ï¿½_ï¿½Ô±ï¿½ï¿½ï¿½ï¿½ï¿½]
 		if( mZone175TypePostTick < ( 120 * 1 ) )
 		{
 			return;
@@ -6851,7 +6851,7 @@ void MyGame::Process_Zone_175_TYPE( void )
 		mZone175TypePostTick = 0;
 		mZone175TypeBattleState = 0;
 		return;
-	case 15 : //[4´Ü°è_ÀÔ±¸Æó¼â]
+	case 15 : //[4ï¿½Ü°ï¿½_ï¿½Ô±ï¿½ï¿½ï¿½ï¿½]
 		if( mZone175TypePostTick < ( 120 * 2 ) )
 		{
 			return;
@@ -6870,7 +6870,7 @@ void MyGame::Process_Zone_175_TYPE( void )
 		mZone175TypePostTick = 0;
 		mZone175TypeBattleState = 0;
 		return;
-	case 16 : //[4´Ü°è_½ÃÀÛ]
+	case 16 : //[4ï¿½Ü°ï¿½_ï¿½ï¿½ï¿½ï¿½]
 		if( mZone175TypePostTick < ( 120 * 1 ) )
 		{
 			return;
@@ -6896,7 +6896,7 @@ void MyGame::Process_Zone_175_TYPE( void )
 		//--------------//
 		//--------------//
 		return;
-	case 17 : //[4´Ü°è_ÁøÇà]
+	case 17 : //[4ï¿½Ü°ï¿½_ï¿½ï¿½ï¿½ï¿½]
 		for( index01 = 0 ; index01 < mSERVER.mMAX_USER_NUM ; index01++ )
 		{
 			if( !mAVATAR_OBJECT[index01].mCheckValidState )
@@ -7021,8 +7021,8 @@ void MyGame::Process_Zone_175_TYPE( void )
 			{
 				continue;
 			}
-			// 2010.1.18 : ±è¼º¼ö : ¹«½Å ºÙÀÌ¸é¼­ Ã³¸®ÇÑ°Å 
-			//Àï º¸»ó½Ã¿¡ Á¡Ç÷»óÅÂÀÏ‹š .. ÇØ´ç ÄÉ¸¯ÅÍÀÇ Á¡Ç÷ »óÅÂ¸¦ Ç®¾î ÁØ´Ù
+			// 2010.1.18 : ï¿½è¼ºï¿½ï¿½ : ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ì¸é¼­ Ã³ï¿½ï¿½ï¿½Ñ°ï¿½ 
+			//ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ã¿ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï‹ï¿½ .. ï¿½Ø´ï¿½ ï¿½É¸ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Â¸ï¿½ Ç®ï¿½ï¿½ ï¿½Ø´ï¿½
 			if( mAVATAR_OBJECT[index01].mDATA.aAction.aSort == 11 )
 			{
 				mAVATAR_OBJECT[index01].mDATA.aAction.aType = mAVATAR_OBJECT[index01].GetWeaponClass() * 2;
@@ -7063,7 +7063,7 @@ void MyGame::Process_Zone_175_TYPE( void )
 		//----------------//
 		//----------------//
 		return;
-	case 18 : //[º»¼º±ÍÈ¯_OR_5´Ü°è_ÀÔ±¸°³¹æ]
+	case 18 : //[ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È¯_OR_5ï¿½Ü°ï¿½_ï¿½Ô±ï¿½ï¿½ï¿½ï¿½ï¿½]
 		if( mZone175TypePostTick < ( 120 * 1 ) )
 		{
 			return;
@@ -7099,7 +7099,7 @@ void MyGame::Process_Zone_175_TYPE( void )
 		mZone175TypePostTick = 0;
 		mZone175TypeBattleState = 0;
 		return;
-	case 19 : //[5´Ü°è_ÀÔ±¸Æó¼â]
+	case 19 : //[5ï¿½Ü°ï¿½_ï¿½Ô±ï¿½ï¿½ï¿½ï¿½]
 		if( mZone175TypePostTick < ( 120 * 2 ) )
 		{
 			return;
@@ -7118,7 +7118,7 @@ void MyGame::Process_Zone_175_TYPE( void )
 		mZone175TypePostTick = 0;
 		mZone175TypeBattleState = 0;
 		return;
-	case 20 : //[5´Ü°è_½ÃÀÛ]
+	case 20 : //[5ï¿½Ü°ï¿½_ï¿½ï¿½ï¿½ï¿½]
 		if( mZone175TypePostTick < ( 120 * 1 ) )
 		{
 			return;
@@ -7144,7 +7144,7 @@ void MyGame::Process_Zone_175_TYPE( void )
 		//--------------//
 		//--------------//
 		return;
-	case 21 : //[5´Ü°è_ÁøÇà]
+	case 21 : //[5ï¿½Ü°ï¿½_ï¿½ï¿½ï¿½ï¿½]
 		for( index01 = 0 ; index01 < mSERVER.mMAX_USER_NUM ; index01++ )
 		{
 			if( !mAVATAR_OBJECT[index01].mCheckValidState )
@@ -7269,8 +7269,8 @@ void MyGame::Process_Zone_175_TYPE( void )
 			{
 				continue;
 			}
-			// 2010.1.18 : ±è¼º¼ö : ¹«½Å ºÙÀÌ¸é¼­ Ã³¸®ÇÑ°Å 
-			//Àï º¸»ó½Ã¿¡ Á¡Ç÷»óÅÂÀÏ‹š .. ÇØ´ç ÄÉ¸¯ÅÍÀÇ Á¡Ç÷ »óÅÂ¸¦ Ç®¾î ÁØ´Ù
+			// 2010.1.18 : ï¿½è¼ºï¿½ï¿½ : ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ì¸é¼­ Ã³ï¿½ï¿½ï¿½Ñ°ï¿½ 
+			//ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ã¿ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï‹ï¿½ .. ï¿½Ø´ï¿½ ï¿½É¸ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Â¸ï¿½ Ç®ï¿½ï¿½ ï¿½Ø´ï¿½
 			if( mAVATAR_OBJECT[index01].mDATA.aAction.aSort == 11 )
 			{
 				mAVATAR_OBJECT[index01].mDATA.aAction.aType = mAVATAR_OBJECT[index01].GetWeaponClass() * 2;
@@ -7316,7 +7316,7 @@ void MyGame::Process_Zone_175_TYPE( void )
 		//----------------//
 		//----------------//
 		return;
-	case 22 : //[º»¼º±ÍÈ¯]
+	case 22 : //[ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È¯]
 		if( mZone175TypePostTick < ( 120 * 1 ) )
 		{
 			return;
@@ -7335,7 +7335,7 @@ void MyGame::Process_Zone_175_TYPE( void )
 		mZone175TypePostTick = 0;
 		mZone175TypeBattleState = 0;
 		return;
-	case 23 : //[ÃÊ±âÈ­]
+	case 23 : //[ï¿½Ê±ï¿½È­]
 		if( mZone175TypePostTick < ( 120 * 60 ) )
 		{
 			return;
@@ -8005,17 +8005,17 @@ void MyGame::GetZone175TypeRewardInfo( int tLevel, int tStep, int *tGainExperien
 	}
 }
 
-// 2010.01.07 ÀÌÀü¿¡ ³âµµ°¡ ¹Ù²î¸é ÀÚµ¿¹°¾à °ü·Ã ÇÊµå°¡ ÃÊ±âÈ­µÇ´Â ¹®Á¦°¡ ÀÖ¾î
-// °ü·Ã ÇÔ¼ö(MyGame::Add_Use_Auto_Day, MyGame::Check_Use_Auto_Day)¸¦ ¼öÁ¤ÇÏ¿´½À´Ï´Ù.
+// 2010.01.07 ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½âµµï¿½ï¿½ ï¿½Ù²ï¿½ï¿½ ï¿½Úµï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Êµå°¡ ï¿½Ê±ï¿½È­ï¿½Ç´ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ö¾ï¿½
+// ï¿½ï¿½ï¿½ï¿½ ï¿½Ô¼ï¿½(MyGame::Add_Use_Auto_Day, MyGame::Check_Use_Auto_Day)ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï¿ï¿½ï¿½ï¿½ï¿½Ï´ï¿½.
 //
-// ÀÌÀü¿¡´Â aUse_AutoPotion_Time¿¡ ³²Àº ÀÏ¼ö°¡ ÀúÀåµÇ¾î ÀÖ¾ú´Âµ¥ °ü·Ã ·ÎÁ÷À» º¯°æÇÑ ÈÄ¿¡´Â
-// aUse_AutoPotion_TimeÀº »ç¿ëÇÏÁö ¾Ê½À´Ï´Ù(´Ü, Client¿¡¼­´Â aUse_AutoPotion_Time º¯¼ö¸¦ »ç¿ë -
-//                                          ¼­¹ö¿¡¼­ º¸³»ÁØ ³¯Â¥¸¦ ÀÓ½Ã·Î ÀúÀåÇÏ´Â º¯¼ö).
-// aUse_AutoPotion_Date¿¡´Â time() °ª(1970.01.01 ºÎÅÍ ÀÚµ¿¹°¾à »ç¿ë ¸¸±âÀÏ±îÁöÀÇ ÃÊ(sec.))À» ÀúÀåÇÕ´Ï´Ù.
-// time() - 2038³â ¹®Á¦´Â ¹«½ÃÇÕ´Ï´Ù.
+// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ aUse_AutoPotion_Timeï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ï¼ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ç¾ï¿½ ï¿½Ö¾ï¿½ï¿½Âµï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ä¿ï¿½ï¿½ï¿½
+// aUse_AutoPotion_Timeï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ê½ï¿½ï¿½Ï´ï¿½(ï¿½ï¿½, Clientï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ aUse_AutoPotion_Time ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ -
+//                                          ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Â¥ï¿½ï¿½ ï¿½Ó½Ã·ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½ ï¿½ï¿½ï¿½ï¿½).
+// aUse_AutoPotion_Dateï¿½ï¿½ï¿½ï¿½ time() ï¿½ï¿½(1970.01.01 ï¿½ï¿½ï¿½ï¿½ ï¿½Úµï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï±ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½(sec.))ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Õ´Ï´ï¿½.
+// time() - 2038ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Õ´Ï´ï¿½.
 BOOL MyGame::Add_Use_Auto_Day(int iIndex, int iDay)
 {
-    const int SEC_PER_DAY = 86400; // 1ÀÏÀ» ÃÊ·Î °è»ê - 60 * 60 * 24 == 86400ÃÊ
+    const int SEC_PER_DAY = 86400; // 1ï¿½ï¿½ï¿½ï¿½ ï¿½Ê·ï¿½ ï¿½ï¿½ï¿½ - 60 * 60 * 24 == 86400ï¿½ï¿½
     int addSec = iDay * SEC_PER_DAY;
     if (mUSER[iIndex].mAvatarInfo.aUse_AutoPotion_Date > 0)
     {
@@ -8033,9 +8033,9 @@ BOOL MyGame::Add_Use_Auto_Day(int iIndex, int iDay)
         mUSER[iIndex].mAvatarInfo.aUse_AutoPotion_Date = nowTimeSec + addSec;
     }
 
-    // 2010.01.07 - ¼­¹ö¿¡¼­´Â aUse_AutoPotion_Time º¯¼ö(DB ÇÊµå Æ÷ÇÔ)´Â »ç¿ëÇÏÁö ¾Ê½À´Ï´Ù.
-    // Client¿¡¼­´Â aUse_AutoPotion_Time º¯¼ö¸¦ »ç¿ëÇÏÁö¸¸ ¼­¹ö¿¡¼­ º¸³»ÁØ ³¯Â¥¸¦
-    // ÀÓ½Ã·Î ÀúÀåÇÏ´Â º¯¼ö·Î »ç¿ëÇÕ´Ï´Ù.
+    // 2010.01.07 - ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ aUse_AutoPotion_Time ï¿½ï¿½ï¿½ï¿½(DB ï¿½Êµï¿½ ï¿½ï¿½ï¿½ï¿½)ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ê½ï¿½ï¿½Ï´ï¿½.
+    // Clientï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ aUse_AutoPotion_Time ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Â¥ï¿½ï¿½
+    // ï¿½Ó½Ã·ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Õ´Ï´ï¿½.
     mUSER[iIndex].mAvatarInfo.aUse_AutoPotion_Time = 0;
 
     return TRUE;
@@ -8071,7 +8071,7 @@ BOOL MyGame::Add_Use_Auto_Day(int iIndex, int iDay)
 
 int MyGame::Check_Use_Auto_Day(int mIndex)
 {
-    const int SEC_PER_DAY = 86400; // 1ÀÏÀ» ÃÊ·Î °è»ê - 60 * 60 * 24 == 86400ÃÊ
+    const int SEC_PER_DAY = 86400; // 1ï¿½ï¿½ï¿½ï¿½ ï¿½Ê·ï¿½ ï¿½ï¿½ï¿½ - 60 * 60 * 24 == 86400ï¿½ï¿½
 
     if (mUSER[mIndex].mAvatarInfo.aUse_AutoPotion_Date > 0)
     {
@@ -8090,7 +8090,7 @@ int MyGame::Check_Use_Auto_Day(int mIndex)
             return 0;
         }
 
-        return ( ((int)((mUSER[mIndex].mAvatarInfo.aUse_AutoPotion_Date - nowTimeSec) / SEC_PER_DAY)) + 1 ); // ÀÜ¿© ÀÏ¼ö.
+        return ( ((int)((mUSER[mIndex].mAvatarInfo.aUse_AutoPotion_Date - nowTimeSec) / SEC_PER_DAY)) + 1 ); // ï¿½Ü¿ï¿½ ï¿½Ï¼ï¿½.
     }
     else
     {
@@ -8249,10 +8249,10 @@ int MyGame::ReturnAlliance(int tTribe)
 	return -1;
 }
 
-// ÀÌµ¿¼­·Î ÀÌµ¿ °¡´ÉÇÑ Á¸À» °Ë»çÇÏ´Â ÇÔ¼ö.
+// ï¿½Ìµï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ìµï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ë»ï¿½ï¿½Ï´ï¿½ ï¿½Ô¼ï¿½.
 int MyGame::CheckMoveZoneForMoveZoneItem(int tTribe, int tLevel, int tZoneNumber)
 {
-	// return 0:ÀÌµ¿°¡´É,  1: ·¹º§Á¦ÇÑ,  2:¼¼·ÂÁ¦ÇÑ, 3:ÀÌµ¿ºÒ°¡ Á¸
+	// return 0:ï¿½Ìµï¿½ï¿½ï¿½ï¿½ï¿½,  1: ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½,  2:ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½, 3:ï¿½Ìµï¿½ï¿½Ò°ï¿½ ï¿½ï¿½
 	if (mSERVER_INFO.mServerNumber == tZoneNumber) {
 		return 3;
     }
@@ -8290,7 +8290,7 @@ int MyGame::CheckMoveZoneForMoveZoneItem(int tTribe, int tLevel, int tZoneNumber
         tCheckTribe = 3;
         tCheckLevelMin = 113;
         break;
-    // °¢ ¼¼·Âº°(³¶ÀÎÁ¦¿Ü) »óÀ§·¹º§ Á¸.
+    // ï¿½ï¿½ ï¿½ï¿½ï¿½Âºï¿½(ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½) ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½.
     case  40 :
     case  43 :
     case  56 :
@@ -8309,34 +8309,34 @@ int MyGame::CheckMoveZoneForMoveZoneItem(int tTribe, int tLevel, int tZoneNumber
         tCheckTribe = 2;
         tCheckLevelMin = 90;
         break;
-    // °ø¿ë Á¸ - 90¼º ÀÌ»ó
+    // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ - 90ï¿½ï¿½ ï¿½Ì»ï¿½
     case  38 :
     case  55 :
     case  89 :
         tCheckTribe = -1;
         tCheckLevelMin = 90;
         break;
-    // °ø¿ë Á¸ - 1°æ ÀÌ»ó
+    // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ - 1ï¿½ï¿½ ï¿½Ì»ï¿½
     case  75 :
         tCheckTribe = -1;
         tCheckLevelMin = 146;
         break;
-    // °ø¿ë Á¸ - 5°æ ÀÌ»ó
+    // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ - 5ï¿½ï¿½ ï¿½Ì»ï¿½
     case  90 :
         tCheckTribe = -1;
         tCheckLevelMin = 150;
         break;
-    // °ø¿ë Á¸ - 9°æ ÀÌ»ó
+    // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ - 9ï¿½ï¿½ ï¿½Ì»ï¿½
     case 201 :
         tCheckTribe = -1;
         tCheckLevelMin = 154;
         break;
     default :
-        return 3; // Á¸ ¹øÈ£ ¿À·ù.
+        return 3; // ï¿½ï¿½ ï¿½ï¿½È£ ï¿½ï¿½ï¿½ï¿½.
     }
 
-    // ÀÔÀå°¡´É ¼¼·Â ¹× ·¹º§ °Ë»ç.
-    if (tCheckTribe != -1) { // ¼¼·Â Á¦ÇÑÀÌ ÀÖ´Â Á¸ °Ë»ç.
+    // ï¿½ï¿½ï¿½å°¡ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ë»ï¿½.
+    if (tCheckTribe != -1) { // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ö´ï¿½ ï¿½ï¿½ ï¿½Ë»ï¿½.
         if ((tTribe == tCheckTribe) || (tTribe == ReturnAlliance(tCheckTribe))) {
         	if (tLevel >= tCheckLevelMin) {
         		return 0;
@@ -8345,7 +8345,7 @@ int MyGame::CheckMoveZoneForMoveZoneItem(int tTribe, int tLevel, int tZoneNumber
             }
         }
         return 2;
-    } else { // °ø¿ë Á¸ °Ë»ç.
+    } else { // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½Ë»ï¿½.
         if (tLevel >= tCheckLevelMin) {
             return 0;
         } else {
@@ -8680,7 +8680,7 @@ void MyGame::Process_Zone_194( void )
 		//----------------//
 		//----------------//
 		//---------//
-		//¼¼·Â_ÇýÅÃ//
+		//ï¿½ï¿½ï¿½ï¿½_ï¿½ï¿½ï¿½ï¿½//
 		//---------//
 		switch( ( rand() % 4 ) )
 		{

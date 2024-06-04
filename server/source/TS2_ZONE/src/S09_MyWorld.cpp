@@ -214,7 +214,7 @@ BOOL WORLD_FOR_GXD::LoadWM( void )
 	}
 #else 
 	FILE *r_fp = NULL;
-	sprintf( tFileName, "/user/service/bin/DATA/Z%03d.WM", mSERVER_INFO.mServerNumber );
+	sprintf( tFileName, "/home/guitar/12sky/twelve-sky/server/service/bin/DATA/Z%03d.WM", mSERVER_INFO.mServerNumber );
 
 	if(!(r_fp = fopen(tFileName, "r"))) {
 		Free();

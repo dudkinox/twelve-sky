@@ -16,7 +16,7 @@ LOG_IP=210.242.33.71
 LOG_PORT=11091
 LEVEL_LIMIT=112
 
-ZONE_CONF_DIR=/user/service/etc
+ZONE_CONF_DIR=/home/guitar/12sky/twelve-sky/server/service/etc
 
 while [ $ZONE_START_NUM -le $ZONE_END_NUM ]; do
 

@@ -122,8 +122,8 @@ BOOL MyDB::Init( void )
 #endif
 	g_mLOG = new CLogging;
 	g_mThreadLOG = new CLogging;
-	g_mLOG->set_log_file_path("/user/service/logs/ts2_player_userd/QUERY_LOG_", "a+");
-	g_mThreadLOG->set_log_file_path("/user/service/logs/ts2_player_userd/QUERY_FOR_THREAD_LOG_", "a+");
+	g_mLOG->set_log_file_path("/home/guitar/12sky/twelve-sky/server/service/logs/ts2_player_userd/QUERY_LOG_", "a+");
+	g_mThreadLOG->set_log_file_path("/home/guitar/12sky/twelve-sky/server/service/logs/ts2_player_userd/QUERY_FOR_THREAD_LOG_", "a+");
 
 	return TRUE;
 }
@@ -450,19 +450,19 @@ void MyDB::MakeQueryForSave( int tSort, char tID[MAX_USER_ID_LENGTH], AVATAR_INF
 				tAvatarInfo->aFiveExpTime,
 				tAvatarInfo->aZone84Time,
 
-				/** 2009. 11. 18 : Àå½Ä ÇØ¹æ ½Ã½ºÅÛ (wolf) */
+				/** 2009. 11. 18 : ï¿½ï¿½ï¿½ ï¿½Ø¹ï¿½ ï¿½Ã½ï¿½ï¿½ï¿½ (wolf) */
 				tAvatarInfo -> iSilverOrnamentRemainsTime,
 				tAvatarInfo -> iGoldOrnamentRemainsTime,
 				tAvatarInfo -> iUseOrnament,					
-				/** 2009. 11. 18 : Àå½Ä ÇØ¹æ ½Ã½ºÅÛ (wolf) */
-				/** 2009. 11. 23 : ÆÐÅ°Áö ¾ÆÀÌÅÛ°³¹ß (wolf) */
+				/** 2009. 11. 18 : ï¿½ï¿½ï¿½ ï¿½Ø¹ï¿½ ï¿½Ã½ï¿½ï¿½ï¿½ (wolf) */
+				/** 2009. 11. 23 : ï¿½ï¿½Å°ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Û°ï¿½ï¿½ï¿½ (wolf) */
 				tAvatarInfo -> aPackSilverDate,
 				tAvatarInfo -> aPackGoldDate,
 				tAvatarInfo -> aPackDiamondDate,
 				tAvatarInfo -> aPackSilverDateMobile,
 				tAvatarInfo -> aPackGoldDateMobile,
 				tAvatarInfo -> aPackDiamondDateMobile,
-				/** 2009. 11. 23 : ÆÐÅ°Áö ¾ÆÀÌÅÛ°³¹ß (wolf) */
+				/** 2009. 11. 23 : ï¿½ï¿½Å°ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Û°ï¿½ï¿½ï¿½ (wolf) */
 				tAvatarInfo -> aLevelZoneKeyNum2, 
 				tAvatarInfo -> aDoubleKillNumTime2,
 				tAvatarInfo->aKillMonsterNum2
@@ -594,11 +594,11 @@ void MyDB::MakeQueryForSave( int tSort, char tID[MAX_USER_ID_LENGTH], AVATAR_INF
 				tAvatarInfo->aFiveExpTime,
 				tAvatarInfo->aZone84Time,
 
-				/** 2009. 11. 18 : Àå½Ä ÇØ¹æ ½Ã½ºÅÛ (wolf) */
+				/** 2009. 11. 18 : ï¿½ï¿½ï¿½ ï¿½Ø¹ï¿½ ï¿½Ã½ï¿½ï¿½ï¿½ (wolf) */
 				tAvatarInfo -> iSilverOrnamentRemainsTime,
 				tAvatarInfo -> iGoldOrnamentRemainsTime,
 				tAvatarInfo -> iUseOrnament,					
-				/** 2009. 11. 18 : Àå½Ä ÇØ¹æ ½Ã½ºÅÛ (wolf) */
+				/** 2009. 11. 18 : ï¿½ï¿½ï¿½ ï¿½Ø¹ï¿½ ï¿½Ã½ï¿½ï¿½ï¿½ (wolf) */
 
 				tAvatarInfo -> aLevelZoneKeyNum2, 
 				tAvatarInfo -> aDoubleKillNumTime2,
@@ -735,19 +735,19 @@ void MyDB::MakeQueryForSave( int tSort, char tID[MAX_USER_ID_LENGTH], AVATAR_INF
 				tAvatarInfo->aFiveExpTime,
 				tAvatarInfo->aZone84Time,
 
-				/** 2009. 11. 18 : Àå½Ä ÇØ¹æ ½Ã½ºÅÛ (wolf) */
+				/** 2009. 11. 18 : ï¿½ï¿½ï¿½ ï¿½Ø¹ï¿½ ï¿½Ã½ï¿½ï¿½ï¿½ (wolf) */
 				tAvatarInfo -> iSilverOrnamentRemainsTime, 
 				tAvatarInfo -> iGoldOrnamentRemainsTime, 
 				tAvatarInfo -> iUseOrnament,
-				/** 2009. 11. 18 : Àå½Ä ÇØ¹æ ½Ã½ºÅÛ (wolf) */
-				/** 2009. 11. 23 : ÆÐÅ°Áö ¾ÆÀÌÅÛ °³¹ß (wolf) */
+				/** 2009. 11. 18 : ï¿½ï¿½ï¿½ ï¿½Ø¹ï¿½ ï¿½Ã½ï¿½ï¿½ï¿½ (wolf) */
+				/** 2009. 11. 23 : ï¿½ï¿½Å°ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ (wolf) */
 				tAvatarInfo -> aPackSilverDate,
 				tAvatarInfo -> aPackGoldDate,
 				tAvatarInfo -> aPackDiamondDate,
 				tAvatarInfo -> aPackSilverDateMobile,
 				tAvatarInfo -> aPackGoldDateMobile,
 				tAvatarInfo -> aPackDiamondDateMobile,
-				/** 2009. 11. 23 : ÆÐÅ°Áö ¾ÆÀÌÅÛ °³¹ß (wolf) */
+				/** 2009. 11. 23 : ï¿½ï¿½Å°ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ (wolf) */
 
 				tAvatarInfo -> aLevelZoneKeyNum2, 
 				tAvatarInfo -> aDoubleKillNumTime2,
@@ -881,11 +881,11 @@ void MyDB::MakeQueryForSave( int tSort, char tID[MAX_USER_ID_LENGTH], AVATAR_INF
 				tAvatarInfo->aFiveExpTime,
 				tAvatarInfo->aZone84Time,
 
-				/** 2009. 11. 18 : Àå½Ä ÇØ¹æ ½Ã½ºÅÛ (wolf) */
+				/** 2009. 11. 18 : ï¿½ï¿½ï¿½ ï¿½Ø¹ï¿½ ï¿½Ã½ï¿½ï¿½ï¿½ (wolf) */
 				tAvatarInfo -> iSilverOrnamentRemainsTime, 
 				tAvatarInfo -> iGoldOrnamentRemainsTime, 
 				tAvatarInfo -> iUseOrnament,
-				/** 2009. 11. 18 : Àå½Ä ÇØ¹æ ½Ã½ºÅÛ (wolf) */
+				/** 2009. 11. 18 : ï¿½ï¿½ï¿½ ï¿½Ø¹ï¿½ ï¿½Ã½ï¿½ï¿½ï¿½ (wolf) */
 
 				tAvatarInfo -> aLevelZoneKeyNum2, 
 				tAvatarInfo -> aDoubleKillNumTime2,

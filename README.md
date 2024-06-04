@@ -73,7 +73,7 @@ Navigate back to your project folder and run the configuration script:
 
 ```bash
 source Build
-cd /user/service/etc
+cd /home/guitar/12sky/twelve-sky/server/service/etc
 sh config_gen.sh
 ```
 
@@ -113,7 +113,9 @@ Replace `'db_username_12sky2'` with your database username.
 - Keep your server and database passwords secure, and use strong passwords.
 
 ## License
+
 This project is licensed under the [MIT License](LICENSE).
 
 ## Issues, Feature Requests or Support
+
 Please use the [New Issue](https://github.com/akinbicer/TS25v1/issues/new) button to submit issues, feature requests or support issues directly to me. You can also send an e-mail to akin.bicer@outlook.com.tr.

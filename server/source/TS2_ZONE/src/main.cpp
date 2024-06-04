@@ -347,7 +347,7 @@ static void load_config(void)
 	ret_val += config_obj_ptr->GetValue(CONFIG_KEY_DATABASE_MAINTENANCE_TIME, db_maintenance_time_str);
 	if (ret_val != 37) {
 #else 
-	if (ret_val != 30) { // ÇÁ¸®¹Ì¾ö ¼­¹ö ¿©ºÎ °ª Ãß°¡·Î ÀÎÇØ +1 // @_Premium_Server_@
+	if (ret_val != 30) { // ï¿½ï¿½ï¿½ï¿½ï¿½Ì¾ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ß°ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ +1 // @_Premium_Server_@
 #endif
 		LOG_TO_BOTH_2("!Insuffient configuration value. see %s file (code = %d) \n", DEFAULT_CONFIG_FILE, ret_val);
 		::exit(1);
@@ -500,7 +500,7 @@ static void load_config(void)
 	char KillOtherTribeExperienceUpRatio[MAX_SIZE_OF_CONFIG_ENTRY]; // @_Premium_Server_@
 
 
-	Config *config_obj_ptr_drop = new Config("/user/service/etc/ts2_drop.conf");
+	Config *config_obj_ptr_drop = new Config("/home/guitar/12sky/twelve-sky/server/service/etc/ts2_drop.conf");
 
 	if(!config_obj_ptr_drop) {
 		LOG_TO_BOTH("!Initializing the configuration object failed. : out of memory\n");

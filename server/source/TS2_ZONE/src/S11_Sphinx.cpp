@@ -22,7 +22,7 @@ BOOL CSphinx::WakeUp_Sphinx()
 
 	for(int i=0; i<MAX_PUZZLE_NUM; ++i)
 	{
-		sprintf( tTemp_String, "/user/service/bin/DATA/001_040%d.TGA", 38 + i );
+		sprintf( tTemp_String, "/home/guitar/12sky/twelve-sky/server/service/bin/DATA/001_040%d.TGA", 38 + i );
 		if(0 == m_Img_Data[i].Load(tTemp_String))
 		{
 			//assert(!"Error -- IMG Load Failed!");
@@ -76,7 +76,7 @@ BOOL CSphinx::Get_Transform_Num(BYTE out[], int index)const
 BOOL CSphinx::Transform_Manager(BYTE out[], BYTE const in[], TGA_HEADER const * hdr)const
 {
 	const int BPP = 32;
-	const int FILTER_CASE = 6;	//Åä³×ÀÌµµ, º¼·ÏÀÌ Á¦°Å.
+	const int FILTER_CASE = 6;	//ï¿½ï¿½ï¿½ï¿½Ìµï¿½, ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½.
 	int fillter_type = rand_mir() % FILTER_CASE;
 	//static int cnt = 0;
 	//if(cnt % 5 == 0)

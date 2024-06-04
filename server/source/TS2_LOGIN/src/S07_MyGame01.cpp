@@ -296,7 +296,7 @@ BOOL MyGame::LoadBlockIPInfo( void )
 	char tempString02[1000];
     FILE* fp = NULL;
 
-    fp = ::fopen ("/user/service/bin/DATA/BlockIPInfo.TXT", "r");
+    fp = ::fopen ("/home/guitar/12sky/twelve-sky/server/service/bin/DATA/BlockIPInfo.TXT", "r");
     if (fp == NULL) {
         LOG_TO_FILE_2 ("![%s] : fopen failed (%s) - BlockIPInfo.TXT\n",
                        __FUNCTION__, ::strerror (errno));
@@ -536,7 +536,7 @@ BOOL MyGame::LoadGiftInfo( void )
 	DWORD nReadByte;
 	int tDataNum;
 
-    fp = ::fopen ("/user/service/bin/DATA/GIFT.DAT", "r");
+    fp = ::fopen ("/home/guitar/12sky/twelve-sky/server/service/bin/DATA/GIFT.DAT", "r");
     if (fp == NULL)
 	{
 		return FALSE;

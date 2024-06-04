@@ -1,5 +1,5 @@
 #!/bin/sh
-cd /user/service/bin
+cd /home/guitar/12sky/twelve-sky/server/service/bin
 sleep 1
 ./ts2_centerd
 sleep 1
@@ -13,5 +13,5 @@ sleep 1
 sleep 1
 ./ts2_extrad
 sleep 1
-./ts2_zoned -f /user/service/etc/zone/ts2_zoned_1.conf -l /user/service/logs/ts2_zoned/ts2_zoned_1_
+./ts2_zoned -f /home/guitar/12sky/twelve-sky/server/service/etc/zone/ts2_zoned_1.conf -l /home/guitar/12sky/twelve-sky/server/service/logs/ts2_zoned/ts2_zoned_1_
 sleep 1

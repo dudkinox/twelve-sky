@@ -567,7 +567,7 @@ BOOL ZONENPCINFO::Init( void )
 	int nRead = 0;
 	FILE *r_fp = NULL;
 
-	if(!(r_fp = fopen("/user/service/bin/DATA/002.BIN", "r"))) {
+	if(!(r_fp = fopen("/home/guitar/12sky/twelve-sky/server/service/bin/DATA/002.BIN", "r"))) {
 		return FALSE;
 	}
 
@@ -708,7 +708,7 @@ BOOL HACKINFO::Init( void )
 #else
 	FILE *r_fp = NULL;
 
-	if(!(r_fp = fopen("/user/service/bin/DATA/HACKINFO.TXT", "r"))) {
+	if(!(r_fp = fopen("/home/guitar/12sky/twelve-sky/server/service/bin/DATA/HACKINFO.TXT", "r"))) {
 		return FALSE;
 	}
 	

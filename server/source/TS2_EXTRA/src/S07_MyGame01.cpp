@@ -261,10 +261,10 @@ int MyGame::GetCostInfoVersion()
 {
     FILE *r_fp = NULL;
 
-    if (!(r_fp = fopen("/user/service/bin/DATA/COST_INFO.TXT", "r")))
+    if (!(r_fp = fopen("/home/guitar/12sky/twelve-sky/server/service/bin/DATA/COST_INFO.TXT", "r")))
     {
-        LOG_TO_FILE_1("!GetCostInfoVersion - file open false : %s\n",  "/user/service/bin/DATA/COST_INFO.TXT\n");
-        return mCashItemInfoVersion; // ÆÄÀÏ ¿­±â ½ÇÆÐ ½Ã ±âÁ¸ ¹öÀüÀ» ¸®ÅÏ.
+        LOG_TO_FILE_1("!GetCostInfoVersion - file open false : %s\n",  "/home/guitar/12sky/twelve-sky/server/service/bin/DATA/COST_INFO.TXT\n");
+        return mCashItemInfoVersion; // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½.
     }
 
     char tempString01[1000] = {0};
@@ -273,7 +273,7 @@ int MyGame::GetCostInfoVersion()
 
     if (readResult != NULL)
     {
-        // COST_INFO.TXT ¹öÀü ÃßÃâ
+        // COST_INFO.TXT ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
         int tVersion = -1;
         if (GetOneValueFromFile(tempString01 , 2, &tVersion))
         {
@@ -293,8 +293,8 @@ bool MyGame::LoadCostInfo(int *pTotalCostInfoNum, int *pVersion, int tCostInfoVa
     int index02 = 0;
     FILE *r_fp = NULL;
 
-    if(!(r_fp = fopen("/user/service/bin/DATA/COST_INFO.TXT", "r"))) {
-        LOG_TO_FILE_1("file open false : %s\n",  "/user/service/bin/DATA/COST_INFO.TXT\n");
+    if(!(r_fp = fopen("/home/guitar/12sky/twelve-sky/server/service/bin/DATA/COST_INFO.TXT", "r"))) {
+        LOG_TO_FILE_1("file open false : %s\n",  "/home/guitar/12sky/twelve-sky/server/service/bin/DATA/COST_INFO.TXT\n");
         return false;
     }
 
@@ -305,7 +305,7 @@ bool MyGame::LoadCostInfo(int *pTotalCostInfoNum, int *pVersion, int tCostInfoVa
         }
         //LOG_TO_FILE_2("!totalcostinfonum[%d] , %s\n", *pTotalCostInfoNum , tempString01);
 
-        // COST_INFO.TXT ¹öÀü ÃßÃâ
+        // COST_INFO.TXT ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
         if (!GetOneValueFromFile(tempString01 , 2, pVersion)) {
             LOG_TO_FILE("!Error - Get Cost Info Version.\n");
             return false;
@@ -320,7 +320,7 @@ bool MyGame::LoadCostInfo(int *pTotalCostInfoNum, int *pVersion, int tCostInfoVa
         return false;
     }
 
-    // Extra ¼­¹ö¿¡¼­ »ç¿ëÇÒ CostInfo ÃßÃâ.
+    // Extra ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ CostInfo ï¿½ï¿½ï¿½ï¿½.
     index01 = 0;
     while(fgets(tempString01, 1000, r_fp) != NULL) {
         //LOG_TO_FILE_1("file load value for one line : %s\n",  tempString01);
@@ -349,7 +349,7 @@ bool MyGame::LoadCostInfo(int *pTotalCostInfoNum, int *pVersion, int tCostInfoVa
 
 bool MyGame::MakeCashItemInfo(int tCashItemInfo[4][10][10][4], const int tCostInfoValue[MAX_COST_INFO_NUM][MAX_COST_INFO_TYPE], int totalCostInfoNum)
 {
-    // Å¬¶óÀÌ¾ðÆ®¿¡¼­ »ç¿ëÇÏ´Â Ä³½¬ Á¤º¸ ¼ÂÆÃ.
+    // Å¬ï¿½ï¿½ï¿½Ì¾ï¿½Æ®ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ï´ï¿½ Ä³ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½.
     const int MAX_CASH_ITEM_NUM = totalCostInfoNum;
     ::memset(tCashItemInfo, -1, MAX_CASH_ITEM_INFO_SIZE);
 

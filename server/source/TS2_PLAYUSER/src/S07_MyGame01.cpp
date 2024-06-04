@@ -154,7 +154,7 @@ BOOL MyGame::LoadForTribeBankInfo( void )
 #else
 	FILE *r_fp = NULL;
 
-	if((r_fp = fopen("/user/service/bin/DATA/TRIBE_BANK_INFO.DAT", "r")) == NULL) {
+	if((r_fp = fopen("/home/guitar/12sky/twelve-sky/server/service/bin/DATA/TRIBE_BANK_INFO.DAT", "r")) == NULL) {
 		for( index01 = 0 ; index01 < 4 ; index01++ ) {
 			for( index02 = 0 ; index02 < MAX_TRIBE_BANK_SLOT_NUM ; index02++ ) {
 				mTribeBankInfo[index01][index02] = 0;
@@ -202,7 +202,7 @@ void MyGame::SaveForTribeBankInfo( void )
 #else
 	FILE *w_fp = NULL;
 
-	if((w_fp = fopen("/user/service/bin/DATA/TRIBE_BANK_INFO.DAT", "w")) == NULL) {
+	if((w_fp = fopen("/home/guitar/12sky/twelve-sky/server/service/bin/DATA/TRIBE_BANK_INFO.DAT", "w")) == NULL) {
 		LOG_TO_FILE_2("![%s] : create file failed(%s) - TRIBE_BANK_INFO.DAT\n", __FUNCTION__, strerror(errno));
 		return;
 	}
@@ -475,7 +475,7 @@ int MyGame::ReturnExistZoneNumberForUserID( char tID[MAX_USER_ID_LENGTH] )
 	return -1;
 }
 //REGISTER_USER_FOR_LOGIN_01
-int MyGame::RegisterUserForLogin_01( char tIP[16], char tID[MAX_USER_ID_LENGTH], int tUserSort, int tGoodFellow, int tLoginPlace, int tLoginPremium, int tLoginPremiumPCRoom, int tTraceState, char tBonus100Money, int tPremiumServerExpirationDate, int *tPlayUserIndex, AUTH_INFO *tAuthInfo ) // ÇÔ¼ö ¼±¾ð ¼öÁ¤ - int tPremiumServerExpirationDate Ãß°¡. // @_Premium_Server_@
+int MyGame::RegisterUserForLogin_01( char tIP[16], char tID[MAX_USER_ID_LENGTH], int tUserSort, int tGoodFellow, int tLoginPlace, int tLoginPremium, int tLoginPremiumPCRoom, int tTraceState, char tBonus100Money, int tPremiumServerExpirationDate, int *tPlayUserIndex, AUTH_INFO *tAuthInfo ) // ï¿½Ô¼ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ - int tPremiumServerExpirationDate ï¿½ß°ï¿½. // @_Premium_Server_@
 {
 	int index01;
 
@@ -555,7 +555,7 @@ int MyGame::RegisterUserForLogin_01( char tIP[16], char tID[MAX_USER_ID_LENGTH],
 	mPremiumServerExpirationDate[index01] = tPremiumServerExpirationDate; // @_Premium_Server_@
 	strcpy( mAvatarInfo[index01].aName, "" );
 	mFirstEnterZone[index01] = TRUE;
-	memset(&mGAME.mMoveItemInfo[index01], -1, sizeof(MOVE_ITEM_INFO)); // ÀÌµ¿¼­ ¾ÆÀÌÅÛ Á¤º¸ ÃÊ±âÈ­
+	memset(&mGAME.mMoveItemInfo[index01], -1, sizeof(MOVE_ITEM_INFO)); // ï¿½Ìµï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ê±ï¿½È­
 	*tPlayUserIndex = index01;
 	CopyMemory(&mAuthInfo[index01], tAuthInfo, sizeof(AUTH_INFO));
 	//mGAMELOG.GL_101_LOGIN( &mID[index01][0], &mIP[index01][0] );
@@ -645,7 +645,7 @@ int MyGame::RegisterUserForZone_00( int tZoneNumber, char tID[MAX_USER_ID_LENGTH
 	return 0;
 }
 //REGISTER_USER_FOR_ZONE_01
-int MyGame::RegisterUserForZone_01( int tZoneNumber, int tPlayUserIndex, char tID[MAX_USER_ID_LENGTH], char tAvatarName[MAX_AVATAR_NAME_LENGTH], int tLogoutInfo[6], int *tUserSort, int *tGoodFellow, int *tLoginPlace, int *tLoginPremium, int *tLoginPremiumPCRoom, int *tTraceState, char *tBonus100Money, int *tPremiumServerExpirationDate, AVATAR_INFO *tAvatarInfo, int tEffectValue[MAX_AVATAR_EFFECT_SORT_NUM][2], int *tCheckFirstZone, AUTH_INFO *tAuthInfo ) // ÇÔ¼ö ¼±¾ð ¼öÁ¤ - int *tPremiumServerExpirationDate Ãß°¡. // @_Premium_Server_@
+int MyGame::RegisterUserForZone_01( int tZoneNumber, int tPlayUserIndex, char tID[MAX_USER_ID_LENGTH], char tAvatarName[MAX_AVATAR_NAME_LENGTH], int tLogoutInfo[6], int *tUserSort, int *tGoodFellow, int *tLoginPlace, int *tLoginPremium, int *tLoginPremiumPCRoom, int *tTraceState, char *tBonus100Money, int *tPremiumServerExpirationDate, AVATAR_INFO *tAvatarInfo, int tEffectValue[MAX_AVATAR_EFFECT_SORT_NUM][2], int *tCheckFirstZone, AUTH_INFO *tAuthInfo ) // ï¿½Ô¼ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ - int *tPremiumServerExpirationDate ï¿½ß°ï¿½. // @_Premium_Server_@
 {
 	if( ( tPlayUserIndex < 0 ) || ( tPlayUserIndex > ( MAX_PLAY_USER_NUM - 1 ) ) || ( !mCheckValidState[tPlayUserIndex] ) || ( mZoneNumber[tPlayUserIndex] != tZoneNumber ) || ( strcmp( mID[tPlayUserIndex], tID ) != 0 ) || ( strcmp( mAvatarInfo[tPlayUserIndex].aName, tAvatarName ) != 0 ) )
 	{

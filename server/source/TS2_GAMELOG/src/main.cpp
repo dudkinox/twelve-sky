@@ -682,10 +682,10 @@ int main(int argc, char **argv)
 
 	if(!log_file_path_str_obj2.length())
 	{
-		snprintf(log_str, 1024, "%s_%d_", "/user/service/logs/ts2_gamelog/GAME_LOG", g_env.world_num);
+		snprintf(log_str, 1024, "%s_%d_", "/home/guitar/12sky/twelve-sky/server/service/logs/ts2_gamelog/GAME_LOG", g_env.world_num);
 		net_log_obj_ptr->set_log_file_path( log_str, "a+");
 
-		snprintf(log_strc, 1024, "%s_%d_", "/user/service/logs/ts2_gamelog/CHAT_LOG", g_env.world_num);
+		snprintf(log_strc, 1024, "%s_%d_", "/home/guitar/12sky/twelve-sky/server/service/logs/ts2_gamelog/CHAT_LOG", g_env.world_num);
 		netc_log_obj_ptr->set_log_file_path( log_strc, "a+");
 	}
 	else
@@ -693,7 +693,7 @@ int main(int argc, char **argv)
 		net_log_obj_ptr->set_log_file_path(log_file_path_str_obj2.c_str(), "a+");
 	}
 
-	snprintf(log_str, 1024, "%s_%d_", "/user/service/logs/ts2_gamelog/GM_LOG", g_env.world_num);
+	snprintf(log_str, 1024, "%s_%d_", "/home/guitar/12sky/twelve-sky/server/service/logs/ts2_gamelog/GM_LOG", g_env.world_num);
 	gm_log_obj_ptr->set_log_file_path(log_str, "a+");
 
 	if(SetBeDmon() < 0) {

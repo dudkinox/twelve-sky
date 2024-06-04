@@ -29,9 +29,9 @@ void MySummonSystem::Init( void )
 	tFileNamePart01[2] = ( mSERVER_INFO.mServerNumber % 10 ) / 1 + '0';
 	tFileNamePart01[3] = '\0';
 #endif
-	sprintf( tFileName, "/user/service/bin/DATA/Z%03d_SUMMONMONSTER.WREGION", mSERVER_INFO.mServerNumber );
+	sprintf( tFileName, "/home/guitar/12sky/twelve-sky/server/service/bin/DATA/Z%03d_SUMMONMONSTER.WREGION", mSERVER_INFO.mServerNumber );
 	LoadRegionInfo_1( tFileName );
-	sprintf( tFileName, "/user/service/bin/DATA/Z%03d_SUMMONBOSSMONSTER.WREGION", mSERVER_INFO.mServerNumber );
+	sprintf( tFileName, "/home/guitar/12sky/twelve-sky/server/service/bin/DATA/Z%03d_SUMMONBOSSMONSTER.WREGION", mSERVER_INFO.mServerNumber );
 	LoadRegionInfo_2( tFileName );
 #endif
 }
@@ -340,7 +340,7 @@ void MySummonSystem::LoadRegionInfo_2( char *tFileName )
 int MySummonSystem::ReturnSpecialSortNumber( MONSTER_INFO *tMONSTER_INFO )
 {
 	//-----------------------------------------------------------------//
-	//[01].ÀÏ¹Ý,[02].¼º¼®,[03].¼öÈ£ºñ,[04].µ¿¸Í¼®,[05].¼öÈ£¼®,[06].¼®Â÷//
+	//[01].ï¿½Ï¹ï¿½,[02].ï¿½ï¿½ï¿½ï¿½,[03].ï¿½ï¿½È£ï¿½ï¿½,[04].ï¿½ï¿½ï¿½Í¼ï¿½,[05].ï¿½ï¿½È£ï¿½ï¿½,[06].ï¿½ï¿½ï¿½ï¿½//
 	//-----------------------------------------------------------------//
 	switch( tMONSTER_INFO->mType )
 	{
@@ -499,7 +499,7 @@ void MySummonSystem::SummonMonster( void )
 			//------------------------//
 			mTRANSFER.B_MONSTER_ACTION_RECV( index03, mMONSTER_OBJECT[index03].mUniqueNumber, &mMONSTER_OBJECT[index03].mDATA, 1 );
 			//-----------------------------------------------------------------//
-			//[01].ÀÏ¹Ý,[02].¼º¼®,[03].¼öÈ£ºñ,[04].µ¿¸Í¼®,[05].¼öÈ£¼®,[06].¼®Â÷//
+			//[01].ï¿½Ï¹ï¿½,[02].ï¿½ï¿½ï¿½ï¿½,[03].ï¿½ï¿½È£ï¿½ï¿½,[04].ï¿½ï¿½ï¿½Í¼ï¿½,[05].ï¿½ï¿½È£ï¿½ï¿½,[06].ï¿½ï¿½ï¿½ï¿½//
 			//-----------------------------------------------------------------//
 			switch( mMONSTER_OBJECT[index03].mSpecialSortNumber )
 			{
@@ -616,7 +616,7 @@ void MySummonSystem::SummonBossMonster( void )
 			//------------------------//
 			mTRANSFER.B_MONSTER_ACTION_RECV( index01, mMONSTER_OBJECT[index01].mUniqueNumber, &mMONSTER_OBJECT[index01].mDATA, 1 );
 			//-----------------------------------------------------------------//
-			//[01].ÀÏ¹Ý,[02].¼º¼®,[03].¼öÈ£ºñ,[04].µ¿¸Í¼®,[05].¼öÈ£¼®,[06].¼®Â÷//
+			//[01].ï¿½Ï¹ï¿½,[02].ï¿½ï¿½ï¿½ï¿½,[03].ï¿½ï¿½È£ï¿½ï¿½,[04].ï¿½ï¿½ï¿½Í¼ï¿½,[05].ï¿½ï¿½È£ï¿½ï¿½,[06].ï¿½ï¿½ï¿½ï¿½//
 			//-----------------------------------------------------------------//
 			switch( mMONSTER_OBJECT[index01].mSpecialSortNumber )
 			{
@@ -691,7 +691,7 @@ void MySummonSystem::SummonMonsterWithoutTimeLimit( void )
 	tFileNamePart01[3] = '\0';
 	//sprintf( tFileName, "DATA\\Z%s_SUMMONMONSTER.WREGION", tFileNamePart01 );
 	*/
-	sprintf( tFileName, "/user/service/bin/DATA/Z%03d_SUMMONMONSTER.WREGION", mSERVER_INFO.mServerNumber );
+	sprintf( tFileName, "/home/guitar/12sky/twelve-sky/server/service/bin/DATA/Z%03d_SUMMONMONSTER.WREGION", mSERVER_INFO.mServerNumber );
 	LoadRegionInfo_1( tFileName );
 	index03 = 0;
 	for( index01 = 0 ; index01 < mTotalMonsterSummonInfoNum ; index01++ )
@@ -787,7 +787,7 @@ void MySummonSystem::SummonMonsterWithoutTimeLimit( void )
 			//------------------------//
 			mTRANSFER.B_MONSTER_ACTION_RECV( index03, mMONSTER_OBJECT[index03].mUniqueNumber, &mMONSTER_OBJECT[index03].mDATA, 1 );
 			//-----------------------------------------------------------------//
-			//[01].ÀÏ¹Ý,[02].¼º¼®,[03].¼öÈ£ºñ,[04].µ¿¸Í¼®,[05].¼öÈ£¼®,[06].¼®Â÷//
+			//[01].ï¿½Ï¹ï¿½,[02].ï¿½ï¿½ï¿½ï¿½,[03].ï¿½ï¿½È£ï¿½ï¿½,[04].ï¿½ï¿½ï¿½Í¼ï¿½,[05].ï¿½ï¿½È£ï¿½ï¿½,[06].ï¿½ï¿½ï¿½ï¿½//
 			//-----------------------------------------------------------------//
 			switch( mMONSTER_OBJECT[index03].mSpecialSortNumber )
 			{
@@ -903,7 +903,7 @@ void MySummonSystem::SummonMonsterForSpecial( int tMonsterNumber, float tMonster
 	mMONSTER_OBJECT[index01].mCheckAttackPacketRecv = FALSE;
 	mMONSTER_OBJECT[index01].mRadiusForSize = sqrtf( (float) ( tMONSTER_INFO->mSize[0] * tMONSTER_INFO->mSize[0] + tMONSTER_INFO->mSize[2] * tMONSTER_INFO->mSize[2] ) ) * 0.5f;
     ::memset(mMONSTER_OBJECT[index01].mAvatarName, 0, MAX_AVATAR_NAME_LENGTH);
-	if(tUserIndex != -1) { // ¸ó½ºÅÍ ¼ÒÀ¯ÀÚ Á¤º¸ ÁöÁ¤ - ÁöÁ¤µÈ ¼ÒÀ¯ÀÚ ¿Ü¿¡´Â Å¸°Ý ºÒ°¡.
+	if(tUserIndex != -1) { // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ - ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ü¿ï¿½ï¿½ï¿½ Å¸ï¿½ï¿½ ï¿½Ò°ï¿½.
 		::memcpy(mMONSTER_OBJECT[index01].mAvatarName, mUSER[tUserIndex].mAvatarInfo.aName, MAX_AVATAR_NAME_LENGTH);
 	}
 	//------------------------//
@@ -911,7 +911,7 @@ void MySummonSystem::SummonMonsterForSpecial( int tMonsterNumber, float tMonster
 	//------------------------//
 	mTRANSFER.B_MONSTER_ACTION_RECV( index01, mMONSTER_OBJECT[index01].mUniqueNumber, &mMONSTER_OBJECT[index01].mDATA, 1 );
 	//-----------------------------------------------------------------//
-	//[01].ÀÏ¹Ý,[02].¼º¼®,[03].¼öÈ£ºñ,[04].µ¿¸Í¼®,[05].¼öÈ£¼®,[06].¼®Â÷//
+	//[01].ï¿½Ï¹ï¿½,[02].ï¿½ï¿½ï¿½ï¿½,[03].ï¿½ï¿½È£ï¿½ï¿½,[04].ï¿½ï¿½ï¿½Í¼ï¿½,[05].ï¿½ï¿½È£ï¿½ï¿½,[06].ï¿½ï¿½ï¿½ï¿½//
 	//-----------------------------------------------------------------//
 	switch( mMONSTER_OBJECT[index01].mSpecialSortNumber )
 	{
@@ -1926,7 +1926,7 @@ BOOL MySummonSystem::SummonMonsterForTribeWeapon( int tMonsterNumber, float tMon
 	//------------------------//
 	mTRANSFER.B_MONSTER_ACTION_RECV( index01, mMONSTER_OBJECT[index01].mUniqueNumber, &mMONSTER_OBJECT[index01].mDATA, 1 );
 	//-----------------------------------------------------------------//
-	//[01].ÀÏ¹Ý,[02].¼º¼®,[03].¼öÈ£ºñ,[04].µ¿¸Í¼®,[05].¼öÈ£¼®,[06].¼®Â÷//
+	//[01].ï¿½Ï¹ï¿½,[02].ï¿½ï¿½ï¿½ï¿½,[03].ï¿½ï¿½È£ï¿½ï¿½,[04].ï¿½ï¿½ï¿½Í¼ï¿½,[05].ï¿½ï¿½È£ï¿½ï¿½,[06].ï¿½ï¿½ï¿½ï¿½//
 	//-----------------------------------------------------------------//
 	switch( mMONSTER_OBJECT[index01].mSpecialSortNumber )
 	{
@@ -1976,7 +1976,7 @@ void MySummonSystem::SummonMonsterWithoutTimeLimitForZone175Type( int tStep )
 		tFileNamePart01[3] = '\0';
 		sprintf( tFileName, "DATA\\Z%s_SUMMONMONSTER_1.WREGION", tFileNamePart01 );
 		*/
-		sprintf(tFileName, "/user/service/bin/DATA/Z%03d_SUMMONMONSTER_1.WREGION", mSERVER_INFO.mServerNumber);
+		sprintf(tFileName, "/home/guitar/12sky/twelve-sky/server/service/bin/DATA/Z%03d_SUMMONMONSTER_1.WREGION", mSERVER_INFO.mServerNumber);
 		break;
 	case 2 :
 		/*
@@ -1986,7 +1986,7 @@ void MySummonSystem::SummonMonsterWithoutTimeLimitForZone175Type( int tStep )
 		tFileNamePart01[3] = '\0';
 		sprintf( tFileName, "DATA\\Z%s_SUMMONMONSTER_2.WREGION", tFileNamePart01 );
 		*/
-		sprintf(tFileName, "/user/service/bin/DATA/Z%03d_SUMMONMONSTER_2.WREGION", mSERVER_INFO.mServerNumber);
+		sprintf(tFileName, "/home/guitar/12sky/twelve-sky/server/service/bin/DATA/Z%03d_SUMMONMONSTER_2.WREGION", mSERVER_INFO.mServerNumber);
 		break;
 	case 3 :
 		/*
@@ -1996,7 +1996,7 @@ void MySummonSystem::SummonMonsterWithoutTimeLimitForZone175Type( int tStep )
 		tFileNamePart01[3] = '\0';
 		sprintf( tFileName, "DATA\\Z%s_SUMMONMONSTER_3.WREGION", tFileNamePart01 );
 		*/
-		sprintf(tFileName, "/user/service/bin/DATA/Z%03d_SUMMONMONSTER_3.WREGION", mSERVER_INFO.mServerNumber);
+		sprintf(tFileName, "/home/guitar/12sky/twelve-sky/server/service/bin/DATA/Z%03d_SUMMONMONSTER_3.WREGION", mSERVER_INFO.mServerNumber);
 		break;
 	case 4 :
 		/*
@@ -2006,7 +2006,7 @@ void MySummonSystem::SummonMonsterWithoutTimeLimitForZone175Type( int tStep )
 		tFileNamePart01[3] = '\0';
 		sprintf( tFileName, "DATA\\Z%s_SUMMONMONSTER_4.WREGION", tFileNamePart01 );
 		*/
-		sprintf(tFileName, "/user/service/bin/DATA/Z%03d_SUMMONMONSTER_4.WREGION", mSERVER_INFO.mServerNumber);
+		sprintf(tFileName, "/home/guitar/12sky/twelve-sky/server/service/bin/DATA/Z%03d_SUMMONMONSTER_4.WREGION", mSERVER_INFO.mServerNumber);
 		break;
 	case 5 :
 		/*
@@ -2016,7 +2016,7 @@ void MySummonSystem::SummonMonsterWithoutTimeLimitForZone175Type( int tStep )
 		tFileNamePart01[3] = '\0';
 		sprintf( tFileName, "DATA\\Z%s_SUMMONMONSTER_5.WREGION", tFileNamePart01 );
 		*/
-		sprintf(tFileName, "/user/service/bin/DATA/Z%03d_SUMMONMONSTER_5.WREGION", mSERVER_INFO.mServerNumber);
+		sprintf(tFileName, "/home/guitar/12sky/twelve-sky/server/service/bin/DATA/Z%03d_SUMMONMONSTER_5.WREGION", mSERVER_INFO.mServerNumber);
 		break;
 	default :
 		return;
