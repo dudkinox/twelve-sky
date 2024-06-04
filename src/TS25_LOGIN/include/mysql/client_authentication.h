@@ -1,7 +1,7 @@
 #ifndef CLIENT_AUTHENTICATION_H
 #define CLIENT_AUTHENTICATION_H
 #include <my_global.h>
-#include "mysql.h"
+#include <mysql.h>
 #include "mysql/client_plugin.h"
 
 C_MODE_START

@@ -19,7 +19,7 @@
 #include <string>
 #include <stdlib.h>
 
-#include "mysql.h"
+#include <mysql.h>
 using namespace std;
 class CMySQL
 {
@@ -82,7 +82,7 @@ private:
 #include <iostream>
 #include <string>
 
-#include "mysql.h"
+#include <mysql.h>
 using namespace std;
 class CMySQL
 {

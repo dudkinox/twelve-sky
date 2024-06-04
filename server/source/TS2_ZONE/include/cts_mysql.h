@@ -21,7 +21,7 @@
 #include <iostream>
 #include <string>
 
-#include "mysql.h"
+#include <mysql.h>
 using namespace std;
 class CMySQL
 {
