@@ -14,7 +14,7 @@
 SVRNAME = ts2_centerd
 
 #program path
-PRGPATH = /user/service
+PRGPATH = /home/guitar/12sky/12sky/server/service
 
 #version
 VERSION = $(shell cat ../VERSION)
